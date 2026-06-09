@@ -1,0 +1,122 @@
+{
+  "_purpose": "ECharts theme JSON for the polished standalone dashboards (Capital, Parks 5-Year). Two registered themes — concept_b_light and concept_b_dark — applied via echarts.registerTheme() then init(el, 'concept_b_light').",
+  "_usage_javascript": "echarts.registerTheme('concept_b_light', /* this object */);\nconst chart = echarts.init(document.getElementById('chart'), 'concept_b_light');\nchart.setOption({ /* series config */ });",
+  "concept_b_light": {
+    "color": [
+      "#1F3864", "#0F766E", "#B45309", "#B91C1C",
+      "#7C3AED", "#0369A1", "#047857", "#C2410C"
+    ],
+    "backgroundColor": "transparent",
+    "textStyle": {
+      "fontFamily": "'Segoe UI', Tahoma, Geneva, sans-serif",
+      "color": "#0F172A"
+    },
+    "title": {
+      "textStyle": {
+        "color": "#0F172A",
+        "fontSize": 14,
+        "fontWeight": 600
+      },
+      "subtextStyle": {
+        "color": "#475569",
+        "fontSize": 11
+      }
+    },
+    "line": {
+      "itemStyle": {
+        "borderWidth": 1
+      },
+      "lineStyle": {
+        "width": 2
+      },
+      "symbolSize": 6,
+      "symbol": "circle",
+      "smooth": false
+    },
+    "bar": {
+      "itemStyle": {
+        "barBorderWidth": 0,
+        "barBorderColor": "#CBD5E1"
+      }
+    },
+    "categoryAxis": {
+      "axisLine": { "lineStyle": { "color": "#94A3B8" } },
+      "axisTick": { "lineStyle": { "color": "#94A3B8" } },
+      "axisLabel": { "color": "#0F172A", "fontSize": 10 },
+      "splitLine": { "show": false }
+    },
+    "valueAxis": {
+      "axisLine": { "show": false },
+      "axisTick": { "show": false },
+      "axisLabel": { "color": "#475569", "fontSize": 10 },
+      "splitLine": {
+        "lineStyle": { "color": "#E2E8F0", "type": "dashed" }
+      }
+    },
+    "legend": {
+      "textStyle": { "color": "#0F172A", "fontSize": 10 }
+    },
+    "tooltip": {
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#CBD5E1",
+      "borderWidth": 1,
+      "textStyle": { "color": "#0F172A", "fontSize": 11 }
+    }
+  },
+  "concept_b_dark": {
+    "color": [
+      "#7C9CFF", "#5EE0C1", "#FFB547", "#FF6B7A",
+      "#B794F6", "#7C9CFF", "#5EE0C1", "#FFB547"
+    ],
+    "backgroundColor": "transparent",
+    "textStyle": {
+      "fontFamily": "'Segoe UI', Tahoma, Geneva, sans-serif",
+      "color": "#E8EDF7"
+    },
+    "title": {
+      "textStyle": {
+        "color": "#E8EDF7",
+        "fontSize": 14,
+        "fontWeight": 600
+      },
+      "subtextStyle": {
+        "color": "#94A3B8",
+        "fontSize": 11
+      }
+    },
+    "line": {
+      "itemStyle": {
+        "borderWidth": 1
+      },
+      "lineStyle": {
+        "width": 2
+      },
+      "symbolSize": 6,
+      "symbol": "circle",
+      "smooth": false
+    },
+    "categoryAxis": {
+      "axisLine": { "lineStyle": { "color": "#33425E" } },
+      "axisTick": { "lineStyle": { "color": "#33425E" } },
+      "axisLabel": { "color": "#E8EDF7", "fontSize": 10 },
+      "splitLine": { "show": false }
+    },
+    "valueAxis": {
+      "axisLine": { "show": false },
+      "axisTick": { "show": false },
+      "axisLabel": { "color": "#94A3B8", "fontSize": 10 },
+      "splitLine": {
+        "lineStyle": { "color": "#243049", "type": "dashed" }
+      }
+    },
+    "legend": {
+      "textStyle": { "color": "#E8EDF7", "fontSize": 10 }
+    },
+    "tooltip": {
+      "backgroundColor": "#121826",
+      "borderColor": "#33425E",
+      "borderWidth": 1,
+      "textStyle": { "color": "#E8EDF7", "fontSize": 11 }
+    }
+  }
+}

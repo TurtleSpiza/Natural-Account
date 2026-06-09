@@ -1,0 +1,418 @@
+{
+  "73511": {
+    "good": [
+      "Staff Christmas party at external venue",
+      "Off-site team lunch at a restaurant",
+      "BBQ for Honorary Park Rangers or Bush care group",
+      "ELT dinner with alcohol",
+      "Staff farewell lunch or dinner",
+      "Gala dinner or awards night"
+    ],
+    "bad": [
+      "Office morning tea on Council premises → 73512",
+      "Working meeting nibbles (on-site) → 73512",
+      "Conference meals employees (on-site) → 73512"
+    ],
+    "vs": "73512",
+    "vs_note": "73511 = off-site OR alcohol present OR social/recreational function OR elaborate meal. 73512 = on-site light refreshments only at a working meeting, no alcohol, no social element."
+  },
+  "73512": {
+    "good": [
+      "Morning tea biscuits at team meeting in office",
+      "Sandwiches at working lunch on Council premises",
+      "Nibbles at internal workshop",
+      "Conference meals employees on-site"
+    ],
+    "bad": [
+      "Off-site lunch at restaurant → 73511",
+      "Any event with alcohol → 73511",
+      "Christmas party → 73511",
+      "Park Rangers BBQ → 73511",
+      "Staff farewell dinner → 73511"
+    ],
+    "vs": "73511",
+    "vs_note": "73512 = on-site light refreshments at a working meeting only. No alcohol. No social function. Off-site or alcohol = 73511."
+  },
+  "73211": {
+    "good": [
+      "Minor ad-hoc maintenance job, total contract value $8,000",
+      "Small service agreement under $20k total",
+      "One-off trade job — plumber, total $3,500"
+    ],
+    "bad": [
+      "Contract total $25,000 — must be 73212",
+      "Single invoice $22,000 — check total contract value, likely 73212",
+      "Annual agreement $80k — must be 73212"
+    ],
+    "vs": "73212",
+    "vs_note": "The threshold is the TOTAL CONTRACT VALUE, not the individual invoice amount. A $3,000 invoice on a $50,000 contract must still be 73212."
+  },
+  "73212": {
+    "good": [
+      "Major landscaping contract $150k per annum",
+      "Ongoing security contract total $50,000",
+      "Waste collection agreement $200k"
+    ],
+    "bad": [
+      "Single ad-hoc job under $20k total → 73211"
+    ],
+    "vs": "73211",
+    "vs_note": "If total contract value is unknown, confirm before coding. Default to 73212 if there is any doubt the total exceeds $20k."
+  },
+  "73214": {
+    "good": [
+      "Hays Recruitment agency labour supply invoice",
+      "Chandler Macleod temporary staff",
+      "Adecco agency personnel",
+      "Labour-hire company invoice for temp workers"
+    ],
+    "bad": [
+      "Directly engaged casual staff via payroll → 71114",
+      "Fixed-term employee engaged directly → 71113"
+    ],
+    "vs": "71113",
+    "vs_note": "73214 = engaged through an employment agency (they invoice LCC). 71113 = Council directly employs and pays the person via payroll. Agency invoice = always 73214."
+  },
+  "71113": {
+    "good": [
+      "Temp Council employee paid directly via payroll",
+      "Fixed-term Council employee at permanent rates — no agency involved"
+    ],
+    "bad": [
+      "Hays / Chandler / Adecco agency invoice → 73214",
+      "Labour-hire company invoice → 73214"
+    ],
+    "vs": "73214",
+    "vs_note": "71113 = Council is the employer, person is on Council payroll. 73214 = third-party agency supplies the person. If there is an agency invoice, it is 73214."
+  },
+  "73542": {
+    "good": [
+      "AILA membership renewal",
+      "CPA Australia annual fee",
+      "Engineers Australia membership",
+      "AIPM professional body fee",
+      "IPWEA membership"
+    ],
+    "bad": [
+      "Blue card renewal → 73433",
+      "DigSafe subscription fee → 73433",
+      "Pesticide applicator licence → 73433",
+      "Chainsaw operator licence → 73433",
+      "First aid certificate → 73544"
+    ],
+    "vs": "73433",
+    "vs_note": "73542 = professional body membership only (an industry association you join). 73433 = licence fees, blue cards, DigSafe — compliance obligations you must hold to perform work."
+  },
+  "73433": {
+    "good": [
+      "Blue card renewal fee",
+      "DigSafe annual account fee",
+      "Pesticide applicator licence",
+      "Working at heights certification fee",
+      "Chainsaw operator licence"
+    ],
+    "bad": [
+      "AILA/CPA/Engineers Australia membership → 73542",
+      "Professional body annual fee → 73542"
+    ],
+    "vs": "73542",
+    "vs_note": "73433 = regulatory compliance fees, licences, blue cards, DigSafe. 73542 = professional body memberships only."
+  },
+  "73544": {
+    "good": [
+      "First aid training course",
+      "Chainsaw operator training",
+      "Leadership development workshop (external provider)",
+      "WHS training course",
+      "Confined space training"
+    ],
+    "bad": [
+      "University course fees reimbursed to staff member → 73545",
+      "Griffith/QUT/TAFE fees reimbursed → 73545",
+      "Internal LCC venue hire for training → 7B611"
+    ],
+    "vs": "73545",
+    "vs_note": "73544 = training and development courses. 73545 = university or TAFE course fees reimbursed to a specific staff member under the Study Assistance Policy."
+  },
+  "73545": {
+    "good": [
+      "Griffith University semester fees reimbursed to staff",
+      "QUT course fees reimbursed under study assistance",
+      "TAFE course fees — staff reimbursement"
+    ],
+    "bad": [
+      "External training course → 73544",
+      "Conference attendance → 73541",
+      "First aid course → 73544"
+    ],
+    "vs": "73544",
+    "vs_note": "73545 = uni/TAFE course fees reimbursed to staff only. All other training and development → 73544."
+  },
+  "73123": {
+    "good": [
+      "Pest control invoice",
+      "Fire protection system inspection",
+      "Building maintenance repairs",
+      "Air conditioning service",
+      "Painter invoice",
+      "Plumber invoice",
+      "Building contractor repairs"
+    ],
+    "bad": [
+      "Security patrol → 73124",
+      "Alarm monitoring → 73124",
+      "Keys and lock replacement → 73124",
+      "Lawn mowing → 73126",
+      "Electrician → 73127"
+    ],
+    "vs": "73124",
+    "vs_note": "73123 = general maintenance (repairs, pest, fire, AC, painters, plumbers). 73124 = security-specific only (patrols, alarms, access control, lock fitting)."
+  },
+  "73124": {
+    "good": [
+      "Security patrol invoice",
+      "Alarm monitoring monthly fee",
+      "Lock and key replacement",
+      "Access card management",
+      "CCTV monitoring",
+      "Security guard services"
+    ],
+    "bad": [
+      "Building repairs → 73123",
+      "Pest control → 73123",
+      "General maintenance → 73123"
+    ],
+    "vs": "73123",
+    "vs_note": "73124 = security services only. Everything else maintenance-related → 73123."
+  },
+  "73531": {
+    "good": [
+      "Cabcharge taxi fare in Brisbane/SEQ",
+      "Council car parking fees in SEQ",
+      "Uber to meeting in Brisbane"
+    ],
+    "bad": [
+      "Motorway toll charges → 73535",
+      "Interstate taxi/Uber → 73533",
+      "Overseas taxi → 73534",
+      "Qld accommodation → 73532"
+    ],
+    "vs": "73535",
+    "vs_note": "73531 = SEQ taxi, Cabcharge, parking only. Toll charges are a separate account (73535). Interstate travel including taxi goes to 73533."
+  },
+  "73535": {
+    "good": [
+      "Go Via motorway toll invoice",
+      "Linkt e-tag statement",
+      "Motorway Queensland invoice"
+    ],
+    "bad": [
+      "Taxi or Cabcharge → 73531",
+      "Parking fees → 73531"
+    ],
+    "vs": "73531",
+    "vs_note": "73535 = toll charges only. All taxi, Cabcharge, and parking → 73531."
+  },
+  "73112": {
+    "good": [
+      "Queensland Audit Office annual financial audit fee",
+      "External auditor invoice for financial statements audit"
+    ],
+    "bad": [
+      "Internal audit investigation → 73116",
+      "Fraud investigation → 73116",
+      "Compliance audit → 73116",
+      "Performance audit → 73116",
+      "Workplace investigation → 73116"
+    ],
+    "vs": "73116",
+    "vs_note": "73112 = external financial reporting audit ONLY (annual financial statements). Every other type of audit or investigation → 73116."
+  },
+  "73116": {
+    "good": [
+      "Internal audit investigation fees",
+      "Fraud investigation",
+      "Compliance review",
+      "Performance audit",
+      "Workplace investigation"
+    ],
+    "bad": [
+      "Annual external financial statements audit → 73112"
+    ],
+    "vs": "73112",
+    "vs_note": "73116 = all audit and investigation except the annual financial reporting audit. When in doubt use 73116."
+  },
+  "7B611": {
+    "good": [
+      "Logan Entertainment Centre room hire",
+      "Council chamber booking",
+      "Internal meeting room at LCC facility",
+      "Logan Metro InSports function space"
+    ],
+    "bad": [
+      "External commercial venue hire → 73521",
+      "Hotel conference room → 73521"
+    ],
+    "vs": "73521",
+    "vs_note": "7B611 = all internal LCC venues (LEC, Logan Metro, Council buildings). External commercial venues → 73521. Even when an LCC room is hired for training, use 7B611 not 73544."
+  },
+  "73521": {
+    "good": [
+      "External hotel conference room hire",
+      "Commercial function centre booking",
+      "Off-site venue hire (non-LCC)"
+    ],
+    "bad": [
+      "Internal LCC venue → 7B611",
+      "Logan Entertainment Centre → 7B611"
+    ],
+    "vs": "7B611",
+    "vs_note": "73521 = external commercial property leases and rentals only. All internal LCC venues → 7B611."
+  },
+  "73601": {
+    "good": [
+      "Management consultant engaged to redesign branch structure (written report delivered)",
+      "Strategic planning consultant — 6-month engagement, unsupervised",
+      "Organisational change consultant producing recommendations report"
+    ],
+    "bad": [
+      "Contractor implementing a known IT system → 73211/73212",
+      "Software developer building to spec → 73211/73212",
+      "Temp agency worker → 73214"
+    ],
+    "vs": "73212",
+    "vs_note": "Consultancy requires ALL 4 elements: expert knowledge producing written recommendations + new concept/process + fixed period/rate + unsupervised. A contractor implementing a known outcome → 73211/73212."
+  },
+  "73126": {
+    "good": [
+      "Austspray mowing invoice — zone work",
+      "Glascott landscape maintenance",
+      "Marsupial zone mowing",
+      "Technigro zone services",
+      "Weed control invoice",
+      "Lawn mowing contract payment"
+    ],
+    "bad": [
+      "Greenwaste disposal → 73129",
+      "Pest control → 73123",
+      "Garden furniture purchase → 72315"
+    ],
+    "vs": "73129",
+    "vs_note": "73126 = landscaping and mowing services. 73129 = greenwaste processing and disposal (what happens after the mowing)."
+  },
+  "73122": {
+    "good": [
+      "Cleanaway domestic bin collection invoice",
+      "Waste disposal contractor invoice",
+      "Council garbage collection payment"
+    ],
+    "bad": [
+      "Greenwaste processing → 73129",
+      "Bulk waste disposal → 73130",
+      "Cleanaway electricity supply → 73312 (miscode)"
+    ],
+    "vs": "73129",
+    "vs_note": "73122 = garbage/bin collection services. 73129 = greenwaste processing. 73130 = solid waste disposal to landfill."
+  },
+  "73533": {
+    "good": [
+      "Flight + hotel in Melbourne for conference",
+      "Interstate accommodation Sydney 3 nights",
+      "Rental car hire in Perth for site visit"
+    ],
+    "bad": [
+      "SEQ taxi to Brisbane airport → 73531",
+      "Accommodation within Queensland → 73532",
+      "Meals during interstate trip → 73511 or 73512 (hospitality rules apply)",
+      "Overseas accommodation → 73534"
+    ],
+    "vs": "73532",
+    "vs_note": "73533 = interstate travel/accommodation only (within Australia, outside QLD). 73532 = intrastate (within QLD). Meals during any travel follow hospitality rules, NOT the travel account."
+  },
+  "73532": {
+    "good": [
+      "Cairns hotel for regional site visit",
+      "Townsville flight + accommodation",
+      "Rental car in Rockhampton"
+    ],
+    "bad": [
+      "Brisbane/SEQ taxi → 73531",
+      "Melbourne conference accommodation → 73533",
+      "Overseas travel → 73534"
+    ],
+    "vs": "73533",
+    "vs_note": "73532 = all travel and accommodation within Queensland. Interstate (other Australian states) → 73533."
+  },
+  "73541": {
+    "good": [
+      "AFAC conference registration fee",
+      "LGMA annual conference registration",
+      "IPWEA Qld conference fee — registration only"
+    ],
+    "bad": [
+      "Conference travel/flights → 73531–73534",
+      "Conference accommodation → 73532/73533",
+      "Conference meals → 73511/73512 (hospitality)",
+      "Training course fee → 73544"
+    ],
+    "vs": "73544",
+    "vs_note": "73541 = conference/seminar REGISTRATION FEES only. Travel, accommodation, and meals are separate accounts. Training courses → 73544."
+  },
+  "73551": {
+    "good": [
+      "Seek.com job advertisement",
+      "Newspaper recruitment ad placed via HR",
+      "LinkedIn recruitment campaign fee"
+    ],
+    "bad": [
+      "Park signage advertising → 73552",
+      "Event promotion → 73552",
+      "Corporate branding campaign → 73552"
+    ],
+    "vs": "73552",
+    "vs_note": "73551 = recruitment advertising only (hiring personnel), coordinated via HR Services. 73552 = all other advertising, coordinated via Marketing & Communication."
+  },
+  "73552": {
+    "good": [
+      "Event promotion flyer printing",
+      "Facebook ad campaign for park event",
+      "Billboard advertising — non-recruitment"
+    ],
+    "bad": [
+      "Job advertisement → 73551",
+      "Promotional merchandise → 73553"
+    ],
+    "vs": "73551",
+    "vs_note": "73552 = all advertising that is NOT for recruitment. Must be coordinated via Marketing & Communication Branch. Promotional items/merchandise → 73553."
+  },
+  "73128": {
+    "good": [
+      "Employee Assistance Program (EAP) fees",
+      "Services genuinely not fitting any other category",
+      "Specialist service with no matching account"
+    ],
+    "bad": [
+      "Pest control → 73123",
+      "Security patrols → 73124",
+      "Mowing → 73126",
+      "Electrician → 73127",
+      "Greenwaste → 73129",
+      "WHS compliance → 73125"
+    ],
+    "vs": null,
+    "vs_note": "73128 is a LAST RESORT account. Before using it, check every other 731xx account. If a more specific account exists, use it. Common miscodings: pest control (73123), WHS (73125), electrical (73127)."
+  },
+  "73219": {
+    "good": [
+      "Biosolids disposal from treatment facility",
+      "Sludge transport and disposal invoice"
+    ],
+    "bad": [
+      "General waste disposal → 73120/73130",
+      "Greenwaste processing → 73129",
+      "Garbage collection → 73122"
+    ],
+    "vs": null,
+    "vs_note": "73219 = disposal of biosolids/sludge from Council treatment facilities only. General waste → 73120/73130. Greenwaste → 73129."
+  }
+}

@@ -1,0 +1,20 @@
+GENJNL Recode — NA 73564 IT Equipment & Applications -> 73566 IT Software Licence Fees
+Batch CN-23167 (HELD pending Finance acceptance of 73564->73566 move; Body2 lines flagged).
+PKs preserved as transacted. Dr positive, Cr negative. Batch nets $0.00. Doc/line fields stored as text.
+
+LDG | Account number | Fund account | Resource Group | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+--------------------------------------------------------------------------------------------------------------------
+ PK | PK000087    | PK000087    | JOURNAL        | 73564         |    -36.14 | Anthropic Claude reversal              | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000087    | PK000087    | JOURNAL        | 73566         |     36.14 | Anthropic Claude IT SW lic TE005499    | Recode from 73564                      | CN-23167
+ PK | PK000084    | PK000084    | JOURNAL        | 73564         |   -132.00 | SW licence bundle reversal             | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000084    | PK000084    | JOURNAL        | 73566         |    132.00 | SW licence bundle IT SW lic INAU004378 | Recode from 73564                      | CN-23167
+ PK | PK000084    | PK000084    | JOURNAL        | 73564         |   -342.00 | SW licence bundle reversal             | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000084    | PK000084    | JOURNAL        | 73566         |    342.00 | SW licence bundle IT SW lic INAU004378 | Recode from 73564                      | CN-23167
+ PK | PK000001    | PK000001    | JOURNAL        | 73564         |   -372.00 | Body2 Cam sub reversal                 | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000001    | PK000001    | JOURNAL        | 73566         |    372.00 | Body2 Cam sub IT SW lic GJ076194       | Recode from 73564                      | CN-23167
+ PK | PK000001    | PK000001    | JOURNAL        | 73564         |   -372.00 | Body2 Cam sub reversal                 | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000001    | PK000001    | JOURNAL        | 73566         |    372.00 | Body2 Cam sub IT SW lic GJ075813       | Recode from 73564                      | CN-23167
+ PK | PK000068    | PK000068    | JOURNAL        | 73564         |   -568.31 | Esri ArcGIS reversal                   | SaaS not 73564 IT equip                | Recode to 73566
+ PK | PK000068    | PK000068    | JOURNAL        | 73566         |    568.31 | Esri ArcGIS IT SW lic INV000555        | Recode from 73564                      | CN-23167
+
+BATCH NET: 0.00  (BALANCED)

@@ -1,0 +1,25 @@
+{
+  "_documentation": {
+    "purpose": "Branch-side fuel levy proposals register. Captures suppliers that have proposed, been modelled at, or are observed invoicing a fuel levy without a sighted Council-issued contract variation letter. Non-authoritative for payment.",
+    "authority": "This register is NOT authority to pay a fuel levy line. Payment authority comes only from fuel_components_register.json, which holds sighted contract variations. The proposals register exists so that the verifier can name the proposed rate in a BLOCK verdict, which helps the reviewer triage whether the invoiced levy is at least internally consistent with what the Branch register suggested.",
+    "update_rule": "Add a supplier here when an invoice arrives carrying a fuel levy line and the supplier is not in fuel_components_register.json. When a Council-issued contract variation is subsequently issued for the supplier, MOVE the entry to fuel_components_register.json (do not duplicate). Mark the proposals row with status 'SUPERSEDED_BY_VARIATION' for audit-trail purposes.",
+    "source": "Branch fuel levy proposals register, compiled 25-Mar-2026. Only suppliers presently observed invoicing without a sighted variation are added here; the full Branch register is referenced separately when needed."
+  },
+  "suppliers": [
+    {
+      "supplier": "Sundai Vegetation Management",
+      "contract": "PAR/336C/2024",
+      "service": "Mowing zone 7 & 8",
+      "branch": "Parks",
+      "coordinator": "Sara Pryor",
+      "contract_manager": "Sara Pryor",
+      "supplier_requested_levy": false,
+      "proposed_rate_text": "7%",
+      "proposed_flat_rate_pct": 0.07,
+      "model_type": "flat",
+      "source_document": "Branch fuel levy proposals register, Sara Pryor entry, 25-Mar-2026",
+      "status": "PROPOSAL_ONLY",
+      "observed_behaviour": "INV-1449 and INV-1450 dated 8-May-2026 invoice a fuel levy line. INV-1449 effective rate 7.023% (work $7,237.81, levy $508.28). INV-1450 effective rate 7.449% (work $1,897.48, levy $141.34). Same supplier, same work date 1-May-2026, different effective rates: structurally inconsistent. No contract variation sighted."
+    }
+  ]
+}

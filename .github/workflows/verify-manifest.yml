@@ -1,0 +1,27 @@
+# Bundle integrity check — cloud replacement for the local pre-commit hook.
+# Fails the push/PR if 00_Bundle_Manifest.csv does not match the deliverable files.
+name: verify-manifest
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install LibreOffice (formula recalc parity)
+        run: sudo apt-get update && sudo apt-get install -y libreoffice-calc
+
+      - name: Strict manifest verify
+        # Assumes verify_manifest.py runs in strict mode and exits non-zero on hash drift.
+        run: python verify_manifest.py --strict

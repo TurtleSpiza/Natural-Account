@@ -1,0 +1,7 @@
+file,account,reference,status,gl_ex_gst,note
+_CarryForward/72111_PCard_Doc45_source.xlsx,72111,Doc45 PCard,PACKAGED,,PCard reconciliation source pass
+_CarryForward/72111_Doc46_Audit_source.xlsx,72111,Doc46 audit,PACKAGED,22028.13,91-line audit source pass
+,72111,Officeworks 626529478,GAP - NOT SIGHTED,,TE005091 double-count blocker; risers already split in PCard batch
+,72111,STIHL GTA 40 S/N 451265196 source invoice,GAP - NOT SIGHTED,,Asset-threshold + P&A status call (72315)
+,72111,PPE / signage / fertiliser / decal source invoices,GAP - NOT SIGHTED,,Per-item source invoices for the five recode propositions not packaged
+,72111,Full 72111 ledger export,GAP - NOT PROVIDED,63621.56,Unreviewed remainder; account balance $67055.47 ex-GST

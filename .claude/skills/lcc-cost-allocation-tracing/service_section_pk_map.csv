@@ -1,0 +1,102 @@
+ServiceCode,ServiceName,PKNumber,Section
+20001,Parks Branch Management,PK000087,Management
+20131,Internal Roads Horticultural Services,PK000044,Park Maintenance
+20141,Parks Planning and Management,PK000086,Planning Design & Capital Delivery
+20151,Parks Leadership and Administration,PK000001,Depots
+20161,Parks Staff Tea Service,,Park Maintenance
+20170,Contract Mowing - Zone 10,PK000427,Park Maintenance
+20171,Zone 11 Mowing,PK000401,Park Maintenance
+20172,Zone 12 Mowing,PK000396,Park Maintenance
+20181,Internal Parks Landscape Services,PK000012,Park Maintenance
+20191,Parks Design & Capital Delivery,PK000082,Planning Design & Capital Delivery
+20211,Free Trees Program,PK000081,Natural Areas
+20221,Contract Roads Mowing - Main Roads,PK000042,Park Maintenance
+20222,Contract Roads Mowing - Private Nature Strip,PK000043,Park Maintenance
+20231,CIR Street Trees,PK000059,Trees
+20241,Roadside Street Tree Operations,PK000055,Trees
+20251,Tip Fees - Marsden Teams,PK000053,Park Maintenance
+20252,Roadside Asset Maintenance Repairs,PK000054,Park Services
+20260,Roadside Co-ordination and Administration,PK000034,Park Maintenance
+20261,Contract Roads Mowing - Zone 1,PK000035,Park Maintenance
+20266,Parks Litter Collection Munruben,PK000040,Park Maintenance
+20267,Munruben Contracts Mowing,PK000041,Park Maintenance
+20276,Contract Roads Landscape Maintenance - Main Roads,PK000052,Park Maintenance
+20281,Roadside Street Tree Planting Program,PK000057,Trees
+20291,Parks Tree Planting Program,PK000033,Trees
+20301,Parks and Bushland Rangers,PK000084,Park Services
+20302,Parks Security Services,PK000085,Park Services
+20311,Parks Litter Collection Marsden,PK000031,Park Maintenance
+20317,Natural Areas - Fire Coordination & Admin,PK000431,Natural Areas
+20318,Natural Areas - Environment Levy Coord & Admin,PK000432,Natural Areas
+20319,Trees Coordination & Administration,PK000433,Trees
+20320,Communities Coordination & Administration,PK000434,Natural Areas
+20322,Internal Bushland Operations,PK000062,Natural Areas
+20331,BBQ Cleaning - Zone 1,PK000025,Park Services
+20332,BBQ Cleaning - Zone 2,PK000026,Park Services
+20333,BBQ Cleaning - Zone 3,PK000027,Park Services
+20341,Amenities Cleaning - Zone 1,PK000028,Park Services
+20342,Amenities Cleaning - Zone 2,PK000029,Park Services
+20343,Amenities Cleaning - Zone 3,PK000030,Park Services
+20351,Contract Landscape Maintenance - Whole Park,PK000013,Park Maintenance
+20361,Parks Coordination and Administration,PK000002,Park Services
+20362,Park Services - Coordination & Administration,PK000435,Park Services
+20371,Contract Landscape Maintenance - Zone 2,PK000014,Park Maintenance
+20372,Contract Landscape Maintenance - Zone 3,PK000015,Park Maintenance
+20373,Contract Landscape Maintenance - Zone 4,PK000016,Park Maintenance
+20374,Contract Landscape Maintenance - Zone 1,PK000017,Park Maintenance
+20375,Contract Landscape Maintenance - Zone 5,PK000019,Park Maintenance
+20376,Contract landscaping zone 6,PK000473,Park Maintenance
+20381,Parks Tree Operations,PK000032,Trees
+20391,Tip Fees - Munruben Teams,PK000021,Park Maintenance
+20392,Parks Asset Maint and Repairs,PK000022,Park Services
+20393,Beenleigh Town Square Maintenance,PK000419,Park Services
+20394,Overnight stays,PK000428,Park Services
+20395,Doug Larsen Park,PK000442,Park Services
+20401,Fire Management Operations,PK000068,Natural Areas
+20411,Bushcare Program,PK000075,Natural Areas
+20412,Community Planting Program,PK000076,Natural Areas
+20421,Natural Area Tree Operations,PK000073,Natural Areas
+20422,Trailcare Coord & Admin,PK000074,Natural Areas
+20431,Bushland Rehabilitation Program,PK000079,Natural Areas
+20432,Post Burnsite Rehabilitation,PK000080,Natural Areas
+20440,Internal Parks Mowing and Turf Services,PK000003,Park Maintenance
+20441,Contract Mowing - Zone 1,PK000422,Park Maintenance
+20442,Contract Mowing - Zone 2,PK000423,Park Maintenance
+20443,Contract Mowing - Zone 3,PK000397,Park Maintenance
+20444,Contract Mowing - Zone 4,PK000398,Park Maintenance
+20445,Contract Mowing - Zone 5,PK000399,Park Maintenance
+20446,Contract Mowing - Zone 6,PK000400,Park Maintenance
+20447,Contract Mowing - Zone 7,PK000424,Park Maintenance
+20448,Contract Mowing - Zone 8,PK000425,Park Maintenance
+20449,Contract Mowing - Zone 9,PK000426,Park Maintenance
+20450,Mowing - Commercial Sites,PK000410,Park Maintenance
+20451,Cemeteries,PK000402,Cemeteries
+20452,Parks Cemeteries - Employee Costs,PK000439,Cemeteries
+20453,Green Asset Renewal,PK000440,Park Maintenance
+20454,Darlington Parklands,PK000441,Park Services
+20455,Contract Mowing Cemeteries,,Cemeteries
+20461,Sports Field Mowing and Renovation Program,,Park Maintenance
+20471,Tracks and Trails Program,PK000078,Natural Areas
+20481,Playground Maintenance & Repairs,PK000023,Park Services
+20482,Shade Sail Maintenance & Repairs,PK000024,Park Services
+20501,Admin Centre Grounds - Maintenance,PK000011,Park Maintenance
+20511,General Landscape Improvement Fund,PK000366,Park Maintenance
+20521,General Landscape Improvement Fund - North,PK000368,Park Maintenance
+20522,General Landscape Improvement Fund - South,PK000369,Park Maintenance
+20551,Fuel Reduction Burn,PK000372,Natural Areas
+20561,Fire Access Line,PK000373,Natural Areas
+20571,Wildfire,PK000374,Natural Areas
+20581,Restoration Reactive,PK000375,Natural Areas
+20591,TrailCare,PK000376,Natural Areas
+20611,Weeds (Natural Areas),PK000378,Natural Areas
+20621,Minor Asset Repair (Natural Areas),PK000379,Natural Areas
+20631,Restoration (Natural Areas),,Natural Areas
+20641,Mountain Bike Trails,PK000381,Natural Areas
+20651,Rubbish (Natural Areas),PK000382,Natural Areas
+20661,ParkCare,PK000383,Natural Areas
+20662,Programmed Restoration - Communities,PK000496,Natural Areas
+20671,Road Reserves (Natural Areas),PK000384,Natural Areas
+20681,Urban Bushland Maintenance,PK000385,Natural Areas
+20802,Water Parks,PK000469,Water Parks
+20811,Parks COVID-19,,NA - Not Applicable
+20821,Parks Disaster Management,,NA - Not Applicable

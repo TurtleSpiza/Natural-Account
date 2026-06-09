@@ -1,0 +1,109 @@
+LCC PARKS 4090000 - NA 73563 PRINTING & STATIONERY - RECODE JOURNAL
+Batch: CN-23167 (held)
+Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch must net $0.00
+Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 9-Jun-2026.
+Amounts ex-GST. Account and Resource Code stored as text (leading zeros preserved).
+Format: per-item pair (credit 73563, debit destination; PK preserved as transacted).
+
+Columns: LDG | Account number | Fund account | Resource Group Code | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+
+Total miscoded out of 73563: $6,354.47 of $9,495.37 account.
+  WINC P1-P10 audit (249 line-items, prior pass): $3,852.64
+  WINC April 9901782965 (prior pass):            $1,187.61
+  WINC February 9901763737 (NOW SIGHTED):          $961.49
+  Officeworks TE005250 / inv 628185694 (SIGHTED):  $352.73
+Correctly retained in 73563: $3,140.90 (WINC stationery, Tom Kibble plan printing
+$303.20, Marsden envelope stock issues $109.47; GJ075544 EOY reversal -$448.22 is
+a normal accrual, left untouched).
+
+
+--- WINC 73563 P1-P10 ---
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -498.61 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 72111 |    498.61 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -36.62 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 72111 |     36.62 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -58.58 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 72111 |     58.58 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -15.56 | Recode WINC fly spray frm 73563 | Mortein insect spray | To 72112 Chemical & Pesticide
+PK | PK000001 | PK000001 | JOURNAL | 72112 |     15.56 | Recode WINC fly spray frm 73563 | Mortein insect spray | To 72112 Chemical & Pesticide
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -23.57 | Recode WINC PPE frm 73563 | First aid vest, nitrile gloves | To 72113 Safety Equipment
+PK | PK000001 | PK000001 | JOURNAL | 72113 |     23.57 | Recode WINC PPE frm 73563 | First aid vest, nitrile gloves | To 72113 Safety Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73563 |  -1305.86 | Recode WINC tearoom frm 73563 | Coffee tea sugar ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73512 |   1305.86 | Recode WINC tearoom frm 73563 | Coffee tea sugar ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73563 |  -1375.15 | Recode WINC IT items frm 73563 | Mice, USB cables, kbds, headsets | To 73564 IT Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73564 |   1375.15 | Recode WINC IT items frm 73563 | Mice, USB cables, kbds, headsets | To 73564 IT Equipment
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -98.36 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 72111 |     98.36 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -25.60 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 72111 |     25.60 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -36.82 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 72111 |     36.82 | Recode WINC non-stat frm 73563 | Cleaning batt kitchen tools | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 73563 |     -7.75 | Recode WINC PPE frm 73563 | First aid vest, nitrile gloves | To 72113 Safety Equipment
+PK | PK000086 | PK000086 | JOURNAL | 72113 |      7.75 | Recode WINC PPE frm 73563 | First aid vest, nitrile gloves | To 72113 Safety Equipment
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -13.00 | Recode WINC tearoom frm 73563 | Coffee tea sugar ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73512 |     13.00 | Recode WINC tearoom frm 73563 | Coffee tea sugar ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73563 |   -357.16 | Recode WINC IT items frm 73563 | Mice, USB cables, kbds, headsets | To 73564 IT Equipment
+PK | PK000086 | PK000086 | JOURNAL | 73564 |    357.16 | Recode WINC IT items frm 73563 | Mice, USB cables, kbds, headsets | To 73564 IT Equipment
+
+--- WINC 73563 Apr-2026 ---
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -107.07 | Recode WINC Apr non-stat fr 73563 | Cleaning kitchen batteries | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 72111 |    107.07 | Recode WINC Apr non-stat fr 73563 | Cleaning kitchen batteries | To 72111 Minor Equip & Supplies
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -402.07 | Recode WINC Apr tearoom fr 73563 | Coffee tea sugar lollies(Rsn B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73512 |    402.07 | Recode WINC Apr tearoom fr 73563 | Coffee tea sugar lollies(Rsn B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -507.51 | Recode WINC Apr IT fr 73563 | Headset chargers kbd adapter | To 73564 IT Equipment & Apps
+PK | PK000001 | PK000001 | JOURNAL | 73564 |    507.51 | Recode WINC Apr IT fr 73563 | Headset chargers kbd adapter | To 73564 IT Equipment & Apps
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -50.06 | Recode WINC Apr non-stat fr 73563 | Cleaning kitchen batteries | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 72111 |     50.06 | Recode WINC Apr non-stat fr 73563 | Cleaning kitchen batteries | To 72111 Minor Equip & Supplies
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -19.70 | Recode WINC Apr tearoom fr 73563 | Coffee tea sugar lollies(Rsn B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73512 |     19.70 | Recode WINC Apr tearoom fr 73563 | Coffee tea sugar lollies(Rsn B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73563 |   -101.20 | Recode WINC Apr IT fr 73563 | Headset chargers kbd adapter | To 73564 IT Equipment & Apps
+PK | PK000086 | PK000086 | JOURNAL | 73564 |    101.20 | Recode WINC Apr IT fr 73563 | Headset chargers kbd adapter | To 73564 IT Equipment & Apps
+
+--- WINC 73563 Feb-2026 ---
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -260.42 | Recode WINC Feb non-stat fr73563 | Clean kitchen battery storage | To 72111 Minor Equip&Supplies
+PK | PK000001 | PK000001 | JOURNAL | 72111 |    260.42 | Recode WINC Feb non-stat fr73563 | Clean kitchen battery storage | To 72111 Minor Equip&Supplies
+PK | PK000001 | PK000001 | JOURNAL | 73563 |     -6.65 | Recode WINC Feb disinf fr 73563 | Glen 20 disinfectant aerosol | To 72112 Chemical & Pesticide
+PK | PK000001 | PK000001 | JOURNAL | 72112 |      6.65 | Recode WINC Feb disinf fr 73563 | Glen 20 disinfectant aerosol | To 72112 Chemical & Pesticide
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -23.57 | Recode WINC Feb PPE fr 73563 | First aid vest | To 72113 Safety Equipment
+PK | PK000001 | PK000001 | JOURNAL | 72113 |     23.57 | Recode WINC Feb PPE fr 73563 | First aid vest | To 72113 Safety Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -353.66 | Recode WINC Feb tearoom fr73563 | Coffee Milo ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73512 |    353.66 | Recode WINC Feb tearoom fr73563 | Coffee Milo ice (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -71.56 | Recode WINC Feb IT fr 73563 | Apple lightning USB cable | To 73564 IT Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73564 |     71.56 | Recode WINC Feb IT fr 73563 | Apple lightning USB cable | To 73564 IT Equipment
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -19.83 | Recode WINC Feb non-stat fr73563 | Serviettes plates forks | To 72111 Minor Equip&Supplies
+PK | PK000086 | PK000086 | JOURNAL | 72111 |     19.83 | Recode WINC Feb non-stat fr73563 | Serviettes plates forks | To 72111 Minor Equip&Supplies
+PK | PK000086 | PK000086 | JOURNAL | 73563 |    -51.90 | Recode WINC Feb tearoom fr73563 | Lollies confectionery (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73512 |     51.90 | Recode WINC Feb tearoom fr73563 | Lollies confectionery (Reason B) | To 73512 Hospitality Non-FBT
+PK | PK000086 | PK000086 | JOURNAL | 73563 |   -173.90 | Recode WINC Feb IT fr 73563 | Monitor stand keyboard mouse | To 73564 IT Equipment
+PK | PK000086 | PK000086 | JOURNAL | 73564 |    173.90 | Recode WINC Feb IT fr 73563 | Monitor stand keyboard mouse | To 73564 IT Equipment
+
+--- Officeworks TE005250 ---
+PK | PK000001 | PK000001 | JOURNAL | 73563 |    -62.73 | Recode OFW TE005250 fr 73563 | JB 2-in-1 active stylus pen | To 73564 IT Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73564 |     62.73 | Recode OFW TE005250 fr 73563 | JB 2-in-1 active stylus pen | To 73564 IT Equipment
+PK | PK000001 | PK000001 | JOURNAL | 73563 |   -290.00 | Recode OFW TE005250 fr 73563 | Otto+mesh desk risers | To 72313 Furniture & Fittings
+PK | PK000001 | PK000001 | JOURNAL | 72313 |    290.00 | Recode OFW TE005250 fr 73563 | Otto+mesh desk risers | To 72313 Furniture & Fittings
+
+CORRECTION 9-Jun-2026: P1-P10 PK000001 PPE pair ($23.57, first aid vest/gloves)
+had reversed signs (debited 73563, credited 72113), cancelling the correct Feb
+PK000001 PPE pair. Signs flipped to 73563 Cr / 72113 Dr, matching the narration
+and the PK000086 analogue. Reclass out of 73563 rises $47.14 to $6,354.47; 72113
+destination rises to $54.89. Batch still nets $0.00.
+
+BATCH STATUS: HELD - AMBER. Account reconciles to $9,495.37 (39 GL lines). Recode held
+pending Finance confirmations:
+  (1) Acceptance of the WINC systemic recode out of 73563 (catch-all stationery order
+      used for tearoom, IT, cleaning, chemical, PPE). 61% of P1-P10 WINC spend was not
+      stationery; the same pattern holds in Feb and April.
+  (2) TE005250 desk risers destination. Otto/mesh desk risers $290.00 recoded to 72313
+      Furniture & Fittings to mirror the PCard-batch treatment of the inv 626529478
+      risers; confirm 72313 vs 72111 for sub-$200 desk risers.
+  (3) 73512 movements assume Reason B (staff morning/afternoon tea on-site, Non-FBT).
+      Filter any Finance 50/50 batch before posting.
+
+VALIDATION
+  Narration cap (40 chars/field): PASS on all 58 lines (validate_narrative -> []).
+  Destinations 72111/72112/72113/72313/73512/73564: all unrestricted (pk_validator -> []).
+  PK000001 (svc 20151) and PK000086 (svc 20141): VALID, preserved as transacted.
+
+RUNNING NET: $0.00
+Total reclassified out of 73563: $6,354.47 of $9,495.37 account (66.9%).

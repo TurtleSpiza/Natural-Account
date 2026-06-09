@@ -1,0 +1,184 @@
+[
+  {
+    "code": "ABN_CHECKSUM_FAILED",
+    "severity": "BLOCK",
+    "category": "ABN validity",
+    "description": "ABN does not pass the ATO checksum algorithm. The ABN is mathematically invalid and cannot be a real ABN.",
+    "action": "Reject the invoice. Contact the supplier and request the correct ABN. Do not pay until a valid ABN is provided."
+  },
+  {
+    "code": "ABN_NOT_ACTIVE",
+    "severity": "BLOCK",
+    "category": "ABN validity",
+    "description": "ABN status on the ABR public register is not Active (Cancelled, Suspended, or never issued). The supplier is not entitled to charge GST against this ABN.",
+    "action": "Reject the invoice. Either the supplier has the wrong ABN, the ABN has been cancelled, or the invoice is fraudulent. Investigate before any payment."
+  },
+  {
+    "code": "GST_CHARGED_WITHOUT_REGISTRATION",
+    "severity": "BLOCK",
+    "category": "GST registration",
+    "description": "Invoice charges GST but the ABR shows the supplier is not registered for GST as at the invoice date. Per ATO QC 22431, a supplier who is not GST-registered cannot charge GST, and the recipient cannot claim a credit on GST that should never have been charged.",
+    "action": "Reject the invoice. Request reissue with no GST line. Recover the wrongly charged GST from the supplier per ATO guidance."
+  },
+  {
+    "code": "GST_REGISTRATION_RECENT",
+    "severity": "NOTE",
+    "category": "GST registration",
+    "description": "Supplier registered for GST less than 90 days before the invoice date. Not inherently a problem, but worth verifying the registration is genuine and not a backdated reactivation, especially for high-value first-time supplier transactions.",
+    "action": "Process the invoice but flag the supplier for follow-up verification on the next transaction. Record the GST registration date in the supplier master."
+  },
+  {
+    "code": "SUPPLIER_NAME_NOT_RECONCILED",
+    "severity": "BLOCK",
+    "category": "Supplier identity",
+    "description": "The supplier name on the invoice matches neither the ABR entity name, nor any registered business name, nor any trading name held by this ABN. Possible misrepresentation, ABN borrowing, or fraud.",
+    "action": "Reject the invoice. Confirm via ASIC Business Names register whether the name has ever been associated with this ABN. If not, escalate as a fraud risk."
+  },
+  {
+    "code": "BUSINESS_NAME_CANCELLED",
+    "severity": "BLOCK",
+    "category": "Supplier identity",
+    "description": "The business name on the invoice is shown as Cancelled or under cancellation review on the ASIC register. The supplier is not legally permitted to trade under that name.",
+    "action": "Reject the invoice. Request reissue under the current registered name or under the entity name."
+  },
+  {
+    "code": "MISSING_TAX_INVOICE_HEADING",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "The document does not carry the words 'Tax Invoice' as required by ATO QC 22422 element 1, and is not a Peppol eInvoice conforming to the A-NZ Invoice Specification.",
+    "action": "Request reissue with 'Tax Invoice' clearly stated as the document heading."
+  },
+  {
+    "code": "MISSING_SUPPLIER_IDENTITY",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "Supplier identity (trading name or registered business name) is not shown on the invoice. ATO QC 22422 element 2 not satisfied.",
+    "action": "Request reissue with the supplier name clearly shown."
+  },
+  {
+    "code": "MISSING_ABN",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "No ABN shown on the invoice. ATO QC 22422 element 3 not satisfied. If the invoice exceeds $82.50 and the supplier has no exemption, the no-ABN-withholding rule applies per TAA Schedule 1 section 12-190.",
+    "action": "Request reissue with the supplier ABN. If the supplier confirms they do not have an ABN and no exemption applies, escalate to NO_ABN_WITHHOLD verdict and withhold 47% to remit to the ATO."
+  },
+  {
+    "code": "MISSING_INVOICE_DATE",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "Invoice issue date is not shown. ATO QC 22422 element 4 not satisfied. Required to determine the tax period and the 4-year credit time limit window.",
+    "action": "Request reissue with the issue date clearly shown."
+  },
+  {
+    "code": "MISSING_DESCRIPTION",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "Brief description of items sold (with quantity where applicable) is missing or too vague ('goods supplied', 'services rendered', 'consulting'). ATO QC 22422 element 5 not satisfied.",
+    "action": "Request reissue with a brief but specific description of the goods or services supplied."
+  },
+  {
+    "code": "MISSING_GST_AMOUNT",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "GST amount payable is not shown, and the invoice does not state 'Total price includes GST'. ATO QC 22422 element 6 not satisfied.",
+    "action": "Request reissue showing either the GST amount or the 'Total price includes GST' statement (only valid if GST equals exactly 1/11 of total)."
+  },
+  {
+    "code": "MIXED_SUPPLY_BREAKDOWN_OPAQUE",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "Invoice bundles taxable and non-taxable (GST-free or input-taxed) items in a single line without identifying which portions are taxable. ATO QC 22422 element 7 not satisfied. Recipient cannot determine the GST credit.",
+    "action": "Request reissue with each taxable sale identified and GST shown only on the taxable portion. See GSTR 2001/8 for apportionment."
+  },
+  {
+    "code": "MISSING_BUYER_IDENTITY_OVER_1000",
+    "severity": "FIXABLE",
+    "category": "Document elements",
+    "description": "Invoice total is $1,000 or more, but neither the buyer's identity nor the buyer's ABN is shown. ATO QC 22422 eighth element not satisfied.",
+    "action": "Request reissue with the buyer's name or ABN shown."
+  },
+  {
+    "code": "GST_MATH_INCONSISTENT",
+    "severity": "FIXABLE",
+    "category": "GST calculation",
+    "description": "GST amount shown does not equal Total divided by 11 (or Subtotal multiplied by 0.10 for GST-exclusive amounts). Possible calculation error or unidentified mixed supply.",
+    "action": "Request reissue with corrected math or a clear breakdown if the discrepancy is due to mixed supplies."
+  },
+  {
+    "code": "GST_CHARGED_ON_GST_FREE_SUPPLY",
+    "severity": "FIXABLE",
+    "category": "GST treatment",
+    "description": "Supply appears to be GST-free per ATO QC 22418 (basic food, water and sewerage, eligible health, eligible education, exports, going concern, precious metals, etc.) but GST has been charged.",
+    "action": "Request a refund of the wrongly charged GST from the supplier. Do not claim it as an input tax credit, as no GST was actually payable."
+  },
+  {
+    "code": "FUTURE_DATED_INVOICE",
+    "severity": "BLOCK",
+    "category": "Date integrity",
+    "description": "Invoice issue date is in the future. Future-dated tax invoices are not valid for GST credit purposes and may indicate fraud or system error.",
+    "action": "Reject the invoice. Request reissue with the actual issue date."
+  },
+  {
+    "code": "APPROACHING_4_YEAR_CREDIT_LIMIT",
+    "severity": "NOTE",
+    "category": "Date integrity",
+    "description": "Invoice is more than three and a half years old. The four-year credit time limit per MT 2024/1 may be close to running out.",
+    "action": "Claim the GST credit in the next BAS to preserve the entitlement. After the four-year limit ends, the credit is permanently lost, no Commissioner discretion to extend."
+  },
+  {
+    "code": "ABN_CANCELLED_THEN_REACTIVATED",
+    "severity": "NOTE",
+    "category": "Supplier history",
+    "description": "ABR historical record shows the ABN was previously cancelled and then reactivated. Not inherently a problem (genuine restart) but worth noting for the supplier master record.",
+    "action": "Process the invoice if all other checks pass. Note the cancel-reactivate history in the supplier master."
+  },
+  {
+    "code": "FREQUENT_BUSINESS_NAME_CHANGES",
+    "severity": "NOTE",
+    "category": "Supplier history",
+    "description": "Supplier has changed registered business names more than twice in the past five years. Not inherently a problem but a soft fraud indicator.",
+    "action": "Process the invoice if all other checks pass. Confirm the supplier master uses the current registered name."
+  },
+  {
+    "code": "ADDRESS_FOR_SERVICE_IS_PO_BOX_ONLY",
+    "severity": "NOTE",
+    "category": "Supplier identity",
+    "description": "ASIC record shows the address for service of documents is a PO box, and there is no separately listed principal place of business, or the principal place is also a PO box. Not unusual for sole traders and small partnerships but reduces traceability.",
+    "action": "Process the invoice if all other checks pass. Note for higher-value transactions, may warrant additional verification."
+  },
+  {
+    "code": "ENTITY_TYPE_INDIVIDUAL_HIGH_VALUE",
+    "severity": "NOTE",
+    "category": "Entity type",
+    "description": "Supplier is registered as Individual or Sole Trader (not Company, Partnership, or Trust) and the invoice value is significant (over $10,000). Not a problem per se, but worth confirming the supplier has the capacity to deliver at that scale.",
+    "action": "Process the invoice if all other checks pass. Confirm contract or PO supports the value."
+  },
+  {
+    "code": "BUSINESS_ACTIVITY_MISMATCH",
+    "severity": "FIXABLE",
+    "category": "Plausibility",
+    "description": "The goods or services described on the invoice are not plausibly within the registered business names or apparent business activity of the supplier. For example, a business registered solely as 'Fire Management Training' invoicing for plumbing services. May indicate the invoice is from a different entity using a borrowed ABN.",
+    "action": "Investigate. Request the supplier confirm the supply is within their registered business activity. If unconfirmed, treat as a fraud risk and escalate."
+  },
+  {
+    "code": "ROUND_DOLLAR_GST_AMOUNT_SUSPICIOUS",
+    "severity": "NOTE",
+    "category": "Calculation pattern",
+    "description": "GST amount is an exact round dollar (e.g. $100.00 GST on a $1,100 invoice). Not impossible but unusual for non-services invoices. Worth quick sanity check.",
+    "action": "Process the invoice if all other checks pass. Confirm the line items support the round GST."
+  },
+  {
+    "code": "INVOICE_NUMBER_MISSING_OR_DUPLICATE",
+    "severity": "NOTE",
+    "category": "Document elements",
+    "description": "Invoice has no invoice number, or the number duplicates a previously processed invoice from the same supplier. ATO QC 22422 does not require an invoice number for compliance, but the absence reduces auditability.",
+    "action": "Process the invoice if all other checks pass. Add an internal reference for traceability. If duplicating a prior invoice, confirm with the supplier this is a reissue, not a double-bill."
+  },
+  {
+    "code": "ABR_UNREACHABLE",
+    "severity": "BLOCK",
+    "category": "Verification feasibility",
+    "description": "Could not reach the ABR public register to verify the ABN. Either the register is temporarily down, the network is unavailable, or the ABN format is malformed.",
+    "action": "Do not process the invoice until the ABR check can be completed. Retry shortly, or fall back to manual verification at abr.business.gov.au."
+  }
+]

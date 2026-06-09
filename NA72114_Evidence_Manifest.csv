@@ -1,0 +1,6 @@
+file,account,reference,status,gl_ex_gst,note
+_Sources_9-Jun-2026/72114_Reali_StandingOrder_set_C00223414.zip,72114,Reali PKLCC2025-07xx set,IN HAND - NOT WORKED,,Wider Reali standing-order set; full-scope review pending
+_Sources_9-Jun-2026/72114_GJ_Document_Reconstruction.xlsx,72114,GJ doc 202603161072172000000001,SIGHTED,10650.27,Balanced recode batch; IPWEA $10650.27 block; posted-or-proposed unconfirmed
+,72114,Reali PKLCC2026-0331 / C00281989,SIGHTED (3-Jun),1059.76,Confirmed subset (~4%)
+,72114,IPWEA invoice behind $10650.27,GAP - NOT SIGHTED,10650.27,Sets nature + destination (73542/73541/73544); invoice number unknown
+,72114,Full 72114 ledger export,GAP - NOT PROVIDED,25176.66,Unreviewed remainder; account balance $26236.42 ex-GST
