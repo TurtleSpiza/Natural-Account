@@ -105,5 +105,17 @@ Everything needed to finish next session is committed:
 
 Next session, once `soffice` loads: run `python build_master.py`, recalc with LibreOffice, read back `data_only=True` and confirm the Register RAG and Reviewed-$ and the Tracker dashboard compute (realigned 72111 reviewed is the sum of non-PENDING lines, $1,893.99 on the 13 worked so far), then retire the three source files and update the repo layout. Decision recorded: a ledger line with no attachment in TechOne is RED on the evidence limb (174 of 364 on 72111), which is already how the listing scores it.
 
+## Correction, 9-Jun-2026 (73533 closed to GREEN)
+
+Both open items on 73533 TE005080 are resolved; the account moves AMBER to GREEN.
+
+- **7-Eleven $6.55 receipt sighted** (NA73533_L02_7Eleven_TE005080.pdf): 7-Eleven 1130 Melb Queen St, ABN 86 960 363 023 (checksum PASS), headed TAX INVOICE, 20-Jan-2026, one ham pesto sandwich $7.20 incl, GST $0.65, ex-GST $6.55 (reconciles to the cent). Cover slip "Dinner/Breakfast", K Quinn. It is food, so a meal during travel: it never sits in the 73531-73534 series. A sole-traveller sandwich, no alcohol, no social function, is light refreshment (Reason B), so the $6.55 recodes to 73512 Non-FBT, not 73511. The pair is now posted in NA73533_GENJNL_Recode.txt (73533 -6.55, 73512 +6.55, nets $0.00, direction verified).
+- **Hotel GST substantiation waived by Spero.** The Booking.com accommodation ($288.18 ex, $28.82 GST) carries no ABN and states it is not a tax invoice. Spero directed (9-Jun-2026) that the line be accepted on the Booking.com confirmation as-is rather than held for an ibis/Accor Australian tax invoice. Recorded as an explicit waiver (only Spero may waive evidence). Residual exposure noted: the $28.82 ITC is claimed without a compliant tax invoice, an ATO substantiation risk if reviewed; the interstate coding is correct and unaffected.
+- **Register and deliverables updated.** 73533 L4 Tax and Overall move to GREEN; the register recalculated via LibreOffice and the total holds at $64,568.41 ex-GST. NA73533_Verification_Record.md carries a closing addendum, NA73533_GENJNL_Recode.txt posts the $6.55 pair, NA73533_Evidence_Manifest.csv lists the receipt, and 00_Bundle_Manifest.csv was regenerated and strict-verified. The Finance email item "obtain ibis tax invoice" drops to advisory; the $6.55 recode joins the held CN-23167 batch.
+
+## Environment note, 9-Jun-2026 (provisioning automated)
+
+`setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.
+
 Kind regards,
 Spero

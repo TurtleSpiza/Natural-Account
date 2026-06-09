@@ -4,7 +4,7 @@ Batch CN-23167. Reviewed 9-Jun-2026. Section 4090000, FY26 (26SLACT), Period 1-1
 Ledger export reconciles to 8 lines, total $1,021.70 ex-GST (footer $1,021.70, matched).
 Single traveller, single trip: Kirsty Quinn, Brisbane to Melbourne and return, svc 20151 PK000001.
 
-Verdict: AMBER. $1,015.15 (99.4%) confirmed correctly coded to 73533. One line, the $6.55 7-Eleven sundry, is held pending sight of the receipt. No recode is required for the confirmed lines; the account is correct as transacted bar the single immaterial line.
+Verdict: GREEN (revised 9-Jun-2026, see final addendum). $1,015.15 (99.4%) confirmed correctly coded to 73533. The $6.55 7-Eleven line is now sighted as a meal during travel and recoded to 73512 (posted). The hotel GST substantiation is waived by Spero. The body below records the AMBER pass; the closing addendum carries the current GREEN state.
 
 ## Account composition
 
@@ -38,7 +38,7 @@ No recode is required for the confirmed $1,015.15. A contingent two-line pair fo
 
 ## Overall RAG
 
-AMBER. The account is correct as transacted bar the single $6.55 line. It clears to GREEN on sight of the 7-Eleven receipt (confirming either a non-meal sundry that stays in 73533, or a meal that moves the $6.55 to 73511/73512).
+GREEN (revised 9-Jun-2026, see final addendum). At the original pass this was AMBER pending the 7-Eleven receipt. The receipt is now sighted (valid tax invoice, a meal), the $6.55 is recoded to 73512 (posted), and the hotel GST is waived by Spero, so all four limbs clear.
 
 ## Open actions
 
@@ -64,3 +64,17 @@ The TE005080 backup has been sighted. Two clarifications and one downgrade follo
 Revised open actions: (1) obtain the ibis Melbourne (Accor) tax invoice for the $288.18 accommodation, or treat the $28.82 GST as non-claimable; (2) sight the 7-Eleven $6.55 receipt (a travel-day 7-Eleven buy is most likely a meal and would recode to 73511/73512), or close on de minimis at $6.55 (0.6%). Overall remains AMBER.
 
 **GST status (Limb 4, per-line).** The ibis accommodation books at $288.18 ex, asserting a $28.82 input tax credit, but the Booking.com document carries no ABN and states it is not a tax invoice; as an offshore booking-agent supply the credit is unsubstantiated and likely non-claimable until an Accor/ibis Australian tax invoice is sighted. The 7-Eleven $6.55 is unsighted and is a probable mixed supply carrying GST-free food, so its booked GST is unconfirmed. Qantas (TE005128), Cabcharge (INV0000315295) and the CTM fees are standard-rated and reconcile; the Uber is an AP reimbursement substantiated by the bank debit. GST status AMBER on the two PCard lines, GREEN on the rest.
+
+---
+
+## Addendum, 9-Jun-2026 (7-Eleven receipt sighted; recode posted; hotel GST waived by Spero)
+
+Both open items on TE005080 are now closed and the account clears to GREEN.
+
+- **7-Eleven receipt sighted and is a valid tax invoice.** NA73533_L02_7Eleven_TE005080.pdf: 7-Eleven 1130 Melb Queen St, ABN 86 960 363 023 (checksum PASS), the document is headed TAX INVOICE, dated 20-Jan-2026 19:07 during the Quinn Melbourne trip, one HAM PESTO SANDWICH $7.20 incl, GST $0.65, ex-GST $6.55. The cover slip (K Quinn, cardholder Kirsty Quinn) describes it as "Dinner/Breakfast". GST reconciles to the cent ($6.55 x 1.1 = $7.205, booked $6.55 ex, GST $0.65). Evidence and tax limbs on L02 GREEN.
+- **The $6.55 is a meal during travel and recodes to 73512, posted.** A meal never sits in the 73531-73534 series. A sole-traveller sandwich with no alcohol, no social function, consumed during the work trip, is light refreshment, Reason B, so it moves to 73512 Entertainment & Hospitality Non-FBT (not 73511: no FBT trigger on the four-factor test). The contingent pair is now posted in NA73533_GENJNL_Recode.txt: 73533 -6.55 credit, 73512 +6.55 debit, nets $0.00, direction verified. Limb 2 on L02 was a confirmed miscode, now resolved by the recode.
+- **Hotel GST substantiation waived by Spero (directive 9-Jun-2026).** The Booking.com accommodation ($288.18 ex, $28.82 GST) carries no ABN and states it is not a tax invoice. Spero has directed the line be accepted on the Booking.com confirmation as-is rather than holding for an ibis/Accor Australian tax invoice. Recorded as an explicit waiver under the four-limb standard (only Spero may waive evidence). Residual exposure noted: the $28.82 input tax credit is claimed without a compliant tax invoice, which is an ATO substantiation risk if the credit is ever reviewed; the room coding (interstate, 73533) is unaffected and correct. Tax limb on L07 cleared GREEN on the waiver.
+
+**Revised limbs.** L1 PK GREEN. L2 NA GREEN ($1,015.15 correct in 73533; the $6.55 7-Eleven miscode resolved by the posted 73512 recode). L3 Evidence GREEN (all lines sighted). L4 Tax GREEN (7-Eleven valid tax invoice; hotel GST accepted on Spero's waiver; remainder standard-rated). **Overall RAG: GREEN.**
+
+**Revised open actions:** none gating the account. Advisory only: if convenient, obtain the ibis Melbourne (Accor) tax invoice to retire the $28.82 ITC exposure noted above.
