@@ -67,3 +67,15 @@ Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers, Par
 Set 2 totals $1,063.44 ex to 72113; the combined 72111 recode (Set 1 Ultimate + Set 2 Motorcycles R Us) is $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, narrations within the cap, direction verified.
 
 Evidence basis differs from Set 1: the Motorcycles R Us invoices (Doc 10286878, Doc 10287279) are NOT packaged. Set 2 is staged on Spero's line-level directive, with the source invoices carried as GAP rows on the evidence manifest and the evidence and tax limbs unverified (ABN and GST not sighted) until the PDFs are provided. The recode dollars are populated on the directive; per the standing standard they are not evidence-cleared until the source invoices are sighted. The account stays AMBER.
+
+---
+
+## Addendum, 9-Jun-2026 (scrap-plaque sale income reclassified out of 72111; Set 3)
+
+A negative $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-2026) sits as a CREDIT in 72111 on Depots svc 20151 / PK000001. It is sale income wrongly offsetting Parks minor-equipment expense, and it belongs to Cemeteries. Confirmed by Spero and staged in Set 3 of `NA72111_GENJNL_Recode.txt`:
+
+- **Reclass to 64411 Sale of materials (revenue, grp 6, unrestricted) on Cemeteries svc 20451 / PK000402.** Scrap metal is recycled goods, which is what 64411 covers; there is no dedicated scrap account. This is both a natural-account change (72111 expense to 64411 revenue) and a section/PK change (Depots PK000001 to Cemeteries PK000402).
+- **Sign treatment.** The amount moved is a credit (-448.00 income), so the usual expense-recode direction inverts: 72111 is DEBITED +448.00 (lifting the income back out of the expense account, which restores Parks minor-equipment expense by $448), and 64411 is CREDITED -448.00 (booking the revenue in Cemeteries). This is correct double-entry, not a sign-flip; the recode flags it explicitly so it is not mis-read at upload.
+- **Effect.** Net 72111 movement across all three sets is now -$1,749.80 ($2,197.80 expense out to 72113/72315, less the $448.00 income reversed back in as a debit). The $448.00 income leaves Parks 4090000 for the Cemeteries revenue line.
+
+Evidence basis: the scrap-sale source document SC10906 is not packaged, so this is staged on Spero's directive plus the intrinsic ledger evidence (a credit balance in an expense account with a scrap-sale narration). Carried as a GAP row on the evidence manifest until SC10906 is sighted. The -492.80 inc / -448.00 ex / -44.80 GST is a taxable scrap supply; GST treatment follows the original booking. The account stays AMBER.

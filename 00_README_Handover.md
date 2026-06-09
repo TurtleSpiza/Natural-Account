@@ -142,6 +142,14 @@ Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers) are
 
 Set 2 is $1,063.44 ex to 72113; combined with Set 1 (Ultimate), the 72111 recode is now $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, direction verified, narrations within the cap. The evidence basis differs from Set 1: the Motorcycles R Us invoices are NOT packaged, so Set 2 is staged on Spero's line-level directive with the source invoices carried as GAP rows and the evidence and tax limbs unverified (ABN/GST not sighted) until the PDFs arrive. Outstanding document to obtain: the two Motorcycles R Us invoices (Doc 10286878, Doc 10287279). The account stays AMBER; the register total holds at $64,568.41 ex-GST.
 
+## Correction, 9-Jun-2026 (72111 Set 3: scrap-plaque sale income reclassified to Cemeteries)
+
+A negative $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-2026) sits as a credit in 72111 on Depots svc 20151 / PK000001. Confirmed by Spero as Cemeteries sale income miscoded against Parks minor-equipment expense; staged in Set 3 of `NA72111_GENJNL_Recode.txt`:
+
+- Reclass to 64411 Sale of materials (grp 6 revenue, unrestricted) on Cemeteries svc 20451 / PK000402. Scrap metal is recycled goods, the 64411 definition; both the natural account (72111 expense to 64411 revenue) and the section/PK (Depots to Cemeteries) change.
+- The amount moved is a credit (income), so the signs invert the usual expense-recode pattern: 72111 is debited +448.00 (lifting the income out, restoring Parks expense) and 64411 credited -448.00. Flagged explicitly in the recode as correct, not a sign-flip.
+- Net 72111 movement across all three sets is now -$1,749.80; the $448.00 income leaves Parks 4090000 for the Cemeteries revenue line. Source doc SC10906 not packaged, carried as a GAP row; staged on directive plus the intrinsic ledger evidence (a credit in an expense account). The register total holds at $64,568.41 ex-GST; the account stays AMBER.
+
 ## Environment note, 9-Jun-2026 (provisioning automated)
 
 `setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.

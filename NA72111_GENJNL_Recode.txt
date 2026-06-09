@@ -48,13 +48,37 @@ Note: the two Tourmax pants are distinct items (3XL on doc 10286878, XXL on doc 
 not a duplicate. Doc 10286878 is a PARTIAL recode: $883.49 of the $1,169.62 line moves, $286.13 stays in 72111.
 
 ====================================================================================================
-DIRECTION CHECK: every 72111 source leg negative (credit), every destination leg positive (debit),
-matching the narration. Signed sum on 72111 source = -2,197.80, equal to the stated reclassified total.
-Destinations: 72113 = +1,758.12, 72315 = +439.68. Net = 0.00.
+SET 3 - Scrap-sale income reclassification (SPERO DIRECTIVE; source doc SC10906 not sighted).
+A NEGATIVE $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-2026) sits as a CREDIT
+in 72111 (an expense account) on Depots svc 20151 / PK000001. It is sale income, not a contra-expense,
+and it belongs to Cemeteries. Move it to 64411 Sale of materials (revenue, recycled goods/scrap) on
+Cemeteries svc 20451 / PK000402. This is BOTH a natural-account change (72111 expense -> 64411 revenue)
+and a section/PK change (Depots PK000001 -> Cemeteries PK000402).
+
+SIGN NOTE (read before checking direction): the amount being moved is a CREDIT (-448.00 income), so the
+usual expense-recode pattern inverts. To lift a credit out of 72111 you DEBIT 72111 (+448.00, restoring
+the wrongly-offset expense); to book the revenue you CREDIT 64411 (-448.00). This is correct and is NOT
+a sign-flip error.
+
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |   448.00 | Scrap plaque income off 72111          | SC10906 ex 448.00                      | Cemeteries income to 64411
+ PK | PK000402    | PK000402    | JOURNAL        | 64411         |  -448.00 | Scrap plaque sale to 64411             | SC10906 ex 448.00                      | From 72111 to Cemeteries PK
+
+SET 3 subtotal: $448.00 income lifted out of 72111 (Dr) to 64411 Cemeteries (Cr). Nets $0.00.
+64411 Sale of materials is grp 6 Revenue, unrestricted; PK000402 is Cemeteries (svc 20451). The -492.80
+inc / -448.00 ex / -44.80 GST is a taxable scrap supply; GST treatment follows the original booking.
+
+====================================================================================================
+DIRECTION CHECK:
+- Sets 1 and 2 (expense recodes): every 72111 source leg negative (credit), every destination positive
+  (debit). Expense reclassified out of 72111 = $2,197.80 ($1,758.12 to 72113 PPE, $439.68 to 72315).
+- Set 3 (income reclass): signs inverted by design (see SIGN NOTE) - 72111 +448.00 (Dr), 64411 -448.00 (Cr).
+- Per-account signed sums: 72111 = -1,749.80, 72113 = +1,758.12, 72315 = +439.68, 64411 = -448.00. Net = 0.00.
 
 BATCH NET: 0.00  (BALANCED)
-Reclassified out of 72111: $2,197.80 ($1,758.12 to 72113 PPE, $439.68 to 72315 parks P&A).
-Evidence basis: Set 1 sighted and tax-verified; Set 2 on Spero directive, source invoices pending.
+Net movement on 72111 = -$1,749.80 ($2,197.80 expense out to 72113/72315, less $448.00 income reversed
+back IN as a debit). Destinations: 72113 +$1,758.12, 72315 +$439.68, 64411 -$448.00 (Cemeteries revenue).
+Evidence basis: Set 1 sighted and tax-verified; Sets 2 and 3 on Spero directive, source documents pending
+(Motorcycles R Us invoices; scrap-sale doc SC10906).
 
 NOT staged here (held / out of scope):
 - 27577 Tennyson PFS Vehicle Stickers $335.00 -> 72222 (printed decals): evidence sighted (ABN
