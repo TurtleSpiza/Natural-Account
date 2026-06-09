@@ -21,6 +21,8 @@ The account reconciles to **$43,393.37 ex-GST** across 36 lines and 9 service co
 | 3 Evidence | AMBER | Esri INV000555 and both bulk Apple invoices (INV-13660, INV-17543) sighted and reconciled. Gaps: SEVEN internal-recharge lines carry no attachment ($6,689.87) pending SR backup (L06 SR-0316577, L08 SR-0315241, L11 SR#204868, L15 SR-0312575, L20 SR#201404, L33 SR-0315517, L34 SR#200930); and five external-supply refs (2412569490, INAU004378, GJ076194, GJ075813, TE005499) not yet sighted. |
 | 4 Tax | AMBER | Three external invoices COMPLIANT (Esri INV000555; Exceed ICT INV-13660 and INV-17543). FIVE external-supply refs not yet sighted and tax-unverified: 2412569490 Single Incident Support ($522.76), INAU004378 license bundles ($474.00), GJ076194 and GJ075813 Body2 software ($372.00 each), TE005499 Anthropic ($36.14). Internal recharges N/A. |
 
+**GST status (Limb 4, per-line).** Internal IJ/GJ/SR recharges are N/A: GST was settled at the original AP layer, so the x1.1 gross-up is reconciling-only and no credit is claimed here. For the external lines the booked-to-document GST check is the live risk: overseas digital suppliers may be GST-free imported services carrying no Australian GST, so any booked input tax credit must be verified against an Australian tax invoice before it stands. Anthropic (TE005499) is the clearest case, with Esri and the Body2 GJ lines to confirm on sighting. Esri INV000555 and both Exceed ICT invoices reconcile; the five unsighted external refs are GST-unverified. GST status AMBER.
+
 ## Findings
 
 ### 1. Software licence / subscription miscoded to 73564 — recode to 73566 ($1,822.45, AMBER)

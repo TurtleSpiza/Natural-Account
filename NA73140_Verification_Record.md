@@ -13,6 +13,8 @@ Verdict: AMBER. Coding is correct; the account is held only on evidence and tax,
 | 3 Evidence | AMBER | No CV Check AP invoice has been sighted in this project. The evidence limb cannot clear until a sample is sighted and reconciled to the GL. |
 | 4 Tax | AMBER | Unverified until the invoices are sighted: ABN checksum, GST math and the mandatory tax-invoice elements must be checked on the sample. |
 
+**GST status (Limb 4, per-line):** Unverified. With no CV Check invoice sighted, no line has had its booked amount reconciled to a charged-GST figure. CV Check is an Australian GST-registered supplier and the supply is taxable, so GST is expected on each line, but the per-line test (GST charged equals booked ex-GST x 0.1, ABN active) cannot run until the sample is sighted.
+
 ## Open actions
 
 1. Obtain and sight a sample of the CV Check AP invoices spanning the period, reconcile to the GL ex-GST, and run the tax-invoice-compliance check (ABN, GST math, mandatory elements). On a clean sample the account closes GREEN with no recode.

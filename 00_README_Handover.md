@@ -79,5 +79,9 @@ This bundle reconciles the two divergent 9-Jun passes into one master. Neither i
 
 No figures other than the 73563 reclass change in this integration; the register total holds at $64,568.41 ex-GST and every account-level RAG is unchanged.
 
+## GST-status method note, 9-Jun-2026
+
+GST verification is confirmed to run per line on every natural account, alongside natural-account, section and employee-PK coding, not as an account-level afterthought. Two changes record this. First, an explicit GST-status line is added to the Limb 4 (tax) section of every Verification Record (72312, 73140, 73533, 73563, 73564), so the per-line booked-to-document reconciliation is visible per account. Second, the rule is recorded durably in the tax-invoice-compliance methodology (new section 14.0): a GL amount booked at GST-inclusive divided by 1.1 asserts a 1/11 input tax credit that holds only where a tax invoice actually charges that GST, so GST-free basic food, offshore supplies and mixed supplies are checked by line. The worked trigger was the Coles milk on 72111 (TE005080), $12.50 GST-free booked at $11.36, a $1.14 phantom credit, alongside the offshore Booking.com line on 73533. Consequence to carry: 73563 tax is GREEN only on the sighted lines and AMBER on the nine unsighted WINC invoices (refreshment lines include GST-free food); the register tax RAG should follow when next recalculated.
+
 Kind regards,
 Spero
