@@ -2,128 +2,134 @@
 """Build 00_Live_Recode_Journal.xlsx, the live consolidated recode journal.
 
 Parses every NA*_GENJNL_Recode.txt in the repo root, extracts the GENJNL PK/SL
-ledger lines, and assembles one workbook: a Journal sheet (every prepared line
-across all accounts) and a Summary sheet (per-account net, per-NA net movement,
-grand net). Re-run whenever a recode changes - this is the live journal.
+ledger lines, and assembles the journal in canonical TechOne upload format
+(matching the carried Consolidated Recode Journal): a Consolidated Journal sheet
+(Stream | LDG | Account (PK) | Fund Account | Resource Group | Resource (NA) |
+Amount | Narrative 1-3), a Summary, and a per-natural-account movement sheet.
+Re-run whenever a recode changes - this is the live journal.
 
 Repo tooling, excluded from the bundle manifest (like build_listing.py /
 build_master.py). The xlsx it writes IS a manifested deliverable.
 """
 from __future__ import annotations
-import glob, re, sys
+import re, sys
 from pathlib import Path
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
 NAVY="1F3864"; BAND="EAEFF7"; WHITE="FFFFFF"
-def hdr_fill(): return PatternFill("solid", fgColor=NAVY)
-def band_fill(): return PatternFill("solid", fgColor=BAND)
-thin=Side(style="thin", color="BFBFBF")
-BORDER=Border(left=thin,right=thin,top=thin,bottom=thin)
+HF=PatternFill("solid", fgColor=NAVY); BANDF=PatternFill("solid", fgColor=BAND)
+thin=Side(style="thin", color="BFBFBF"); BD=Border(thin,thin,thin,thin)
+MONEY='#,##0.00;[Red]-#,##0.00'
+NA_RE=re.compile(r'^[0-9][0-9A-Z]{4}$')
+SET_RE=re.compile(r'^(SET\s+\d+|SUB-BATCH\s+[AB])\b[ :-]*(.*)', re.I)
 
-NA_RE=re.compile(r'^[0-9][0-9A-Z]{4}$')   # 5-char account code, e.g. 72111, 7B223
+LABELS={'NA72111':'72111 Minor Equipment','NA72312':'72312->72313 Furniture',
+        'NA73513':'73513 Flair Floral','NA73533':'73533 Travel meal',
+        'NA73563':'73563 WINC stationery','NA73564':'73564 IT Equipment',
+        'NACarried3Jun':'Carried 3-Jun (Doc46+PCard)','NA72114':'72114 Reali uniforms'}
 
-def parse_recode(path: Path):
-    """Yield (ldg, account, fund, rg, resource, amount, n1, n2, n3) for real lines."""
-    disposition="unknown"
+def parse(path: Path, label: str):
+    stream=label
     for raw in path.read_text(encoding="utf-8", errors="replace").splitlines():
-        low=raw.lower()
-        if "prepared for journal" in low and disposition=="unknown": disposition="PREPARED"
-        elif ("held" in low or "pending" in low) and disposition=="unknown": disposition="HELD"
+        m=SET_RE.match(raw.strip())
+        if m:
+            tail=re.split(r'[(.]', m.group(2))[0].strip().strip('-').strip()
+            stream=f"{label} - {m.group(1).upper()}" + (f" {tail[:28]}" if tail else "")
         if "|" not in raw: continue
-        parts=[p.strip() for p in raw.split("|")]
-        if len(parts)<6: continue
-        if parts[0] not in ("PK","SL"): continue
-        res=parts[4]
-        if not NA_RE.match(res): continue            # skip header / placeholder (e.g. 735xx)
-        try: amt=float(parts[5])
+        p=[x.strip() for x in raw.split("|")]
+        if len(p)<6 or p[0] not in ("PK","SL"): continue
+        if not NA_RE.match(p[4]): continue
+        try: amt=float(p[5])
         except ValueError: continue
-        n1,n2,n3=(parts[6:9]+["","",""])[:3]
-        yield (parts[0],parts[1],parts[2],parts[3],res,amt,n1,n2,n3,disposition)
+        n1,n2,n3=(p[6:9]+["","",""])[:3]
+        yield (stream,p[0],p[1],p[2],p[3],p[4],amt,n1,n2,n3)
+
+def style_header(ws, row, ncols, size=10):
+    for c in range(1,ncols+1):
+        x=ws.cell(row,c); x.font=Font(name="Segoe UI",bold=True,color=WHITE,size=size)
+        x.fill=HF; x.alignment=Alignment(horizontal="center",vertical="center",wrap_text=True); x.border=BD
 
 def main(argv):
     root=Path(argv[1]).resolve() if len(argv)>1 else Path(__file__).resolve().parent
     files=sorted(root.glob("NA*_GENJNL_Recode.txt"))
-    rows=[]; per_file={}; per_na={}
+    lines=[]; per_file={}; per_na={}
     for f in files:
-        acct=f.name.split("_")[0]            # e.g. NA72111
-        disp="unknown"
-        recs=list(parse_recode(f))
-        for (ldg,ac,fund,rg,res,amt,n1,n2,n3,d) in recs:
-            disp=d
-            rows.append((acct,disp,ldg,ac,fund,rg,res,amt,n1,n2,n3))
-            per_file.setdefault(acct,{"lines":0,"net":0.0,"disp":disp})
-            per_file[acct]["lines"]+=1; per_file[acct]["net"]+=amt; per_file[acct]["disp"]=disp
-            per_na[res]=per_na.get(res,0.0)+amt
+        acct=f.name.split("_")[0]
+        lab=LABELS.get(acct, acct)
+        recs=list(parse(f, lab))
+        per_file[acct]={"lines":len(recs),"net":round(sum(r[6] for r in recs),2)}
+        for r in recs:
+            lines.append(r); per_na[r[5]]=per_na.get(r[5],0.0)+r[6]
+    gross_dr=round(sum(r[6] for r in lines if r[6]>0),2)
+    gross_cr=round(sum(r[6] for r in lines if r[6]<0),2)
+    net=round(sum(r[6] for r in lines),2)
+    streams=sorted({r[0] for r in lines})
 
     wb=openpyxl.Workbook()
-    # ---- Journal sheet ----
-    ws=wb.active; ws.title="Journal"
-    cols=["Source acct","Disposition","LDG","Account (PK)","Fund","RG","Resource (NA)",
-          "Amount ex-GST","Narrative 1","Narrative 2","Narrative 3"]
-    ws.append(cols)
-    for c in range(1,len(cols)+1):
-        cell=ws.cell(1,c); cell.font=Font(name="Segoe UI",bold=True,color=WHITE,size=10)
-        cell.fill=hdr_fill(); cell.alignment=Alignment(horizontal="center",vertical="center",wrap_text=True); cell.border=BORDER
-    for i,r in enumerate(rows, start=2):
-        for c,val in enumerate(r, start=1):
-            cell=ws.cell(i,c,val); cell.font=Font(name="Segoe UI",size=9); cell.border=BORDER
-            if c==8:
-                cell.number_format='#,##0.00;[Red]-#,##0.00'; cell.alignment=Alignment(horizontal="right")
-            if i%2==0: cell.fill=band_fill()
-        # store NA / PK as text to preserve leading chars
-        ws.cell(i,4).number_format='@'; ws.cell(i,7).number_format='@'
-    ws.freeze_panes="A2"
-    widths=[12,12,6,13,11,9,13,13,34,34,26]
-    for c,w in enumerate(widths,start=1): ws.column_dimensions[chr(64+c)].width=w
-    # net row
-    nr=len(rows)+2
-    ws.cell(nr,7,"BATCH NET").font=Font(name="Segoe UI",bold=True)
-    netc=ws.cell(nr,8,f"=SUM(H2:H{len(rows)+1})"); netc.font=Font(name="Segoe UI",bold=True)
-    netc.number_format='#,##0.00;[Red]-#,##0.00'
+    # ---------- Summary ----------
+    ss=wb.active; ss.title="Summary"
+    ss["A1"]="PARKS BRANCH 4090000 - LIVE CONSOLIDATED RECODE JOURNAL"; ss["A1"].font=Font(name="Segoe UI",bold=True,size=13,color=NAVY)
+    ss["A2"]="Batch CN-23167. TechOne GENJNL (PK ledger). Dr positive, Cr negative. Regenerated by build_live_journal.py."
+    ss["A2"].font=Font(name="Segoe UI",size=9,italic=True)
+    ss.append([]);
+    ss.append(["Total lines","Batch balance","Streams","Account recodes","Gross debits","Gross credits"])
+    style_header(ss,4,6)
+    ss.append([len(lines),net,len(streams),len(per_file),gross_dr,gross_cr])
+    for c in range(1,7):
+        x=ss.cell(5,c); x.font=Font(name="Segoe UI",size=11,bold=(c in(1,2))); x.border=BD; x.alignment=Alignment(horizontal="center")
+    for c in (2,5,6): ss.cell(5,c).number_format=MONEY
+    ss.cell(5,2).font=Font(name="Segoe UI",size=11,bold=True,color=("C00000" if abs(net)>0.005 else "1F7A1F"))
+    # per-account block
+    ss.append([]); r=7
+    ss.cell(r,1,"Per account recode"); ss.cell(r,1).font=Font(name="Segoe UI",bold=True,size=11,color=NAVY); r+=1
+    ss.append(["Account","Lines","Net (=0.00)"]); style_header(ss,r,3); r+=1
+    for a in sorted(per_file):
+        d=per_file[a]; ss.cell(r,1,a); ss.cell(r,2,d["lines"]); nc=ss.cell(r,3,d["net"]); nc.number_format=MONEY
+        for c in range(1,4): ss.cell(r,c).font=Font(name="Segoe UI",size=9); ss.cell(r,c).border=BD
+        if r%2==0:
+            for c in range(1,4): ss.cell(r,c).fill=BANDF
+        r+=1
+    for c,w in zip("ABCDEF",[16,15,10,16,14,14]): ss.column_dimensions[c].width=w
 
-    # ---- Summary sheet ----
-    ss=wb.create_sheet("Summary")
-    ss.append(["Live Recode Journal - Summary"])
-    ss["A1"].font=Font(name="Segoe UI",bold=True,size=13,color=NAVY)
-    ss.append([f"{len(rows)} lines across {len(per_file)} account recodes. Each account batch nets $0.00; grand net $0.00."])
-    ss.append([])
-    ss.append(["Per account recode","Lines","Net (must be 0.00)","Disposition"])
-    hr=4
-    for c in range(1,5):
-        cell=ss.cell(hr,c); cell.font=Font(name="Segoe UI",bold=True,color=WHITE,size=10); cell.fill=hdr_fill()
-        cell.alignment=Alignment(horizontal="center"); cell.border=BORDER
-    r=hr+1
-    for acct in sorted(per_file):
-        d=per_file[acct]
-        ss.cell(r,1,acct); ss.cell(r,2,d["lines"]);
-        nc=ss.cell(r,3,round(d["net"],2)); nc.number_format='#,##0.00;[Red]-#,##0.00'
-        ss.cell(r,4,d["disp"])
-        for c in range(1,5):
-            ss.cell(r,c).font=Font(name="Segoe UI",size=9); ss.cell(r,c).border=BORDER
-            if r%2==0: ss.cell(r,c).fill=band_fill()
-        r+=1
-    # per-NA net movement
-    r+=1
-    ss.cell(r,1,"Net movement by natural account").font=Font(name="Segoe UI",bold=True,size=11,color=NAVY); r+=1
-    for c,t in enumerate(["Natural account","Net (+in / -out)"],start=1):
-        cell=ss.cell(r,c); cell.font=Font(name="Segoe UI",bold=True,color=WHITE,size=10); cell.fill=hdr_fill(); cell.border=BORDER
-    r+=1
+    # ---------- Consolidated Journal (canonical upload format) ----------
+    js=wb.create_sheet("Consolidated Journal")
+    js["A1"]="CONSOLIDATED RECODE JOURNAL - CN-23167 (upload format)"; js["A1"].font=Font(name="Segoe UI",bold=True,size=12,color=NAVY)
+    js["A2"]="40-char narrative cap; PK preserved unless stated; batch nets $0.00. Store Account/Resource as text."
+    js["A2"].font=Font(name="Segoe UI",size=8,italic=True)
+    cols=["Stream","LDG","Account (PK)","Fund Account","Resource Group","Resource (NA)","Amount","Narrative 1","Narrative 2","Narrative 3"]
+    hrow=4
+    for c,t in enumerate(cols,1): js.cell(hrow,c,t)
+    style_header(js,hrow,len(cols),size=9)
+    for i,r in enumerate(lines, start=hrow+1):
+        for c,v in enumerate(r,1):
+            x=js.cell(i,c,v); x.font=Font(name="Segoe UI",size=8); x.border=BD
+            if c==7: x.number_format=MONEY; x.alignment=Alignment(horizontal="right")
+            if c in (3,4,6): x.number_format='@'
+            if i%2==0: x.fill=BANDF
+    js.freeze_panes=f"A{hrow+1}"
+    nr=hrow+1+len(lines)
+    js.cell(nr,6,"BATCH NET").font=Font(name="Segoe UI",bold=True)
+    nc=js.cell(nr,7,f"=SUM(G{hrow+1}:G{hrow+len(lines)})"); nc.font=Font(name="Segoe UI",bold=True); nc.number_format=MONEY
+    for c,w in zip("ABCDEFGHIJ",[34,6,13,13,15,14,12,34,34,26]): js.column_dimensions[c].width=w
+
+    # ---------- Net movement by NA ----------
+    ms=wb.create_sheet("NA Movement")
+    ms["A1"]="Net movement by natural account (+in / -out)"; ms["A1"].font=Font(name="Segoe UI",bold=True,size=12,color=NAVY)
+    ms.append([]); ms.append(["Natural account","Net movement"]); style_header(ms,3,2)
+    r=4
     for na in sorted(per_na):
-        ss.cell(r,1,na).number_format='@'
-        nc=ss.cell(r,2,round(per_na[na],2)); nc.number_format='#,##0.00;[Red]-#,##0.00'
-        for c in range(1,3):
-            ss.cell(r,c).font=Font(name="Segoe UI",size=9); ss.cell(r,c).border=BORDER
+        ms.cell(r,1,na).number_format='@'; nc=ms.cell(r,2,round(per_na[na],2)); nc.number_format=MONEY
+        for c in (1,2): ms.cell(r,c).font=Font(name="Segoe UI",size=9); ms.cell(r,c).border=BD
         r+=1
-    ss.cell(r,1,"GRAND NET").font=Font(name="Segoe UI",bold=True)
-    gc=ss.cell(r,2,round(sum(per_na.values()),2)); gc.font=Font(name="Segoe UI",bold=True); gc.number_format='#,##0.00;[Red]-#,##0.00'
-    for c,w in zip("ABCD",[26,10,20,16]): ss.column_dimensions[c].width=w
+    ms.cell(r,1,"GRAND NET").font=Font(name="Segoe UI",bold=True); gc=ms.cell(r,2,round(sum(per_na.values()),2)); gc.font=Font(name="Segoe UI",bold=True); gc.number_format=MONEY
+    for c,w in zip("AB",[18,16]): ms.column_dimensions[c].width=w
 
     out=root/"00_Live_Recode_Journal.xlsx"; wb.save(out)
-    print(f"Wrote {out.name}: {len(rows)} lines, {len(per_file)} account recodes.")
-    print(f"Grand net = {sum(per_na.values()):+.2f}")
-    bad=[(a,round(d['net'],2)) for a,d in per_file.items() if abs(d['net'])>0.005]
-    print("Per-account net check:", "ALL ZERO" if not bad else f"NON-ZERO: {bad}")
+    print(f"Wrote {out.name}: {len(lines)} lines, {len(per_file)} account recodes, {len(streams)} streams.")
+    print(f"Gross Dr {gross_dr:,.2f} | Gross Cr {gross_cr:,.2f} | NET {net:+.2f}")
+    bad=[(a,d['net']) for a,d in per_file.items() if abs(d['net'])>0.005]
+    print("Per-account net:", "ALL ZERO" if not bad else f"NON-ZERO {bad}")
     return 0
 
 if __name__=="__main__":

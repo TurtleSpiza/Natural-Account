@@ -1,0 +1,110 @@
+LCC PARKS 4090000 - CARRIED 3-JUN RECODE (Doc46 audit + PCard residual) - RECODE JOURNAL
+Batch: CN-23167 (PREPARED FOR JOURNAL; Spero decision, no Finance gate)
+Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch nets $0.00. Fields stored as text.
+Carried from _CarryForward/Parks_4090000_Consolidated_Recode_Journal_3-Jun-2026.xlsx, DEDUPED against the
+9-Jun worked recodes so nothing double-counts (see 00_Journal_Reconciliation_9-Jun-2026.md):
+  - Doc46 audit: all lines EXCEPT J30 Motorcycles R Us (helmet+boots), which is a subset of NA72111 Set 2.
+  - PCard batch: 626529478 split (Doc45, stands) + TE004478; TE004824 reduced to the riser-only move to
+    72313 (Posca $41.05 is in NA72111 Set 4); Flair $77.27 dropped (superseded by NA73513 fresh $85).
+  - WINC 73563 streams dropped entirely (NA73563 carries the fuller P1-P10 + Apr + Feb + TE005250 recode).
+
+LDG | Account number | Fund account | Resource Group | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+--------------------------------------------------------------------------------------------------------------------
+ PK | PK000068    | PK000068    | JOURNAL        | 72113         |   2377.35 | J1 recode: Pac Fire PPE                | Ref 188512 Svc 20401 (PK000068)        | PPE for fire operations
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |  -2377.35 | J1 recode: Pac Fire PPE                | Ref 188512 Svc 20401 (PK000068)        | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 73220         |   1383.29 | J2 recode: Altus Traffic               | Ref 410015740 Svc 20401 (PK000068)     | Traffic control service — 
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |  -1383.29 | J2 recode: Altus Traffic               | Ref 410015740 Svc 20401 (PK000068)     | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 73211         |    696.10 | J3 recode: Industrial Decontamination  | Ref INV-19260 Svc 20401 (PK000068)     | PPE decontamination — wild
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -696.10 | J3 recode: Industrial Decontamination  | Ref INV-19260 Svc 20401 (PK000068)     | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 73211         |    560.85 | J4 recode: Industrial Decontamination  | Ref INV-18994 Svc 20401 (PK000068)     | PPE decontamination — wild
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -560.85 | J4 recode: Industrial Decontamination  | Ref INV-18994 Svc 20401 (PK000068)     | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 73211         |    450.30 | J5 recode: Industrial Decontamination  | Ref INV-19437 Svc 20401 (PK000068)     | PPE decontamination — wild
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -450.30 | J5 recode: Industrial Decontamination  | Ref INV-19437 Svc 20401 (PK000068)     | From 72111
+ PK | PK000075    | PK000075    | JOURNAL        | 72113         |    200.00 | J8 recode: Reptile Awareness Displays  | Ref 003-2026 Svc 20411 (PK000075)      | First aid kits — bulk same
+ PK | PK000075    | PK000075    | JOURNAL        | 72111         |   -200.00 | J8 recode: Reptile Awareness Displays  | Ref 003-2026 Svc 20411 (PK000075)      | From 72111
+ PK | PK000496    | PK000496    | JOURNAL        | 72113         |    369.00 | J9 recode: Alpha First Aid             | Ref 8168559 Svc 20662 (PK000496)       | First aid kits — bulk same
+ PK | PK000496    | PK000496    | JOURNAL        | 72111         |   -369.00 | J9 recode: Alpha First Aid             | Ref 8168559 Svc 20662 (PK000496)       | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 72113         |    307.35 | J10 recode: Pac Fire                   | Ref 188738 Svc 20401 (PK000068)        | Safety boot — individually
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -307.35 | J10 recode: Pac Fire                   | Ref 188738 Svc 20401 (PK000068)        | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 72113         |    314.70 | J11 recode: Pac Fire                   | Ref 183802 Svc 20401 (PK000068)        | Safety helmet $299.70 + fr
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -314.70 | J11 recode: Pac Fire                   | Ref 183802 Svc 20401 (PK000068)        | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72112         |    237.83 | J13 recode: Bunnings                   | Ref 8210/02030503 Svc 20181 (PK000012) | Insecticide + fertiliser
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    159.43 | J13 recode: Bunnings                   | Ref 8210/02030503 Svc 20181 (PK000012) | Plants — landscape supplie
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -397.26 | J13 recode: Bunnings                   | Ref 8210/02030503 Svc 20181 (PK000012) | From 72111 ($0.04 variance
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    324.13 | J14 recode: Bunnings                   | Ref 8171/01438782 Svc 20181 (PK000012) | Ornamental plants — landsc
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -324.13 | J14 recode: Bunnings                   | Ref 8171/01438782 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72112         |    161.66 | J15 recode: Bunnings                   | Ref 8210/01369423 Svc 20181 (PK000012) | Chemicals (+$0.01 rounding
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    147.94 | J15 recode: Bunnings                   | Ref 8210/01369423 Svc 20181 (PK000012) | Irrigation/landscape hardw
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -309.60 | J15 recode: Bunnings                   | Ref 8210/01369423 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    240.23 | J16 recode: Bunnings                   | Ref 8210/01349884 Svc 20181 (PK000012) | Landscape supplies
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -240.23 | J16 recode: Bunnings                   | Ref 8210/01349884 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72113         |     55.78 | J17 recode: Bunnings                   | Ref 8171/01240231 Svc 20181 (PK000012) | Work gloves — PPE
+ PK | PK000012    | PK000012    | JOURNAL        | 72311         |    171.00 | J17 recode: Bunnings                   | Ref 8171/01240231 Svc 20181 (PK000012) | Lopper — small tool
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -226.78 | J17 recode: Bunnings                   | Ref 8171/01240231 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    203.57 | J18 recode: Bunnings                   | Ref 8171/01259462 Svc 20181 (PK000012) | Artificial plants
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -203.57 | J18 recode: Bunnings                   | Ref 8171/01259462 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |    210.29 | J19 recode: Bunnings                   | Ref 8171/01228418 Svc 20181 (PK000012) | Plants + chain — landscape
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -210.29 | J19 recode: Bunnings                   | Ref 8171/01228418 Svc 20181 (PK000012) | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72113         |    203.79 | J20 recode: Spill Station              | Ref 109368 Svc 20181 (PK000012)        | Spill response — safety eq
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -203.79 | J20 recode: Spill Station              | Ref 109368 Svc 20181 (PK000012)        | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 72311         |    388.50 | J21 recode: Big Red Truck Fire Rescue  | Ref S206895 Svc 20401 (PK000068)       | Fuel cans — planned burns
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -388.50 | J21 recode: Big Red Truck Fire Rescue  | Ref S206895 Svc 20401 (PK000068)       | From 72111
+ PK | PK000055    | PK000055    | JOURNAL        | 72222         |    335.00 | J22 recode: Tennyson Group             | Ref 27577 Svc 20241 (PK000055)         | Branded vehicle signage (P
+ PK | PK000055    | PK000055    | JOURNAL        | 72111         |   -335.00 | J22 recode: Tennyson Group             | Ref 27577 Svc 20241 (PK000055)         | From 72111
+ PK | PK000068    | PK000068    | JOURNAL        | 72222         |    285.00 | J23 recode: Traffic Control Supplies   | Ref 178176 Svc 20401 (PK000068)        | Branded vehicle signage (p
+ PK | PK000068    | PK000068    | JOURNAL        | 72111         |   -285.00 | J23 recode: Traffic Control Supplies   | Ref 178176 Svc 20401 (PK000068)        | From 72111
+ PK | PK000076    | PK000076    | JOURNAL        | 72222         |    307.00 | J24 recode: Tennyson Group             | Ref 25804 Svc 20412 (PK000076)         | Tree Day corflutes — event
+ PK | PK000076    | PK000076    | JOURNAL        | 72111         |   -307.00 | J24 recode: Tennyson Group             | Ref 25804 Svc 20412 (PK000076)         | From 72111
+ PK | PK000445    | PK000445    | JOURNAL        | 72248         |   1360.00 | J25 recode: Legacy Monuments           | Ref 2591 Svc 20451 (PK000445)          | Memorial plaque — cemetery
+ PK | PK000445    | PK000445    | JOURNAL        | 72111         |  -1360.00 | J25 recode: Legacy Monuments           | Ref 2591 Svc 20451 (PK000445)          | From 72111
+ PK | PK000083    | PK000083    | JOURNAL        | 72249         |   1308.58 | J26 recode: Fulton Hogan               | Ref 20587563 Svc 20451 (PK000083)      | Topsoil — cemeteries groun
+ PK | PK000083    | PK000083    | JOURNAL        | 72111         |  -1308.58 | J26 recode: Fulton Hogan               | Ref 20587563 Svc 20451 (PK000083)      | From 72111
+ PK | PK000083    | PK000083    | JOURNAL        | 72249         |    841.16 | J27 recode: Fulton Hogan               | Ref 20672646 Svc 20451 (PK000083)      | Topsoil — cemeteries groun
+ PK | PK000083    | PK000083    | JOURNAL        | 72111         |   -841.16 | J27 recode: Fulton Hogan               | Ref 20672646 Svc 20451 (PK000083)      | From 72111
+ PK | PK000083    | PK000083    | JOURNAL        | 72249         |    792.50 | J28 recode: Fulton Hogan               | Ref 20736903 Svc 20451 (PK000083)      | Topsoil — cemeteries groun
+ PK | PK000083    | PK000083    | JOURNAL        | 72111         |   -792.50 | J28 recode: Fulton Hogan               | Ref 20736903 Svc 20451 (PK000083)      | From 72111
+ PK | PK000022    | PK000022    | JOURNAL        | 72315         |   1250.00 | J29 recode: Petersen Castings          | Ref 1215 Svc 20392 (PK000022)          | Bin keys — parks assets (b
+ PK | PK000022    | PK000022    | JOURNAL        | 72111         |  -1250.00 | J29 recode: Petersen Castings          | Ref 1215 Svc 20392 (PK000022)          | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72311         |    913.09 | J33 recode: Stihl Shop Jimboomba       | Ref 283346 Svc 20181 (PK000012)        | Stihl chargers — bulk same
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -913.09 | J33 recode: Stihl Shop Jimboomba       | Ref 283346 Svc 20181 (PK000012)        | From 72111
+ PK | PK000032    | PK000032    | JOURNAL        | 72112         |    791.00 | J34 recode: STKISS INITIATOR RB43      | Ref 096371 Svc 20381 (PK000032)        | INITIATOR 3kg insecticide/
+ PK | PK000032    | PK000032    | JOURNAL        | 72111         |   -791.00 | J34 recode: STKISS INITIATOR RB43      | Ref 096371 Svc 20381 (PK000032)        | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72112         |    237.83 | J36 recode: Bunnings Underwood         | Ref 8210/00230575 Svc 20181 (PK000012) | Chemicals + fertiliser
+ PK | PK000012    | PK000012    | JOURNAL        | 72113         |     21.08 | J36 recode: Bunnings Underwood         | Ref 8210/00230575 Svc 20181 (PK000012) | Safety helmets — PPE
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |     44.55 | J36 recode: Bunnings Underwood         | Ref 8210/00230575 Svc 20181 (PK000012) | Landscape Lock 2L paving a
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -303.46 | J36 recode: Bunnings Underwood         | Ref 8210/00230575 Svc 20181 (PK000012) | From 72111 (watering can $
+ PK | PK000012    | PK000012    | JOURNAL        | 72112         |    185.05 | J37 recode: Bunnings Underwood         | Ref 8210/02056322 Svc 20181 (PK000012) | Powerfeed 10L x2 (bulk) + 
+ PK | PK000012    | PK000012    | JOURNAL        | 72231         |     79.70 | J37 recode: Bunnings Underwood         | Ref 8210/02056322 Svc 20181 (PK000012) | Mixed plants (marigold, le
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -264.75 | J37 recode: Bunnings Underwood         | Ref 8210/02056322 Svc 20181 (PK000012) | From 72111
+ PK | PK000496    | PK000496    | JOURNAL        | 72311         |    418.22 | J35a recode: STKISS LITTER PIC JF51    | Ref 092580 Svc 20662 (PK000496)        | Litter pickers — field ops
+ PK | PK000496    | PK000496    | JOURNAL        | 72111         |   -418.22 | J35a recode: STKISS LITTER PIC JF51    | Ref 092580 Svc 20662 (PK000496)        | From 72111
+ PK | PK000001    | PK000001    | JOURNAL        | 72113         |    331.18 | J35b recode: STKISS LCC AWARE RB22     | Ref 093813 Svc 20151 (PK000001)        | LCC Aware tape — site safe
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |   -331.18 | J35b recode: STKISS LCC AWARE RB22     | Ref 093813 Svc 20151 (PK000001)        | From 72111
+ PK | PK000493    | PK000493    | JOURNAL        | 72311         |    562.79 | J35c recode: STKISS SITE BARRI XI11    | Ref 095340 Svc 20392 (PK000493)        | Site barrier mesh — bulk s
+ PK | PK000493    | PK000493    | JOURNAL        | 72111         |   -562.79 | J35c recode: STKISS SITE BARRI XI11    | Ref 095340 Svc 20392 (PK000493)        | From 72111
+ PK | PK000003    | PK000003    | JOURNAL        | 72311         |    227.09 | J35d recode: STKISS TRIMMER CO RC42    | Ref 095736 Svc 20440 (PK000003)        | Trimmer cord — power tool 
+ PK | PK000003    | PK000003    | JOURNAL        | 72111         |   -227.09 | J35d recode: STKISS TRIMMER CO RC42    | Ref 095736 Svc 20440 (PK000003)        | From 72111
+ PK | PK000084    | PK000084    | JOURNAL        | 72113         |    343.46 | J35e recode: STKISS ELECTROLYT RE21    | Ref 095893 Svc 20301 (PK000084)        | Electrolyte drink — crew h
+ PK | PK000084    | PK000084    | JOURNAL        | 72111         |   -343.46 | J35e recode: STKISS ELECTROLYT RE21    | Ref 095893 Svc 20301 (PK000084)        | From 72111
+ PK | PK000496    | PK000496    | JOURNAL        | 72311         |    285.49 | J35f recode: STKISS LITTER PIC LF21    | Ref 096300 Svc 20662 (PK000496)        | Litter pickers — field ops
+ PK | PK000496    | PK000496    | JOURNAL        | 72111         |   -285.49 | J35f recode: STKISS LITTER PIC LF21    | Ref 096300 Svc 20662 (PK000496)        | From 72111
+ PK | PK000001    | PK000001    | JOURNAL        | 72311         |    286.06 | J35g recode: STKISS LITTER PIC LF21    | Ref 096601 Svc 20151 (PK000001)        | Litter pickers — field ops
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |   -286.06 | J35g recode: STKISS LITTER PIC LF21    | Ref 096601 Svc 20151 (PK000001)        | From 72111
+ PK | PK000435    | PK000435    | JOURNAL        | 72311         |    241.43 | J35h recode: STKISS TRAFFIC CO XF11    | Ref 096664 Svc 20362 (PK000435)        | Traffic cones — bulk same-
+ PK | PK000435    | PK000435    | JOURNAL        | 72111         |   -241.43 | J35h recode: STKISS TRAFFIC CO XF11    | Ref 096664 Svc 20362 (PK000435)        | From 72111
+ PK | PK000003    | PK000003    | JOURNAL        | 72311         |    229.11 | J35i recode: STKISS TRIMMER CO RC42    | Ref 097341 Svc 20440 (PK000003)        | Trimmer cord — power tool 
+ PK | PK000003    | PK000003    | JOURNAL        | 72111         |   -229.11 | J35i recode: STKISS TRIMMER CO RC42    | Ref 097341 Svc 20440 (PK000003)        | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72311         |    229.11 | J35j recode: STKISS TRIMMER CO RC42    | Ref 097673 Svc 20181 (PK000012)        | Trimmer cord — power tool 
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -229.11 | J35j recode: STKISS TRIMMER CO RC42    | Ref 097673 Svc 20181 (PK000012)        | From 72111
+ PK | PK000012    | PK000012    | JOURNAL        | 72311         |    334.16 | J35k recode: STKISS STAR PICKE WD26    | Ref 097868 Svc 20181 (PK000012)        | Star pickets — bulk same-i
+ PK | PK000012    | PK000012    | JOURNAL        | 72111         |   -334.16 | J35k recode: STKISS STAR PICKE WD26    | Ref 097868 Svc 20181 (PK000012)        | From 72111
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |   -473.64 | 13-Jan-2026                            | OFFICEWORKS                            | 
+ PK | PK000001    | PK000001    | JOURNAL        | 73563         |     43.64 | 3× 2026 Collins A5 Diary               | OFFICEWORKS                            | 
+ PK | PK000001    | PK000001    | JOURNAL        | 72313         |    398.18 | 20× Otto Acrylic Desk Riser Large + 2× | OFFICEWORKS                            | 
+ PK | PK000001    | PK000001    | JOURNAL        | 73564         |     31.82 | 1× USB-C / SD Card Reader Adapter      | OFFICEWORKS                            | 
+ PK | PK000001    | PK000001    | JOURNAL        | 72313         |     54.52 | 3× Otto Acrylic Desk Riser Large       | OFFICEWORKS                            | 
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |    -54.52 | TE004824                               |                                        | 
+ PK | PK000001    | PK000001    | JOURNAL        | 72248         |     27.55 | TE004478                               |                                        | 
+ PK | PK000001    | PK000001    | JOURNAL        | 72111         |    -27.55 | TE004478                               |                                        | 
+
+BATCH NET: 0.00  (Doc46 88 lines + PCard residual 8 lines)
