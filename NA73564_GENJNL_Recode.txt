@@ -37,5 +37,7 @@ PK000087 +500.00 (Dressman) each appear once. PK000001 also carries sub-batch A 
 
 BATCH NET (A + B): 0.00  (BALANCED)
 Sub-batch A (73564->73566 software, 6 pairs): 0.00.  Sub-batch B (PK attribution, 3 pairs): 0.00.
-Both sub-batches remain HELD: A pending Finance acceptance of the 73564->73566 move; B is attribution-confirmed
-by Spero and ready, but evidence-limb SR backups (SR219175, SR235810, SR-0315517) are not yet sighted.
+DISPOSITION (Spero standing directive, 9-Jun-2026): Sub-batch B is PREPARED FOR JOURNAL on Spero's
+attribution confirmation; the SR backups (SR219175, SR235810, SR-0315517) are recorded as evidence gaps
+for audit but no longer hold the lines. Sub-batch A remains HELD pending Finance acceptance of the
+73564->73566 natural-account move (an external Finance decision, not a Spero-criteria item).

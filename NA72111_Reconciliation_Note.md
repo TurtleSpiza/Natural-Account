@@ -79,3 +79,15 @@ A negative $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-20
 - **Effect.** Net 72111 movement across all three sets is now -$1,749.80 ($2,197.80 expense out to 72113/72315, less the $448.00 income reversed back in as a debit). The $448.00 income leaves Parks 4090000 for the Cemeteries revenue line.
 
 Evidence basis: the scrap-sale source document SC10906 is not packaged, so this is staged on Spero's directive plus the intrinsic ledger evidence (a credit balance in an expense account with a scrap-sale narration). Carried as a GAP row on the evidence manifest until SC10906 is sighted. The -492.80 inc / -448.00 ex / -44.80 GST is a taxable scrap supply; GST treatment follows the original booking. The account stays AMBER.
+
+---
+
+## Addendum, 9-Jun-2026 (Posca markers to 73563; Spero standing directive recorded)
+
+**Standing directive (Spero, 9-Jun-2026).** Anything Spero gives commentary or instruction on overrides the review criteria and is prepared for journal (upload-ready), applied retroactively. A missing source document is recorded for audit but no longer holds a directed line. This is now the operating rule for this batch; the recode files carry the disposition and the directed sets are upload-ready rather than held on evidence sighting.
+
+**Set 4 - Posca paint markers (sighted).** TE004824 Officeworks invoice 624206983 (ABN 36 004 763 526 PASS, Kirsty Quinn, 2-Oct-2025) and the Celeste Fry cover slip are sighted. A partial recode off the $95.57 ex line: the PK8 POSCA PC5M marker pack ($45.16 inc / $41.05 ex) is stationery and moves to 73563 Printing & Stationery; the 3 OTTO acrylic desk risers ($59.97 inc / $54.52 ex) stay in 72111 for now. Set 4 is $41.05 ex to 73563.
+
+The combined 72111 recode is now 14 lines, net 72111 movement -$1,790.85, batch nets $0.00, destinations 72113 +$1,758.12, 72315 +$439.68, 73563 +$41.05, 64411 -$448.00.
+
+**Advisory (not journalled, awaiting instruction).** The 3 OTTO desk risers ($54.52 ex) on this invoice are stands for monitors/laptops; per the desk-component rule (chair and desk components, including desk risers, are 72313) they belong in 72313 Furniture & Fittings, not 72111. Left in place pending Spero's instruction, consistent with the directive that only instructed lines are journalled.
