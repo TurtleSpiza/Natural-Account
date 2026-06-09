@@ -4,23 +4,18 @@ This repo runs the branch-level NA review under Claude Code, working against Git
 
 ## 1. Environment provisioning
 
-Run at the start of a session (and again if the sandbox resets between sessions; it is cheap):
+`setup.sh` at the repo root is the single source of truth. It installs LibreOffice headless and the Python dependencies, is idempotent (safe to re-run), and self-heals the two snags this sandbox image throws: the Debian-managed `pip` cannot self-upgrade (so the script does not try), and `cffi`'s `_cffi_backend` occasionally ships broken (so the script detects a failed `pypdf` import and force-reinstalls `cffi`).
 
 ```bash
-# Python dependencies
-pip install -r requirements.txt --break-system-packages
-
-# System dependency: LibreOffice headless, for spreadsheet formula recalculation
-#   Debian/Ubuntu sandbox:
-sudo apt-get update && sudo apt-get install -y libreoffice-calc
-#   verify:
-soffice --headless --version
+bash setup.sh
 ```
+
+**Automatic on Claude Code web.** `.claude/hooks/session-start.sh` is a `SessionStart` hook (registered in `.claude/settings.json`) that runs `setup.sh` on every fresh web session, guarded to remote sessions only via `$CLAUDE_CODE_REMOTE`. It runs synchronously, so dependencies are guaranteed ready before the session starts. The hook activates for all future sessions once `.claude/settings.json` is merged to the default branch.
 
 Confirm the toolchain before working:
 
 ```bash
-python -c "import pandas, openpyxl, py7zr, pypdf; import python_calamine; print('python OK')"
+python3 -c "import pandas, openpyxl, py7zr, pypdf; import python_calamine; print('python OK')"
 soffice --headless --version
 ```
 
