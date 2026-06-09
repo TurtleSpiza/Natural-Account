@@ -37,6 +37,8 @@ EXCLUDE_FILES = {
     "README.md",
     "gen_manifest.py",
     "verify_manifest.py",
+    "build_listing.py",
+    "build_master.py",
     ".gitignore",
 }
 

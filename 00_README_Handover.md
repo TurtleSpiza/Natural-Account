@@ -93,5 +93,17 @@ Worked into the listing this pass: TE005091 Officeworks 626529478 (the RED gate,
 
 72111 previously carried a reconciliation note with no packaged evidence set. That is corrected. `NA72111_Evidence/` is created and holds eight sighted documents for the worked lines (Officeworks 626529478 invoice and cover slip, Coles and Woolworths milk receipts and slips, Bunnings tax invoice, Steel Post and Rail payment receipt 621). `NA72111_Reconciliation_Note.md` carries a dated addendum recording the full ledger receipt (364 lines, $67,055.47), the TE005091 gate resolution, the Coles GST error and the TE004477 Parks Services and Steel Post findings; `NA72111_Evidence_Manifest.csv` is rewritten to mark Officeworks 626529478 and the milk, Bunnings and Steel Post lines SIGHTED and the full ledger PROVIDED, leaving Play Safety, STIHL and the 8-Jun AP source invoices as the remaining gaps. The line-level state for all 364 lines lives in the running listing.
 
+## Consolidation status and next session, 9-Jun-2026
+
+Decision taken: bind the three review tiers into one workbook (Tracker, Register, per-account line tabs) with live rollups, line criteria to Register RAG and Reviewed-$ to Tracker Reviewed/Untested, and realign 72111 from the old subset to the full ledger. The consolidated `00_NAReview_Master.xlsx` is built and Python-checked, but it is held out of the repo this session because LibreOffice (`soffice`) would not load any workbook in the sandbox, so the live formulas and the realigned register and tracker totals could not be recalc-verified. The standalone `00_Running_Transaction_Listing.xlsx` remains the live line-level artifact in the meantime.
+
+Everything needed to finish next session is committed:
+
+- `NA72111_Evidence/NA72111_Ledger_Full_9-Jun-2026.xlsx`, the full 72111 ledger (364 lines, $67,055.47), so the line tier can be rebuilt.
+- `build_listing.py`, rebuilds the running listing from the stored ledger and the four account extracts (carries the per-line verdict overlays).
+- `build_master.py`, rebuilds the consolidated master from the listing plus the register and tracker, with the live rollup formulas.
+
+Next session, once `soffice` loads: run `python build_master.py`, recalc with LibreOffice, read back `data_only=True` and confirm the Register RAG and Reviewed-$ and the Tracker dashboard compute (realigned 72111 reviewed is the sum of non-PENDING lines, $1,893.99 on the 13 worked so far), then retire the three source files and update the repo layout. Decision recorded: a ledger line with no attachment in TechOne is RED on the evidence limb (174 of 364 on 72111), which is already how the listing scores it.
+
 Kind regards,
 Spero
