@@ -1,0 +1,16 @@
+LCC PARKS 4090000 - NA 72114 UNIFORMS - REALI PK SPLIT - RECODE JOURNAL
+Batch: CN-23167 (PREPARED FOR JOURNAL; Spero decision, no Finance gate)
+Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch nets $0.00. Fields stored as text.
+Carried from the 3-Jun consolidated journal: the Reali standing-order PK split within 72114 ($1,059.76
+redistributed across service-level Uniforms PKs, nets $0.00). No overlap with the 9-Jun work.
+
+LDG | Account number | Fund account | Resource Group | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+--------------------------------------------------------------------------------------------------------------------
+ PK | PK000012    | PK000012    | JOURNAL        | 72114         |    102.78 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt (confirm w 
+ PK | PK000433    | PK000433    | JOURNAL        | 72114         |    229.34 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt (confirm w 
+ PK | PK000435    | PK000435    | JOURNAL        | 72114         |    589.63 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt (confirm w 
+ PK | PK000003    | PK000003    | JOURNAL        | 72114         |     45.29 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt (confirm w 
+ PK | PK000402    | PK000402    | JOURNAL        | 72114         |     92.72 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt (confirm w 
+ PK | PK000001    | PK000001    | JOURNAL        | 72114         |  -1059.76 | Reali uniform recode fr 20151          | PO702344 SI consol Mar-2026            | 72114 net-mvmt incl 1c rou
+
+BATCH NET: 0.00  (6 lines)

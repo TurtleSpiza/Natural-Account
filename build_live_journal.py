@@ -26,7 +26,8 @@ SET_RE=re.compile(r'^(SET\s+\d+|SUB-BATCH\s+[AB])\b[ :-]*(.*)', re.I)
 
 LABELS={'NA72111':'72111 Minor Equipment','NA72312':'72312->72313 Furniture',
         'NA73513':'73513 Flair Floral','NA73533':'73533 Travel meal',
-        'NA73563':'73563 WINC stationery','NA73564':'73564 IT Equipment'}
+        'NA73563':'73563 WINC stationery','NA73564':'73564 IT Equipment',
+        'NACarried3Jun':'Carried 3-Jun (Doc46+PCard)','NA72114':'72114 Reali uniforms'}
 
 def parse(path: Path, label: str):
     stream=label
