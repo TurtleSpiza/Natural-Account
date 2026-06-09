@@ -89,5 +89,9 @@ GST verification is confirmed to run per line on every natural account, alongsid
 
 Worked into the listing this pass: TE005091 Officeworks 626529478 (the RED gate, resolved: Doc45 split stands, Doc46 J12 is a duplicate and stays dropped); TE005080 Coles milk ($12.50 GST-free booked $11.36, $1.14 phantom GST credit, RED); TE005250 Woolworths and TE005531 Coles milk (GST-free booked at full value, correct; amenity-not-equipment advisory); and TE004477 (Bunnings, Steel Post & Rail, Play Safety) which is two findings: Limb 1 RED, all three are operational park materials sitting on Depots admin svc 20151 / PK000001 and belong in Parks Services svc 20392 / PK000022; Limb 4 RED on Steel Post & Rail, a payment receipt not a tax invoice, with a $2.02 input-taxed finance charge inside a fully grossed $93.63 (GST over-claimed).
 
+## Correction, 9-Jun-2026 (72111 evidence packaged; findings folded in)
+
+72111 previously carried a reconciliation note with no packaged evidence set. That is corrected. `NA72111_Evidence/` is created and holds eight sighted documents for the worked lines (Officeworks 626529478 invoice and cover slip, Coles and Woolworths milk receipts and slips, Bunnings tax invoice, Steel Post and Rail payment receipt 621). `NA72111_Reconciliation_Note.md` carries a dated addendum recording the full ledger receipt (364 lines, $67,055.47), the TE005091 gate resolution, the Coles GST error and the TE004477 Parks Services and Steel Post findings; `NA72111_Evidence_Manifest.csv` is rewritten to mark Officeworks 626529478 and the milk, Bunnings and Steel Post lines SIGHTED and the full ledger PROVIDED, leaving Play Safety, STIHL and the 8-Jun AP source invoices as the remaining gaps. The line-level state for all 364 lines lives in the running listing.
+
 Kind regards,
 Spero
