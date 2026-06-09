@@ -17,4 +17,25 @@ LDG | Account number | Fund account | Resource Group | Resource Code | Amount | 
  PK | PK000068    | PK000068    | JOURNAL        | 73564         |   -568.31 | Esri ArcGIS reversal                   | SaaS not 73564 IT equip                | Recode to 73566
  PK | PK000068    | PK000068    | JOURNAL        | 73566         |    568.31 | Esri ArcGIS IT SW lic INV000555        | Recode from 73564                      | CN-23167
 
-BATCH NET: 0.00  (BALANCED)
+--------------------------------------------------------------------------------------------------------------------
+SUB-BATCH B: PK ATTRIBUTION NET-MOVES (off-home-PK recharges; NA 73564 unchanged, only the PK moves).
+Confirmed by Spero directive 9-Jun-2026 (officer home-PK convention). Credit (-) the wrongly-charged PK,
+debit (+) the officer's substantive home PK. Each pair nets $0.00; the three pairs net $0.00.
+
+ PK | PK000001    | PK000001    | JOURNAL        | 73564         |    -30.00 | Robertson iPhone off PK000001          | Trees home 20319 per Spero             | SR219175 PK000001>PK000433
+ PK | PK000433    | PK000433    | JOURNAL        | 73564         |     30.00 | Robertson iPhone to PK000433           | Trees Coord Admin home                 | SR219175 fr PK000001
+ PK | PK000082    | PK000082    | JOURNAL        | 73564         |   -500.00 | Dressman Poly off PK000082             | Branch Mgmt 20001 per Spero            | SR235810 PK000082>PK000087
+ PK | PK000087    | PK000087    | JOURNAL        | 73564         |    500.00 | Dressman Poly to PK000087              | Parks Branch Mgmt home                 | SR235810 fr PK000082
+ PK | PK000055    | PK000055    | JOURNAL        | 73564         |  -1929.27 | Fry iPhone off PK000055                | Depot 20151 per Spero                  | SR0315517 PK000055>PK000001
+ PK | PK000001    | PK000001    | JOURNAL        | 73564         |   1929.27 | Fry iPhone to PK000001                 | Parks Depot home                       | SR0315517 fr PK000055
+
+DIRECTION CHECK (Sub-batch B): each off-home PK is credited (negative) and each home PK debited (positive),
+matching the narration. Signed sum per pair = 0.00; sub-batch B signed sum = 0.00. The only PK shared across the
+three officer pairs is PK000001: Robertson off (-30.00) and Fry on (+1929.27) net +1899.27, which is correct and
+must stay explicit rather than merged. PK000433 +30.00 (Robertson), PK000055 -1929.27 (Fry), PK000082 -500.00 and
+PK000087 +500.00 (Dressman) each appear once. PK000001 also carries sub-batch A software legs; all legs are distinct.
+
+BATCH NET (A + B): 0.00  (BALANCED)
+Sub-batch A (73564->73566 software, 6 pairs): 0.00.  Sub-batch B (PK attribution, 3 pairs): 0.00.
+Both sub-batches remain HELD: A pending Finance acceptance of the 73564->73566 move; B is attribution-confirmed
+by Spero and ready, but evidence-limb SR backups (SR219175, SR235810, SR-0315517) are not yet sighted.

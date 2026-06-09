@@ -113,6 +113,16 @@ Both open items on 73533 TE005080 are resolved; the account moves AMBER to GREEN
 - **Hotel GST substantiation waived by Spero.** The Booking.com accommodation ($288.18 ex, $28.82 GST) carries no ABN and states it is not a tax invoice. Spero directed (9-Jun-2026) that the line be accepted on the Booking.com confirmation as-is rather than held for an ibis/Accor Australian tax invoice. Recorded as an explicit waiver (only Spero may waive evidence). Residual exposure noted: the $28.82 ITC is claimed without a compliant tax invoice, an ATO substantiation risk if reviewed; the interstate coding is correct and unaffected.
 - **Register and deliverables updated.** 73533 L4 Tax and Overall move to GREEN; the register recalculated via LibreOffice and the total holds at $64,568.41 ex-GST. NA73533_Verification_Record.md carries a closing addendum, NA73533_GENJNL_Recode.txt posts the $6.55 pair, NA73533_Evidence_Manifest.csv lists the receipt, and 00_Bundle_Manifest.csv was regenerated and strict-verified. The Finance email item "obtain ibis tax invoice" drops to advisory; the $6.55 recode joins the held CN-23167 batch.
 
+## Correction, 9-Jun-2026 (73564 PK attributions confirmed, three net-moves staged)
+
+Spero confirmed the IT-recharge allocation convention as officer home PK and resolved three of the nine off-home-PK lines on 73564. Net-movement recodes (NA 73564 unchanged) are now staged in sub-batch B of the held NA73564_GENJNL_Recode.txt:
+
+- L04 Brenda Robertson (Trees) iPhone $30.00, wrongly on Depots 20151/PK000001, to her Trees home 20319/PK000433 (Trees Coordination & Administration).
+- L25 Sara Dressman (Branch Management) Poly headset $500.00, wrongly on Planning 20191/PK000082, to 20001/PK000087.
+- L33 Celeste Fry (Depots) iPhone $1,929.27, wrongly on Trees 20241/PK000055, to 20151/PK000001 (the 8-Jun confirmed cross-section miscode, now released).
+
+Total $2,459.27. Each pair credits the off-home PK and debits the home PK; the three pairs net $0.00 and the full 18-line batch (A software + B attribution) nets $0.00, all narrations within the 40-character cap. Limb 1 (attribution) is cleared on these three; their Limb 3 evidence is still open pending the SR backups (SR219175, SR235810, SR-0315517). Six off-home lines remain ($1,957.00, five Anne-Marie King plus L11 Lilly Shearman), including the L08/L24 Anne-Marie vs Caroline King name-attribution question, all still pending. The register 73564 row carries the update; the account stays AMBER (software recode, six PK lines, and the unsighted-invoice tax limb all still open). The register total holds at $64,568.41 ex-GST.
+
 ## Environment note, 9-Jun-2026 (provisioning automated)
 
 `setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.
