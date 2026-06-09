@@ -105,5 +105,11 @@ Everything needed to finish next session is committed:
 
 Next session, once `soffice` loads: run `python build_master.py`, recalc with LibreOffice, read back `data_only=True` and confirm the Register RAG and Reviewed-$ and the Tracker dashboard compute (realigned 72111 reviewed is the sum of non-PENDING lines, $1,893.99 on the 13 worked so far), then retire the three source files and update the repo layout. Decision recorded: a ledger line with no attachment in TechOne is RED on the evidence limb (174 of 364 on 72111), which is already how the listing scores it.
 
+## Correction, 9-Jun-2026 (73533 TE005080 L02 7-Eleven receipt sighted)
+
+The outstanding 7-Eleven receipt behind TE005080 L02 ($6.55 ex) is now sighted and filed as `NA73533_Evidence/NA73533_L02_7Eleven_TE005080.pdf` (cover slip plus EFTPOS tax invoice). It supplied as the Booking.com accommodation backup but is in fact the sundry line, so the accommodation gap is untouched. Detail: 7-Eleven Stores Pty Ltd store 1130 Melb Queen St, ABN 86 960 363 023 (checksum valid), 20-Jan-2026 19:07, one Ham Pesto sandwich $7.20 incl, GST $0.65, ex-GST $6.55, reconciling to the booked $6.55. Cover slip is hand-dated 29/11/26 in error; the receipt date governs.
+
+Consequences. Limb 3 evidence on the $6.55 closes to sighted. Limb 4 clears on the line: the sandwich is standard-rated ($0.65 GST charged and booked), so the earlier "probable GST-free food" worry does not arise. Limb 2 confirms the meal-during-travel call: a ham sandwich is food, so the $6.55 recodes out of 73533 to 73511/73512 by FBT classification, which converts the line from "held pending receipt" to "recode pending the 73511-vs-73512 FBT split" (the contingent pair in `NA73533_GENJNL_Recode.txt`). The account stays AMBER, now solely on the accommodation $28.82 GST substantiation (ibis Melbourne / Accor tax invoice still required); that action is unchanged. `NA73533_Evidence_Manifest.csv` and `00_Bundle_Manifest.csv` regenerated and strict-verified (69 rows, 0 drift) before this commit.
+
 Kind regards,
 Spero
