@@ -1,5 +1,5 @@
 GENJNL Recode — NA 73564 IT Equipment & Applications -> 73566 IT Software Licence Fees
-Batch CN-23167 (HELD pending Finance acceptance of 73564->73566 move; Body2 lines flagged).
+Batch CN-23167 (PREPARED FOR JOURNAL; Spero decision, no Finance gate. Body2 move-or-stay flagged).
 PKs preserved as transacted. Dr positive, Cr negative. Batch nets $0.00. Doc/line fields stored as text.
 
 LDG | Account number | Fund account | Resource Group | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
@@ -39,5 +39,5 @@ BATCH NET (A + B): 0.00  (BALANCED)
 Sub-batch A (73564->73566 software, 6 pairs): 0.00.  Sub-batch B (PK attribution, 3 pairs): 0.00.
 DISPOSITION (Spero standing directive, 9-Jun-2026): Sub-batch B is PREPARED FOR JOURNAL on Spero's
 attribution confirmation; the SR backups (SR219175, SR235810, SR-0315517) are recorded as evidence gaps
-for audit but no longer hold the lines. Sub-batch A remains HELD pending Finance acceptance of the
-73564->73566 natural-account move (an external Finance decision, not a Spero-criteria item).
+for audit but no longer hold the lines. Sub-batch A is PREPARED FOR JOURNAL on Spero's decision; the
+73564->73566 natural-account move no longer waits on a Finance-acceptance step (no email, no Finance gate).
