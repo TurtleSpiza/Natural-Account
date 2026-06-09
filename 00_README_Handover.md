@@ -123,6 +123,16 @@ Spero confirmed the IT-recharge allocation convention as officer home PK and res
 
 Total $2,459.27. Each pair credits the off-home PK and debits the home PK; the three pairs net $0.00 and the full 18-line batch (A software + B attribution) nets $0.00, all narrations within the 40-character cap. Limb 1 (attribution) is cleared on these three; their Limb 3 evidence is still open pending the SR backups (SR219175, SR235810, SR-0315517). Six off-home lines remain ($1,957.00, five Anne-Marie King plus L11 Lilly Shearman), including the L08/L24 Anne-Marie vs Caroline King name-attribution question, all still pending. The register 73564 row carries the update; the account stays AMBER (software recode, six PK lines, and the unsighted-invoice tax limb all still open). The register total holds at $64,568.41 ex-GST.
 
+## Correction, 9-Jun-2026 (72111 Ultimate set sighted, three Trees-PK recodes staged)
+
+The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is sighted, all five invoices reconcile to the ledger and all ABNs checksum PASS (Ultimate 91 104 115 095, Woodmans 88 105 899 689, Tennyson 31 110 400 809). Three Trees-section lines (svc 20241 / PK000055), confirmed by Spero, are staged in the new `NA72111_GENJNL_Recode.txt` as NA-only recodes (PK preserved):
+
+- ADVANCE X-Light trousers (PIK2270125) $292.09 ex to 72113 PPE, a partial recode off a $409.62 mixed invoice (STIHL consumables $80.29 stay in 72111).
+- Protective Pants G&U Navy (PIK2267644) $402.59 ex to 72113 PPE, a partial recode off a $776.72 mixed invoice (AS charger/battery/fuel $303.52 stay in 72111).
+- STIHL GTA 40.0 SET (PIK2267816) $439.68 ex to 72315 parks P&A, the whole line, serialised (SN451265196), below the asset threshold.
+
+Batch nets $0.00, narrations within the 40-character cap, direction verified: $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero, which resolves the 72113-vs-72114 question on these lines. The STIHL and PPE/decal evidence GAP rows on the manifest are closed. Tennyson 27577 ($335 to 72222) evidence is sighted but its recode stays held pending the Doc46-vs-AP dedup; Woodmans 6429672 ($54.41) is correct in 72111. The account stays AMBER: NA RED holds at account level on the untested remainder, and TE005091 dedup and the Doc46-vs-AP population match are still open. The register 72111 row carries the update; the register total holds at $64,568.41 ex-GST.
+
 ## Environment note, 9-Jun-2026 (provisioning automated)
 
 `setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.

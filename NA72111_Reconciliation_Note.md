@@ -40,3 +40,17 @@ The full 72111 ledger export is now in hand: 364 transaction lines reconciling t
 Support filed in `NA72111_Evidence/`: Officeworks 626529478 invoice and cover slip, Coles and Woolworths milk receipts and slips, Bunnings tax invoice, Steel Post & Rail payment receipt 621. The remaining lines are PENDING in the listing until their receipts are sighted; the untested remainder is now a line-level review, not a held scope item.
 
 Further lines worked (same pass): TE005080 Choice storage tubs $73.35 clears all four limbs (ABN 45 647 301 764 valid, GST $7.34, booked correct), the first 72111 line to clear fully. TE004476 (Bunnings, card ...0429) is correctly split across services: $32.66 and $126.46 already sit on Parks Services svc 20392/PK000022, while the two sighted lines ($259.89 tool trolley and bolts, $40.38 cleaning and cable ties) sit on Depots svc 20151; both have correct GST (ABN 26 008 672 179, $26.00 and $4.04). TE004476 is the contrast that supports the TE004477 recode: the same card and vendor were split to Parks Services here. Open: confirm the two Depots lines are not also Parks Services, and a P&A-register check on the $226 tool trolley. 13 of 364 lines now carry a verdict in the listing.
+
+---
+
+## Addendum, 9-Jun-2026 (Ultimate Motorbikes set sighted; three Trees-PK recodes staged)
+
+The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is now sighted, closing two of the standing GAP rows on the evidence manifest (STIHL, and the PPE/decal source invoices). All five invoices reconcile to the ledger and all four ABNs checksum PASS (Ultimate 91 104 115 095, Woodmans 88 105 899 689, Tennyson 31 110 400 809). Three Trees-section lines (all svc 20241 / PK000055) are confirmed by Spero and staged in the new `NA72111_GENJNL_Recode.txt` as NA-only recodes (PK preserved):
+
+- **ADVANCE X-Light trousers (PIK2270125) $292.09 ex -> 72113 PPE.** A partial recode off a $409.62 mixed invoice; the trousers portion ($321.30 incl) is protective clothing, the STIHL files, wrenches and mixing bottle ($80.29 ex) stay correctly in 72111.
+- **Protective Pants G&U Navy (PIK2267644) $402.59 ex -> 72113 PPE.** A partial recode off a $776.72 mixed invoice; the pants portion ($442.85 incl) is protective clothing, the AS-system charger, battery and Scepter fuel/oil ($303.52 ex) stay in 72111 (advisory only whether the $286 incl battery/charger is P&A).
+- **STIHL GTA 40.0 SET (PIK2267816) $439.68 ex -> 72315 parks P&A.** The whole line; a serialised parks power tool (SN451265196) below the asset threshold, so portable-and-attractive parks equipment.
+
+The recode batch nets $0.00, all narrations within the 40-character cap, direction verified per pair (72111 source credited, destinations debited): $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero (resolves the 72113-vs-72114 question on these lines). The batch stays HELD with the rest of CN-23167.
+
+Two further lines in the same set are sighted but not recoded here: the Tennyson PFS Vehicle Stickers ($335.00 -> 72222) evidence is now in hand but its recode stays held pending the Doc46-vs-AP double-count dedup (Tennyson 27577 is the confirmed overlap), and the Woodmans mulch fork and flexi tub ($54.41) are sub-$200 minor equipment, correct in 72111. The account remains AMBER: NA RED stands at account level on the untested remainder, and the population dedupe is still open.
