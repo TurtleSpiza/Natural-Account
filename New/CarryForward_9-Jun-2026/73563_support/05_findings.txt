@@ -1,0 +1,316 @@
+==============================================================================
+CODING REVIEW — 73563 PRINTING & STATIONERY (Parks Branch 4090000)
+WINC Line-Item Audit — P1 to P10 FY25-26
+Prepared 8-May-2026 — Spero Karkalemis, Assistant Financial Analyst
+==============================================================================
+
+HEADLINE
+------------------------------------------------------------------------------
+$3,805.50 of $6,261.48 WINC creditor-invoice spend coded to 73563 is not
+stationery. 61% miscoded by value, 114 of 249 lines.
+
+SCOPE
+------------------------------------------------------------------------------
+9 WINC Tax Invoices, billing periods Jun-2025 to Mar-2026.
+Parks accounts tested:
+  10179376  LCC - PA - DEPOT STATIONERY        -> 1-20151-73563 (PK000001)
+  10428958  LCC - PA - PLANNING AND DESIGN     -> 1-20141-73563 (PK000086)
+
+Test: each ITEM DESCRIPTION classified against PDF p23 definition for 73563
+"Expenses related to printing and stationery costs." Items outside that scope
+routed to next-best NA per the chart.
+
+RESULT BY PK
+------------------------------------------------------------------------------
+                  lines    total
+pk       status                 
+PK000001 MISCODE     92  3266.81
+         OK          90  1770.93
+PK000086 MISCODE     22   538.69
+         OK          45   685.05
+
+RECODE BREAKDOWN BY DESTINATION NA
+------------------------------------------------------------------------------
+                                                    lines    total
+suggested_acct suggested_category                                 
+73564          IT equipment / accessories              32  1732.31
+73512          Hospitality refreshments (Reason B)     42  1318.86
+72111          Cleaning / minor kitchen supplies       26   596.97
+               Minor equipment / tools                  2    95.40
+               Minor equipment / batteries              8    62.22
+72112          Chemical / pesticide                     2    15.56
+72113          Safety equipment / PPE                   2   -15.82
+
+RECODE BY PK + DESTINATION NA (TechOne batch view)
+------------------------------------------------------------------------------
+                                                             lines    total
+pk       suggested_acct suggested_category                                 
+PK000001 73564          IT equipment / accessories              25  1375.15
+         73512          Hospitality refreshments (Reason B)     40  1305.86
+         72111          Cleaning / minor kitchen supplies       19   498.61
+                        Minor equipment / tools                  1    58.58
+                        Minor equipment / batteries              4    36.62
+         72112          Chemical / pesticide                     2    15.56
+         72113          Safety equipment / PPE                   1   -23.57
+PK000086 73564          IT equipment / accessories               7   357.16
+         72111          Cleaning / minor kitchen supplies        7    98.36
+                        Minor equipment / tools                  1    36.82
+                        Minor equipment / batteries              4    25.60
+         73512          Hospitality refreshments (Reason B)      2    13.00
+         72113          Safety equipment / PPE                   1     7.75
+
+DETAILED MISCODE ITEMS (aggregated across all WINC invoices)
+==============================================================================
+
+--- Destination NA 72111  (Cleaning / minor kitchen supplies)  Total $754.59
+Item Code   Description                                        Qty  Occ     Amount
+25071759    Purell Hand Sansr Gel Pmp 350ml Ct 12                1    1 $    88.71
+18761977    Finish Con Powder Lemon Sparkle 2kg                  4    2 $    81.12
+25176637    Winc Height Adj Footrest Blk                         2    1 $    58.58
+25173516    Toilet Brush White And Grey Plastic                  7    1 $    54.95
+25037238    Bio Activ Drain Cleaner 5L                           1    1 $    49.49
+86788877    Spry Bo W/ Triggr 750Ml                              6    1 $    38.34
+18967787    Tape Measure 8m 25mm  Ea                             1    1 $    36.82
+87208844    Fnsh Rglr Rns Aid 500Ml                              3    2 $    35.61
+18880174    Kleenex Anti-Bacterial Wet Wipes Pkt15              11    2 $    33.22
+86789326    Cleera Euca Clenr Dsnfctnt Deodrsr 5L                3    1 $    31.59
+25079236    Germ Buster Antibac Hnd San 350ml Pump               4    1 $    30.36
+87271988    Wypall 94152 Xtra Perf 106 Wpr/Rl Blu                1    1 $    29.37
+86854263    Cleera Lmon Dshwshng Dtrgnt 5L                       2    1 $    21.26
+25163004    Antibac Surface Wipes Pack 100                       4    1 $    19.80
+10006618    Winc AA Prem Alkal Batt Bx 24                        3    3 $    19.20
+10006619    Winc AAA Prem Alkal Batt Bx 24                       3    3 $    19.20
+86895884    Softwash 1507088 H/Wash Antbac Pmp 250ml             6    1 $    14.58
+19018235    Fnsh Dwasher Clnr Lmon 250ml Twn Pk                  1    1 $    13.64
+10006625    Winc D Prem Alkal Batt Bx 10                         1    1 $    12.01
+10006624    Winc C Prem Alkal Batt Bx 12                         1    1 $    11.81
+25171728    Connoisseur Flat Ssteel Teaspoon Box24               1    1 $    11.74
+86792811    Cleera Win&Glss Clnr Triggr 750ml                    1    1 $     9.56
+87211228    Eth Chce Dshwng Liqd 1Litre                          4    2 $     9.08
+25095030    Palmolive Hand San Cherry Blos 200ml                 1    1 $     6.82
+86794343    Windex Glass Cleaner Trigger 750ml                   1    1 $     6.80
+87074579    WINC Ppr Pte Lunch Uncted 175mm Pk50                 1    1 $     4.29
+86529457    Cling Wp Disp Glad 33Cmx30M Rl                       1    1 $     3.87
+18777000    A/wick Aerosol Vanila Air Freshnr 237g               1    1 $     2.77
+
+--- Destination NA 72112  (Chemical / pesticide)  Total $15.56
+Item Code   Description                                        Qty  Occ     Amount
+86777177    Mortein Fly Spry Fast Knockdown 300G                 2    2 $    15.56
+
+--- Destination NA 72113  (Safety equipment / PPE)  Total $-15.82
+Item Code   Description                                        Qty  Occ     Amount
+25206076    Prosafe Black Nitrile Glove M Bx100                  1    1 $     7.75
+18989091    MV117 First AidVest Yellow Lrg Ea                    1    1 $   -23.57
+
+--- Destination NA 73512  (Hospitality refreshments (Reason B))  Total $1,318.86
+Item Code   Description                                        Qty  Occ     Amount
+25184215    Moccona Med Roast Instant Coff 1kg Tin               7    6 $   466.30
+25173703    Cuppa Cartel The Don Coffee Beans 1kg                4    4 $   213.56
+86530711    Nestle Compl Mix Ht Choc 2Kg Tin                     4    4 $   176.76
+86669584    Vittoria Coff Esprso Bns 1Kg Pk                      3    1 $   130.05
+25123638    Zooper Dooper Ice Blocks Cosmic Pk24                 9    5 $    72.81
+85202000    Moccona Med Roast Instant Coff 500G Tin              2    1 $    64.80
+25129026    Sunshine Raw Sugar 2kg                               6    4 $    30.48
+25170915    Delonghi Coffee Descaler 500ml                       1    1 $    30.34
+25163283    Nestle Milo 700g Tin                                 2    1 $    26.16
+25233608    Zooper Dooper Ice Blocks Lemonade Pk 24              2    2 $    19.92
+25128351    ISM White Sugar 1kg                                  8    4 $    17.36
+87205990    Lipton Grntea Bx 100                                 1    1 $    16.39
+86579747    Saxa Ground Black Pepper 50g                         2    2 $    14.72
+86547541    Lipton Tbg Pk100                                     1    1 $     8.17
+86722017    Tbl Slt Saxa 750Gm Pk                                1    1 $     7.56
+86712372    Sce Barbecue Sqze Bo 500Ml Masterfoods               1    1 $     6.50
+86712373    Sce Tomato Sqze Bo 500Ml Masterfoods                 1    1 $     6.50
+18881747    Zoetic F T Org Chai Tea Bags Pkt 25                  1    1 $     6.40
+86579748    Saxa Table Salt Picnic Pack 125g                     1    1 $     4.08
+
+--- Destination NA 73564  (IT equipment / accessories)  Total $1,732.31
+Item Code   Description                                        Qty  Occ     Amount
+25174532    cms 1.2m Apl Lghtng To USB Mfi Cbl - Wt             14    4 $   250.46
+25191165    Verbatim Keyb Mouse Blk                              6    4 $   191.34
+87144065    Kensington Smrtft EQ Esyrsr Coolng Stnd              2    1 $   159.88
+18999854    Logitech Wireless Combo Mk270R                       2    1 $   137.64
+25212418    Com 1.2m Grs Cble Usba To Usbc Blk                   8    1 $   123.52
+25164503    Cygnett Dashview  Uni Adj Car Mnt                    4    3 $   116.44
+18978415    Verbatim Sdxc Card 64gb Class 10                     5    1 $    90.60
+25232965    Mk250 Bluetooth Keyb                                 2    1 $    73.14
+18977474    Kensington Ls150 15.6In Backpack Blk                 1    1 $    72.48
+25175347    Knsgtn Pro Fit Left-hnded Ergo Wless Mse             1    1 $    71.79
+25228794    Kens H1050 Eq Btooth Onear Hdset                     1    1 $    69.01
+18624480    Vbatm Store-N-Go Pinstripe Usb Drve 32Gb             7    1 $    67.69
+25050075    Comsol Usb A To Usb C Cbl 1.2m                       3    1 $    42.33
+87019002    Winc Gel Kb Wrst Rest Blk                            2    2 $    37.80
+25165025    Comsol 1.5m USB-C Ml To USB-C Ml Cbl                 2    1 $    37.70
+87019004    Winc Mse Pd W/ Gel Wrst Rest Blk                     3    2 $    34.47
+18932249    Logitech Mk220 Wireless Combo                        1    1 $    34.20
+19001021    Kensington Wireless Mouse For Life                   1    1 $    34.09
+18752565    Logitech M235 Wireless Mouse Colt Grey               1    1 $    34.04
+25194800    Energizer Lithium Battery 2032 Coin 4pk              2    1 $    30.70
+25202882    Logitech M240 Wireless Bt Mouse                      1    1 $    20.89
+18890727    Winc Mse Pd w/ Rbbr Bckng - Blk                      1    1 $     2.10
+
+==============================================================================
+OK ITEMS (genuine stationery — kept in 73563)
+==============================================================================
+
+Total: $2,455.98 across 135 lines and 81 distinct items.
+
+Item Code   Description                                        Qty  Occ     Amount
+25198200    Winc Premium CN A4 80gsm White Ctn5                 14    4 $   392.00
+25094782    SDS Binder A4 2 D-Ring 40mm Yel                      6    1 $   266.28
+19796100    Winc 2026 Hardcover Diary A4 DTP Navy               24    2 $   196.32
+25198202    Winc Premium CN A3 80gsm White Ctn3                  3    3 $   108.90
+19977300    Winc 2026 Hardcover Diary A5 DTP Navy               20    2 $    91.60
+25093092    Wall Mount Brochure Hold DL 4 Pocket SBS             2    1 $    90.26
+18885357    Winc Spiral Ntebk No. 337 A5 Prf 200 Pgs            21    5 $    67.41
+86701308    Winc Spiral Ntebk No. 336 A4 240 Pgs                16    4 $    55.85
+25093152    Marbig Prof Clpbrd A4 Storage Case Blk               3    2 $    54.99
+25219446    Rapid Stapler Long Arm                               1    1 $    50.51
+87215079    Winc Rtrct Blpnt Pn Blu 1.0mm Pk 12                 15   10 $    49.65
+86713670    Winc A3 80 Mc Glss Lamtng Pouches Pk100              3    2 $    49.38
+25088777    Keba Clpbrd A3 With Pen Hldr Blk                     2    1 $    44.08
+10003788    Winc Recld FlipChrt Pad 600x850 50sh Pk2             1    1 $    40.71
+87215078    Winc Rtrct Blpnt Pn Blk 1.0mm Pk 12                 12    7 $    39.72
+86860543    Mbg Sheet Protect A4 H/wgt Bx100                     4    2 $    38.32
+86713671    Winc A4 80 Mc Glss Lamtng Pouches Pk100              3    2 $    34.62
+86714375    Winc Self Adh Ntes Pastel 76X76mm Pkt5               9    5 $    33.39
+18892646    Artline 200 Mrkr Fin 0.4mm Blk                      13    2 $    29.90
+25147632    Deflecto Sign Menu Prtrt Wall Mount A3               1    1 $    29.25
+10003777    Winc 8.4mmx12m Perm Glue Tape Roller                10    1 $    29.20
+19031468    Pstit Sup Stky Miami Pop-Up 76X76mm Pk6              1    1 $    29.04
+9150600     Qrtet Wbrd Clnr Spirit Based 500ml                   4    1 $    26.48
+10006999    Spirax 812 A5 120Pg Recyled Notebook                11    2 $    26.18
+18680621    Winc Chsl Tip Hghlghtr Assrt Col Bx 5                4    3 $    25.76
+25086865    Winc Clipboard A4 Trnsprnt Clear                    12    1 $    25.20
+3488100     Winc Spiral Ntebk No.334 A4 120 Pg                  11    2 $    23.65
+25136042    Corp Exp Card Holder Retrac Blk                     15    2 $    23.55
+86602621    Spirax 571 Notebook A5 300Pg                         6    2 $    22.92
+86823374    Rexel Fuel Card Holder/Key Ring Pkt 10               1    1 $    22.52
+25176572    Newspnt Wrap Roll 610mmx150m 45gsm White             1    1 $    18.40
+74926000    Mrbg Desk Stapler Half Strip Blk/Grey                2    1 $    17.86
+20430300    Winc 2026 Hardcover Diary A4 WTV Navy                3    1 $    16.44
+25090900    Winc Clipfolder A4 W/Inside Pokt Blk                 5    2 $    16.25
+25170068    Gorilla Mounting Tape Blk 25.4mm x 1.52m             1    1 $    15.39
+86760467    Winc 5mmx8m Dual Angle Crrctn Tpe                   12    1 $    14.40
+25087818    Uni Pwe8k Chalk Mker Chsl Tip Lht Blu Ea             2    1 $    14.12
+20566200    Winc 2026 Hardcover Diary A5 WTV Navy                5    2 $    13.90
+87079069    Winc Hc Spral Ntbk A4 Blk 200 Pgs                    4    1 $    12.60
+18980340    Winc 2026 Wiro Diary A5 Day to Page Blue             1    1 $    12.09
+87161150    Mbg 43150 Clpbrd A3 Msnite LS LgeClp Brw             1    1 $    12.00
+35469902    Winc Lever Arch File PP A4 Black                     2    1 $    11.88
+86657340    Canon Ls82Z Dsktop Calc 8 Digit Dual Pwr             1    1 $    11.11
+86677531    Winc 23450 Dul Pwr 12 Dgt Dsktp Clcltr               1    1 $    10.79
+25085755    Off El Black Wb Markers Bullet Tip Bx12              1    1 $    10.69
+38867600    Mbg Enviro 80022E Arcv Stor Box Fix Lid              2    1 $    10.62
+18949526    Winc Rtrct Blpnt Pn Blk 0.7mm Pk 12                  4    4 $    10.40
+87215081    Winc Rtrct Blpnt Pn Red 1.0mm Pk 12                  3    2 $     9.93
+18805289    Marbig 215mm Large Scissors Black Handle             3    1 $     9.93
+25090983    Winc Fastener Strip Hook & Loop                      1    1 $     9.62
+86822088    WE Whtbrd Mkr Bllt Asst Cols Set4                    2    1 $     9.58
+18648710    Winc HFC Free Air Duster 400ml                       2    1 $     9.02
+25090887    Winc Clipboard A4 Trnsprnt Neon Yell                 4    1 $     8.40
+25090893    Winc Clipboard A4 Trnsprnt Neon Pink                 4    1 $     8.40
+87215297    Winc Perm Mrkr Bllt Tp Blk Bx 12                     1    1 $     8.31
+86823400    Kevron 46944 Key Tags Asst Flouro Pkt 10             1    1 $     8.07
+18949527    Winc Rtrct Blpnt Pn Blu 0.7mm Pk 12                  3    3 $     7.80
+86540972    Spirax 595 Nbk A4 Side Opening 120 Pages             4    1 $     7.68
+86695456    Bostik Blu Tack Rsble Adh 75G                        3    2 $     7.56
+18835492    Winc Chsl Tip Hghlghtr Yllw Bx 5                     1    1 $     7.47
+86815269    Winc Whtbrd Spry Clnr 250ml                          3    2 $     6.93
+87161434    Winc Chsl Tp Rcyc Hghlghtr Assrt Pk 6                2    1 $     6.42
+25147626    Deflecto Sign Menu Prtrt Wall Mount A4               1    1 $     6.40
+35469909    Winc Lever Arch File PP A4 Orange                    1    1 $     5.94
+35469905    Winc Lever Arch File PP A4 Red                       1    1 $     5.94
+35469904    Winc Lever Arch File PP A4 Blue                      1    1 $     5.94
+35469908    Winc Lever Arch File PP A4 Yellow                    1    1 $     5.94
+35469906    Winc Lever Arch File PP A4 Green                     1    1 $     5.94
+87142914    Winc Glue Stick 20g                                  5    1 $     5.60
+86714374    Winc Self Adh Ntes Neon 76X76mm Pkt5                 1    1 $     5.56
+25091151    Winc Doc Wallet PP Button A4 Purple                  5    1 $     5.55
+25136045    Corp Exp Card Holder Retractable Wht                 3    1 $     4.65
+86511444    Winc Earth Insert Lev Arch File A4 White             1    1 $     4.55
+25091004    Dispenser Tape Omax Dsktop Lge                       1    1 $     3.99
+25085719    Winc Staples 26/6 BX/5000                            2    1 $     3.20
+25086863    Scissors Gp Omax Smart Cut Ssteel 195mm              1    1 $     2.98
+86762449    Winc Crystal Clear Tape 24Mmx66M                     2    1 $     2.82
+25085729    Winc Canister Sharpener 1 Hole Astd Clrs             2    1 $     2.68
+18999146    Winc Rnd Magnets 25mm Black Pk 10                    1    1 $     2.44
+25086820    Adhesive Max-tack Reusable 75gm Blu                  1    1 $     2.15
+18894989    Westcott Microban Kids Scissor 6 Inch                1    1 $     2.01
+
+==============================================================================
+PER-INVOICE SUMMARY
+==============================================================================
+
+WINC Invoice   PK            Total $       OK $  Miscode $  Miscode %
+9901690129     PK000001   $   448.22 $    72.28 $   375.94      83.9%
+9901699602     PK000001   $   307.03 $   133.41 $   173.62      56.5%
+9901699602     PK000086   $   151.46 $   151.46 $     0.00       0.0%
+9901709054     PK000001   $   214.20 $    19.20 $   195.00      91.0%
+9901709054     PK000086   $   143.30 $    98.37 $    44.93      31.4%
+9901718415     PK000001   $   974.16 $   512.49 $   461.67      47.4%
+9901718415     PK000086   $   118.70 $   118.70 $     0.00       0.0%
+9901727996     PK000001   $   520.73 $   128.80 $   391.93      75.3%
+9901727996     PK000086   $   255.71 $   183.99 $    71.72      28.0%
+9901737473     PK000001   $   518.08 $    88.56 $   429.52      82.9%
+9901737473     PK000086   $   111.58 $     7.90 $   103.68      92.9%
+9901746332     PK000001   $   380.33 $   114.56 $   265.77      69.9%
+9901746332     PK000086   $   217.53 $    46.92 $   170.61      78.4%
+9901754676     PK000001   $   801.77 $    44.01 $   757.76      94.5%
+9901754676     PK000086   $   148.22 $    21.63 $   126.59      85.4%
+9901773647     PK000001   $   873.22 $   657.62 $   215.60      24.7%
+9901773647     PK000086   $    77.24 $    56.08 $    21.16      27.4%
+
+==============================================================================
+RECOMMENDED ACTIONS
+==============================================================================
+
+1. Process the recode journal (TechOne PK ledger) per the workbook Recode
+   Journal sheet. Aggregated batch posting, balance $0.00, narratives within
+   the 40-character cap per field. 73512 lines require Reason code B (Staff
+   Morning/Afternoon Tea on-site, no FBT).
+
+2. Fix at source. Liaise with depot ordering staff on the WINC standing order
+   process. Items outside stationery scope must use the correct cost-centre
+   code at order time, not 10179376 / 10428958.
+
+3. Add WINC standing-order coding rules to the Parks coding aide-memoire:
+     Coffee, tea, sugar, refreshments       -> 73512 (Reason B on-site)
+     USB cables, mice, keyboards, headsets  -> 73564
+     Cleaning, batteries, kitchen, PPE      -> 72111 (or 72113 if PPE)
+     Fly spray, herbicide, chemicals        -> 72112
+     Pens, paper, files, diaries, post-its  -> 73563
+
+4. Re-test next WINC creditor batch (April 2026 onward) to confirm fix.
+
+==============================================================================
+METHODOLOGY AND LIMITATIONS
+==============================================================================
+
+Source: TAXINVOICE sheet of 9 WINC creditor invoices, 249 line items totalling
+$6,261.48 across both Parks accounts. Reconciles to GL AP postings $0.00.
+
+Classification rules:
+  - Default home for an item is 73563 only if it is genuinely stationery.
+  - Generic alkaline batteries (AA/AAA/C/D) routed to 72111 not 73564
+    (unless explicitly tied to IT equipment).
+  - CR2032 coin batteries routed to 73564 (used in keyboards/mice).
+  - Whiteboard accessories (markers, magnets, spray cleaner) kept in 73563
+    on the basis that whiteboards are stationery infrastructure.
+  - Tearoom standing stock routed to 73512 with Reason B on the basis that
+    morning/afternoon tea on-site qualifies under Council's hospitality
+    framework (PDF p68, Scenario 6). Alternative reading is 72111 if Finance
+    prefers - confirm and adjust if needed.
+
+Limitations:
+  - WINC invoice 9901763737 (Feb 2026, $1,240.45 across both PKs) hits GL P9
+    but PDF was not in the upload pack. Same line-item mix likely.
+  - PCard charges (TE004125 $166.40, TE005154 $136.80, TE005250 $352.73) and
+    IN stockroom envelope issues ($109.47 across two reqs) are NOT included
+    in this $3,805.50 recode total. PCard cover slips need separate sighting.
+  - Dollar amounts are GST-exclusive (column AMOUNT on the WINC TAXINVOICE).
+    GST follows the recode automatically through TechOne tax codes.
+
+==============================================================================
+END OF FINDINGS
+==============================================================================

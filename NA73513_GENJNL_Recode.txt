@@ -1,0 +1,25 @@
+LCC PARKS 4090000 - NA 73513 EMPLOYEE REWARD & RECOGNITION - RECODE JOURNAL
+Batch: CN-23167 (PREPARED FOR JOURNAL; Spero decision, no Finance gate)
+Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch nets $0.00.
+Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 9-Jun-2026. Amounts ex-GST. Fields stored as text.
+
+Flair Floral sympathy bouquet ($85.00, Order #1030, 22-Jan-2026, requesting officer Wendy Hoyle, card
+Marissa Dyba) was miscoded to 71111 Full Time Staff (wages) on PK000001. It is a staff bereavement gift,
+which is Employee Reward and Recognition: 73513 (Flowers/Cards/Gifts for employees, infrequent and under
+$300, FBT-exempt, Reason D). Confirmed by Spero. Net-movement recode, PK preserved.
+
+  Source: 1-PK000001-71111  ->  Destination: 1-PK000001-73513   Amount $85.00 (no GST)
+
+LDG | Account number | Fund account | Resource Group | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+--------------------------------------------------------------------------------------------------------------------
+ PK | PK000001    | PK000001    | JOURNAL        | 71111         |   -85.00 | Flair Floral sympathy off 71111        | Order1030 ex 85.00 no GST              | To 73513 emp recognition
+ PK | PK000001    | PK000001    | JOURNAL        | 73513         |    85.00 | Flair Floral sympathy to 73513         | Order1030 ex 85.00 no GST              | From 71111 wages
+
+DIRECTION CHECK: source 71111 leg negative (-85.00, credit), destination 73513 leg positive (+85.00, debit),
+matching the narration. Net = 0.00.
+
+TAX: Flair Floral (Glenys Mercer) ABN 68 064 945 671 checksum PASS, GST-registered. The Order #1030 shows
+$85.00 "Including $0.00 in taxes", so no GST was charged and no input tax credit is claimed; the $85.00 books
+as transacted. Under $300, infrequent, FBT-exempt minor benefit (Reason D).
+
+BATCH NET: 0.00  (BALANCED)

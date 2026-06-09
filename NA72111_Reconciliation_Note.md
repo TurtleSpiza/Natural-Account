@@ -40,3 +40,54 @@ The full 72111 ledger export is now in hand: 364 transaction lines reconciling t
 Support filed in `NA72111_Evidence/`: Officeworks 626529478 invoice and cover slip, Coles and Woolworths milk receipts and slips, Bunnings tax invoice, Steel Post & Rail payment receipt 621. The remaining lines are PENDING in the listing until their receipts are sighted; the untested remainder is now a line-level review, not a held scope item.
 
 Further lines worked (same pass): TE005080 Choice storage tubs $73.35 clears all four limbs (ABN 45 647 301 764 valid, GST $7.34, booked correct), the first 72111 line to clear fully. TE004476 (Bunnings, card ...0429) is correctly split across services: $32.66 and $126.46 already sit on Parks Services svc 20392/PK000022, while the two sighted lines ($259.89 tool trolley and bolts, $40.38 cleaning and cable ties) sit on Depots svc 20151; both have correct GST (ABN 26 008 672 179, $26.00 and $4.04). TE004476 is the contrast that supports the TE004477 recode: the same card and vendor were split to Parks Services here. Open: confirm the two Depots lines are not also Parks Services, and a P&A-register check on the $226 tool trolley. 13 of 364 lines now carry a verdict in the listing.
+
+---
+
+## Addendum, 9-Jun-2026 (Ultimate Motorbikes set sighted; three Trees-PK recodes staged)
+
+The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is now sighted, closing two of the standing GAP rows on the evidence manifest (STIHL, and the PPE/decal source invoices). All five invoices reconcile to the ledger and all four ABNs checksum PASS (Ultimate 91 104 115 095, Woodmans 88 105 899 689, Tennyson 31 110 400 809). Three Trees-section lines (all svc 20241 / PK000055) are confirmed by Spero and staged in the new `NA72111_GENJNL_Recode.txt` as NA-only recodes (PK preserved):
+
+- **ADVANCE X-Light trousers (PIK2270125) $292.09 ex -> 72113 PPE.** A partial recode off a $409.62 mixed invoice; the trousers portion ($321.30 incl) is protective clothing, the STIHL files, wrenches and mixing bottle ($80.29 ex) stay correctly in 72111.
+- **Protective Pants G&U Navy (PIK2267644) $402.59 ex -> 72113 PPE.** A partial recode off a $776.72 mixed invoice; the pants portion ($442.85 incl) is protective clothing, the AS-system charger, battery and Scepter fuel/oil ($303.52 ex) stay in 72111 (advisory only whether the $286 incl battery/charger is P&A).
+- **STIHL GTA 40.0 SET (PIK2267816) $439.68 ex -> 72315 parks P&A.** The whole line; a serialised parks power tool (SN451265196) below the asset threshold, so portable-and-attractive parks equipment.
+
+The recode batch nets $0.00, all narrations within the 40-character cap, direction verified per pair (72111 source credited, destinations debited): $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero (resolves the 72113-vs-72114 question on these lines). The batch stays HELD with the rest of CN-23167.
+
+Two further lines in the same set are sighted but not recoded here: the Tennyson PFS Vehicle Stickers ($335.00 -> 72222) evidence is now in hand but its recode stays held pending the Doc46-vs-AP double-count dedup (Tennyson 27577 is the confirmed overlap), and the Woodmans mulch fork and flexi tub ($54.41) are sub-$200 minor equipment, correct in 72111. The account remains AMBER: NA RED stands at account level on the untested remainder, and the population dedupe is still open.
+
+---
+
+## Addendum, 9-Jun-2026 (Motorcycles R Us PPE staged on directive; Set 2 of the recode)
+
+Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers, Park Services) are confirmed by Spero as motorcycle PPE and staged in Set 2 of `NA72111_GENJNL_Recode.txt`, all to 72113:
+
+- **Doc 10286878 (9-Sep-2025), partial $883.49 ex of $1,169.62.** Four PPE items: LS2 MX701 helmet 2XL $390.90, Tourmax 2 pants 3XL $179.95, Alpinestars Tech 3 boots $234.50, Five Stunt Evo 2 gloves $78.14. The remaining $286.13 ex stays in 72111 (confirmed by Spero, non-PPE).
+- **Doc 10287279 (17-Sep-2025), full line $179.95 ex.** Tourmax 2 motorcycle pants XXL, armoured riding pants. The two Tourmax pants (3XL on 10286878, XXL on 10287279) are distinct sizes on different dates, not a duplicate.
+
+Set 2 totals $1,063.44 ex to 72113; the combined 72111 recode (Set 1 Ultimate + Set 2 Motorcycles R Us) is $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, narrations within the cap, direction verified.
+
+Evidence basis differs from Set 1: the Motorcycles R Us invoices (Doc 10286878, Doc 10287279) are NOT packaged. Set 2 is staged on Spero's line-level directive, with the source invoices carried as GAP rows on the evidence manifest and the evidence and tax limbs unverified (ABN and GST not sighted) until the PDFs are provided. The recode dollars are populated on the directive; per the standing standard they are not evidence-cleared until the source invoices are sighted. The account stays AMBER.
+
+---
+
+## Addendum, 9-Jun-2026 (scrap-plaque sale income reclassified out of 72111; Set 3)
+
+A negative $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-2026) sits as a CREDIT in 72111 on Depots svc 20151 / PK000001. It is sale income wrongly offsetting Parks minor-equipment expense, and it belongs to Cemeteries. Confirmed by Spero and staged in Set 3 of `NA72111_GENJNL_Recode.txt`:
+
+- **Reclass to 64411 Sale of materials (revenue, grp 6, unrestricted) on Cemeteries svc 20451 / PK000402.** Scrap metal is recycled goods, which is what 64411 covers; there is no dedicated scrap account. This is both a natural-account change (72111 expense to 64411 revenue) and a section/PK change (Depots PK000001 to Cemeteries PK000402).
+- **Sign treatment.** The amount moved is a credit (-448.00 income), so the usual expense-recode direction inverts: 72111 is DEBITED +448.00 (lifting the income back out of the expense account, which restores Parks minor-equipment expense by $448), and 64411 is CREDITED -448.00 (booking the revenue in Cemeteries). This is correct double-entry, not a sign-flip; the recode flags it explicitly so it is not mis-read at upload.
+- **Effect.** Net 72111 movement across all three sets is now -$1,749.80 ($2,197.80 expense out to 72113/72315, less the $448.00 income reversed back in as a debit). The $448.00 income leaves Parks 4090000 for the Cemeteries revenue line.
+
+Evidence basis: the scrap-sale source document SC10906 is not packaged, so this is staged on Spero's directive plus the intrinsic ledger evidence (a credit balance in an expense account with a scrap-sale narration). Carried as a GAP row on the evidence manifest until SC10906 is sighted. The -492.80 inc / -448.00 ex / -44.80 GST is a taxable scrap supply; GST treatment follows the original booking. The account stays AMBER.
+
+---
+
+## Addendum, 9-Jun-2026 (Posca markers to 73563; Spero standing directive recorded)
+
+**Standing directive (Spero, 9-Jun-2026).** Anything Spero gives commentary or instruction on overrides the review criteria and is prepared for journal (upload-ready), applied retroactively. A missing source document is recorded for audit but no longer holds a directed line. This is now the operating rule for this batch; the recode files carry the disposition and the directed sets are upload-ready rather than held on evidence sighting.
+
+**Set 4 - Posca paint markers (sighted).** TE004824 Officeworks invoice 624206983 (ABN 36 004 763 526 PASS, Kirsty Quinn, 2-Oct-2025) and the Celeste Fry cover slip are sighted. A partial recode off the $95.57 ex line: the PK8 POSCA PC5M marker pack ($45.16 inc / $41.05 ex) is stationery and moves to 73563 Printing & Stationery; the 3 OTTO acrylic desk risers ($59.97 inc / $54.52 ex) stay in 72111 for now. Set 4 is $41.05 ex to 73563.
+
+The combined 72111 recode is now 14 lines, net 72111 movement -$1,790.85, batch nets $0.00, destinations 72113 +$1,758.12, 72315 +$439.68, 73563 +$41.05, 64411 -$448.00.
+
+**Advisory (not journalled, awaiting instruction).** The 3 OTTO desk risers ($54.52 ex) on this invoice are stands for monitors/laptops; per the desk-component rule (chair and desk components, including desk risers, are 72313) they belong in 72313 Furniture & Fittings, not 72111. Left in place pending Spero's instruction, consistent with the directive that only instructed lines are journalled.

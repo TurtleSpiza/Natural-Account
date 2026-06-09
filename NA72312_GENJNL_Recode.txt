@@ -1,5 +1,5 @@
 LCC PARKS 4090000 - NA 72312 OFFICE & LIBRARY EQUIPMENT - RECODE JOURNAL
-Batch: CN-23167 (held)
+Batch: CN-23167 (PREPARED FOR JOURNAL; Spero decision, no Finance gate. PK000493 Flying Gang validator note stands)
 Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch must net $0.00
 Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 8-Jun-2026.
 Amounts ex-GST. Account and Resource Code stored as text (leading zeros preserved).
