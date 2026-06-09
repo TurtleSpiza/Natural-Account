@@ -45,6 +45,10 @@ Data-quality note: the ledger Details narration reads "Quote RL 48500", which ne
 
 RAG: AMBER. Recode $2,243.09 ex to 72313, same PK000001. Direction firm and fully validated; held only on Finance format acceptance.
 
+## GST status (Limb 4, per-line reconciliation)
+
+Both lines reconcile booked-to-document and carry no GST-free or offshore element. IKEA $218.18 ex with $21.82 GST shown ($240.00 / 11); Empire $2,243.09 ex with $224.31 GST ($2,467.40 / 11). Both are standard-rated taxable supplies, so the booked ex-GST grosses to the invoice at 1.1 and the input tax credit is valid on each. GST status GREEN.
+
 ## Account reconciliation
 
 Ledger total $2,461.27 ex-GST = footer $2,461.27. Reclassified out of 72312: $2,461.27 (both lines). Remaining correctly in 72312: $0.00. The account does not retain a single line.

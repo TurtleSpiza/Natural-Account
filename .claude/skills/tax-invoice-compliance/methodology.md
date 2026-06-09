@@ -177,3 +177,21 @@ Under non-cash (accruals) accounting, that is the first tax period an invoice wa
 If the four years pass without the credit being included in an assessment, the entitlement ceases. The Commissioner has no discretion to extend the limit. Two narrow exceptions apply, see ATO QC 22431.
 
 This skill flags any invoice older than three and a half years as a NOTE-tier concern, since the four-year clock may be close to running out.
+
+## 14.0 Per-line GST-status reconciliation (every line, every account)
+
+GST verification is not a property of an account; it runs on every line of every natural account, alongside correct natural-account, section and employee-PK coding. A booked GL amount sitting at the GST-inclusive figure divided by 1.1 is asserting a 1/11 input tax credit. That assertion only holds where a tax invoice actually charges that GST.
+
+For each ledger line, reconcile the booked treatment against the supplier document:
+
+1. Read the document's actual GST position: GST shown, "GST included $0.00", the per-line taxable flag for mixed supplies (element 7), or no ABN.
+2. Recompute. A taxable line books at incl / 1.1 with GST equal to booked x 0.1; a GST-free or input-taxed line books at the full incl amount with no credit; an offshore supply with no Australian GST carries no credit.
+3. Flag any divergence. The common failure is a GST-free or offshore supply booked at incl / 1.1, which over-claims the credit by 1/11 (see 6.0 and 12.0). The line does not clear Limb 4 until the booked GST equals the document's charged GST.
+
+Three recurring populations carry this risk and must be checked by line, not by account total:
+
+- **Basic food** (milk, bread, plain water): GST-free. Booked at incl / 1.1 is an over-claim. Worked instance: Coles milk on 72111 (TE005080), $12.50 GST-free, booked $11.36, a $1.14 phantom credit.
+- **Offshore suppliers** (overseas booking agents, imported digital services and software): often no Australian GST. No credit unless an Australian tax invoice shows GST. Worked instance: the Booking.com ibis line on 73533.
+- **Mixed supplies**: apportion by the per-line taxable flag; do not gross the whole line.
+
+A clean invoice-total GST reconciliation is necessary but not sufficient: it can still hide a GST-free line booked as taxable. Reconcile per line.
