@@ -133,6 +133,15 @@ The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is sighte
 
 Batch nets $0.00, narrations within the 40-character cap, direction verified: $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero, which resolves the 72113-vs-72114 question on these lines. The STIHL and PPE/decal evidence GAP rows on the manifest are closed. Tennyson 27577 ($335 to 72222) evidence is sighted but its recode stays held pending the Doc46-vs-AP dedup; Woodmans 6429672 ($54.41) is correct in 72111. The account stays AMBER: NA RED holds at account level on the untested remainder, and TE005091 dedup and the Doc46-vs-AP population match are still open. The register 72111 row carries the update; the register total holds at $64,568.41 ex-GST.
 
+## Correction, 9-Jun-2026 (72111 Set 2: Motorcycles R Us PPE staged on directive)
+
+Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers) are confirmed by Spero as motorcycle PPE and staged in Set 2 of `NA72111_GENJNL_Recode.txt`, all to 72113:
+
+- Doc 10286878 (9-Sep-2025), partial $883.49 ex of the $1,169.62 line: LS2 MX701 helmet 2XL $390.90, Tourmax 2 pants 3XL $179.95, Alpinestars Tech 3 boots $234.50, Five Stunt Evo 2 gloves $78.14. The remaining $286.13 ex stays in 72111 (confirmed by Spero).
+- Doc 10287279 (17-Sep-2025), full line $179.95 ex: Tourmax 2 motorcycle pants XXL. The two Tourmax pants (3XL and XXL) are distinct sizes on different dates, not a duplicate.
+
+Set 2 is $1,063.44 ex to 72113; combined with Set 1 (Ultimate), the 72111 recode is now $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, direction verified, narrations within the cap. The evidence basis differs from Set 1: the Motorcycles R Us invoices are NOT packaged, so Set 2 is staged on Spero's line-level directive with the source invoices carried as GAP rows and the evidence and tax limbs unverified (ABN/GST not sighted) until the PDFs arrive. Outstanding document to obtain: the two Motorcycles R Us invoices (Doc 10286878, Doc 10287279). The account stays AMBER; the register total holds at $64,568.41 ex-GST.
+
 ## Environment note, 9-Jun-2026 (provisioning automated)
 
 `setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.

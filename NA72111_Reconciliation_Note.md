@@ -54,3 +54,16 @@ The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is now si
 The recode batch nets $0.00, all narrations within the 40-character cap, direction verified per pair (72111 source credited, destinations debited): $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero (resolves the 72113-vs-72114 question on these lines). The batch stays HELD with the rest of CN-23167.
 
 Two further lines in the same set are sighted but not recoded here: the Tennyson PFS Vehicle Stickers ($335.00 -> 72222) evidence is now in hand but its recode stays held pending the Doc46-vs-AP double-count dedup (Tennyson 27577 is the confirmed overlap), and the Woodmans mulch fork and flexi tub ($54.41) are sub-$200 minor equipment, correct in 72111. The account remains AMBER: NA RED stands at account level on the untested remainder, and the population dedupe is still open.
+
+---
+
+## Addendum, 9-Jun-2026 (Motorcycles R Us PPE staged on directive; Set 2 of the recode)
+
+Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers, Park Services) are confirmed by Spero as motorcycle PPE and staged in Set 2 of `NA72111_GENJNL_Recode.txt`, all to 72113:
+
+- **Doc 10286878 (9-Sep-2025), partial $883.49 ex of $1,169.62.** Four PPE items: LS2 MX701 helmet 2XL $390.90, Tourmax 2 pants 3XL $179.95, Alpinestars Tech 3 boots $234.50, Five Stunt Evo 2 gloves $78.14. The remaining $286.13 ex stays in 72111 (confirmed by Spero, non-PPE).
+- **Doc 10287279 (17-Sep-2025), full line $179.95 ex.** Tourmax 2 motorcycle pants XXL, armoured riding pants. The two Tourmax pants (3XL on 10286878, XXL on 10287279) are distinct sizes on different dates, not a duplicate.
+
+Set 2 totals $1,063.44 ex to 72113; the combined 72111 recode (Set 1 Ultimate + Set 2 Motorcycles R Us) is $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, narrations within the cap, direction verified.
+
+Evidence basis differs from Set 1: the Motorcycles R Us invoices (Doc 10286878, Doc 10287279) are NOT packaged. Set 2 is staged on Spero's line-level directive, with the source invoices carried as GAP rows on the evidence manifest and the evidence and tax limbs unverified (ABN and GST not sighted) until the PDFs are provided. The recode dollars are populated on the directive; per the standing standard they are not evidence-cleared until the source invoices are sighted. The account stays AMBER.

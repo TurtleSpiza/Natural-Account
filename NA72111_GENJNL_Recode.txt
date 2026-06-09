@@ -3,10 +3,10 @@ Batch CN-23167 (HELD). Ledger: PK | Format: GENJNL. Section 4090000, FY26 (26SLA
 Prepared 9-Jun-2026. Amounts ex-GST. Dr positive, Cr negative. Batch nets $0.00.
 PKs preserved as transacted (NA-only recodes). Doc/line fields stored as text.
 
-Three lines confirmed by Spero (9-Jun) against sighted Ultimate Motorbikes tax invoices
-(ABN 91 104 115 095, checksum PASS). All three sit on svc 20241 / PK000055 (Trees).
-Two are PARTIAL recodes off mixed invoices: only the protective-clothing portion moves to 72113,
-the remaining STIHL consumables stay correctly in 72111. The STIHL set moves in full to 72315.
+====================================================================================================
+SET 1 - Ultimate Motorbikes (EVIDENCE SIGHTED). svc 20241 / PK000055 (Trees).
+ABN 91 104 115 095 checksum PASS. Two PARTIAL recodes off mixed invoices (PPE portion only moves);
+one full-line STIHL recode.
 
   Invoice     | Item                          | Incl GST | Ex-GST  | From  | To    | Remainder in 72111
   PIK2270125  | Trousers ADVANCE X-Light XL   | 321.30   | 292.09  | 72111 | 72113 | 80.29 (files/wrenches/bottle)
@@ -22,17 +22,42 @@ LDG | Account number | Fund account | Resource Group | Resource Code | Amount | 
  PK | PK000055    | PK000055    | JOURNAL        | 72111         |  -439.68 | STIHL GTA 40 set off 72111             | PIK2267816 ex 439.68                   | To 72315 parks P&A
  PK | PK000055    | PK000055    | JOURNAL        | 72315         |   439.68 | STIHL GTA 40 set to 72315              | PIK2267816 SN451265196                 | From 72111 P&A
 
-DIRECTION CHECK: each 72111 source leg negative (credit), each destination leg positive (debit),
-matching the narration. Signed sum on 72111 source = -(292.09+402.59+439.68) = -1134.36, equal to the
-stated reclassified total. Destinations: 72113 = +694.68, 72315 = +439.68. Net = 0.00.
+SET 1 subtotal: out of 72111 $1,134.36 ($694.68 to 72113 PPE, $439.68 to 72315 parks P&A). Nets $0.00.
+
+====================================================================================================
+SET 2 - Motorcycles R Us (SPERO DIRECTIVE; source invoices NOT YET SIGHTED). svc 20301 / PK000084
+(Parks and Bushland Rangers, Park Services). Staged on Spero's line-level direction 9-Jun; the
+Motorcycles R Us invoices (Doc 10286878, Doc 10287279) are not packaged, so the evidence and tax
+limbs are GAP until the PDFs are sighted (ABN and GST unverified). All items are motorcycle PPE -> 72113.
+
+  Doc         | Item                          | Ex-GST  | From  | To
+  10286878    | LS2 MX701 helmet 2XL          | 390.90  | 72111 | 72113
+  10286878    | Tourmax 2 pants 3XL           | 179.95  | 72111 | 72113
+  10286878    | Alpinestars Tech 3 boots      | 234.50  | 72111 | 72113
+  10286878    | Five Stunt Evo 2 gloves       |  78.14  | 72111 | 72113
+  10286878 PPE subtotal                       | 883.49  |       |        (remainder $286.13 stays in 72111 per Spero)
+  10287279    | Tourmax 2 motorcycle pants XXL| 179.95  | 72111 | 72113  (whole line)
+
+ PK | PK000084    | PK000084    | JOURNAL        | 72111         |  -883.49 | Moto R Us PPE off 72111                | doc10286878 ex 883.49                  | To 72113 PPE (4 items)
+ PK | PK000084    | PK000084    | JOURNAL        | 72113         |   883.49 | Moto R Us PPE to 72113                 | doc10286878 ex 883.49                  | From 72111 partial
+ PK | PK000084    | PK000084    | JOURNAL        | 72111         |  -179.95 | Moto R Us pants off 72111              | doc10287279 ex 179.95                  | To 72113 PPE
+ PK | PK000084    | PK000084    | JOURNAL        | 72113         |   179.95 | Moto R Us pants to 72113               | doc10287279 ex 179.95                  | From 72111 whole line
+
+SET 2 subtotal: out of 72111 $1,063.44 (all to 72113 PPE). Nets $0.00.
+Note: the two Tourmax pants are distinct items (3XL on doc 10286878, XXL on doc 10287279, different dates),
+not a duplicate. Doc 10286878 is a PARTIAL recode: $883.49 of the $1,169.62 line moves, $286.13 stays in 72111.
+
+====================================================================================================
+DIRECTION CHECK: every 72111 source leg negative (credit), every destination leg positive (debit),
+matching the narration. Signed sum on 72111 source = -2,197.80, equal to the stated reclassified total.
+Destinations: 72113 = +1,758.12, 72315 = +439.68. Net = 0.00.
 
 BATCH NET: 0.00  (BALANCED)
-Reclassified out of 72111: $1,134.36 ($694.68 to 72113 PPE, $439.68 to 72315 parks P&A).
+Reclassified out of 72111: $2,197.80 ($1,758.12 to 72113 PPE, $439.68 to 72315 parks P&A).
+Evidence basis: Set 1 sighted and tax-verified; Set 2 on Spero directive, source invoices pending.
 
-NOT staged here (held / out of scope of this set):
-- 27577 Tennyson PFS Vehicle Stickers $335.00 -> 72222 (printed decals): evidence now sighted (ABN
-  31 110 400 809 PASS), but the recode stays HELD pending the Doc46-vs-AP double-count dedup.
+NOT staged here (held / out of scope):
+- 27577 Tennyson PFS Vehicle Stickers $335.00 -> 72222 (printed decals): evidence sighted (ABN
+  31 110 400 809 PASS), recode HELD pending the Doc46-vs-AP double-count dedup.
 - 6429672 Woodmans mulch fork + flexi tub $54.41: sighted (ABN 88 105 899 689 PASS), sub-$200 minor
   equipment, CORRECT in 72111, no recode.
-- The STIHL consumables and battery/charger remainders left in 72111 are minor equipment, correct as
-  coded; advisory only whether the AS-system battery/charger ($286 incl on PIK2267644) is P&A.
