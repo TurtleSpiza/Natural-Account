@@ -9,6 +9,9 @@ NA72111_Evidence/NA72111_TE005250_Woolworths_Milk_Receipt.pdf,72111,Woolworths m
 NA72111_Evidence/NA72111_TE005531_Coles_Milk_CoverSlip_Receipt.pdf,72111,Coles milk / TE005531,SIGHTED,13.80,GST-free, booked full = correct; amenity not equipment
 NA72111_Evidence/NA72111_TE004477_Bunnings_TaxInvoice.pdf,72111,Bunnings / TE004477,SIGHTED,71.00,Tax invoice ABN 26 008 672 179; GST correct; recode PK to Parks Services 20392/PK000022
 NA72111_Evidence/NA72111_TE004477_SteelPostRail_PaymentReceipt621.pdf,72111,Steel Post & Rail / TE004477,SIGHTED (payment receipt),85.12,Not a tax invoice (inv 11925 needed); $2.02 finance charge input-taxed; recode PK to Parks Services
+NA72111_Evidence/NA72111_TE005080_Choice_StorageTubs.pdf,72111,Choice storage tubs / TE005080,SIGHTED,73.35,Clears all four limbs; ABN 45 647 301 764 valid; GST $7.34 correct
+NA72111_Evidence/NA72111_TE004476_Bunnings_ToolTrolley_285.pdf,72111,Bunnings tool trolley / TE004476,SIGHTED,259.89,GST $26.00 correct; confirm Depots vs Parks Services (batch also on svc 20392); P&A check on $226 trolley
+NA72111_Evidence/NA72111_TE004476_Bunnings_Cleaning_44.pdf,72111,Bunnings cleaning / TE004476,SIGHTED,40.38,GST $4.04 correct; confirm Depots vs Parks Services
 ,72111,Play Safety Australia / TE004477,GAP - NOT SIGHTED,681.82,Receipt outstanding; recode PK to Parks Services 20392/PK000022
 ,72111,STIHL GTA 40 S/N 451265196 source invoice,GAP - NOT SIGHTED,,Asset-threshold + P&A status call (72315)
 ,72111,PPE / signage / fertiliser / decal source invoices,GAP - NOT SIGHTED,,Per-item source invoices for the five 8-Jun AP recode propositions not packaged
