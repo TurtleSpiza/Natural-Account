@@ -1,0 +1,611 @@
+{
+  "count": 101,
+  "service_codes": {
+    "20001": {
+      "service_code": "20001",
+      "service_name": "Parks Branch Management",
+      "section": "Management",
+      "pk": "PK000087"
+    },
+    "20131": {
+      "service_code": "20131",
+      "service_name": "Internal Roads Horticultural Services",
+      "section": "Park Maintenance",
+      "pk": "PK000044"
+    },
+    "20141": {
+      "service_code": "20141",
+      "service_name": "Parks Planning and Management",
+      "section": "Planning Design & Capital Delivery",
+      "pk": "PK000086"
+    },
+    "20151": {
+      "service_code": "20151",
+      "service_name": "Parks Leadership and Administration",
+      "section": "Depots",
+      "pk": "PK000001"
+    },
+    "20161": {
+      "service_code": "20161",
+      "service_name": "Parks Staff Tea Service",
+      "section": "Park Maintenance",
+      "pk": null
+    },
+    "20170": {
+      "service_code": "20170",
+      "service_name": "Contract Mowing - Zone 10",
+      "section": "Park Maintenance",
+      "pk": "PK000427"
+    },
+    "20171": {
+      "service_code": "20171",
+      "service_name": "Zone 11 Mowing",
+      "section": "Park Maintenance",
+      "pk": "PK000401"
+    },
+    "20172": {
+      "service_code": "20172",
+      "service_name": "Zone 12 Mowing",
+      "section": "Park Maintenance",
+      "pk": "PK000396"
+    },
+    "20181": {
+      "service_code": "20181",
+      "service_name": "Internal Parks Landscape Services",
+      "section": "Park Maintenance",
+      "pk": "PK000012"
+    },
+    "20191": {
+      "service_code": "20191",
+      "service_name": "Parks Design & Capital Delivery",
+      "section": "Planning Design & Capital Delivery",
+      "pk": "PK000082"
+    },
+    "20211": {
+      "service_code": "20211",
+      "service_name": "Free Trees Program",
+      "section": "Natural Areas",
+      "pk": "PK000081"
+    },
+    "20221": {
+      "service_code": "20221",
+      "service_name": "Contract Roads Mowing - Main Roads",
+      "section": "Park Maintenance",
+      "pk": "PK000042"
+    },
+    "20222": {
+      "service_code": "20222",
+      "service_name": "Contract Roads Mowing - Private Nature Strip",
+      "section": "Park Maintenance",
+      "pk": "PK000043"
+    },
+    "20231": {
+      "service_code": "20231",
+      "service_name": "CIR Street Trees",
+      "section": "Trees",
+      "pk": "PK000059"
+    },
+    "20241": {
+      "service_code": "20241",
+      "service_name": "Roadside Street Tree Operations",
+      "section": "Trees",
+      "pk": "PK000055"
+    },
+    "20251": {
+      "service_code": "20251",
+      "service_name": "Tip Fees - Marsden Teams",
+      "section": "Park Maintenance",
+      "pk": "PK000053"
+    },
+    "20252": {
+      "service_code": "20252",
+      "service_name": "Roadside Asset Maintenance Repairs",
+      "section": "Park Services",
+      "pk": "PK000054"
+    },
+    "20260": {
+      "service_code": "20260",
+      "service_name": "Roadside Co-ordination and Administration",
+      "section": "Park Maintenance",
+      "pk": "PK000034"
+    },
+    "20261": {
+      "service_code": "20261",
+      "service_name": "Contract Roads Mowing - Zone 1",
+      "section": "Park Maintenance",
+      "pk": "PK000035"
+    },
+    "20266": {
+      "service_code": "20266",
+      "service_name": "Parks Litter Collection Munruben",
+      "section": "Park Maintenance",
+      "pk": "PK000040"
+    },
+    "20267": {
+      "service_code": "20267",
+      "service_name": "Munruben Contracts Mowing",
+      "section": "Park Maintenance",
+      "pk": "PK000041"
+    },
+    "20276": {
+      "service_code": "20276",
+      "service_name": "Contract Roads Landscape Maintenance - Main Roads",
+      "section": "Park Maintenance",
+      "pk": "PK000052"
+    },
+    "20281": {
+      "service_code": "20281",
+      "service_name": "Roadside Street Tree Planting Program",
+      "section": "Trees",
+      "pk": "PK000057"
+    },
+    "20291": {
+      "service_code": "20291",
+      "service_name": "Parks Tree Planting Program",
+      "section": "Trees",
+      "pk": "PK000033"
+    },
+    "20301": {
+      "service_code": "20301",
+      "service_name": "Parks and Bushland Rangers",
+      "section": "Park Services",
+      "pk": "PK000084"
+    },
+    "20302": {
+      "service_code": "20302",
+      "service_name": "Parks Security Services",
+      "section": "Park Services",
+      "pk": "PK000085"
+    },
+    "20311": {
+      "service_code": "20311",
+      "service_name": "Parks Litter Collection Marsden",
+      "section": "Park Maintenance",
+      "pk": "PK000031"
+    },
+    "20317": {
+      "service_code": "20317",
+      "service_name": "Natural Areas - Fire Coordination & Admin",
+      "section": "Natural Areas",
+      "pk": "PK000431"
+    },
+    "20318": {
+      "service_code": "20318",
+      "service_name": "Natural Areas - Environment Levy Coord & Admin",
+      "section": "Natural Areas",
+      "pk": "PK000432"
+    },
+    "20319": {
+      "service_code": "20319",
+      "service_name": "Trees Coordination & Administration",
+      "section": "Trees",
+      "pk": "PK000433"
+    },
+    "20320": {
+      "service_code": "20320",
+      "service_name": "Communities Coordination & Administration",
+      "section": "Natural Areas",
+      "pk": "PK000434"
+    },
+    "20322": {
+      "service_code": "20322",
+      "service_name": "Internal Bushland Operations",
+      "section": "Natural Areas",
+      "pk": "PK000062"
+    },
+    "20331": {
+      "service_code": "20331",
+      "service_name": "BBQ Cleaning - Zone 1",
+      "section": "Park Services",
+      "pk": "PK000025"
+    },
+    "20332": {
+      "service_code": "20332",
+      "service_name": "BBQ Cleaning - Zone 2",
+      "section": "Park Services",
+      "pk": "PK000026"
+    },
+    "20333": {
+      "service_code": "20333",
+      "service_name": "BBQ Cleaning - Zone 3",
+      "section": "Park Services",
+      "pk": "PK000027"
+    },
+    "20341": {
+      "service_code": "20341",
+      "service_name": "Amenities Cleaning - Zone 1",
+      "section": "Park Services",
+      "pk": "PK000028"
+    },
+    "20342": {
+      "service_code": "20342",
+      "service_name": "Amenities Cleaning - Zone 2",
+      "section": "Park Services",
+      "pk": "PK000029"
+    },
+    "20343": {
+      "service_code": "20343",
+      "service_name": "Amenities Cleaning - Zone 3",
+      "section": "Park Services",
+      "pk": "PK000030"
+    },
+    "20351": {
+      "service_code": "20351",
+      "service_name": "Contract Landscape Maintenance - Whole Park",
+      "section": "Park Maintenance",
+      "pk": "PK000013"
+    },
+    "20361": {
+      "service_code": "20361",
+      "service_name": "Parks Coordination and Administration",
+      "section": "Park Services",
+      "pk": "PK000002"
+    },
+    "20362": {
+      "service_code": "20362",
+      "service_name": "Park Services - Coordination & Administration",
+      "section": "Park Services",
+      "pk": "PK000435"
+    },
+    "20371": {
+      "service_code": "20371",
+      "service_name": "Contract Landscape Maintenance - Zone 2",
+      "section": "Park Maintenance",
+      "pk": "PK000014"
+    },
+    "20372": {
+      "service_code": "20372",
+      "service_name": "Contract Landscape Maintenance - Zone 3",
+      "section": "Park Maintenance",
+      "pk": "PK000015"
+    },
+    "20373": {
+      "service_code": "20373",
+      "service_name": "Contract Landscape Maintenance - Zone 4",
+      "section": "Park Maintenance",
+      "pk": "PK000016"
+    },
+    "20374": {
+      "service_code": "20374",
+      "service_name": "Contract Landscape Maintenance - Zone 1",
+      "section": "Park Maintenance",
+      "pk": "PK000017"
+    },
+    "20375": {
+      "service_code": "20375",
+      "service_name": "Contract Landscape Maintenance - Zone 5",
+      "section": "Park Maintenance",
+      "pk": "PK000019"
+    },
+    "20376": {
+      "service_code": "20376",
+      "service_name": "Contract landscaping zone 6",
+      "section": "Park Maintenance",
+      "pk": "PK000473"
+    },
+    "20381": {
+      "service_code": "20381",
+      "service_name": "Parks Tree Operations",
+      "section": "Trees",
+      "pk": "PK000032"
+    },
+    "20391": {
+      "service_code": "20391",
+      "service_name": "Tip Fees - Munruben Teams",
+      "section": "Park Maintenance",
+      "pk": "PK000021"
+    },
+    "20392": {
+      "service_code": "20392",
+      "service_name": "Parks Asset Maint and Repairs",
+      "section": "Park Services",
+      "pk": "PK000022"
+    },
+    "20393": {
+      "service_code": "20393",
+      "service_name": "Beenleigh Town Square Maintenance",
+      "section": "Park Services",
+      "pk": "PK000419"
+    },
+    "20394": {
+      "service_code": "20394",
+      "service_name": "Overnight stays",
+      "section": "Park Services",
+      "pk": "PK000428"
+    },
+    "20395": {
+      "service_code": "20395",
+      "service_name": "Doug Larsen Park",
+      "section": "Park Services",
+      "pk": "PK000442"
+    },
+    "20401": {
+      "service_code": "20401",
+      "service_name": "Fire Management Operations",
+      "section": "Natural Areas",
+      "pk": "PK000068"
+    },
+    "20411": {
+      "service_code": "20411",
+      "service_name": "Bushcare Program",
+      "section": "Natural Areas",
+      "pk": "PK000075"
+    },
+    "20412": {
+      "service_code": "20412",
+      "service_name": "Community Planting Program",
+      "section": "Natural Areas",
+      "pk": "PK000076"
+    },
+    "20421": {
+      "service_code": "20421",
+      "service_name": "Natural Area Tree Operations",
+      "section": "Natural Areas",
+      "pk": "PK000073"
+    },
+    "20422": {
+      "service_code": "20422",
+      "service_name": "Trailcare Coord & Admin",
+      "section": "Natural Areas",
+      "pk": "PK000074"
+    },
+    "20431": {
+      "service_code": "20431",
+      "service_name": "Bushland Rehabilitation Program",
+      "section": "Natural Areas",
+      "pk": "PK000079"
+    },
+    "20432": {
+      "service_code": "20432",
+      "service_name": "Post Burnsite Rehabilitation",
+      "section": "Natural Areas",
+      "pk": "PK000080"
+    },
+    "20440": {
+      "service_code": "20440",
+      "service_name": "Internal Parks Mowing and Turf Services",
+      "section": "Park Maintenance",
+      "pk": "PK000003"
+    },
+    "20441": {
+      "service_code": "20441",
+      "service_name": "Contract Mowing - Zone 1",
+      "section": "Park Maintenance",
+      "pk": "PK000422"
+    },
+    "20442": {
+      "service_code": "20442",
+      "service_name": "Contract Mowing - Zone 2",
+      "section": "Park Maintenance",
+      "pk": "PK000423"
+    },
+    "20443": {
+      "service_code": "20443",
+      "service_name": "Contract Mowing - Zone 3",
+      "section": "Park Maintenance",
+      "pk": "PK000397"
+    },
+    "20444": {
+      "service_code": "20444",
+      "service_name": "Contract Mowing - Zone 4",
+      "section": "Park Maintenance",
+      "pk": "PK000398"
+    },
+    "20445": {
+      "service_code": "20445",
+      "service_name": "Contract Mowing - Zone 5",
+      "section": "Park Maintenance",
+      "pk": "PK000399"
+    },
+    "20446": {
+      "service_code": "20446",
+      "service_name": "Contract Mowing - Zone 6",
+      "section": "Park Maintenance",
+      "pk": "PK000400"
+    },
+    "20447": {
+      "service_code": "20447",
+      "service_name": "Contract Mowing - Zone 7",
+      "section": "Park Maintenance",
+      "pk": "PK000424"
+    },
+    "20448": {
+      "service_code": "20448",
+      "service_name": "Contract Mowing - Zone 8",
+      "section": "Park Maintenance",
+      "pk": "PK000425"
+    },
+    "20449": {
+      "service_code": "20449",
+      "service_name": "Contract Mowing - Zone 9",
+      "section": "Park Maintenance",
+      "pk": "PK000426"
+    },
+    "20450": {
+      "service_code": "20450",
+      "service_name": "Mowing - Commercial Sites",
+      "section": "Park Maintenance",
+      "pk": "PK000410"
+    },
+    "20451": {
+      "service_code": "20451",
+      "service_name": "Cemeteries",
+      "section": "Cemeteries",
+      "pk": "PK000402"
+    },
+    "20452": {
+      "service_code": "20452",
+      "service_name": "Parks Cemeteries - Employee Costs",
+      "section": "Cemeteries",
+      "pk": "PK000439"
+    },
+    "20453": {
+      "service_code": "20453",
+      "service_name": "Green Asset Renewal",
+      "section": "Park Maintenance",
+      "pk": "PK000440"
+    },
+    "20454": {
+      "service_code": "20454",
+      "service_name": "Darlington Parklands",
+      "section": "Park Services",
+      "pk": "PK000441"
+    },
+    "20455": {
+      "service_code": "20455",
+      "service_name": "Contract Mowing Cemeteries",
+      "section": "Cemeteries",
+      "pk": null
+    },
+    "20461": {
+      "service_code": "20461",
+      "service_name": "Sports Field Mowing and Renovation Program",
+      "section": "Park Maintenance",
+      "pk": null
+    },
+    "20471": {
+      "service_code": "20471",
+      "service_name": "Tracks and Trails Program",
+      "section": "Natural Areas",
+      "pk": "PK000078"
+    },
+    "20481": {
+      "service_code": "20481",
+      "service_name": "Playground Maintenance & Repairs",
+      "section": "Park Services",
+      "pk": "PK000023"
+    },
+    "20482": {
+      "service_code": "20482",
+      "service_name": "Shade Sail Maintenance & Repairs",
+      "section": "Park Services",
+      "pk": "PK000024"
+    },
+    "20501": {
+      "service_code": "20501",
+      "service_name": "Admin Centre Grounds - Maintenance",
+      "section": "Park Maintenance",
+      "pk": "PK000011"
+    },
+    "20511": {
+      "service_code": "20511",
+      "service_name": "General Landscape Improvement Fund",
+      "section": "Park Maintenance",
+      "pk": "PK000366"
+    },
+    "20521": {
+      "service_code": "20521",
+      "service_name": "General Landscape Improvement Fund - North",
+      "section": "Park Maintenance",
+      "pk": "PK000368"
+    },
+    "20522": {
+      "service_code": "20522",
+      "service_name": "General Landscape Improvement Fund - South",
+      "section": "Park Maintenance",
+      "pk": "PK000369"
+    },
+    "20551": {
+      "service_code": "20551",
+      "service_name": "Fuel Reduction Burn",
+      "section": "Natural Areas",
+      "pk": "PK000372"
+    },
+    "20561": {
+      "service_code": "20561",
+      "service_name": "Fire Access Line",
+      "section": "Natural Areas",
+      "pk": "PK000373"
+    },
+    "20571": {
+      "service_code": "20571",
+      "service_name": "Wildfire",
+      "section": "Natural Areas",
+      "pk": "PK000374"
+    },
+    "20581": {
+      "service_code": "20581",
+      "service_name": "Restoration Reactive",
+      "section": "Natural Areas",
+      "pk": "PK000375"
+    },
+    "20591": {
+      "service_code": "20591",
+      "service_name": "TrailCare",
+      "section": "Natural Areas",
+      "pk": "PK000376"
+    },
+    "20611": {
+      "service_code": "20611",
+      "service_name": "Weeds (Natural Areas)",
+      "section": "Natural Areas",
+      "pk": "PK000378"
+    },
+    "20621": {
+      "service_code": "20621",
+      "service_name": "Minor Asset Repair (Natural Areas)",
+      "section": "Natural Areas",
+      "pk": "PK000379"
+    },
+    "20631": {
+      "service_code": "20631",
+      "service_name": "Restoration (Natural Areas)",
+      "section": "Natural Areas",
+      "pk": null
+    },
+    "20641": {
+      "service_code": "20641",
+      "service_name": "Mountain Bike Trails",
+      "section": "Natural Areas",
+      "pk": "PK000381"
+    },
+    "20651": {
+      "service_code": "20651",
+      "service_name": "Rubbish (Natural Areas)",
+      "section": "Natural Areas",
+      "pk": "PK000382"
+    },
+    "20661": {
+      "service_code": "20661",
+      "service_name": "ParkCare",
+      "section": "Natural Areas",
+      "pk": "PK000383"
+    },
+    "20662": {
+      "service_code": "20662",
+      "service_name": "Programmed Restoration - Communities",
+      "section": "Natural Areas",
+      "pk": "PK000496"
+    },
+    "20671": {
+      "service_code": "20671",
+      "service_name": "Road Reserves (Natural Areas)",
+      "section": "Natural Areas",
+      "pk": "PK000384"
+    },
+    "20681": {
+      "service_code": "20681",
+      "service_name": "Urban Bushland Maintenance",
+      "section": "Natural Areas",
+      "pk": "PK000385"
+    },
+    "20802": {
+      "service_code": "20802",
+      "service_name": "Water Parks",
+      "section": "Water Parks",
+      "pk": "PK000469"
+    },
+    "20811": {
+      "service_code": "20811",
+      "service_name": "Parks COVID-19",
+      "section": "NA - Not Applicable",
+      "pk": null
+    },
+    "20821": {
+      "service_code": "20821",
+      "service_name": "Parks Disaster Management",
+      "section": "NA - Not Applicable",
+      "pk": null
+    }
+  }
+}

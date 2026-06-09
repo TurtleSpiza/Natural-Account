@@ -1,0 +1,170 @@
+{
+  "1": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "A",
+    "fbt": false,
+    "note": "Work-related purpose — not entertainment"
+  },
+  "2": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "A or B",
+    "fbt": false,
+    "note": "Refreshment, not entertainment"
+  },
+  "3": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "A",
+    "fbt": false,
+    "note": "Work-related purpose"
+  },
+  "4": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "C",
+    "fbt": true,
+    "note": "Social function — FBT applies. BBQ = 73511."
+  },
+  "5": {
+    "account": "73513",
+    "name": "Employee Reward & Recognition",
+    "reason": "D",
+    "fbt": false,
+    "note": "Minor benefit if infrequent — FBT exempt"
+  },
+  "6": {
+    "account": "73513",
+    "name": "Employee Reward & Recognition",
+    "reason": "E",
+    "fbt": true,
+    "note": "Expense benefit ≥$300 — FBT applies"
+  },
+  "7": {
+    "account": "73553",
+    "name": "Promotional Items",
+    "reason": "K",
+    "fbt": false,
+    "note": "FBT exempt — must go via Marketing Branch"
+  },
+  "8": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "B",
+    "fbt": false,
+    "note": "Refreshment only — no FBT"
+  },
+  "9": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "C",
+    "fbt": true,
+    "note": "Social function — FBT applies. All costs including venue, food, entertainment."
+  },
+  "10": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "F",
+    "fbt": false,
+    "note": "Light refreshments with work-related training"
+  },
+  "11": {
+    "account": "73544",
+    "name": "Training & Development",
+    "reason": "F",
+    "fbt": false,
+    "note": "External training — not a hospitality account"
+  },
+  "12": {
+    "account": "73541",
+    "name": "Conferences & Seminar Fees",
+    "reason": "F",
+    "fbt": false,
+    "note": "Registration fees only. Travel and meals are separate accounts."
+  },
+  "13": {
+    "account": "73515",
+    "name": "Presenter and Entertainer Fees",
+    "reason": "L",
+    "fbt": false,
+    "note": "Non-FBT for community events"
+  },
+  "14": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "A",
+    "fbt": false,
+    "note": "Work-related meals at conference — on-site employees only"
+  },
+  "15": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "B",
+    "fbt": false,
+    "note": "Refreshment only — nibbles and morning tea at farewell"
+  },
+  "16": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "C",
+    "fbt": true,
+    "note": "Social function — FBT applies"
+  },
+  "17": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "H",
+    "fbt": true,
+    "note": "Off-site or elaborate meal → 73511. Apply Reason H 4 factors: purpose, food type, timing, location."
+  },
+  "18": {
+    "account": "73512",
+    "name": "Entertainment & Hospitality Non-FBT",
+    "reason": "G",
+    "fbt": false,
+    "note": "Non work-related meal entertainment for guest — 73512"
+  },
+  "19": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "C",
+    "fbt": true,
+    "note": "Alcohol present — FBT applies"
+  },
+  "20": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "H",
+    "fbt": true,
+    "note": "Management team lunch — likely off-site and elaborate. Apply Reason H."
+  },
+  "21": {
+    "account": "73511",
+    "name": "Entertainment & Hospitality FBT",
+    "reason": "H",
+    "fbt": null,
+    "note": "Depends on food and venue — apply Reason H 4 factors to determine 73511 vs 73512"
+  },
+  "22": {
+    "account": "73514",
+    "name": "Employee Functions & Awards",
+    "reason": "D or E",
+    "fbt": true,
+    "note": "FBT applies — lunch or dinner"
+  },
+  "23": {
+    "account": "7B221",
+    "name": "Internal Catering — FBT",
+    "reason": "C",
+    "fbt": true,
+    "note": "LEC/Logan Metro InSports — FBT incurs. Invoice must detail purpose, attendees, food/drink."
+  },
+  "24": {
+    "account": "7B222",
+    "name": "Internal Catering — Non-FBT",
+    "reason": "A or B or F",
+    "fbt": false,
+    "note": "LEC/Logan Metro InSports — no FBT. Invoice must detail purpose, attendees, food/drink."
+  }
+}

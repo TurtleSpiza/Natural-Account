@@ -1,0 +1,49 @@
+{
+  "Natural Areas": {
+    "coordinator": "Marisse Dyba (Natural Areas Coordinator)",
+    "contacts": [
+      "Clayton Te Maipi",
+      "Adam Barter"
+    ]
+  },
+  "Park Maintenance": {
+    "coordinator": "Gregory Birkett (Parks Maintenance Coordinator)",
+    "contacts": [
+      "Brad Powell (Parks Services Coordinator)"
+    ]
+  },
+  "Trees": {
+    "coordinator": "Dean Mawby (Tree Services Coordinator)",
+    "contacts": []
+  },
+  "Park Services": {
+    "coordinator": "Brad Powell (Parks Services Coordinator)",
+    "contacts": [
+      "Nabita Bishop (Park Asset Maintenance Supervisor)"
+    ]
+  },
+  "Planning Design & Capital Delivery": {
+    "coordinator": "Caroline King (Manager Parks Planning Design & Capital Delivery)",
+    "contacts": [
+      "Dan O'Brien (Parks Asset Management Lead)"
+    ]
+  },
+  "Management": {
+    "coordinator": "Anita Moore (General Manager Parks — Acting)",
+    "contacts": []
+  },
+  "Depots": {
+    "coordinator": "Brad Powell (Parks Services Coordinator)",
+    "contacts": []
+  },
+  "Cemeteries": {
+    "coordinator": "Brad Powell (Parks Services Coordinator)",
+    "contacts": [
+      "Nabita Bishop (Park Asset Maintenance Supervisor)"
+    ]
+  },
+  "Water Parks": {
+    "coordinator": "Brad Powell (Parks Services Coordinator)",
+    "contacts": []
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "source": "LCC_Service_Section_Map__2_.csv (May 2026 canonical)",
+  "count": 101,
+  "service_codes": {
+    "20001": {
+      "name": "Parks Branch Management",
+      "pk": "PK000087",
+      "section": "Management"
+    },
+    "20131": {
+      "name": "Internal Roads Horticultural Services",
+      "pk": "PK000044",
+      "section": "Park Maintenance"
+    },
+    "20141": {
+      "name": "Parks Planning and Management",
+      "pk": "PK000086",
+      "section": "Planning Design & Capital Delivery"
+    },
+    "20151": {
+      "name": "Parks Leadership and Administration",
+      "pk": "PK000001",
+      "section": "Depots"
+    },
+    "20161": {
+      "name": "Parks Staff Tea Service",
+      "pk": "",
+      "section": "Park Maintenance"
+    },
+    "20170": {
+      "name": "Contract Mowing - Zone 10",
+      "pk": "PK000427",
+      "section": "Park Maintenance"
+    },
+    "20171": {
+      "name": "Zone 11 Mowing",
+      "pk": "PK000401",
+      "section": "Park Maintenance"
+    },
+    "20172": {
+      "name": "Zone 12 Mowing",
+      "pk": "PK000396",
+      "section": "Park Maintenance"
+    },
+    "20181": {
+      "name": "Internal Parks Landscape Services",
+      "pk": "PK000012",
+      "section": "Park Maintenance"
+    },
+    "20191": {
+      "name": "Parks Design & Capital Delivery",
+      "pk": "PK000082",
+      "section": "Planning Design & Capital Delivery"
+    },
+    "20211": {
+      "name": "Free Trees Program",
+      "pk": "PK000081",
+      "section": "Natural Areas"
+    },
+    "20221": {
+      "name": "Contract Roads Mowing - Main Roads",
+      "pk": "PK000042",
+      "section": "Park Maintenance"
+    },
+    "20222": {
+      "name": "Contract Roads Mowing - Private Nature Strip",
+      "pk": "PK000043",
+      "section": "Park Maintenance"
+    },
+    "20231": {
+      "name": "CIR Street Trees",
+      "pk": "PK000059",
+      "section": "Trees"
+    },
+    "20241": {
+      "name": "Roadside Street Tree Operations",
+      "pk": "PK000055",
+      "section": "Trees"
+    },
+    "20251": {
+      "name": "Tip Fees - Marsden Teams",
+      "pk": "PK000053",
+      "section": "Park Maintenance"
+    },
+    "20252": {
+      "name": "Roadside Asset Maintenance Repairs",
+      "pk": "PK000054",
+      "section": "Park Services"
+    },
+    "20260": {
+      "name": "Roadside Co-ordination and Administration",
+      "pk": "PK000034",
+      "section": "Park Maintenance"
+    },
+    "20261": {
+      "name": "Contract Roads Mowing - Zone 1",
+      "pk": "PK000035",
+      "section": "Park Maintenance"
+    },
+    "20266": {
+      "name": "Parks Litter Collection Munruben",
+      "pk": "PK000040",
+      "section": "Park Maintenance"
+    },
+    "20267": {
+      "name": "Munruben Contracts Mowing",
+      "pk": "PK000041",
+      "section": "Park Maintenance"
+    },
+    "20276": {
+      "name": "Contract Roads Landscape Maintenance - Main Roads",
+      "pk": "PK000052",
+      "section": "Park Maintenance"
+    },
+    "20281": {
+      "name": "Roadside Street Tree Planting Program",
+      "pk": "PK000057",
+      "section": "Trees"
+    },
+    "20291": {
+      "name": "Parks Tree Planting Program",
+      "pk": "PK000033",
+      "section": "Trees"
+    },
+    "20301": {
+      "name": "Parks and Bushland Rangers",
+      "pk": "PK000084",
+      "section": "Park Services"
+    },
+    "20302": {
+      "name": "Parks Security Services",
+      "pk": "PK000085",
+      "section": "Park Services"
+    },
+    "20311": {
+      "name": "Parks Litter Collection Marsden",
+      "pk": "PK000031",
+      "section": "Park Maintenance"
+    },
+    "20317": {
+      "name": "Natural Areas - Fire Coordination & Admin",
+      "pk": "PK000431",
+      "section": "Natural Areas"
+    },
+    "20318": {
+      "name": "Natural Areas - Environment Levy Coord & Admin",
+      "pk": "PK000432",
+      "section": "Natural Areas"
+    },
+    "20319": {
+      "name": "Trees Coordination & Administration",
+      "pk": "PK000433",
+      "section": "Trees"
+    },
+    "20320": {
+      "name": "Communities Coordination & Administration",
+      "pk": "PK000434",
+      "section": "Natural Areas"
+    },
+    "20322": {
+      "name": "Internal Bushland Operations",
+      "pk": "PK000062",
+      "section": "Natural Areas"
+    },
+    "20331": {
+      "name": "BBQ Cleaning - Zone 1",
+      "pk": "PK000025",
+      "section": "Park Services"
+    },
+    "20332": {
+      "name": "BBQ Cleaning - Zone 2",
+      "pk": "PK000026",
+      "section": "Park Services"
+    },
+    "20333": {
+      "name": "BBQ Cleaning - Zone 3",
+      "pk": "PK000027",
+      "section": "Park Services"
+    },
+    "20341": {
+      "name": "Amenities Cleaning - Zone 1",
+      "pk": "PK000028",
+      "section": "Park Services"
+    },
+    "20342": {
+      "name": "Amenities Cleaning - Zone 2",
+      "pk": "PK000029",
+      "section": "Park Services"
+    },
+    "20343": {
+      "name": "Amenities Cleaning - Zone 3",
+      "pk": "PK000030",
+      "section": "Park Services"
+    },
+    "20351": {
+      "name": "Contract Landscape Maintenance - Whole Park",
+      "pk": "PK000013",
+      "section": "Park Maintenance"
+    },
+    "20361": {
+      "name": "Parks Coordination and Administration",
+      "pk": "PK000002",
+      "section": "Park Services"
+    },
+    "20362": {
+      "name": "Park Services - Coordination & Administration",
+      "pk": "PK000435",
+      "section": "Park Services"
+    },
+    "20371": {
+      "name": "Contract Landscape Maintenance - Zone 2",
+      "pk": "PK000014",
+      "section": "Park Maintenance"
+    },
+    "20372": {
+      "name": "Contract Landscape Maintenance - Zone 3",
+      "pk": "PK000015",
+      "section": "Park Maintenance"
+    },
+    "20373": {
+      "name": "Contract Landscape Maintenance - Zone 4",
+      "pk": "PK000016",
+      "section": "Park Maintenance"
+    },
+    "20374": {
+      "name": "Contract Landscape Maintenance - Zone 1",
+      "pk": "PK000017",
+      "section": "Park Maintenance"
+    },
+    "20375": {
+      "name": "Contract Landscape Maintenance - Zone 5",
+      "pk": "PK000019",
+      "section": "Park Maintenance"
+    },
+    "20376": {
+      "name": "Contract landscaping zone 6",
+      "pk": "PK000473",
+      "section": "Park Maintenance"
+    },
+    "20381": {
+      "name": "Parks Tree Operations",
+      "pk": "PK000032",
+      "section": "Trees"
+    },
+    "20391": {
+      "name": "Tip Fees - Munruben Teams",
+      "pk": "PK000021",
+      "section": "Park Maintenance"
+    },
+    "20392": {
+      "name": "Parks Asset Maint and Repairs",
+      "pk": "PK000022",
+      "section": "Park Services"
+    },
+    "20393": {
+      "name": "Beenleigh Town Square Maintenance",
+      "pk": "PK000419",
+      "section": "Park Services"
+    },
+    "20394": {
+      "name": "Overnight stays",
+      "pk": "PK000428",
+      "section": "Park Services"
+    },
+    "20395": {
+      "name": "Doug Larsen Park",
+      "pk": "PK000442",
+      "section": "Park Services"
+    },
+    "20401": {
+      "name": "Fire Management Operations",
+      "pk": "PK000068",
+      "section": "Natural Areas"
+    },
+    "20411": {
+      "name": "Bushcare Program",
+      "pk": "PK000075",
+      "section": "Natural Areas"
+    },
+    "20412": {
+      "name": "Community Planting Program",
+      "pk": "PK000076",
+      "section": "Natural Areas"
+    },
+    "20421": {
+      "name": "Natural Area Tree Operations",
+      "pk": "PK000073",
+      "section": "Natural Areas"
+    },
+    "20422": {
+      "name": "Trailcare Coord & Admin",
+      "pk": "PK000074",
+      "section": "Natural Areas"
+    },
+    "20431": {
+      "name": "Bushland Rehabilitation Program",
+      "pk": "PK000079",
+      "section": "Natural Areas"
+    },
+    "20432": {
+      "name": "Post Burnsite Rehabilitation",
+      "pk": "PK000080",
+      "section": "Natural Areas"
+    },
+    "20440": {
+      "name": "Internal Parks Mowing and Turf Services",
+      "pk": "PK000003",
+      "section": "Park Maintenance"
+    },
+    "20441": {
+      "name": "Contract Mowing - Zone 1",
+      "pk": "PK000422",
+      "section": "Park Maintenance"
+    },
+    "20442": {
+      "name": "Contract Mowing - Zone 2",
+      "pk": "PK000423",
+      "section": "Park Maintenance"
+    },
+    "20443": {
+      "name": "Contract Mowing - Zone 3",
+      "pk": "PK000397",
+      "section": "Park Maintenance"
+    },
+    "20444": {
+      "name": "Contract Mowing - Zone 4",
+      "pk": "PK000398",
+      "section": "Park Maintenance"
+    },
+    "20445": {
+      "name": "Contract Mowing - Zone 5",
+      "pk": "PK000399",
+      "section": "Park Maintenance"
+    },
+    "20446": {
+      "name": "Contract Mowing - Zone 6",
+      "pk": "PK000400",
+      "section": "Park Maintenance"
+    },
+    "20447": {
+      "name": "Contract Mowing - Zone 7",
+      "pk": "PK000424",
+      "section": "Park Maintenance"
+    },
+    "20448": {
+      "name": "Contract Mowing - Zone 8",
+      "pk": "PK000425",
+      "section": "Park Maintenance"
+    },
+    "20449": {
+      "name": "Contract Mowing - Zone 9",
+      "pk": "PK000426",
+      "section": "Park Maintenance"
+    },
+    "20450": {
+      "name": "Mowing - Commercial Sites",
+      "pk": "PK000410",
+      "section": "Park Maintenance"
+    },
+    "20451": {
+      "name": "Cemeteries",
+      "pk": "PK000402",
+      "section": "Cemeteries"
+    },
+    "20452": {
+      "name": "Parks Cemeteries - Employee Costs",
+      "pk": "PK000439",
+      "section": "Cemeteries"
+    },
+    "20453": {
+      "name": "Green Asset Renewal",
+      "pk": "PK000440",
+      "section": "Park Maintenance"
+    },
+    "20454": {
+      "name": "Darlington Parklands",
+      "pk": "PK000441",
+      "section": "Park Services"
+    },
+    "20455": {
+      "name": "Contract Mowing Cemeteries",
+      "pk": "",
+      "section": "Cemeteries"
+    },
+    "20461": {
+      "name": "Sports Field Mowing and Renovation Program",
+      "pk": "",
+      "section": "Park Maintenance"
+    },
+    "20471": {
+      "name": "Tracks and Trails Program",
+      "pk": "PK000078",
+      "section": "Natural Areas"
+    },
+    "20481": {
+      "name": "Playground Maintenance & Repairs",
+      "pk": "PK000023",
+      "section": "Park Services"
+    },
+    "20482": {
+      "name": "Shade Sail Maintenance & Repairs",
+      "pk": "PK000024",
+      "section": "Park Services"
+    },
+    "20501": {
+      "name": "Admin Centre Grounds - Maintenance",
+      "pk": "PK000011",
+      "section": "Park Maintenance"
+    },
+    "20511": {
+      "name": "General Landscape Improvement Fund",
+      "pk": "PK000366",
+      "section": "Park Maintenance"
+    },
+    "20521": {
+      "name": "General Landscape Improvement Fund - North",
+      "pk": "PK000368",
+      "section": "Park Maintenance"
+    },
+    "20522": {
+      "name": "General Landscape Improvement Fund - South",
+      "pk": "PK000369",
+      "section": "Park Maintenance"
+    },
+    "20551": {
+      "name": "Fuel Reduction Burn",
+      "pk": "PK000372",
+      "section": "Natural Areas"
+    },
+    "20561": {
+      "name": "Fire Access Line",
+      "pk": "PK000373",
+      "section": "Natural Areas"
+    },
+    "20571": {
+      "name": "Wildfire",
+      "pk": "PK000374",
+      "section": "Natural Areas"
+    },
+    "20581": {
+      "name": "Restoration Reactive",
+      "pk": "PK000375",
+      "section": "Natural Areas"
+    },
+    "20591": {
+      "name": "TrailCare",
+      "pk": "PK000376",
+      "section": "Natural Areas"
+    },
+    "20611": {
+      "name": "Weeds (Natural Areas)",
+      "pk": "PK000378",
+      "section": "Natural Areas"
+    },
+    "20621": {
+      "name": "Minor Asset Repair (Natural Areas)",
+      "pk": "PK000379",
+      "section": "Natural Areas"
+    },
+    "20631": {
+      "name": "Restoration (Natural Areas)",
+      "pk": "",
+      "section": "Natural Areas"
+    },
+    "20641": {
+      "name": "Mountain Bike Trails",
+      "pk": "PK000381",
+      "section": "Natural Areas"
+    },
+    "20651": {
+      "name": "Rubbish (Natural Areas)",
+      "pk": "PK000382",
+      "section": "Natural Areas"
+    },
+    "20661": {
+      "name": "ParkCare",
+      "pk": "PK000383",
+      "section": "Natural Areas"
+    },
+    "20662": {
+      "name": "Programmed Restoration - Communities",
+      "pk": "PK000496",
+      "section": "Natural Areas"
+    },
+    "20671": {
+      "name": "Road Reserves (Natural Areas)",
+      "pk": "PK000384",
+      "section": "Natural Areas"
+    },
+    "20681": {
+      "name": "Urban Bushland Maintenance",
+      "pk": "PK000385",
+      "section": "Natural Areas"
+    },
+    "20802": {
+      "name": "Water Parks",
+      "pk": "PK000469",
+      "section": "Water Parks"
+    },
+    "20811": {
+      "name": "Parks COVID-19",
+      "pk": "",
+      "section": "NA - Not Applicable"
+    },
+    "20821": {
+      "name": "Parks Disaster Management",
+      "pk": "",
+      "section": "NA - Not Applicable"
+    }
+  }
+}

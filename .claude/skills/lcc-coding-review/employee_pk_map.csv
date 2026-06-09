@@ -1,0 +1,115 @@
+emp_id,first,last,section,current_pk,revert_pk,cutover,temp_status,pending_separation,basis
+20680,Peter,Cronin,Park Maintenance,PK000044,PK000044,,single,False,crosswalk
+18325,Brian,Kirkman,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+17549,Candy,Rosmarin,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+18592,Anne-Marie,King,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+14683,Kim,Pryce,Park Services,PK000435,PK000435,,single,False,crosswalk
+22572,Dean,Mawby,Trees,PK000433,PK000433,,single,False,crosswalk
+22339,Henry,Fusi,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+15962,Brenda,Robertson,Trees,PK000433,PK000433,,single,False,crosswalk
+21777,Brad,Powell,Park Services,PK000002,PK000002,,single,False,crosswalk
+12827,Rene,Harreman,Park Services,PK000435,PK000435,,single,False,crosswalk
+20944,Peter,Salisnew,Natural Areas,PK000074,PK000074,,single,False,crosswalk
+81938,Jules,Villiers,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+22270,Douglas,Walker,Trees,PK000433,PK000433,,single,False,crosswalk
+20189,Russ,Petersen,Park Maintenance,PK000012,PK000012,20-Jun-2026,acting-same,False,crosswalk
+19032,Fiona,Perry,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+19546,Henny,Purwodihardjo,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+19936,Tania,Papatheodosiou,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+20484,David,Franz,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+15651,Jannit,Catchpole,Depots,PK000001,PK000001,,single,False,crosswalk
+17358,Paul,Mann,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+21390,Craig,Logan,Depots,PK000001,PK000001,,single,False,crosswalk
+81811,Jason,Fourmile,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+18395,Scott,Grant,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+21491,Dylan,McGavin,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+20704,Ron,Clunn,Park Maintenance,PK000012,PK000012,,override,False,analyst-confirmed; old file PK000003 discarded
+20291,Kirsty,Quinn,Depots,PK000001,PK000001,,single,False,crosswalk
+20198,Greg,Birkett,Park Maintenance,PK000034,PK000034,,single,False,crosswalk
+17253,Nigel,Atkinson,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+22831,Susannah,Harvey-Jamieson,Management,PK000087,PK000087,,pending-sep,True,crosswalk
+21085,Kerrie,Dahtler,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+21383,Julie,Glazebrook,Natural Areas,PK000431,PK000431,,single,False,crosswalk
+15538,Melina,Turpin,Park Services,PK000435,PK000435,,single,False,crosswalk
+19654,Adam,Hiratos,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+18240,Travis,Black,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+21477,Scott,Kane,Trees,PK000433,PK000433,,single,False,crosswalk
+21507,Adam,Goodsir,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+16963,Daniel,Harman,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+20179,Sam,Forbes,Trees,PK000433,PK000433,,single,False,crosswalk
+19221,Brent,Dowden,,,,,single,False,crosswalk
+16351,Cael,Wright,Natural Areas,PK000374,PK000374,,single,False,crosswalk
+21982,Leanne,Ness Wilson,Depots,PK000001,PK000001,25-Jun-2027,override-acting,True,analyst-confirmed; pending separation
+20187,Danielle,Johnsen,Planning Design & Capital Delivery,PK000082,PK000082,17-Jun-2026,acting-same,False,crosswalk
+21469,Anita,Moore,Planning Design & Capital Delivery,PK000087,PK000087,30-Jun-2026,override-acting,False,management coding decision; differs from crosswalk PK000086 (substantive Manager)
+20671,Renee,Hoyle,Natural Areas,PK000432,PK000434,30-Jun-2026,acting-move,False,crosswalk
+19944,Wendy,Hoyle,Natural Areas,PK000431,PK000431,30-Jun-2026,acting-same,False,crosswalk
+22214,Lachlan,Peebles,Cemeteries,PK000439,PK000439,,single,False,crosswalk
+20182,Monty,Dean,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+22633,Jill,Provins,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+20206,Shane,Morris,Trees,PK000433,PK000433,,single,False,crosswalk
+20404,Greg,Cavell,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+21656,Adam,Barter,Natural Areas,PK000434,PK000434,,single,False,crosswalk
+20998,Allan,Anyaya,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+82100,Shawn,Luxford,Cemeteries,PK000439,PK000439,26-Jun-2026,acting-same,False,crosswalk
+20836,Steve,Allan,Natural Areas,PK000431,PK000431,,single,False,crosswalk
+17662,Caroline,King,Planning Design & Capital Delivery,PK000086,PK000082,30-Jun-2026,acting-move,False,crosswalk
+20965,Lisa,Hodgson,Natural Areas,PK000431,PK000432,30-Jun-2026,acting-move,False,crosswalk
+22714,Trevor,Boobyer,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+20399,Aprilita,Santos,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+21511,Dan,O'Brien,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+20026,Matt,Dwyer,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+17594,Paul,Canis,Planning Design & Capital Delivery,PK000082,PK000082,30-Jun-2026,acting-same,False,crosswalk
+21409,Gihani,Mandala Waththage,Management,PK000087,PK000087,,single,False,crosswalk
+18310,Marissa,Dyba,Natural Areas,PK000432,PK000432,,single,False,crosswalk
+19753,Shane,Ohlsen,Park Services,PK000435,PK000435,,single,False,crosswalk
+17565,Nakita,Bishop,Park Services,PK000435,PK000435,,single,False,crosswalk
+20106,Navneet,Garewal,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+81474,Corey,Stoops,Park Services,PK000435,PK000435,25-Jun-2027,acting-same,False,crosswalk
+21540,Sara,Dresman,Management,PK000087,PK000087,,single,False,crosswalk
+21619,Sione,Namoa,Cemeteries,PK000439,PK000439,,single,False,crosswalk
+22169,Billy,Bevan,Park Maintenance,PK000044,PK000044,,single,False,crosswalk
+20874,Leighton,Funk,Park Maintenance,PK000003,PK000003,,single,False,crosswalk
+21572,Jessica,Burke,Park Services,PK000435,PK000435,,single,False,crosswalk
+20126,Hannah,Butcher,Depots,PK000001,PK000001,,single,False,crosswalk
+20934,Todd,Preussner,Natural Areas,PK000434,PK000434,,single,False,crosswalk
+20963,Sara,Pryor,Park Maintenance,PK000044,PK000003,03-Jul-2026,acting-move,False,crosswalk
+20397,Lucas,Lu,Planning Design & Capital Delivery,PK000082,PK000082,,single,False,crosswalk
+20177,Joshua,Van Werkhoven,Natural Areas,PK000431,PK000431,,single,False,crosswalk
+22037,Celeste,Fry,Depots,PK000001,PK000001,05-Jun-2026,override-acting,True,analyst-confirmed; pending separation
+20092,Lilly,Shearman,Planning Design & Capital Delivery,PK000086,PK000086,,pending-sep,True,crosswalk
+22717,Kemal,Basic,Planning Design & Capital Delivery,PK000086,PK000086,,pending-sep,True,crosswalk
+20913,Duen,Jaemjamrat,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+20342,Michael,Moody,Natural Areas,PK000432,PK000432,,single,False,crosswalk
+21309,Renee,Noon,Park Maintenance,PK000012,PK000012,,single,False,crosswalk
+22359,Brett,Morton,Park Maintenance,PK000044,PK000044,,single,False,crosswalk
+22760,James,Lloyd-Jones,Natural Areas,PK000432,PK000432,,single,False,crosswalk
+19521,Nani,Ruatoe,Trees,PK000433,PK000433,,single,False,crosswalk
+21369,Jamie,Fisher,Natural Areas,PK000432,PK000374,07-Jun-2026,acting-move,False,crosswalk
+80090,Kahn,Helms,Park Services,PK000435,PK000435,26-Jun-2026,acting-same,False,crosswalk
+82034,Lee-Anne,Niblett,Trees,PK000433,PK000433,,pending-sep,True,crosswalk
+22584,Darren,Bester,Cemeteries,PK000439,PK000439,,pending-sep,True,crosswalk
+22570,Shaun,Harrison,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+22112,Dominic,Unwin,Park Services,PK000435,PK000435,,pending-sep,True,crosswalk
+23125,Ryan,McCorkindale,Depots,PK000001,PK000001,,pending-sep,True,crosswalk
+22743,Dale,Mckenzie,Park Maintenance,PK000003,PK000003,,pending-sep,True,crosswalk
+81521,Philip,Roschitsch,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+22705,Oliver,Mueller,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+22713,Graeme,Gray,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+23292,Mario,Fuentes,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+23322,Tyron,Vakapuna,Trees,PK000433,PK000433,,pending-sep,True,crosswalk
+22825,Sione,Mafi,Trees,PK000433,PK000433,,pending-sep,True,crosswalk
+23251,Connor,Forde,Natural Areas,PK000374,PK000374,,pending-sep,True,crosswalk
+22727,Guy,Carkeet,Park Maintenance,PK000003,PK000003,,pending-sep,True,crosswalk
+23171,Ron,Jacobs,,,,,pending-sep,True,crosswalk
+81125,Sheryll,Arcilla,Planning Design & Capital Delivery,PK000082,PK000082,,pending-sep,True,crosswalk
+21707,Benjamin,Tabuwaitui,Park Maintenance,PK000012,PK000012,,pending-sep,True,crosswalk
+22715,Spero,Efstathiadis,Management,PK000087,PK000087,,single,False,crosswalk
+22293,Addis,Evans-Potter,Depots,PK000001,PK000001,,pending-sep,True,crosswalk
+21042,Aisha,Wilson,Depots,PK000001,PK000001,,pending-sep,True,crosswalk
+22761,Isabel,Howard,Natural Areas,PK000431,PK000431,,single,False,crosswalk
+81552,Emily,Garrett,Planning Design & Capital Delivery,PK000086,PK000086,,single,False,crosswalk
+81589,Georgia,Legg,Depots,PK000001,PK000001,,single,False,crosswalk
+81911,Jenny,Moir,Park Maintenance,PK000044,PK000044,,single,False,crosswalk
+21591,Amarlia,Toese,Depots,PK000001,PK000001,,single,False,crosswalk
+22791,Bradley,Waugh,,PK000001,PK000001,,override,True,manual: Trainee code 112521 does not crosswalk; PK assigned by analyst

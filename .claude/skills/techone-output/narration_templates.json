@@ -1,0 +1,204 @@
+{
+  "_meta": {
+    "extracted_from": "Downloads/LCC_AP_Coding_Review_v7.html lines 4162-4271",
+    "extracted_at": "2026-05-08",
+    "category_count": 9,
+    "extractor_version": "1.0",
+    "_template_pattern_format": "Each pattern is an ordered list of segments. Each segment is one of: {literal: '...'}, {field: 'narr_X', fallback: '[Contractor]'}, or {if_field: 'narr_po', then_segments: [...]}. The runtime walks segments and concatenates."
+  },
+  "categories": {
+    "mowing": {
+      "title": "Contract Mowing / Landscaping",
+      "account": "73126",
+      "fields": [
+        {"id": "narr_vendor",  "label": "Contractor",        "placeholder": "e.g. Austspray, Glascott"},
+        {"id": "narr_service", "label": "Service",           "placeholder": "e.g. Zone mowing, vegetation management"},
+        {"id": "narr_zone",    "label": "Zone / Location",   "placeholder": "e.g. Zone 3, Logan Reserve, MZ09"},
+        {"id": "narr_period",  "label": "Period",            "placeholder": "e.g. March 2026, Q3 FY2026"},
+        {"id": "narr_po",      "label": "PO / Contract Ref", "placeholder": "e.g. PO 485102, DM 16845001"},
+        {"id": "narr_svc",     "label": "Service Code",      "placeholder": "e.g. 20371"}
+      ],
+      "template_pattern": [
+        {"field": "narr_vendor",  "fallback": "[Contractor]"},
+        {"literal": " — "},
+        {"field": "narr_service", "fallback": "[Service]"},
+        {"literal": " "},
+        {"field": "narr_zone",    "fallback": "[Zone]"},
+        {"literal": " "},
+        {"field": "narr_period",  "fallback": "[Period]"},
+        {"if_field": "narr_po",   "then_segments": [{"literal": " Ref: "}, {"field": "narr_po"}]},
+        {"if_field": "narr_svc",  "then_segments": [{"literal": " Svc "}, {"field": "narr_svc"}]}
+      ]
+    },
+    "maintenance": {
+      "title": "Maintenance / Repairs",
+      "account": "73123",
+      "fields": [
+        {"id": "narr_vendor", "label": "Contractor",      "placeholder": "e.g. Weis, Riverdale"},
+        {"id": "narr_work",   "label": "Work Type",       "placeholder": "e.g. BBQ repair, fence fix, irrigation"},
+        {"id": "narr_asset",  "label": "Asset / Location","placeholder": "e.g. Berrinba Wetlands, Depot"},
+        {"id": "narr_po",     "label": "PO / WO Ref",     "placeholder": "e.g. PO 483340, WO 12345"},
+        {"id": "narr_svc",    "label": "Service Code",    "placeholder": "e.g. 20481"}
+      ],
+      "template_pattern": [
+        {"field": "narr_vendor", "fallback": "[Contractor]"},
+        {"literal": " — "},
+        {"field": "narr_work",   "fallback": "[Work]"},
+        {"literal": " at "},
+        {"field": "narr_asset",  "fallback": "[Location]"},
+        {"if_field": "narr_po",  "then_segments": [{"literal": " Ref: "}, {"field": "narr_po"}]},
+        {"if_field": "narr_svc", "then_segments": [{"literal": " Svc "}, {"field": "narr_svc"}]}
+      ]
+    },
+    "hospitality": {
+      "title": "Hospitality / Catering",
+      "account": "73512",
+      "fields": [
+        {"id": "narr_event",  "label": "Event",        "placeholder": "e.g. Team planning day, staff farewell"},
+        {"id": "narr_venue",  "label": "Venue",        "placeholder": "e.g. LEC, Council boardroom, restaurant"},
+        {"id": "narr_food",   "label": "Food / Drink", "placeholder": "e.g. Morning tea, lunch, dinner + wine"},
+        {"id": "narr_attend", "label": "Attendees",    "placeholder": "e.g. 12 staff, 3 external guests"},
+        {"id": "narr_onsite", "label": "On/Off-site",  "placeholder": "e.g. On-site (Council premises)"}
+      ],
+      "template_pattern": [
+        {"field": "narr_event",  "fallback": "[Event]"},
+        {"literal": " — "},
+        {"field": "narr_food",   "fallback": "[Food]"},
+        {"literal": " at "},
+        {"field": "narr_venue",  "fallback": "[Venue]"},
+        {"literal": ", "},
+        {"field": "narr_attend", "fallback": "[Attendees]"},
+        {"literal": ", "},
+        {"field": "narr_onsite", "fallback": "[Location type]"}
+      ]
+    },
+    "training": {
+      "title": "Training / Conference / Study",
+      "account": "73544",
+      "fields": [
+        {"id": "narr_course",   "label": "Course / Event", "placeholder": "e.g. LGMA Conference, Chainsaw cert"},
+        {"id": "narr_provider", "label": "Provider",       "placeholder": "e.g. LGAQ, TAFE, University"},
+        {"id": "narr_staff",    "label": "Staff Member",   "placeholder": "e.g. J. Smith"},
+        {"id": "narr_dates",    "label": "Dates",          "placeholder": "e.g. 15-17 May 2026"},
+        {"id": "narr_type",     "label": "Type",           "placeholder": "e.g. Registration, accommodation, fees"}
+      ],
+      "template_pattern": [
+        {"field": "narr_course",   "fallback": "[Course]"},
+        {"literal": " — "},
+        {"field": "narr_provider", "fallback": "[Provider]"},
+        {"literal": " for "},
+        {"field": "narr_staff",    "fallback": "[Staff]"},
+        {"literal": " "},
+        {"field": "narr_dates",    "fallback": "[Dates]"},
+        {"literal": " ("},
+        {"field": "narr_type",     "fallback": "[Type]"},
+        {"literal": ")"}
+      ]
+    },
+    "agency": {
+      "title": "Agency / Temp Labour",
+      "account": "73214",
+      "fields": [
+        {"id": "narr_agency",  "label": "Agency",  "placeholder": "e.g. Hays, Chandler Macleod, Adecco"},
+        {"id": "narr_role",    "label": "Role",    "placeholder": "e.g. Admin support, field officer"},
+        {"id": "narr_period",  "label": "Period",  "placeholder": "e.g. w/e 15 Mar 2026"},
+        {"id": "narr_section", "label": "Section", "placeholder": "e.g. Natural Areas, Park Maintenance"}
+      ],
+      "template_pattern": [
+        {"field": "narr_agency",  "fallback": "[Agency]"},
+        {"literal": " — "},
+        {"field": "narr_role",    "fallback": "[Role]"},
+        {"literal": " "},
+        {"field": "narr_period",  "fallback": "[Period]"},
+        {"literal": " "},
+        {"field": "narr_section", "fallback": "[Section]"},
+        {"literal": " — agency temp labour"}
+      ]
+    },
+    "plant": {
+      "title": "Plant / Equipment Hire",
+      "account": "74123",
+      "fields": [
+        {"id": "narr_equip",    "label": "Equipment",       "placeholder": "e.g. 8t excavator, backhoe, water truck"},
+        {"id": "narr_supplier", "label": "Supplier",        "placeholder": "e.g. Tutt Bryant, Kennards"},
+        {"id": "narr_period",   "label": "Hire Period",     "placeholder": "e.g. 3 days, 1 week"},
+        {"id": "narr_site",     "label": "Site / Location", "placeholder": "e.g. Slacks Creek reserve"},
+        {"id": "narr_svc",      "label": "Service Code",    "placeholder": "e.g. 20451"}
+      ],
+      "template_pattern": [
+        {"field": "narr_supplier", "fallback": "[Supplier]"},
+        {"literal": " — "},
+        {"field": "narr_equip",    "fallback": "[Equipment]"},
+        {"literal": " hire "},
+        {"field": "narr_period",   "fallback": "[Period]"},
+        {"literal": " at "},
+        {"field": "narr_site",     "fallback": "[Site]"},
+        {"if_field": "narr_svc",   "then_segments": [{"literal": " Svc "}, {"field": "narr_svc"}]}
+      ]
+    },
+    "travel": {
+      "title": "Travel / Transport",
+      "account": "73533",
+      "fields": [
+        {"id": "narr_dest",    "label": "Destination", "placeholder": "e.g. Melbourne, Cairns, Brisbane CBD"},
+        {"id": "narr_purpose", "label": "Purpose",     "placeholder": "e.g. LGMA conference, site inspection"},
+        {"id": "narr_mode",    "label": "Mode",        "placeholder": "e.g. Flight, taxi, toll, accommodation"},
+        {"id": "narr_staff",   "label": "Staff",       "placeholder": "e.g. K. Quinn"},
+        {"id": "narr_dates",   "label": "Dates",       "placeholder": "e.g. 10-12 Apr 2026"}
+      ],
+      "template_pattern": [
+        {"field": "narr_mode",    "fallback": "[Mode]"},
+        {"literal": " — "},
+        {"field": "narr_dest",    "fallback": "[Destination]"},
+        {"literal": " for "},
+        {"field": "narr_purpose", "fallback": "[Purpose]"},
+        {"literal": " "},
+        {"field": "narr_staff",   "fallback": "[Staff]"},
+        {"literal": " "},
+        {"field": "narr_dates",   "fallback": "[Dates]"}
+      ]
+    },
+    "cleaning": {
+      "title": "Cleaning / Waste / Sanitary",
+      "account": "73121",
+      "fields": [
+        {"id": "narr_vendor",  "label": "Contractor",   "placeholder": "e.g. Kachel, Cleanaway, ANS"},
+        {"id": "narr_service", "label": "Service Type", "placeholder": "e.g. Amenities cleaning, garbage"},
+        {"id": "narr_zone",    "label": "Zone / Site",  "placeholder": "e.g. Zone 1, Marsden depot"},
+        {"id": "narr_period",  "label": "Period",       "placeholder": "e.g. March 2026"},
+        {"id": "narr_po",      "label": "SO / DM Ref",  "placeholder": "e.g. DM 16845001"}
+      ],
+      "template_pattern": [
+        {"field": "narr_vendor",  "fallback": "[Contractor]"},
+        {"literal": " — "},
+        {"field": "narr_service", "fallback": "[Service]"},
+        {"literal": " "},
+        {"field": "narr_zone",    "fallback": "[Zone]"},
+        {"literal": " "},
+        {"field": "narr_period",  "fallback": "[Period]"},
+        {"if_field": "narr_po",   "then_segments": [{"literal": " Ref: "}, {"field": "narr_po"}]}
+      ]
+    },
+    "general": {
+      "title": "General Invoice",
+      "account": null,
+      "fields": [
+        {"id": "narr_vendor",   "label": "Vendor",         "placeholder": "e.g. Bunnings, Officeworks"},
+        {"id": "narr_goods",    "label": "Goods / Service","placeholder": "e.g. Garden tools, office supplies"},
+        {"id": "narr_purpose",  "label": "Purpose",        "placeholder": "e.g. For depot workshop"},
+        {"id": "narr_location", "label": "Location",       "placeholder": "e.g. Marsden depot"},
+        {"id": "narr_ref",      "label": "Invoice Ref",    "placeholder": "e.g. INV-12345"}
+      ],
+      "template_pattern": [
+        {"field": "narr_vendor",   "fallback": "[Vendor]"},
+        {"literal": " — "},
+        {"field": "narr_goods",    "fallback": "[Goods/Service]"},
+        {"literal": " for "},
+        {"field": "narr_purpose",  "fallback": "[Purpose]"},
+        {"literal": " at "},
+        {"field": "narr_location", "fallback": "[Location]"},
+        {"if_field": "narr_ref",   "then_segments": [{"literal": " Ref: "}, {"field": "narr_ref"}]}
+      ]
+    }
+  }
+}

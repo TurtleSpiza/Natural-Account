@@ -1,0 +1,190 @@
+{
+  "source": "LCC_Parks_Branch_Review_Analysis.txt §Coding patterns and systemic issues",
+  "review_anchor": "P10 FY2025-26 (April 2026)",
+  "purpose": "Catalogue of recurring miscoding patterns observed in Parks Branch 4090000 across 99 natural accounts. Each pattern names what it looks like on the surface, why it gets miscoded, and the correct destination.",
+  "patterns": [
+    {
+      "id": "pfs_restricted",
+      "title": "PFS-restricted accounts misused by Parks",
+      "wrong_accounts": ["74181", "74182", "74183", "74184", "74185", "74186", "74187", "74188"],
+      "rule": "74181-74188 are restricted to Plant Fleet Services Branch only. The restriction is unconditional and applies regardless of item type.",
+      "why_it_recurs": "Parks staff appear unaware of the restriction. May have been open to all branches in prior years, or restriction is poorly communicated.",
+      "examples": [
+        "74183 Fuel $279.46 - internal fuel card billing error (should route through 7C111 Internal Vehicle/Plant Hire)",
+        "74184 Oils & Grease $641.32 - 19 ALLSTORE inventory issues drawn against wrong restricted account",
+        "74187 Rego/Licences $337.58 - OIR high-risk work licence fees, double error: wrong branch AND wrong NA (licence fees → 73433)"
+      ],
+      "fix": "Recode to 7C111 (internal Fleet) or appropriate operational account. Long-term: TechOne account-level block on 74181-188 for non-PFS branches.",
+      "frequency": "Recurs every review period."
+    },
+    {
+      "id": "training_catchall",
+      "title": "73544 Training & Development used as a catch-all",
+      "wrong_accounts": ["73544"],
+      "rule": "73544 is for training and professional development costs only. Blue cards, licences, university units, office furniture, and consulting fees do not belong here.",
+      "why_it_recurs": "Account name is too broad. Coders pattern-match on 'work-related' rather than reading the chart definition.",
+      "examples": [
+        "Blue card fee → should be 73433 Other Fees & Charges",
+        "ACDC electrical licence → should be 73433",
+        "University unit reimbursements (Preussner ENVR1001/CHEM1001/STAT1002 $2,113.45 + SCIN1005 $931.20) → should be 73545 Study Assistance Reimbursement",
+        "Office furniture - Empire chair $453.04 → should be 72313 Furniture & Fittings",
+        "Management consulting - Bendelta INV-13157 $8,966.28 → likely 73601 Management Consultancies"
+      ],
+      "fix": "Per-item recode to correct destination. Watch for PDI form requirement when 73545 is the destination.",
+      "frequency": "Most heavily miscoded account in branch."
+    },
+    {
+      "id": "saas_as_subscriptions",
+      "title": "Software licences miscoded as Reference Materials and Subscriptions",
+      "wrong_accounts": ["73543"],
+      "rule": "73543 is for consecutive issues of magazines, newspapers, books, or electronic information only. Software licences and SaaS belong in 73566 IT Software Licence Fees.",
+      "why_it_recurs": "Common usage of 'subscription' includes SaaS. The LCC chart definition is narrower than the common usage. Cover slips describe SaaS as 'subscription' which mismatches the account.",
+      "examples": [
+        "Canva Pro $18.18 → should be 73566",
+        "VisitUs Reception SaaS $1,249.00 → should be 73566"
+      ],
+      "fix": "Recode to 73566. Brief coders that 'subscription' on a cover slip does not auto-trigger 73543.",
+      "frequency": "Recurs whenever a new SaaS tool gets onboarded."
+    },
+    {
+      "id": "bulk_water_misuse",
+      "title": "Contractor water services miscoded to Bulk Water",
+      "wrong_accounts": ["72411"],
+      "rule": "72411 is for purchases of bulk water from SEQWC only. Water-truck services from contractors belong in 74114 Water Truck External Hire.",
+      "why_it_recurs": "Coder reads the description as 'water' rather than 'SEQWC bulk water purchase'.",
+      "examples": [
+        "Bushcare Services planned-burn water cart hire $1,137.45 → should be 74114"
+      ],
+      "fix": "Recode to 74114.",
+      "frequency": "Occasional."
+    },
+    {
+      "id": "cemetery_refunds_in_rates",
+      "title": "Cemetery deposit refunds miscoded to Rates & Charges Paid",
+      "wrong_accounts": ["73421"],
+      "rule": "73421 is for payments to external authorities (rates, fire levy, etc.). Customer deposit refunds are not payments to authorities. Refund of prepaid cemetery deposit → 73412 Refund of Operational Contributions. Adjustment of overcharge → credit against 62125 Cemetery Charges.",
+      "why_it_recurs": "Payments to members of the public have a 'charges paid' surface quality. Process not standardised across cemetery staff.",
+      "examples": [
+        "Iakopo refund $3,199.09 → should be 73412",
+        "Tankei refund $5,197.27 → should be 73412 (also has $519.73 unexplained shortfall vs original receipt)"
+      ],
+      "fix": "Recode to 73412. Document standardised cemetery refund process for cemetery staff.",
+      "frequency": "Several per period."
+    },
+    {
+      "id": "hospitality_as_gifts",
+      "title": "73513 Employee Reward and Recognition used for hospitality items",
+      "wrong_accounts": ["73513"],
+      "rule": "73513 is for actual gifts (flowers, cards, vouchers) not for food/beverage at functions. Food and beverage at functions belongs in 73511 (off-site/alcohol/social) or 73512 (on-site nibbles).",
+      "why_it_recurs": "Trigger words 'staff appreciation' or 'recognition' on a cover slip pull the account regardless of what was actually purchased.",
+      "examples": [
+        "Paper plates for EOFY function → 73511 or 73512",
+        "Coles drinks → 73511 or 73512",
+        "Appreciation Awards afternoon tea → 73511 or 73512",
+        "Never Been cafe breakfast (group) → 73511",
+        "Yummy Tummy restaurant meal → 73511",
+        "Flowers $98.45 (TE004409) - correct in 73513"
+      ],
+      "fix": "Recode food/beverage to 73511 or 73512 per FBT decision tree. Keep gifts (flowers/cards/vouchers) in 73513.",
+      "frequency": "Several per period."
+    },
+    {
+      "id": "it_batch_cost_centre",
+      "title": "IT Adhoc batch journals post 7B411 to wrong cost centres",
+      "wrong_accounts": ["7B411"],
+      "rule": "IT team processes batch journals for multiple employees. Wrong service code assignment is systematic but per-line.",
+      "why_it_recurs": "Manual cost-centre assignment in IT batches with no validation against employee assignment.",
+      "examples": [
+        "Anita Moore $1,699 - 20374 → 20001",
+        "A-M King laptop 1 $1,699 - 20191 → 20151",
+        "A-M King Adobe CC $1,464 - 20191 → 20151",
+        "A-M King laptop 2 $1,699 - 20001 → 20151",
+        "Fiona Perry $460 - 20151 → 20141",
+        "Jill Provins $320 - 20001 → 20141",
+        "Naomi English $1,699 - 20191 → SL ledger 1-18611-73564 (LCI not Parks)"
+      ],
+      "fix": "Per-line recode. English requires SL ledger entry not PK. Liaise with IT on validation step in batch process.",
+      "frequency": "Every IT Adhoc batch (recurring monthly)."
+    },
+    {
+      "id": "travel_splitting",
+      "title": "Travel accounts (73531/73532/73533) confused",
+      "wrong_accounts": ["73531", "73532", "73533", "73541"],
+      "rule": "73531 = local SEQ travel. 73532 = intrastate (Qld outside SEQ). 73533 = interstate. 73541 = conferences (registration fee, not travel).",
+      "why_it_recurs": "Cabcharge invoices cover trips across all three regions. Coders default to whichever account they used last.",
+      "examples": [
+        "Quinn Cabcharge Ormiston→Brisbane Airport (SEQ) → posted to 73532, should be 73531 ($199.32)",
+        "Gold Coast parking → posted to 73541 Conferences, should be 73531 ($6.05)",
+        "McGregor Melbourne→Geelong West → posted to local SEQ, should be 73533 (cross-branch error)"
+      ],
+      "fix": "Per-line recode. SEQ = local. Outside SEQ = intrastate. Outside Qld = interstate.",
+      "frequency": "Every Cabcharge batch."
+    },
+    {
+      "id": "fbt_5050_batches",
+      "title": "Finance 50/50 FBT batch journals look like miscodes but aren't",
+      "wrong_accounts": [],
+      "rule": "Finance runs systematic batch journals (AP003xxx, GJ07xxxx series) moving amounts between 73511 and 73512 at a batch level under the 50/50 method. These are NOT individual miscodes.",
+      "why_it_recurs": "Reviewer flags 73511↔73512 movements as miscodes without first identifying batch source.",
+      "examples": [
+        "GJ078599 - 60+ lines moving between 73511/73512",
+        "AP003xxx series - Finance-processed FBT adjustments"
+      ],
+      "fix": "Identify and exclude 50/50 batches before flagging any 73511/73512 miscode.",
+      "frequency": "Every FBT period."
+    },
+    {
+      "id": "pending_account_balance",
+      "title": "Pending accounts (71000, 72118, 72119) carry uncleared balances",
+      "wrong_accounts": ["71000", "72118", "72119"],
+      "rule": "Pending accounts must net to zero at all times. A balance is a compliance breach under LCC's own chart rules.",
+      "why_it_recurs": "Payroll/GL interface failure (71000), or P-Card/fuel-card-pending lines that don't get cleared by Finance.",
+      "examples": [
+        "71000 - $7,455.63 stuck since P1-P2 Jul-Aug 2025 (8+ periods)",
+        "72118 - $108.08 uncleared",
+        "72119 - per-period small balances"
+      ],
+      "fix": "Escalate to Finance/HR. 71000 is payroll interface issue. 72118/72119 require Finance to allocate to correct expense accounts.",
+      "frequency": "Persistent - check every period."
+    },
+    {
+      "id": "non_existent_71227",
+      "title": "71227 Years of Service Allowance - account does not exist in chart",
+      "wrong_accounts": ["71227"],
+      "rule": "71227 is not in the LCC Chart of Accounts. Likely intended as 73514 Employee Functions & Awards.",
+      "why_it_recurs": "Manual journal entry without TechOne validation, or chart-of-accounts version mismatch.",
+      "examples": [
+        "71227 - amount unconfirmed, posting needs verification with Finance"
+      ],
+      "fix": "Confirm with Finance whether account exists as non-standard code or is a posting error. Recode to 73514 if confirmed Years of Service awards."
+    },
+    {
+      "id": "consultancy_test_failure",
+      "title": "Consultancy accounts (73601, 73609) without invoice sighting",
+      "wrong_accounts": ["73601", "73609"],
+      "rule": "All four elements of the LCC consultant definition must be satisfied. Without invoice sighting the test cannot be applied.",
+      "why_it_recurs": "Recurring 'Project Organisational Consulting' narrations from a single supplier read as consultancy without verification.",
+      "examples": [
+        "73601 - $46,003.66 from a single supplier, all narrations identical, no invoice sighted"
+      ],
+      "fix": "Request source invoices. Apply 4-element test. Recode to 73211/73212 if any element fails."
+    },
+    {
+      "id": "documentation_failure",
+      "title": "Receipts that aren't receipts (Uber promotional emails)",
+      "wrong_accounts": [],
+      "rule": "Receipt must show date, dollar amount, supplier, and trip/item detail. Promotional marketing emails are not receipts.",
+      "why_it_recurs": "AP processes invoices/reimbursements without validating that the supporting document is a tax invoice.",
+      "examples": [
+        "Quinn $137.85 Uber reimbursement - submitted email is Uber loyalty marketing, no trip detail at all"
+      ],
+      "fix": "Reject reimbursement claim. Recover from employee or require valid receipt resubmission."
+    }
+  ],
+  "evidence_tier_summary": {
+    "tier_1_cleared": "Tax invoice + cover slip (PCard) OR AP invoice (creditor) OR signed agreement (internal). Status: Cleared.",
+    "tier_2_review": "Partial documentation - listing without invoices, invoice without cover slip. Status: Review.",
+    "tier_3_review": "Narration only. Cannot confirm or deny. Status: Review.",
+    "rule": "Recode $ populated only after Tier 1 evidence confirms the wrong account. Suspicious narrations alone do not generate recodes."
+  }
+}

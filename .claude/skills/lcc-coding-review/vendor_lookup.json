@@ -1,0 +1,209 @@
+[
+  {
+    "names": [
+      "Austspray",
+      "Glascott",
+      "Marsupial",
+      "Technigro",
+      "Sundai Vegetation"
+    ],
+    "accounts": [
+      "73126"
+    ],
+    "desc": "Landscaping & mowing contractors",
+    "warn": null
+  },
+  {
+    "names": [
+      "Weis Contractors",
+      "Riverdale"
+    ],
+    "accounts": [
+      "73211",
+      "73212",
+      "73123"
+    ],
+    "desc": "General maintenance contractors",
+    "warn": "Check total contract value for 73211 vs 73212 threshold"
+  },
+  {
+    "names": [
+      "Cleanaway"
+    ],
+    "accounts": [
+      "73122",
+      "73129"
+    ],
+    "desc": "Waste collection & greenwaste",
+    "warn": "If Cleanaway invoice is for electricity → 73312 (anomalous — flag as miscode)"
+  },
+  {
+    "names": [
+      "Hays",
+      "Chandler Macleod",
+      "Adecco"
+    ],
+    "accounts": [
+      "73214"
+    ],
+    "desc": "Agency personnel",
+    "warn": "NEVER code agency invoices to 71113 — always 73214"
+  },
+  {
+    "names": [
+      "TEC",
+      "Total Environmental Concepts"
+    ],
+    "accounts": [
+      "73125",
+      "73128"
+    ],
+    "desc": "WHS & environmental services — Natural Areas",
+    "warn": null
+  },
+  {
+    "names": [
+      "QLDPSI"
+    ],
+    "accounts": [
+      "73124"
+    ],
+    "desc": "Security services — Parks Security contract",
+    "warn": "Contract never budgeted historically — flag if checking budget vs actual"
+  },
+  {
+    "names": [
+      "Easyweb Digital"
+    ],
+    "accounts": [
+      "73564",
+      "73566",
+      "73605"
+    ],
+    "desc": "IT equipment, software licences, IT consultancy",
+    "warn": null
+  },
+  {
+    "names": [
+      "Ventia",
+      "Spotless"
+    ],
+    "accounts": [
+      "73121",
+      "73123"
+    ],
+    "desc": "Facility cleaning & maintenance",
+    "warn": null
+  },
+  {
+    "names": [
+      "Kachel",
+      "Kachel Cleaning"
+    ],
+    "accounts": [
+      "73121"
+    ],
+    "desc": "Cleaning & sanitary — 8 service zones (BBQs, toilets, amenities)",
+    "warn": "Standing orders DM 16845001 / DM 16845542"
+  },
+  {
+    "names": [
+      "Advanced National Services"
+    ],
+    "accounts": [
+      "73121"
+    ],
+    "desc": "Secondary cleaning — Parks Depot Marsden, Berrinba Wetlands",
+    "warn": null
+  },
+  {
+    "names": [
+      "CNBM"
+    ],
+    "accounts": [
+      "73121"
+    ],
+    "desc": "Park Road Depot cleaning — SI-series invoices",
+    "warn": "Transferred from account 11081 via GJ monthly"
+  },
+  {
+    "names": [
+      "Canasta Holdings",
+      "LD Total"
+    ],
+    "accounts": [
+      "72231"
+    ],
+    "desc": "Hand watering newly planted areas",
+    "warn": "ABN 26 660 260 426. Invs 130926–135034"
+  },
+  {
+    "names": [
+      "Queensland Audit Office",
+      "QAO"
+    ],
+    "accounts": [
+      "73112"
+    ],
+    "desc": "External financial audit ONLY",
+    "warn": "73112 = financial reporting audit only. All other audit → 73116"
+  },
+  {
+    "names": [
+      "Seek",
+      "LinkedIn"
+    ],
+    "accounts": [
+      "73551"
+    ],
+    "desc": "Recruitment advertising",
+    "warn": "Must be coordinated via HR Services Branch"
+  },
+  {
+    "names": [
+      "Telstra",
+      "Optus",
+      "Vodafone"
+    ],
+    "accounts": [
+      "73313"
+    ],
+    "desc": "Telecommunications",
+    "warn": "Phone purchases should NOT be coded to 73313 — use 72314 or 73564"
+  },
+  {
+    "names": [
+      "Energex",
+      "Origin",
+      "AGL",
+      "Ergon"
+    ],
+    "accounts": [
+      "73312"
+    ],
+    "desc": "Electricity supply",
+    "warn": "If internal LCC electricity → 7B111, never 73312"
+  },
+  {
+    "names": [
+      "Go Via",
+      "Linkt",
+      "Motorway Queensland"
+    ],
+    "accounts": [
+      "73535"
+    ],
+    "desc": "Tollway charges",
+    "warn": "Tolls = 73535. NOT taxi/parking (73531)"
+  },
+  {
+    "names": [
+      "Ozzie Workwear"
+    ],
+    "accounts": [
+      "72114"
+    ],
+    "desc": "Uniforms and outdoor clothing",
+    "warn": null
+  }
+]

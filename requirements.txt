@@ -1,0 +1,11 @@
+# Parks 4090000 NA Review — Python dependencies
+# Install:  pip install -r requirements.txt   (add --break-system-packages in a managed sandbox)
+
+pandas>=2.0           # ledger analysis
+python-calamine>=0.2  # REQUIRED engine for TechOne .xlsx exports: read_excel(engine='calamine')
+openpyxl>=3.1         # read/write xlsx, data_only=True after LibreOffice recalc
+py7zr>=0.21           # read/write .7z bundle archives
+pypdf>=4.0            # PDF inventory / text extraction for evidence
+
+# System package, NOT pip — see SETUP.md:
+#   libreoffice (soffice --headless) for spreadsheet formula recalculation

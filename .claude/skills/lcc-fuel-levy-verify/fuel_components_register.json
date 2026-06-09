@@ -1,0 +1,23 @@
+{
+  "_documentation": {
+    "purpose": "Per-supplier Fuel Component % under PAR/* contracts, used as the contractually-locked input to the Fact Sheet fuel levy formula.",
+    "formula_role": "Levy = Work_ex_GST x Fuel_Component_% x Fuel_Escalation_%",
+    "fact_sheet_ref": "DM19338551",
+    "source_evidence_rule": "Every supplier entry must reference the contract variation letter, schedule, or other formal document that locks the Fuel Component %. Entries without a sighted source must not be added.",
+    "update_rule": "Fuel Components are contractually locked and do not change between invoices. Only update an entry if a new contract variation letter is issued. When updating, copy the old entry into a 'historical' block with the effective date range, do not overwrite."
+  },
+  "suppliers": [
+    {
+      "supplier": "Vinton Tree Services",
+      "abn": "84 008 552 538",
+      "trading_entity": "R. S. T. Systems Pty. Limited",
+      "contract": "PAR/329E/2021",
+      "fuel_component_pct": 0.197,
+      "source_document": "DM19354756 - Council to Vinton Tree Services, Proposed Contract Variation Temporary Fuel Levy, 20 April 2026, attention Mat Vinton",
+      "effective_from": "2026-04-20",
+      "approver": "LCC Procurement / Parks contract owner",
+      "notes": "Fuel Component locked at 19.7% in the 20 April 2026 contract variation letter responding to Middle East crisis fuel prices. Formula explicitly stated as Fuel Levy surcharge = Fuel Escalation Percentage (%) x Fuel Component (19.7%)."
+    }
+  ],
+  "historical": []
+}

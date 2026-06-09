@@ -1,0 +1,31 @@
+{
+  "purpose": "Known LCC holding accounts where vendor invoices land before being split via journal to destination cost centres. Tracing a passthrough cost requires identifying the holding account first, then following the split journal to its destinations.",
+  "anchor": "P10 FY2025-26 (April 2026)",
+  "accounts": [
+    {
+      "account_string": "1-20276-73126",
+      "owner": "Parks Maintenance",
+      "ledger": "PK",
+      "purpose": "Holding account for whole-zone landscape maintenance contracts (Austspray, Glascott). Vendor invoices post here as lump sums and are then journal-split across destination services using fixed values from the Green Maintenance Budget Tracker (DM# 17767639).",
+      "vendors_using_it": ["Austspray", "Glascott"],
+      "split_destinations": [
+        "1-20374-73126 LZ1 works (PK000017)",
+        "1-20371-73126 LZ2 works (PK000014)",
+        "1-20372-73126 LZ3 works (PK000015)",
+        "1-20373-73126 LZ4 works (PK000016)",
+        "1-20375-73126 LZ5 works (PK000019)",
+        "1-20376-73126 LZ6 works (PK000473)",
+        "1-20681-73126 Urban Bushland (PK000385)"
+      ],
+      "split_basis": "Fixed dollar values from Green Maintenance Budget Tracker DM# 17767639. Values do not vary month-to-month and are not derived from any vendor document.",
+      "governance_doc": "Urban Bushland Checklist DM# 14719249 — defines approved scope per zone but is NOT what drives the split.",
+      "known_issue": "The Tracker split values were never reconciled against the Checklist. LZ6 split is 6× the Checklist-approved scope ($13,993/month vs $2,306/round). Annualised overcharge to PK385: ~$140,246. See worked_example_pk385.md."
+    }
+  ],
+  "tracing_rule": "If a PK has zero direct vendor invoices but carries operational spend, it is downstream of a holding account. Find the upstream holding account by tracing GJ entries on the PK back to their source AP invoices.",
+  "common_journal_signatures": [
+    "GJ followed by a debit/credit pair where one side is the holding account and the other is the destination PK (look for matching dollar amounts on opposite signs)",
+    "RJ at end of month — accrual for vendor invoice not yet processed; mirrors the same split values as the eventual GJ",
+    "DM reference in the narration (e.g. DM# 17767639 = Green Tracker) names the basis of the split"
+  ]
+}

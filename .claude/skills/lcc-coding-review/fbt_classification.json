@@ -1,0 +1,95 @@
+{
+  "source": "1778210808294_Chart_of_Accounts___Consultancy___FBT___Travel_ETC.pdf, pp 68-70 (Hospitality & Entertainment Guide)",
+  "authority": {
+    "primary": "FBT Act",
+    "secondary": "Local Government Regulation 2012 s.196",
+    "guide": "Hospitality & Entertainment Guide (LCC Chart of Accounts PDF, pp 68-70)",
+    "contact": "FinancialAccounting@logan.qld.gov.au"
+  },
+  "fbt_method": {
+    "name": "50/50 method for meal entertainment",
+    "rule": "Council uses the 50/50 method to determine FBT liability for meal entertainment. All meal entertainment (whether for employees or non-employees) is subject to FBT at 50% of the value of the cost. Using the 50/50 method removes the need to analyse actual expenditure."
+  },
+  "scenarios": [
+    {"id": 1, "title": "Art Gallery Openings/Citizenship Ceremony/Open Day/Media Launches/Opening of Facilities, e.g. new library — Hospitality", "account": "73512/7B222", "reason_code": "A", "gst_code": "C", "fbt": false},
+    {"id": 2, "title": "Author Visits — morning tea", "account": "73512", "reason_code": "A or B", "gst_code": "C", "fbt": false},
+    {"id": 3, "title": "Children's Activities/Parties/Book Club — Snacks", "account": "73512", "reason_code": "A", "gst_code": "C", "fbt": false},
+    {"id": 4, "title": "Honorary Park Rangers & Bush care group functions — BBQ", "account": "73511", "reason_code": "C", "gst_code": "P", "fbt": true},
+    {"id": "5a", "title": "Flowers / Cards / Gifts — Employee Reward and Recognition < $300", "account": "73513/7B222", "reason_code": "D", "gst_code": "C", "fbt": false},
+    {"id": "5b", "title": "Flowers / Cards / Gifts — Employee Reward and Recognition ≥ $300", "account": "73513/7B221", "reason_code": "E", "gst_code": "C", "fbt": true},
+    {"id": "5c", "title": "Flowers / Cards / Gifts — Non-Employee", "account": "73553", "reason_code": "K", "gst_code": "C", "fbt": false},
+    {"id": 6, "title": "Staff Morning Tea / Afternoon Tea", "account": "73512", "reason_code": "B", "gst_code": "C", "fbt": false},
+    {"id": 7, "title": "Christmas Party (All costs e.g. Karaoke) / Gala Dinners", "account": "73511", "reason_code": "C", "gst_code": "P", "fbt": true},
+    {"id": 8, "title": "Workshop/Seminar/Course/Conference provided by the local government", "account": "73512/7B222", "reason_code": "F", "gst_code": "C", "fbt": false},
+    {"id": "9a", "title": "Workshop/Courses provided by an external organisation", "account": "73544", "reason_code": "F", "gst_code": "C", "fbt": false},
+    {"id": "9b", "title": "Seminars/Conferences provided by an external organisation", "account": "73541", "reason_code": "F", "gst_code": "C", "fbt": false},
+    {"id": 10, "title": "Entertainers for Events e.g. Carols by Candlelight", "account": "73515", "reason_code": "L", "gst_code": "C", "fbt": false},
+    {"id": 11, "title": "Conference Meals — Employees Only", "account": "73512", "reason_code": "A", "gst_code": "C", "fbt": false},
+    {"id": "12a", "title": "Staff retirement/farewell — Morning/Afternoon Tea & nibbles", "account": "73512/7B222", "reason_code": "B", "gst_code": "C", "fbt": false},
+    {"id": "12b", "title": "Staff retirement/farewell — Lunch/Dinner", "account": "73511/7B221", "reason_code": "C", "gst_code": "P", "fbt": true},
+    {"id": 13, "title": "Lunches — customer meetings/consultants/formal off-site meetings/Working Lunches — ELT & special project groups", "account": "73511 or 73512 (depends on food & venue — apply Reason H)", "reason_code": "H", "gst_code": "P", "fbt": null},
+    {"id": 14, "title": "Formal off-site and on-site meetings for external and internal attendees", "account": "73511 or 73512 (depends on food & venue — apply Reason H)", "reason_code": "H", "gst_code": "P", "fbt": null},
+    {"id": 15, "title": "Refreshments/lunches etc. for visiting Dignitaries", "account": "73512", "reason_code": "G", "gst_code": "C", "fbt": false},
+    {"id": 16, "title": "Refreshments — ELT — includes alcohol", "account": "73511", "reason_code": "C", "gst_code": "P", "fbt": true},
+    {"id": 17, "title": "Annual ELT/Stream/Mgt Team lunches", "account": "73511 or 73512 (depends on food & venue — apply Reason H)", "reason_code": "H", "gst_code": "P", "fbt": null},
+    {"id": 18, "title": "Business Breakfasts/Networking Events", "account": "73511 or 73512 (depends on food & venue — apply Reason H)", "reason_code": "H", "gst_code": "C", "fbt": null},
+    {"id": "19a", "title": "Employee Functions & Awards — Lunch or dinner", "account": "73514/7B223", "reason_code": "D or E", "gst_code": "C", "fbt": true},
+    {"id": "19b", "title": "Employee Functions & Awards — Year of Service Gift Cards", "account": "73514/7B223", "reason_code": "I or J", "gst_code": "NA", "fbt": null}
+  ],
+  "reason_codes": {
+    "A": "Food is provided for a work-related purpose rather than an entertainment purpose.",
+    "B": "Food is provided for the purpose of refreshment rather than an entertainment purpose.",
+    "C": "Social function (recreation or meal entertainment). These are subject to FBT.",
+    "D": "Expense benefits with a value of < $300 (including GST). These are minor benefits if provided infrequently and are exempt.",
+    "E": "Expense benefits with a value of $300 or more. These are subject to FBT.",
+    "F": "Light refreshments provided with work-related training.",
+    "G": "Non work-related meal entertainment (e.g. for guest speaker, volunteer) or gift.",
+    "H": "Requires assessment of a combination of factors (purpose / type of food / when / where).",
+    "I": "Years of Service Gift < $500. FBT exempt.",
+    "J": "Years of Service Gift > $500. Subject to FBT.",
+    "K": "Event or gift for community members/non-employees. Exempt from FBT.",
+    "L": "Presenter, speaker, entertainer's fee — non-FBT if for a community event. Exempt from FBT (account 73515)."
+  },
+  "reason_h_factors": {
+    "1_purpose_food_or_drink_is_provided": {
+      "refreshment_only_light_lunch_and_teas": "73512",
+      "social": "73511"
+    },
+    "2_type_of_food_or_drink_provided": {
+      "tea_or_light_or_finger_lunch": "73512",
+      "elaborate_meal_or_alcohol": "73511"
+    },
+    "3_when_provided": {
+      "during_work_or_overtime": "73512 likely",
+      "outside_of_work": "73511 likely"
+    },
+    "4_where_provided": {
+      "on_business_premises": "73512 likely",
+      "off_site_or_function_room": "73511 likely"
+    }
+  },
+  "internal_catering": {
+    "context": "Catering provided by Council owned and operated facilities (Logan Entertainment Centre and Logan Metro InSports)",
+    "fbt_account": "7B221",
+    "non_fbt_account": "7B222",
+    "invoice_requirements": "Full details of catering provided, including purpose for catering, internal/external attendees and specifics of food and drink provided must be included on any internal invoice quoting natural accounts 7B221/7B222.",
+    "authorisation": "Authorised per Instrument of Authorisation AUTH0009 (Financial Authorisation Limits) and AUTH0012 (General Authorisations)."
+  },
+  "gst_codes": {
+    "C": "Standard taxable supply with credit (most allocations).",
+    "P": "Generally used for 73511 allocations. Applied where input tax credit not claimable. Final code depends on supplier GST registration, GST status of the supply, and FBT applicability.",
+    "NA": "GST not applicable (e.g. gift cards).",
+    "note": "GST is highly complex; the Finance Branch has the authoritative call. Generally use P for 73511 and C elsewhere."
+  },
+  "scenario_to_fbt_data_id_map": {
+    "_comment": "Maps fbt_classification.json scenario id to fbt_data.json key (the existing 24-entry operational lookup)",
+    "1": 1, "2": 2, "3": 3, "4": 4,
+    "5a": 5, "5b": 6, "5c": 7,
+    "6": 8, "7": 9, "8": 10,
+    "9a": 11, "9b": 12,
+    "10": 13, "11": 14,
+    "12a": 15, "12b": 16,
+    "13": 17, "14": 18, "15": 19, "16": 20, "17": 21, "18": 22,
+    "19a": 23, "19b": 24
+  }
+}

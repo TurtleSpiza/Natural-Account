@@ -1,0 +1,62 @@
+{
+  "mowing": {
+    "vendor": "Austspray",
+    "desc": "zone mowing landscape maintenance contract payment",
+    "amt": "",
+    "coded": ""
+  },
+  "cleanaway": {
+    "vendor": "Cleanaway",
+    "desc": "garbage collection waste disposal domestic bin service",
+    "amt": "",
+    "coded": ""
+  },
+  "security": {
+    "vendor": "",
+    "desc": "security patrol monitoring after hours services",
+    "amt": "",
+    "coded": ""
+  },
+  "morningtea": {
+    "vendor": "",
+    "desc": "staff morning tea refreshments working team meeting on-site",
+    "amt": "",
+    "coded": ""
+  },
+  "agency": {
+    "vendor": "Hays Recruitment",
+    "desc": "agency temporary labour supply staff hire",
+    "amt": "",
+    "coded": ""
+  },
+  "tec": {
+    "vendor": "Total Environmental Concepts",
+    "desc": "workplace health safety WHS services environmental",
+    "amt": "",
+    "coded": ""
+  },
+  "conference": {
+    "vendor": "",
+    "desc": "conference registration fees seminar attendance",
+    "amt": "",
+    "coded": ""
+  },
+  "christmas": {
+    "vendor": "",
+    "desc": "Christmas party staff function end of year all costs",
+    "amt": "",
+    "coded": ""
+  },
+  "weis": {
+    "vendor": "Weis Contractors",
+    "desc": "maintenance services repairs general works",
+    "amt": "",
+    "coded": ""
+  },
+  "treework": {
+    "vendor": "",
+    "desc": "tree operations tree removal pruning arborist services",
+    "amt": "",
+    "coded": ""
+  }
+}

@@ -1,0 +1,1141 @@
+{
+  "mixed": [
+    {
+      "scenario": "Hays Recruitment invoice for $4,200 — supply of temporary administration officer for 3 weeks.",
+      "correct": "73214",
+      "options": [
+        "71113",
+        "73214",
+        "73211",
+        "71112"
+      ],
+      "explain": "Agency personnel are ALWAYS 73214. 71113 is for staff directly engaged by Council via payroll — never for agency invoices."
+    },
+    {
+      "scenario": "Invoice from Cleanaway for monthly domestic wheelie bin collection — $14,320.",
+      "correct": "73122",
+      "options": [
+        "73122",
+        "73129",
+        "73130",
+        "73121"
+      ],
+      "explain": "Domestic bin collection = 73122 Garbage Collection. Greenwaste processing = 73129. General waste to landfill = 73130."
+    },
+    {
+      "scenario": "Austspray Pty Ltd — zone mowing contract payment, $8,450.",
+      "correct": "73126",
+      "options": [
+        "73126",
+        "73211",
+        "73123",
+        "73129"
+      ],
+      "explain": "Mowing and landscaping services = 73126 Landscapers & Gardeners. Austspray is a known mowing/landscaping vendor."
+    },
+    {
+      "scenario": "Go Via motorway toll invoice for Council vehicles — $387.",
+      "correct": "73535",
+      "options": [
+        "73535",
+        "73531",
+        "73533",
+        "73312"
+      ],
+      "explain": "Tollway charges = 73535. NOT 73531 (taxi/parking). NOT 73533 (interstate travel)."
+    },
+    {
+      "scenario": "Purchase of 4 safety vests and 2 hard hats for park maintenance crew — $186.",
+      "correct": "72113",
+      "options": [
+        "72113",
+        "72114",
+        "72111",
+        "73125"
+      ],
+      "explain": "Safety equipment = 72113 Safety Equipment & Medical Supplies. Uniforms = 72114. Items under $200 minor equipment = 72111. WHS services = 73125."
+    },
+    {
+      "scenario": "Griffith University semester fees — reimbursement to staff member under Study Assistance Policy — $3,810.",
+      "correct": "73545",
+      "options": [
+        "73545",
+        "73544",
+        "73541",
+        "73542"
+      ],
+      "explain": "University fees reimbursed to staff = 73545 Study Assistance. Training courses = 73544. Conference registration = 73541."
+    },
+    {
+      "scenario": "AILA annual membership renewal — $495.",
+      "correct": "73542",
+      "options": [
+        "73542",
+        "73433",
+        "73544",
+        "73541"
+      ],
+      "explain": "Professional body membership = 73542. Blue cards and licence fees = 73433. Training = 73544."
+    },
+    {
+      "scenario": "Blue card renewal fee for park ranger — $87.90.",
+      "correct": "73433",
+      "options": [
+        "73433",
+        "73542",
+        "73544",
+        "73211"
+      ],
+      "explain": "Blue cards = 73433 Other Fees & Charges. NOT 73542 which is professional body memberships only."
+    },
+    {
+      "scenario": "Internal venue hire — Logan Entertainment Centre function room for team planning day.",
+      "correct": "7B611",
+      "options": [
+        "7B611",
+        "73521",
+        "73544",
+        "73511"
+      ],
+      "explain": "All internal LCC venue hire = 7B611. External commercial venues only = 73521. Even if used for training, venue hire is 7B611."
+    },
+    {
+      "scenario": "Cemetery refund — customer cancelled prepaid burial plot arrangement, $2,400 credit.",
+      "correct": "62125",
+      "options": [
+        "62125",
+        "62121",
+        "73412",
+        "64212"
+      ],
+      "explain": "Cemetery charges including refunds and credits = 62125 Cemetery Charges. This is a revenue account for all cemetery plot transactions."
+    },
+    {
+      "scenario": "Contract mowing at Slacks Creek Cemetery — invoice $1,890.",
+      "correct": "73126",
+      "options": [
+        "73126",
+        "73211",
+        "73123",
+        "73122"
+      ],
+      "explain": "Mowing at cemeteries = 73126 Landscapers & Gardeners. No cemetery-specific expense accounts exist — standard accounts apply."
+    },
+    {
+      "scenario": "Queensland Audit Office — annual financial statements audit fee $45,000.",
+      "correct": "73112",
+      "options": [
+        "73112",
+        "73116",
+        "73601",
+        "73211"
+      ],
+      "explain": "External financial reporting audit ONLY = 73112. All other audit/investigation = 73116."
+    },
+    {
+      "scenario": "QLDPSI security patrol invoice — monthly parks security, $23,390.",
+      "correct": "73124",
+      "options": [
+        "73124",
+        "73123",
+        "73121",
+        "73211"
+      ],
+      "explain": "Security patrols and alarm monitoring = 73124 Security. NOT 73123 Maintenance Services."
+    },
+    {
+      "scenario": "Internal water usage charge from LCC Water branch — journal entry $1,240.",
+      "correct": "7B113",
+      "options": [
+        "7B113",
+        "73316",
+        "73314",
+        "7B111"
+      ],
+      "explain": "Internal LCC water usage = 7B113. 73314-73317 are for EXTERNAL water/sewer providers only, never for internal LCC charges."
+    },
+    {
+      "scenario": "Consultant engaged to review branch restructure — written report, 6-month engagement, unsupervised.",
+      "correct": "73601",
+      "options": [
+        "73601",
+        "73211",
+        "73212",
+        "73699"
+      ],
+      "explain": "All 4 consultancy elements met: expert knowledge + written recommendations + fixed period + unsupervised = 73601 Management Consultancy."
+    },
+    {
+      "scenario": "Plumber called to fix burst pipe at depot — one-off job, $2,800.",
+      "correct": "73123",
+      "options": [
+        "73123",
+        "73211",
+        "73124",
+        "73127"
+      ],
+      "explain": "Plumbing, pest control, repairs, building contractors = 73123 Maintenance Services. Plumbing is specifically listed in the 73123 description."
+    },
+    {
+      "scenario": "P-Card purchase — morning tea biscuits for on-site team meeting — $45.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "72111",
+        "73513"
+      ],
+      "explain": "On-site light refreshments at a working meeting, no alcohol = 73512 Non-FBT. Off-site or alcohol present = 73511."
+    },
+    {
+      "scenario": "Energex electricity bill for park depot — $4,200.",
+      "correct": "73312",
+      "options": [
+        "73312",
+        "7B111",
+        "7B112",
+        "73311"
+      ],
+      "explain": "External electricity supply = 73312. Internal LCC rates/utilities = 7B111 series. Gas = 73311."
+    },
+    {
+      "scenario": "Purchase of 20 bags of topsoil for garden bed renovation — $340.",
+      "correct": "72249",
+      "options": [
+        "72249",
+        "72231",
+        "72112",
+        "72214"
+      ],
+      "explain": "Topsoil = 72249. Landscape supplies (mulch, turf) = 72231. Chemicals/fertiliser = 72112. Construction materials = 72214."
+    },
+    {
+      "scenario": "Pest control service at park amenities building — quarterly invoice $890.",
+      "correct": "73123",
+      "options": [
+        "73123",
+        "73124",
+        "73125",
+        "73128"
+      ],
+      "explain": "Pest control = 73123 Maintenance Services. Pest control is specifically listed in the 73123 account description."
+    },
+    {
+      "scenario": "External hire of excavator for drainage work — 3 days, $2,100.",
+      "correct": "74123",
+      "options": [
+        "74123",
+        "73211",
+        "74183",
+        "73123"
+      ],
+      "explain": "External excavator hire = 74123. 74183 (Fuel) is RESTRICTED to Plant Fleet Services only — never use 7418x accounts."
+    },
+    {
+      "scenario": "Telstra mobile phone monthly rental and usage — $1,890.",
+      "correct": "73313",
+      "options": [
+        "73313",
+        "73564",
+        "73312",
+        "72314"
+      ],
+      "explain": "Phone rental and usage charges = 73313 Telecommunications. Phone PURCHASES should NOT go to 73313 — use 72314 or 73564."
+    },
+    {
+      "scenario": "Purchase of new desk and chair for depot office — $780 total.",
+      "correct": "72313",
+      "options": [
+        "72313",
+        "72111",
+        "73564",
+        "72312"
+      ],
+      "explain": "Furniture below capitalisation threshold = 72313. NOT 72111 (under $200 only). At or above capitalisation threshold → Asset Register."
+    },
+    {
+      "scenario": "Cabcharge taxi fare — staff travel to meeting in Brisbane CBD.",
+      "correct": "73531",
+      "options": [
+        "73531",
+        "73535",
+        "73533",
+        "73532"
+      ],
+      "explain": "SEQ taxi fares and parking = 73531. Tolls = 73535. Interstate travel = 73533. Intrastate QLD travel = 73532."
+    },
+    {
+      "scenario": "Staff farewell — morning tea with cake on Council premises, no alcohol.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73513",
+        "73514"
+      ],
+      "explain": "On-site farewell morning tea with simple food, no alcohol = 73512. A farewell LUNCH or DINNER (especially off-site or with alcohol) = 73511."
+    },
+    {
+      "scenario": "Recovery received from insurance claim after vehicle damage — $3,200.",
+      "correct": "64211",
+      "options": [
+        "64211",
+        "73133",
+        "73131",
+        "73132"
+      ],
+      "explain": "Insurance RECOVERIES received = 64211 (revenue). Insurance premiums = 73131. Excess/damage payments = 73132-73137."
+    },
+    {
+      "scenario": "Purchase of herbicide for weed control — $420.",
+      "correct": "72112",
+      "options": [
+        "72112",
+        "72113",
+        "72111",
+        "72249"
+      ],
+      "explain": "Chemicals, fertiliser and paints = 72112. Safety equipment = 72113. Minor equipment = 72111."
+    },
+    {
+      "scenario": "Seek.com job advertisement for park ranger position.",
+      "correct": "73551",
+      "options": [
+        "73551",
+        "73552",
+        "73553",
+        "73561"
+      ],
+      "explain": "Recruitment advertising = 73551, coordinated via HR Services. Non-recruitment advertising = 73552. Promotional items = 73553."
+    },
+    {
+      "scenario": "Internal tip fees — green waste disposal via LCC facility.",
+      "correct": "7B122",
+      "options": [
+        "7B122",
+        "73129",
+        "73130",
+        "73122"
+      ],
+      "explain": "Internal LCC tip fees = 7B122. External greenwaste processing = 73129. External garbage collection = 73122."
+    },
+    {
+      "scenario": "Fire levy payment on Council-owned building.",
+      "correct": "73422",
+      "options": [
+        "73422",
+        "73131",
+        "73421",
+        "73411"
+      ],
+      "explain": "Fire levy on Council properties = 73422. Insurance premiums = 73131. Rates paid to other authorities = 73421."
+    },
+    {
+      "scenario": "Refund of operational contribution no longer required — $5,000.",
+      "correct": "73412",
+      "options": [
+        "73412",
+        "73411",
+        "72233",
+        "64212"
+      ],
+      "explain": "Refund of contributions no longer required = 73412. External contributions = 73411."
+    },
+    {
+      "scenario": "Ozzie Workwear — outdoor clothing for field staff, $1,200.",
+      "correct": "72114",
+      "options": [
+        "72114",
+        "72113",
+        "72111",
+        "73125"
+      ],
+      "explain": "Corporate uniforms and outdoor clothing = 72114. Safety equipment/medical supplies = 72113."
+    },
+    {
+      "scenario": "Equifax pre-employment background check — $180.",
+      "correct": "73140",
+      "options": [
+        "73140",
+        "73433",
+        "73141",
+        "73128"
+      ],
+      "explain": "Pre-employment background checks = 73140. Drug/alcohol testing = 73141. Other fees = 73433."
+    },
+    {
+      "scenario": "Internal spoils material from LCC quarry — journal entry.",
+      "correct": "7B532",
+      "options": [
+        "7B532",
+        "72252",
+        "72251",
+        "7B531"
+      ],
+      "explain": "Internal spoils from LCC = 7B532. External quarry material = 72252. Internal sand = 7B531."
+    },
+    {
+      "scenario": "Debt collection commission fee — $450.",
+      "correct": "73432",
+      "options": [
+        "73432",
+        "73431",
+        "73433",
+        "73434"
+      ],
+      "explain": "Debt collection and commission fees = 73432. Fines/penalties = 73431. Other fees = 73433. Regulatory fees = 73434."
+    },
+    {
+      "scenario": "Dog food purchase for Council's Animal Management Centre — $210.",
+      "correct": "72116",
+      "options": [
+        "72116",
+        "72111",
+        "72122",
+        "72117"
+      ],
+      "explain": "Dog food for Animal Management = 72116. Cat food = 72117. Food for resale = 72122. Minor equipment = 72111."
+    },
+    {
+      "scenario": "Water meter issued from Council inventory.",
+      "correct": "72115",
+      "options": [
+        "72115",
+        "72111",
+        "72213",
+        "72331"
+      ],
+      "explain": "Water meters from inventory = 72115. Water meters from stores = 72331. Plumbing materials = 72213."
+    },
+    {
+      "scenario": "Bitumen and asphalt for road patching — $3,200.",
+      "correct": "72211",
+      "options": [
+        "72211",
+        "72212",
+        "72214",
+        "72231"
+      ],
+      "explain": "Bitumen & asphalt products = 72211. Concrete = 72212. Construction materials = 72214. Landscape supplies = 72231."
+    },
+    {
+      "scenario": "Road furniture purchase — bollards and park bench — $1,400.",
+      "correct": "72221",
+      "options": [
+        "72221",
+        "72222",
+        "72313",
+        "72315"
+      ],
+      "explain": "Roads & parks furniture = 72221. Signs = 72222. Office furniture = 72313. Parks assets = 72315."
+    },
+    {
+      "scenario": "Signage for park entrance — directional and safety signs — $800.",
+      "correct": "72222",
+      "options": [
+        "72222",
+        "72221",
+        "72315",
+        "72111"
+      ],
+      "explain": "Signs for roads and parks = 72222. Roads & parks furniture = 72221. Parks assets = 72315."
+    },
+    {
+      "scenario": "Waste levy payment to Queensland State Government — $15,000.",
+      "correct": "73423",
+      "options": [
+        "73423",
+        "73422",
+        "73421",
+        "73411"
+      ],
+      "explain": "State Government waste levy = 73423. Fire levy = 73422. Rates to other authorities = 73421. External contributions = 73411."
+    },
+    {
+      "scenario": "Graphic design for park event brochure — $650.",
+      "correct": "73562",
+      "options": [
+        "73562",
+        "73552",
+        "73553",
+        "73563"
+      ],
+      "explain": "Multi-media services, photography, graphic design = 73562. Other advertising = 73552. Promotional items = 73553. Printing = 73563."
+    },
+    {
+      "scenario": "Postage for mailing park permits — $120.",
+      "correct": "73565",
+      "options": [
+        "73565",
+        "73561",
+        "73563",
+        "73313"
+      ],
+      "explain": "Postage and courier services = 73565. Other admin = 73561. Printing/stationery = 73563. Telecommunications = 73313."
+    },
+    {
+      "scenario": "IT software licence renewal — annual fee $2,400.",
+      "correct": "73566",
+      "options": [
+        "73566",
+        "73564",
+        "73605",
+        "7B411"
+      ],
+      "explain": "IT software licence fees = 73566. IT equipment/applications = 73564. IT consultancies = 73605. Internal IT = 7B411."
+    },
+    {
+      "scenario": "Internal crushed gravel supply from LCC quarry — journal $890.",
+      "correct": "7B521",
+      "options": [
+        "7B521",
+        "72241",
+        "7B520",
+        "72240"
+      ],
+      "explain": "Internal crushed gravel from LCC = 7B521. External crushed gravel = 72241. Internal gravel (general) = 7B520. External gravel = 72240."
+    },
+    {
+      "scenario": "Drug and alcohol testing for park maintenance crew — $340.",
+      "correct": "73141",
+      "options": [
+        "73141",
+        "73140",
+        "73115",
+        "73125"
+      ],
+      "explain": "Drug & alcohol testing = 73141. Pre-employment background checks = 73140. Medical services = 73115. WHS = 73125."
+    },
+    {
+      "scenario": "Internal vehicle hire from Plant Fleet Services — journal entry.",
+      "correct": "7C111",
+      "options": [
+        "7C111",
+        "7C112",
+        "74151",
+        "7B612"
+      ],
+      "explain": "Internal vehicle/plant hire from Plant Fleet = 7C111. Internal misc plant = 7C112. External utility hire = 74151. Internal equipment lease = 7B612."
+    },
+    {
+      "scenario": "Environmental protection activities — weed management materials, $560.",
+      "correct": "72201",
+      "options": [
+        "72201",
+        "72112",
+        "73126",
+        "73125"
+      ],
+      "explain": "Environmental protection expenses = 72201. Chemicals/fertiliser = 72112. Landscaping services = 73126. WHS = 73125."
+    },
+    {
+      "scenario": "Carbon emissions tax permit purchase — $8,000.",
+      "correct": "73424",
+      "options": [
+        "73424",
+        "73423",
+        "73425",
+        "73421"
+      ],
+      "explain": "Carbon emissions tax = 73424. Waste levy = 73423. Carbon provision adjustments = 73425. Rates to other authorities = 73421."
+    }
+  ],
+  "traps": [
+    {
+      "scenario": "Chandler Macleod invoice — supply of temporary groundskeeper, 4 weeks, $6,200.",
+      "correct": "73214",
+      "options": [
+        "73214",
+        "71113",
+        "71112",
+        "71118"
+      ],
+      "explain": "TRAP: Agency temps → ALWAYS 73214, never 71113. Chandler Macleod is an employment agency — the person is not on Council payroll."
+    },
+    {
+      "scenario": "On-call leave accrual for park ranger — payroll journal.",
+      "correct": "71226",
+      "options": [
+        "71226",
+        "71112",
+        "71111",
+        "71119"
+      ],
+      "explain": "TRAP: On-call leave → 71226 Banked RDO / On Call Leave. NOT 71112 Overtime. These are commonly confused."
+    },
+    {
+      "scenario": "Staff Christmas party at external restaurant — $2,400 (alcohol served).",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73513",
+        "73514"
+      ],
+      "explain": "TRAP: Christmas party = ALWAYS 73511 FBT. Off-site + alcohol + social function — every Reason H factor points to 73511."
+    },
+    {
+      "scenario": "DigSafe annual subscription fee — $330.",
+      "correct": "73433",
+      "options": [
+        "73433",
+        "73542",
+        "73544",
+        "73561"
+      ],
+      "explain": "TRAP: DigSafe = 73433 Other Fees & Charges. NOT 73542 (professional memberships only). This is one of the most common miscodes."
+    },
+    {
+      "scenario": "Training venue hire — Logan Entertainment Centre for full-day WHS training.",
+      "correct": "7B611",
+      "options": [
+        "7B611",
+        "73544",
+        "73521",
+        "73125"
+      ],
+      "explain": "TRAP: Internal LCC venue = ALWAYS 7B611, even when used for training. Never 73521 (external only) or 73544 (training content, not venue)."
+    },
+    {
+      "scenario": "Electricity bill from Energex — depot supply, $4,200.",
+      "correct": "73312",
+      "options": [
+        "73312",
+        "7B111",
+        "7B112",
+        "73311"
+      ],
+      "explain": "TRAP: External electricity = 73312. LCC internal rates/utilities = 7B111 series. These get confused because both are 'utilities'."
+    },
+    {
+      "scenario": "Internal LCC rates and charges journal — $890.",
+      "correct": "7B111",
+      "options": [
+        "7B111",
+        "73312",
+        "73314",
+        "73421"
+      ],
+      "explain": "TRAP: Internal LCC rates = 7B111. 73314-73317 are for EXTERNAL providers only — never for internal LCC charges."
+    },
+    {
+      "scenario": "Invoice total $3,000 but the underlying contract value is $45,000 per annum.",
+      "correct": "73212",
+      "options": [
+        "73212",
+        "73211",
+        "73123",
+        "73128"
+      ],
+      "explain": "TRAP: Threshold is TOTAL CONTRACT VALUE, not invoice amount. $45k total = 73212 Major Contracts, even though this invoice is $3k."
+    },
+    {
+      "scenario": "Cleanaway invoice — but this one is for ELECTRICITY supply, not waste collection.",
+      "correct": "73312",
+      "options": [
+        "73312",
+        "73122",
+        "73129",
+        "73130"
+      ],
+      "explain": "TRAP: Vendor name can mislead. Cleanaway electricity = 73312. Code based on what's being supplied, not who the vendor is."
+    },
+    {
+      "scenario": "Someone manually coded a cost allocation to 7BZ11.",
+      "correct": "7BZ11",
+      "options": [
+        "7BZ11",
+        "7B111",
+        "7B123",
+        "73128"
+      ],
+      "explain": "TRAP: 7BZ11 = system-generated CSO journals ONLY. Manual coding to 7BZ11 is NEVER correct. Must be flagged and referred to Finance."
+    },
+    {
+      "scenario": "Plant hire invoice for excavator — coded to 74183 Fuel (restricted account).",
+      "correct": "74123",
+      "options": [
+        "74123",
+        "74183",
+        "73211",
+        "73212"
+      ],
+      "explain": "TRAP: 74181-74188 are RESTRICTED to Plant Fleet Services Branch only. External excavator hire = 74123."
+    },
+    {
+      "scenario": "Conference accommodation in Melbourne — staff attending LGMA conference.",
+      "correct": "73533",
+      "options": [
+        "73533",
+        "73532",
+        "73541",
+        "73531"
+      ],
+      "explain": "TRAP: Melbourne = interstate = 73533. NOT 73532 (within QLD only). Conference REGISTRATION is separate → 73541."
+    },
+    {
+      "scenario": "Meals during interstate travel — staff dinner at hotel restaurant, $85.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73533",
+        "73512",
+        "73531"
+      ],
+      "explain": "TRAP: Meals during travel follow HOSPITALITY rules, not the travel account. Restaurant dinner = off-site = 73511. Never code meals to 73533."
+    },
+    {
+      "scenario": "Purchase of office chair — $420, above P&A threshold.",
+      "correct": "72313",
+      "options": [
+        "72313",
+        "72111",
+        "73564",
+        "73544"
+      ],
+      "explain": "TRAP: Furniture = 72313. NOT 72111 (under $200 only). NOT 73564 (IT equipment). If above capitalisation threshold → Asset Register."
+    },
+    {
+      "scenario": "University course code visible on invoice — staff TAFE reimbursement.",
+      "correct": "73545",
+      "options": [
+        "73545",
+        "73544",
+        "73541",
+        "73542"
+      ],
+      "explain": "TRAP: University/TAFE fees reimbursed to staff = 73545 Study Assistance. A course code is the giveaway — not general training (73544)."
+    },
+    {
+      "scenario": "Greenwaste disposal to Council tip — $650.",
+      "correct": "73129",
+      "options": [
+        "73129",
+        "73122",
+        "73130",
+        "73126"
+      ],
+      "explain": "TRAP: Greenwaste processing and disposal = 73129. Garbage/bin collection = 73122. Solid waste to landfill = 73130. Mowing = 73126."
+    },
+    {
+      "scenario": "Electrician called to repair depot lighting — $1,200.",
+      "correct": "73127",
+      "options": [
+        "73127",
+        "73123",
+        "73312",
+        "73318"
+      ],
+      "explain": "TRAP: Electrician services = 73127. NOT 73123 (general maintenance — plumber/pest/painter). NOT 73312 (electricity supply bill)."
+    },
+    {
+      "scenario": "New employee — Workers Compensation Insurance journal entry.",
+      "correct": "71116",
+      "options": [
+        "71116",
+        "71241",
+        "71231",
+        "73131"
+      ],
+      "explain": "TRAP: 71116 WCI = recording only, always nets to nil. System generated. 71241 = actual Work Cover premium payment. 73131 = insurance premiums."
+    },
+    {
+      "scenario": "Promotional items for park event — branded water bottles, $800.",
+      "correct": "73553",
+      "options": [
+        "73553",
+        "73552",
+        "73513",
+        "73515"
+      ],
+      "explain": "TRAP: Promotional items = 73553, coordinated through Marketing. NOT 73552 (advertising). NOT 73513 (employee gifts)."
+    },
+    {
+      "scenario": "Insurance premium annual payment — $12,000.",
+      "correct": "73131",
+      "options": [
+        "73131",
+        "73132",
+        "73133",
+        "64211"
+      ],
+      "explain": "TRAP: Insurance PREMIUMS = 73131. Excess/damage NOT covered by insurance = 73132-73137. Insurance RECOVERIES = 64211 (revenue)."
+    },
+    {
+      "scenario": "Damage payment after Council mower hit a fence — $800 reimbursement to property owner.",
+      "correct": "73438",
+      "options": [
+        "73438",
+        "73132",
+        "73133",
+        "73131"
+      ],
+      "explain": "TRAP: Minor damage claims for Council activity damaging non-Council property = 73438. Insurance excess = 73132-73137. Insurance premiums = 73131."
+    },
+    {
+      "scenario": "Gas supply bill for depot kitchen — $340.",
+      "correct": "73311",
+      "options": [
+        "73311",
+        "73312",
+        "7B111",
+        "73313"
+      ],
+      "explain": "TRAP: Gas supply = 73311. Electricity = 73312. Internal rates = 7B111. Telecommunications = 73313."
+    },
+    {
+      "scenario": "Adecco agency invoice for temporary admin support — $3,800.",
+      "correct": "73214",
+      "options": [
+        "73214",
+        "71113",
+        "71118",
+        "71112"
+      ],
+      "explain": "TRAP: Adecco is an employment agency. ALL agency invoices = 73214. Never 71113 (Council direct temps) or 71118 (temporary appointments via payroll)."
+    },
+    {
+      "scenario": "Fuel card transaction — diesel, not yet allocated to correct account.",
+      "correct": "72118",
+      "options": [
+        "72118",
+        "72111",
+        "74183",
+        "73535"
+      ],
+      "explain": "TRAP: Fuel card PENDING = 72118. Must be cleared to the correct expense account. 74183 is RESTRICTED to Plant Fleet Services — never use it."
+    },
+    {
+      "scenario": "P-Card transaction — not yet allocated to correct account.",
+      "correct": "72119",
+      "options": [
+        "72119",
+        "72118",
+        "72111",
+        "73128"
+      ],
+      "explain": "TRAP: Credit card PENDING = 72119. Must be cleared before period end. 72118 is fuel card pending — different pending account."
+    },
+    {
+      "scenario": "73215 coded on a Parks invoice — is this correct for Parks?",
+      "correct": "73215",
+      "options": [
+        "73211",
+        "73212",
+        "73215",
+        "73601"
+      ],
+      "explain": "TRAP: 73215 Alliance Contracts is RESTRICTED to Logan Water only. If a Parks invoice is coded here, it is miscoded — should be 73211 or 73212."
+    },
+    {
+      "scenario": "Contractor implementing an IT system to Council specifications, supervised by Council staff.",
+      "correct": "73212",
+      "options": [
+        "73212",
+        "73605",
+        "73601",
+        "73564"
+      ],
+      "explain": "TRAP: Supervised by Council + implementing known system = CONTRACTOR, not consultant. Missing the 'unsupervised' element means it fails the 4-element test. Use 73211/73212."
+    },
+    {
+      "scenario": "Internal photocopying charges — journal entry $120.",
+      "correct": "7BZ21",
+      "options": [
+        "7BZ21",
+        "73563",
+        "7B123",
+        "73561"
+      ],
+      "explain": "TRAP: Internal photocopies = 7BZ21. External printing/stationery = 73563. Internal other fees = 7B123."
+    },
+    {
+      "scenario": "Street lighting infrastructure charge from electricity supplier.",
+      "correct": "73318",
+      "options": [
+        "73318",
+        "73312",
+        "73127",
+        "73312"
+      ],
+      "explain": "TRAP: Street lighting infrastructure charge = 73318 (separate from regular electricity). Regular electricity = 73312. Electrical maintenance = 73127."
+    },
+    {
+      "scenario": "Regulatory fee paid to industry ombudsman — $2,400.",
+      "correct": "73434",
+      "options": [
+        "73434",
+        "73433",
+        "73431",
+        "73432"
+      ],
+      "explain": "TRAP: Regulatory fees (industry regulators, ombudsman) = 73434. Other fees/charges = 73433. Fines/penalties = 73431. Commissions = 73432."
+    }
+  ],
+  "fbt": [
+    {
+      "scenario": "Morning tea — biscuits and tea at team meeting in Council office boardroom.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73513",
+        "7B222"
+      ],
+      "explain": "On-site, light refreshments, working meeting, no alcohol = 73512 Non-FBT. All 4 Reason H factors support 73512."
+    },
+    {
+      "scenario": "Staff farewell lunch at a restaurant — 12 attendees, $480.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73513",
+        "73514"
+      ],
+      "explain": "Off-site restaurant = 73511 FBT. Reason H: off-premises → automatic 73511 regardless of other factors."
+    },
+    {
+      "scenario": "Staff farewell — morning tea on-site with cake, no alcohol.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73513",
+        "73514"
+      ],
+      "explain": "On-site farewell morning tea with simple food, no alcohol, during work hours = 73512 Non-FBT."
+    },
+    {
+      "scenario": "Park Rangers BBQ for Honorary Rangers and Bushcare volunteers.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73553",
+        "73514"
+      ],
+      "explain": "Rangers BBQ = 73511 FBT. Reason C — social/recreational function. Social nature makes it FBT."
+    },
+    {
+      "scenario": "ELT leadership dinner at external venue — wine served.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73514",
+        "7B221"
+      ],
+      "explain": "Off-site + alcohol = 73511 FBT. Two Reason H factors (off-premises, alcohol) both point to 73511."
+    },
+    {
+      "scenario": "Working lunch — sandwiches delivered to meeting room for all-day workshop.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "7B222",
+        "73514"
+      ],
+      "explain": "On-site, working meeting, sandwiches (light food), during work hours, no alcohol = 73512 Non-FBT."
+    },
+    {
+      "scenario": "Conference meals — employees dining on-site at conference venue.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73541",
+        "73533"
+      ],
+      "explain": "Conference meals for employees on-site = 73512 Non-FBT. The conference venue is treated as 'on premises'."
+    },
+    {
+      "scenario": "Christmas party — all costs including venue, catering, decorations, DJ.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73514",
+        "73553"
+      ],
+      "explain": "Christmas party = ALWAYS 73511 FBT. All costs for the event go to 73511, no exceptions."
+    },
+    {
+      "scenario": "Flowers sent to employee who had a baby — $45.",
+      "correct": "73513",
+      "options": [
+        "73513",
+        "73511",
+        "73512",
+        "73553"
+      ],
+      "explain": "Employee gift, infrequent, under $300 = 73513 Employee Reward & Recognition. Minor benefit exemption = no FBT."
+    },
+    {
+      "scenario": "Employee gift basket — $350 value, one-off recognition.",
+      "correct": "73513",
+      "options": [
+        "73513",
+        "73511",
+        "73514",
+        "73553"
+      ],
+      "explain": "Employee gift ≥$300 = 73513 but FBT APPLIES (expense benefit). Still coded to 73513, but FBT must be reported."
+    },
+    {
+      "scenario": "Catering by Logan Entertainment Centre for staff farewell function.",
+      "correct": "7B221",
+      "options": [
+        "7B221",
+        "73511",
+        "73512",
+        "7B222"
+      ],
+      "explain": "Internal LEC catering for farewell function = 7B221 (Internal Hospitality FBT). Farewell = social = FBT. Use 7B221 because provider is internal LCC."
+    },
+    {
+      "scenario": "Nibbles from LEC Corporate Catalogue for on-site working meeting.",
+      "correct": "7B222",
+      "options": [
+        "7B222",
+        "7B221",
+        "73512",
+        "7B123"
+      ],
+      "explain": "Internal snack-type nibbles at working meeting = 7B222 (Internal Hospitality Non-FBT). On-site, light refreshments, working = no FBT."
+    },
+    {
+      "scenario": "Awards night dinner — Employee Excellence Awards at external venue.",
+      "correct": "73514",
+      "options": [
+        "73514",
+        "73511",
+        "73513",
+        "7B223"
+      ],
+      "explain": "Employee years of service/excellence awards functions = 73514 Employee Functions & Awards."
+    },
+    {
+      "scenario": "Guest speaker fee at community park event — $500.",
+      "correct": "73515",
+      "options": [
+        "73515",
+        "73511",
+        "73553",
+        "73541"
+      ],
+      "explain": "Speaker and presenter costs for community events = 73515 Presenter & Entertainer Fees (Non-FBT)."
+    },
+    {
+      "scenario": "Lunch at restaurant for visiting dignitary — $180.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73553",
+        "73513"
+      ],
+      "explain": "Off-site meal for dignitary/external guest = 73511 FBT. Any off-site hospitality = 73511, regardless of who is being hosted."
+    },
+    {
+      "scenario": "Pizza ordered for team working late on-site during emergency response.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73513",
+        "72111"
+      ],
+      "explain": "On-site food during work = 73512 Non-FBT. Even though it's pizza (more than biscuits), it's on-premises, during work, for a working purpose."
+    },
+    {
+      "scenario": "Non-employee gift — thank-you hamper for external volunteer, $120.",
+      "correct": "73553",
+      "options": [
+        "73553",
+        "73513",
+        "73511",
+        "73515"
+      ],
+      "explain": "Non-employee gifts = 73553 Promotional Items. Must go via Marketing & Communication Branch. Employee gifts = 73513."
+    },
+    {
+      "scenario": "BBQ lunch at Council depot for all staff — end of year celebration.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73514",
+        "73513"
+      ],
+      "explain": "End of year celebration/social event = 73511 FBT. Even if on Council premises, the social/recreational purpose (Reason C) makes it FBT."
+    },
+    {
+      "scenario": "Morning tea for community volunteers at park cleanup event.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73553",
+        "73515"
+      ],
+      "explain": "Light refreshments at a working/community event, on-site, no alcohol = 73512 Non-FBT."
+    },
+    {
+      "scenario": "Bottle of wine given to retiring staff member — $60.",
+      "correct": "73513",
+      "options": [
+        "73513",
+        "73511",
+        "73553",
+        "73514"
+      ],
+      "explain": "Employee gift (wine), infrequent, under $300 = 73513 Employee Reward & Recognition. Minor benefit = no FBT."
+    },
+    {
+      "scenario": "Staff end-of-year lunch at a club — $2,800, beer and wine included.",
+      "correct": "73511",
+      "options": [
+        "73511",
+        "73512",
+        "73514",
+        "7B221"
+      ],
+      "explain": "Off-site + alcohol + social function = 73511. Three Reason H factors all point to FBT. This is functionally a Christmas party."
+    },
+    {
+      "scenario": "Catering for Council workshop held at LEC — sandwiches and tea, no alcohol.",
+      "correct": "7B222",
+      "options": [
+        "7B222",
+        "7B221",
+        "73512",
+        "7B123"
+      ],
+      "explain": "Internal LCC venue (LEC) + light refreshments + working meeting + no alcohol = 7B222 Internal Hospitality Non-FBT."
+    },
+    {
+      "scenario": "Gift card $400 for employee 10-year service award.",
+      "correct": "73514",
+      "options": [
+        "73514",
+        "73513",
+        "73511",
+        "7B223"
+      ],
+      "explain": "Years of service awards = 73514 Employee Functions & Awards. ≥$300 gift = FBT applies but correct account is 73514 for service milestones."
+    },
+    {
+      "scenario": "Morning tea for training day — muffins and coffee purchased from local bakery.",
+      "correct": "73512",
+      "options": [
+        "73512",
+        "73511",
+        "73544",
+        "72111"
+      ],
+      "explain": "Light refreshments at training event (working context), purchased externally, no alcohol = 73512. The training itself is 73544, but the food is separate."
+    }
+  ]
+}

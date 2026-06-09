@@ -1,0 +1,1870 @@
+{
+  "62121": {
+    "name": "Charges Received",
+    "desc": "Revenue from fees charged by Council (waste disposal, liquid waste, cemetery). Refunds/credits code here.",
+    "rules": [],
+    "pdf_desc": "Revenue from fees charged by Council, such as the waste disposal charges at Council's landfill and liquid waste disposal charges at Council's treatment plant.",
+    "source": "PDF p12"
+  },
+  "62125": {
+    "name": "Cemetery Charges",
+    "desc": "Income received for prepaid deposits, instalment plan payments and prepayments for cemetery plots. Includes advance/prepaid arrangements and time-of-need charges. Cemetery refunds and credits also code here.",
+    "rules": [],
+    "pdf_desc": "Income received for prepaid deposits, instalment plan payments & prepayments for cemetery plots.",
+    "source": "PDF p13"
+  },
+  "64111": {
+    "name": "Discounts & Rebates Received",
+    "desc": "Sundry discounts received on expenses, such as postage rebate.",
+    "rules": [],
+    "pdf_desc": "Sundry discounts received on expenses, such as postage rebate.",
+    "source": "PDF p13"
+  },
+  "64211": {
+    "name": "Insurance Recoveries",
+    "desc": "Recoveries received from external parties in relation to insurance claims.",
+    "rules": [
+      "Insurance premiums → 73131, excess → 73132–73137"
+    ],
+    "pdf_desc": ") Recoveries received from external parties in relation to insurance claims.",
+    "source": "PDF p13"
+  },
+  "64311": {
+    "name": "Plant Leases (Revenue)",
+    "desc": "Leasing revenue from Council-owned plant provided for hire to Council employees.",
+    "rules": [],
+    "pdf_desc": "Leasing revenue from Council-owned plant provided for hire to Council employees.",
+    "source": "PDF p13"
+  },
+  "64312": {
+    "name": "External Plant Hire (Revenue)",
+    "desc": "Leasing revenue from Council-owned plant provided for hire to external parties.",
+    "rules": [],
+    "pdf_desc": "Leasing revenue from Council-owned plant provided for hire to external parties.",
+    "source": "PDF p13"
+  },
+  "71000": {
+    "name": "Timesheet Clearing",
+    "desc": "Clearing only. Must always net to nil.",
+    "rules": [
+      "PENDING — clear to correct account"
+    ],
+    "flags": [
+      "pending"
+    ],
+    "pdf_desc": "AccountAutomated Entries Only. Solely for HR/Payroll System generated entries.",
+    "source": "PDF p17"
+  },
+  "71111": {
+    "name": "Full Time Staff",
+    "desc": "Permanent full-time wages via payroll. Wages when on leave not charged here.",
+    "rules": [],
+    "pdf_desc": "Wages for days at work and RDO's for permanent full time employees paid via payroll (wages when on leave are not charged to this account).",
+    "source": "PDF p17"
+  },
+  "71112": {
+    "name": "Overtime",
+    "desc": "Overtime only. On-call leave → 71226.",
+    "rules": [
+      "On-call leave → 71226, NOT 71112"
+    ],
+    "pdf_desc": "Overtime not including callouts.",
+    "source": "PDF p17"
+  },
+  "71113": {
+    "name": "Temporary Staff",
+    "desc": "Directly engaged Council temps via payroll. NOT agency temps.",
+    "rules": [
+      "Agency temps → 73214, NEVER 71113"
+    ],
+    "pdf_desc": "Wages for staff employed at full time hours for a specific time period who are paid at the rates provided for permanent employees and enjoy the same entitlements as a permanent employee and are paid via payroll. Temporary staff employed through an agency should be coded to 73214.",
+    "source": "PDF p18"
+  },
+  "71114": {
+    "name": "Casual Staff",
+    "desc": "Hourly casual wages via payroll.",
+    "rules": [],
+    "pdf_desc": "Wages for staff employed on an hourly basis and paid via payroll. Casual staff are generally employed for short-term and ad-hoc projects and do not receive the same entitlements as permanent staff. Their employment is subject to termination at any time.",
+    "source": "PDF p18"
+  },
+  "71115": {
+    "name": "Trainees",
+    "desc": "Wages for employees engaged under formal traineeships.",
+    "rules": [],
+    "pdf_desc": ") Non-reimbursable wages paid to employees on work cover (usually up to first five days).",
+    "source": "PDF p18"
+  },
+  "71116": {
+    "name": "Workers Compensation Insurance",
+    "desc": "Recording only — always nets to nil. System generated.",
+    "rules": [
+      "Recording only — nets to nil"
+    ],
+    "pdf_desc": ") Reimbursable wages paid to employees on work cover (this account is for recording purposes only and will result in a nil balance as reimbursements are also included).",
+    "source": "PDF p18"
+  },
+  "71118": {
+    "name": "Temporary Appointments",
+    "desc": "Wages for temporary appointment staff engaged directly by Council.",
+    "rules": [],
+    "pdf_desc": "Overtime paid on callout.",
+    "source": "PDF p18"
+  },
+  "71119": {
+    "name": "Other Wages",
+    "desc": "Other wage payments not classified elsewhere.",
+    "rules": [],
+    "pdf_desc": "Wages for days at work & RDO's for staff employed at part time hours who are permanent employees and are paid via payroll (wages when on leave are not charged to this account).",
+    "source": "PDF p18"
+  },
+  "71121": {
+    "name": "Councillor Superannuation",
+    "desc": "Superannuation contributions for Councillors.",
+    "rules": [],
+    "pdf_desc": "Wages for trainees employed on Council's traineeship programs.",
+    "source": "PDF p18"
+  },
+  "71211": {
+    "name": "Allowances",
+    "desc": "Allowances paid to employees as part of their employment conditions.",
+    "rules": [],
+    "pdf_desc": "Paid Employee allowances e.g. first aid, shift, meal, mileage, leading hand.",
+    "source": "PDF p18"
+  },
+  "71221": {
+    "name": "Annual Leave",
+    "desc": "Annual leave wage costs.",
+    "rules": [],
+    "pdf_desc": "Payroll tax expense and Public Holidays & Xmas Leave entitlements earned by staff.",
+    "source": "PDF p18"
+  },
+  "71222": {
+    "name": "Sick / Personal Leave",
+    "desc": "Sick and personal leave wage costs.",
+    "rules": [],
+    "pdf_desc": "Annual, Sick, and Long Service Leave entitlements earned by staff.",
+    "source": "PDF p18"
+  },
+  "71223": {
+    "name": "Workers Compensation Leave",
+    "desc": "Leave wages while on workers compensation.",
+    "rules": [],
+    "pdf_desc": "Expenses related to plant and tools of an incidental nature that will be used in a number of projects and therefore should not be costed directly to a project (e.g. Shovels).",
+    "source": "PDF p18"
+  },
+  "71224": {
+    "name": "Maternity Leave",
+    "desc": "Maternity leave wage costs.",
+    "rules": [],
+    "pdf_desc": "Payment of maternity leave as per the EB6 agreement.",
+    "source": "PDF p18"
+  },
+  "71225": {
+    "name": "Parental Leave",
+    "desc": "Parental leave wage costs.",
+    "rules": [],
+    "pdf_desc": "Payment of parental leave as per the Commonwealth Govts Paid Parental Leave Scheme (Finance use only).",
+    "source": "PDF p18"
+  },
+  "71226": {
+    "name": "Banked RDO / On Call Leave",
+    "desc": "On-call leave accrual. NOT overtime.",
+    "rules": [],
+    "pdf_desc": "Employee oncost accrual account for banked RDO's and on call leave.",
+    "source": "PDF p18"
+  },
+  "71231": {
+    "name": "Superannuation",
+    "desc": "Employer superannuation contributions.",
+    "rules": [],
+    "pdf_desc": "Total employer contributions to superannuation funds.",
+    "source": "PDF p18"
+  },
+  "71241": {
+    "name": "Work Cover Premium",
+    "desc": "Annual premium with Work Cover for work-related injury compensation.",
+    "rules": [],
+    "pdf_desc": "Expenses related to annual premium with Work Cover against the cost of compensating a worker who has a work-related injury.",
+    "source": "PDF p18"
+  },
+  "71311": {
+    "name": "Bonuses Paid",
+    "desc": "Bonus payments in accordance with employment agreements.",
+    "rules": [],
+    "pdf_desc": "Bonus payments in accordance with employment agreements.",
+    "source": "PDF p18"
+  },
+  "71312": {
+    "name": "Redundancies Paid",
+    "desc": "Redundancy payments per employment agreements.",
+    "rules": [],
+    "pdf_desc": "Redundancy payments in accordance with employment agreements.",
+    "source": "PDF p18"
+  },
+  "71321": {
+    "name": "Fringe Benefits Tax",
+    "desc": "Tax on benefits provided to employees.",
+    "rules": [],
+    "pdf_desc": "Tax on benefits provided to employees.",
+    "source": "PDF p18"
+  },
+  "71331": {
+    "name": "Jury Service Leave",
+    "desc": "Wages costs while employees are on Jury Service.",
+    "rules": [],
+    "pdf_desc": "Wages costs while employees are on Jury Service.",
+    "source": "PDF p18"
+  },
+  "71332": {
+    "name": "Study Leave",
+    "desc": "Wages costs while employees are on approved Study Leave.",
+    "rules": [],
+    "pdf_desc": "Wages costs while employees are on approved Study Leave (DocsOpen #4007271 - Study Assistance for Employees).",
+    "source": "PDF p18"
+  },
+  "72111": {
+    "name": "Minor Equipment & Supplies",
+    "desc": "Expenses less than $200 related to minor equipment and supplies that are NOT to be registered on the portable and attractive items register. For portable and attractive items $200+ use 72311 to 72315. Items at or above capitalisation threshold → Asset Register.",
+    "rules": [
+      "Items $200+ → 72311–72315 or Asset Register"
+    ],
+    "pdf_desc": "Expenses less than $200 related to minor equipment & supplies that are not to be registered on the portable and attractive items register. (For portable and attractive items use 72311 to 72315).",
+    "source": "PDF p18"
+  },
+  "72112": {
+    "name": "Chemicals, Fertiliser & Paints",
+    "desc": "Expenses related to purchase of chemicals, fertilisers and paints for operational use.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of chemicals, fertilisers and paints.",
+    "source": "PDF p19"
+  },
+  "72113": {
+    "name": "Safety Equipment & Medical Supplies",
+    "desc": "Expenses related to purchase of safety equipment and medical supplies, including PPE and first aid supplies.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of safety equipment and medical supplies.",
+    "source": "PDF p19"
+  },
+  "72114": {
+    "name": "Uniforms",
+    "desc": "Corporate uniforms and outdoor clothing for employees. Includes all corporate-branded workwear and protective clothing.",
+    "rules": [],
+    "pdf_desc": "Corporate uniforms and outdoor clothing for employees.",
+    "source": "PDF p19"
+  },
+  "72115": {
+    "name": "Water Meters",
+    "desc": "Issue of water meters from inventory.",
+    "rules": [],
+    "pdf_desc": "Issue of water meters from inventory.",
+    "source": "PDF p19"
+  },
+  "72116": {
+    "name": "Dog Food",
+    "desc": "Dog food for Council's Animal Management Centre.",
+    "rules": [],
+    "pdf_desc": "Purchase of dog food for operations at Council's Animal Management Centre.",
+    "source": "PDF p19"
+  },
+  "72117": {
+    "name": "Cat Food",
+    "desc": "Cat food for Council's Animal Management Centre.",
+    "rules": [],
+    "pdf_desc": "Purchase of cat food for operations at Council's Animal Management Centre.",
+    "source": "PDF p19"
+  },
+  "72118": {
+    "name": "Fuel Card — Pending",
+    "desc": "Fuel card clearing. Must clear to correct account.",
+    "rules": [
+      "PENDING — clear before period end"
+    ],
+    "flags": [
+      "pending"
+    ],
+    "pdf_desc": "Account Council's Fuel card transactions are charged to this account prior to the allocation of the transaction to the correct expense account that the transaction relates to.",
+    "source": "PDF p19"
+  },
+  "72119": {
+    "name": "Credit Card — Pending",
+    "desc": "P-Card clearing. Must clear to correct account.",
+    "rules": [
+      "PENDING — clear before period end"
+    ],
+    "flags": [
+      "pending"
+    ],
+    "pdf_desc": "Account Council's credit card transactions are charged to this account prior to the allocation of the transaction to the correct expense account that the transaction relates to.",
+    "source": "PDF p19"
+  },
+  "72122": {
+    "name": "Food for Resale",
+    "desc": "Food purchased for resale through Council's venues & facilities.",
+    "rules": [],
+    "pdf_desc": "Food purchased for resale through Council's major venues & facilities.",
+    "source": "PDF p19"
+  },
+  "72123": {
+    "name": "Beverage for Resale",
+    "desc": "Beverages purchased for resale through Council's venues & facilities.",
+    "rules": [],
+    "pdf_desc": "Beverages purchased for resale through Council's major venues & facilities.",
+    "source": "PDF p19"
+  },
+  "72201": {
+    "name": "Environmental Protection",
+    "desc": "Expenses related to environmental protection activities.",
+    "rules": [],
+    "pdf_desc": "Expenses related to environmental protection activities",
+    "source": "PDF p19"
+  },
+  "72211": {
+    "name": "Bitumen & Asphalt Products",
+    "desc": "Purchase of bitumen and asphalt products.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of bitumen and asphalt products.",
+    "source": "PDF p19"
+  },
+  "72212": {
+    "name": "Concrete",
+    "desc": "Purchase of concrete.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of concrete.",
+    "source": "PDF p19"
+  },
+  "72213": {
+    "name": "Plumbing Materials",
+    "desc": "Purchase of plumbing materials.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of plumbing materials.",
+    "source": "PDF p19"
+  },
+  "72214": {
+    "name": "Construction Materials",
+    "desc": "Purchase of construction materials.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of construction materials.",
+    "source": "PDF p19"
+  },
+  "72215": {
+    "name": "Pipes",
+    "desc": "Purchase of pipes.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of pipes and pipe products.",
+    "source": "PDF p19"
+  },
+  "72221": {
+    "name": "Roads & Parks Furniture",
+    "desc": "Purchase of roads furniture and parks furniture.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of roads furniture and parks furniture.",
+    "source": "PDF p19"
+  },
+  "72222": {
+    "name": "Signs",
+    "desc": "Purchase of signage for roads and parks.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of signage for roads and parks.",
+    "source": "PDF p19"
+  },
+  "72231": {
+    "name": "Landscape Supplies",
+    "desc": "Landscape supplies including soil, turf, mulch, aggregate and other materials for landscaping and gardening activities.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of landscape supplies.",
+    "source": "PDF p19"
+  },
+  "72233": {
+    "name": "Refund of Contributions",
+    "desc": "Refund of contributions received by Council. Should be offset against revenue.",
+    "rules": [],
+    "pdf_desc": "Refund of contributions received by Council (should be offset against revenue)",
+    "source": "PDF p19"
+  },
+  "72240": {
+    "name": "Gravel",
+    "desc": "Purchase of gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of gravel.",
+    "source": "PDF p19"
+  },
+  "72241": {
+    "name": "Crushed Gravel",
+    "desc": "Purchase of crushed gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of crushed gravel.",
+    "source": "PDF p19"
+  },
+  "72242": {
+    "name": "Pea Gravel",
+    "desc": "Purchase of pea gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of pea gravel.",
+    "source": "PDF p19"
+  },
+  "72243": {
+    "name": "Uncrushed Gravel",
+    "desc": "Purchase of uncrushed gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of uncrushed gravel.",
+    "source": "PDF p19"
+  },
+  "72244": {
+    "name": "X Gravel",
+    "desc": "Purchase of X gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of X gravel.",
+    "source": "PDF p19"
+  },
+  "72245": {
+    "name": "Ballast",
+    "desc": "Purchase of ballast.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of ballast.",
+    "source": "PDF p19"
+  },
+  "72246": {
+    "name": "Screenings",
+    "desc": "Purchase of screenings.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of screenings.",
+    "source": "PDF p19"
+  },
+  "72248": {
+    "name": "Crusher Dust",
+    "desc": "Purchase of crusher dust.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of crusher dust.",
+    "source": "PDF p19"
+  },
+  "72249": {
+    "name": "Topsoil",
+    "desc": "Purchase of topsoil.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of topsoil.",
+    "source": "PDF p19"
+  },
+  "72250": {
+    "name": "Gravel — BTB",
+    "desc": "Purchase of BTB gravel.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of Gravel BTB.",
+    "source": "PDF p19"
+  },
+  "72251": {
+    "name": "Sand",
+    "desc": "Purchase of sand.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of sand.",
+    "source": "PDF p19"
+  },
+  "72252": {
+    "name": "Other Quarry Material",
+    "desc": "Other quarry material not classified elsewhere.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchase of other quarry material that does not fall under any other specific category.",
+    "source": "PDF p19"
+  },
+  "72260": {
+    "name": "Provision for Rehabilitation Expense",
+    "desc": "Rehabilitation provision for landfill & quarry sites. Financial Accounting only.",
+    "rules": [],
+    "pdf_desc": "Expense relating to the increase in the rehabilitation provision arising from Council's obligation to rehabilitate it's Landfill & Quarry sites back to their original natural state (natural vegetation) once the site/s are no longer in use (i.e. completed & reached their capacity in case of waste landfill) & where Council doesn't account for the asset (landfill or quarry site) in the Financial Asset Register. For Financial Accounting use only.",
+    "source": "PDF p19"
+  },
+  "72311": {
+    "name": "Other Plant & Equipment",
+    "desc": "Items below capitalisation threshold only. Not services or utilities.",
+    "rules": [],
+    "pdf_desc": "Expenses related to the purchase of Minor assets that do not meet the threshold for recording as an asset and cannot be classified into Office & Library Equipment (72312); Furniture & Fittings (72313); Cultural Assets (72314); or Parks Assets (72315).",
+    "source": "PDF p20"
+  },
+  "72312": {
+    "name": "Office & Library Equipment",
+    "desc": "Purchase of office/library equipment below threshold. NOT services or utilities.",
+    "rules": [],
+    "pdf_desc": "Expenses related to the purchase of Minor Office & Library Equipment that do not meet the threshold for recording as an asset.",
+    "source": "PDF p20"
+  },
+  "72313": {
+    "name": "Furniture",
+    "desc": "Minor furniture below capitalisation threshold.",
+    "rules": [],
+    "pdf_desc": "& Fittings Expenses related to the purchase of Minor Furniture & Fittings that do not meet the threshold for recording as an asset.",
+    "source": "PDF p20"
+  },
+  "72314": {
+    "name": "Communication Equipment",
+    "desc": "Purchase of communication equipment below threshold.",
+    "rules": [],
+    "pdf_desc": "Expenses related to the purchase of Minor Cultural assets that do not meet the threshold for recording as an asset.",
+    "source": "PDF p20"
+  },
+  "72315": {
+    "name": "Parks Assets",
+    "desc": "Parks asset purchases below capitalisation threshold.",
+    "rules": [],
+    "pdf_desc": "Expenses related to the purchase of Minor Parks assets that do not meet the threshold for recording as an asset.",
+    "source": "PDF p20"
+  },
+  "72321": {
+    "name": "Materials from Stores",
+    "desc": "Materials drawn from Council stores.",
+    "rules": [],
+    "pdf_desc": "Purchase of the right-of-way over land or waterways.",
+    "source": "PDF p20"
+  },
+  "72331": {
+    "name": "Water Meters from Stores",
+    "desc": "Water meters drawn from Council stores.",
+    "rules": [],
+    "pdf_desc": "Minor Tax Asset.",
+    "source": "PDF p20"
+  },
+  "72411": {
+    "name": "Water Purchased for Resale",
+    "desc": "Water purchased in bulk for resale.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to purchase of bulk water from SEQWC.",
+    "source": "PDF p20"
+  },
+  "73111": {
+    "name": "Property-based Professional Services",
+    "desc": "Architects, Building & Land Surveyors, Town Planning, Valuation Services.",
+    "rules": [],
+    "pdf_desc": "Expenses related to professional services such as Architects, Building & Land Surveyors, Town Planning and Valuation Services.",
+    "source": "PDF p20"
+  },
+  "73112": {
+    "name": "Audit Services — External Financial",
+    "desc": "External audit fees for FINANCIAL REPORTING ONLY.",
+    "rules": [
+      "All other audit → 73116"
+    ],
+    "pdf_desc": "Expenses related to external audit fees for financial reporting only to be charged to this natural account (other audit fees use 73116).",
+    "source": "PDF p20"
+  },
+  "73113": {
+    "name": "Engineering Services",
+    "desc": "Engineering services NOT classified as consulting.",
+    "rules": [],
+    "pdf_desc": "Expenses related to Engineering Services, which are not Consulting Services.",
+    "source": "PDF p20"
+  },
+  "73114": {
+    "name": "Legal Services",
+    "desc": "Expenses for legal services.",
+    "rules": [],
+    "pdf_desc": "Expenses for Legal Services.",
+    "source": "PDF p20"
+  },
+  "73115": {
+    "name": "Medical Services",
+    "desc": "Veterinarian, immunisation, other medical services.",
+    "rules": [],
+    "pdf_desc": "Expenses related to medical services such as Veterinarian, immunisation and other medical services.",
+    "source": "PDF p20"
+  },
+  "73116": {
+    "name": "Investigations & Other Audit",
+    "desc": "Audit fees NOT for financial reports. Includes all non-financial audit.",
+    "rules": [
+      "Financial audit only → 73112"
+    ],
+    "pdf_desc": "Expenses related to audit fees that are not for the audit of financial reports.",
+    "source": "PDF p20"
+  },
+  "73120": {
+    "name": "Waste Disposal (General)",
+    "desc": "General waste disposal costs not classified under more specific accounts. Check 73122 (garbage), 73129 (greenwaste), or 73130 (solid waste to landfill) first.",
+    "rules": [],
+    "source": "v7 HTML only (PDF Data Dictionary silent)"
+  },
+  "73121": {
+    "name": "Cleaning & Sanitary",
+    "desc": "Cleaning services and sanitary disposal.",
+    "rules": [],
+    "pdf_desc": "Expenses related to cleaning services and sanitary disposal.",
+    "source": "PDF p20"
+  },
+  "73122": {
+    "name": "Garbage Collection",
+    "desc": "Waste disposal, payments to garbage contractor for domestic wheelie bin collection.",
+    "rules": [],
+    "pdf_desc": "Expenses related to waste disposal, including payments to Council garbage contractor for domestic wheelie bin collection.",
+    "source": "PDF p20"
+  },
+  "73123": {
+    "name": "Maintenance Services",
+    "desc": "Expenses related to maintenance services such as fire protection, pest control, repair fees, painters, building contractors, air conditioning, plumbers and other maintenance services. NOT security (73124), NOT landscaping/mowing (73126), NOT electrical (73127).",
+    "rules": [
+      "Security → 73124, NOT 73123",
+      "Landscaping → 73126",
+      "Electrical → 73127"
+    ],
+    "pdf_desc": "Expenses related to maintenance services such as fire protection, pest control, repair fees, painters, building contractors, air conditioning, plumbers and other maintenance services.",
+    "source": "PDF p20"
+  },
+  "73124": {
+    "name": "Security",
+    "desc": "Expenses related to alarm monitoring, security patrols and other security services including keys and lock fitting. NOT general maintenance (73123).",
+    "rules": [
+      "Maintenance → 73123, NOT 73124"
+    ],
+    "pdf_desc": "Expenses related to alarm monitoring, security patrols and other security services including keys and lock fitting.",
+    "source": "PDF p20"
+  },
+  "73125": {
+    "name": "Workplace Health & Safety",
+    "desc": "Services to ensure WHS compliance.",
+    "rules": [],
+    "pdf_desc": "Expenses related to purchases of services to ensure compliance with workplace health & safety requirements.",
+    "source": "PDF p20"
+  },
+  "73126": {
+    "name": "Landscapers & Gardeners",
+    "desc": "Expenses related to weed control, lawn mowing, landscaping and other gardening services purchased including the hire of indoor plants. NOT greenwaste disposal (73129).",
+    "rules": [
+      "Greenwaste disposal → 73129"
+    ],
+    "pdf_desc": "Expenses related to weed control, lawn mowing, landscaping and other gardening services purchased including the hire of indoor plants.",
+    "source": "PDF p20"
+  },
+  "73127": {
+    "name": "Electrical Maintenance",
+    "desc": "Electrician services purchased.",
+    "rules": [],
+    "pdf_desc": "Expenses related to electrician services purchased.",
+    "source": "PDF p20"
+  },
+  "73128": {
+    "name": "Other Services",
+    "desc": "Expenses related to other general services that do not fall under any other specific category, e.g. the Employee Assistance Program (EAP). This is a LAST RESORT account — before using it, check every other 731xx account for a better fit.",
+    "rules": [
+      "Last resort — use only when no specific account applies"
+    ],
+    "pdf_desc": "Expenses related to other general services that do not fall under any other specific category, e.g. the Employee Assistance Program (EAP).",
+    "source": "PDF p21"
+  },
+  "73129": {
+    "name": "Greenwaste Processing & Disposal",
+    "desc": "Treatment and disposal of green waste through Council waste facilities.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to the treatment and disposal of green waste through Council's waste facilities.",
+    "source": "PDF p21"
+  },
+  "73130": {
+    "name": "Waste Disposal",
+    "desc": "Costs for disposing of solid waste to landfill or other means (e.g. alternative waste treatment systems). NOT garbage bin collection (73122) or greenwaste (73129).",
+    "rules": [
+      "Garbage collection → 73122",
+      "Greenwaste → 73129"
+    ],
+    "pdf_desc": "Costs for disposing of solid waste to landfill or other means (e.g. alternative waste treatment systems).",
+    "source": "PDF p21"
+  },
+  "73131": {
+    "name": "Insurance Premium",
+    "desc": "Insurance premiums as advised by Admin Services & Risk Management Branch. Premiums ONLY — excess and damage payments NOT covered by insurance go to 73132–73137. Insurance recoveries received = 64211 (revenue).",
+    "rules": [
+      "Excess/damage → 73132–73137",
+      "Recoveries → 64211"
+    ],
+    "pdf_desc": "Expenses related to insurance premiums, as advised by Admin Services & Risk Management Branch.",
+    "source": "PDF p21"
+  },
+  "73132": {
+    "name": "Excess & Damage — Combined Liability",
+    "desc": "Amounts NOT covered by insurance — combined liability claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for combined liability claims, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73133": {
+    "name": "Excess & Damage — Motor Vehicle",
+    "desc": "Amounts NOT covered by insurance — motor vehicle claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for motor vehicle claims, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73134": {
+    "name": "Excess & Damage — Industrial",
+    "desc": "Amounts NOT covered by insurance — industrial claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for industrial claims, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73135": {
+    "name": "Excess & Damage — Contract Work",
+    "desc": "Amounts NOT covered by insurance — contract works claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for contract works claims, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73136": {
+    "name": "Excess & Damage — Employment",
+    "desc": "Amounts NOT covered by insurance — employment claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for employment claims, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73137": {
+    "name": "Excess & Damage — Other",
+    "desc": "Amounts NOT covered by insurance — other claims.",
+    "rules": [],
+    "pdf_desc": "Expenses related to excess and damage payments for other claims that do not fall under any other specific category, not covered by insurance.",
+    "source": "PDF p21"
+  },
+  "73140": {
+    "name": "Pre-Employment Background Checks",
+    "desc": "Expenses relating to background checks for future employees, such as criminal history checks and reference verification.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to background checks for future employees.",
+    "source": "PDF p21"
+  },
+  "73141": {
+    "name": "Drug & Alcohol Testing",
+    "desc": "Expenses relating to employee drug and alcohol testing programs to ensure workplace safety compliance.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to employee drug and alcohol testing.",
+    "source": "PDF p21"
+  },
+  "73211": {
+    "name": "Minor Contracts (below $20k)",
+    "desc": "Contract payments where the TOTAL VALUE of the contract is BELOW $20,000. The threshold is the total contract value, NOT the individual invoice amount. A $3,000 invoice on a $50,000 contract must be 73212.",
+    "rules": [
+      "Total value ≥$20k → 73212",
+      "Threshold = TOTAL contract, not per invoice"
+    ],
+    "pdf_desc": ") Contract payments relating to a contract where the total value of the contract is below $20,000.",
+    "source": "PDF p21"
+  },
+  "73212": {
+    "name": "Major Contracts ($20k+)",
+    "desc": "Contract payments where the TOTAL VALUE of the contract is $20,000 or ABOVE. If total contract value is unknown, confirm before coding — default to 73212 if there is any doubt the total exceeds $20k.",
+    "rules": [
+      "Total value <$20k → 73211"
+    ],
+    "pdf_desc": "Contract payments relating to a contract where the total value of the contract is $20,000 or above.",
+    "source": "PDF p21"
+  },
+  "73213": {
+    "name": "Contractor Entitlements",
+    "desc": "Portable Long Service Leave levy payments for contractors.",
+    "rules": [],
+    "pdf_desc": "Portable Long Service Leave.",
+    "source": "PDF p21"
+  },
+  "73214": {
+    "name": "Agency Personnel Costs",
+    "desc": "Payments made to Employment Agencies (e.g. Hays, Chandler Macleod, Adecco) for temporary or permanent staff. Agency temps must NEVER be coded to 71113 Temporary Staff — 71113 is for people directly engaged and paid via Council payroll only.",
+    "rules": [
+      "Agency temps NEVER to 71113"
+    ],
+    "pdf_desc": "Payments made to Employment Agencies for temporary or permanent staff.",
+    "source": "PDF p21"
+  },
+  "73215": {
+    "name": "Major Contracts — Alliance",
+    "desc": "Payments to Logan Water and Infrastructure Alliances.",
+    "rules": [
+      "RESTRICTED — Logan Water only"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Payments made to Logan Water and Logan Water Infrastructure Alliances.",
+    "source": "PDF p21"
+  },
+  "73219": {
+    "name": "Sludge Disposal",
+    "desc": "Disposal of biosolids from Council treatment facilities.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to the disposal of biosolids from Council's Treatment facilities.",
+    "source": "PDF p21"
+  },
+  "73220": {
+    "name": "Traffic Control",
+    "desc": "Payments to Traffic Control service providers.",
+    "rules": [],
+    "pdf_desc": "Payments made to Traffic Control service providers.",
+    "source": "PDF p21"
+  },
+  "73311": {
+    "name": "Gas",
+    "desc": "Payments for gas supply to Council facilities.",
+    "rules": [],
+    "pdf_desc": "Payments for gas supply.",
+    "source": "PDF p21"
+  },
+  "73312": {
+    "name": "Electricity",
+    "desc": "Payments for electricity supply to Council facilities from external providers (e.g. Energex, Origin, AGL). Internal LCC electricity charges use 7B111 series.",
+    "rules": [
+      "Internal LCC utilities → 7B111 series"
+    ],
+    "pdf_desc": "Payments for electricity supply.",
+    "source": "PDF p21"
+  },
+  "73313": {
+    "name": "Telecommunication Services",
+    "desc": "Monthly rental and usage charges for phones (including mobile phones), facsimiles and data lines. NOTE: Purchases of phones should NOT be charged to this account — use 72314 Communication Equipment or 73564 IT Equipment.",
+    "rules": [
+      "Phone purchases → 72314 or 73564"
+    ],
+    "pdf_desc": "Monthly rental and usage charges for phones (including mobile phones), facsimiles and data lines - purchases of phones should not be charged to this account.",
+    "source": "PDF p21"
+  },
+  "73314": {
+    "name": "Water Base Charges",
+    "desc": "Water service/access charges from entities OTHER THAN LCC.",
+    "rules": [
+      "LCC internal water → 7B112/7B113"
+    ],
+    "pdf_desc": "Expenses related to water service/access charges that are charged by entities (private or government) other than Logan City Council.",
+    "source": "PDF p21"
+  },
+  "73315": {
+    "name": "Sewerage Base Charges",
+    "desc": "Sewerage charges from entities OTHER THAN LCC.",
+    "rules": [
+      "LCC internal sewer → 7B114"
+    ],
+    "pdf_desc": "Expenses related to sewerage service/access charges that are charged by entities (private or government) other than Logan City Council.",
+    "source": "PDF p21"
+  },
+  "73316": {
+    "name": "Water Consumption Charges",
+    "desc": "Water consumption from entities OTHER THAN LCC.",
+    "rules": [
+      "LCC internal water → 7B113"
+    ],
+    "pdf_desc": "Expenses related to water consumption use charged by entities (private or government) other than Logan City Council.",
+    "source": "PDF p21"
+  },
+  "73317": {
+    "name": "Trade Waste Charges",
+    "desc": "Trade waste charges from entities OTHER THAN LCC.",
+    "rules": [
+      "LCC internal trade waste → 7B121"
+    ],
+    "pdf_desc": "Expenses related to trade waste usage charged by entities (private or government) other than Logan City Council.",
+    "source": "PDF p22"
+  },
+  "73318": {
+    "name": "Street Lighting Infrastructure",
+    "desc": "Street lighting infrastructure charge from electricity supplier.",
+    "rules": [],
+    "pdf_desc": "Charges Street lighting infrastructure charge usually charged by electricity supplier for maintaining street lighting infrastructure.",
+    "source": "PDF p22"
+  },
+  "73411": {
+    "name": "External Contributions",
+    "desc": "Contributions to external parties.",
+    "rules": [],
+    "pdf_desc": "External Contributions.",
+    "source": "PDF p22"
+  },
+  "73412": {
+    "name": "Refund of Operational Contributions",
+    "desc": "Refunds of contributions received by Council no longer required.",
+    "rules": [],
+    "pdf_desc": "Refunds of contributions received by Council that are no longer required.",
+    "source": "PDF p22"
+  },
+  "73421": {
+    "name": "Rates & Charges Paid",
+    "desc": "Rates, trade waste, water and tip fees paid to other authorities.",
+    "rules": [],
+    "pdf_desc": "Expenses related to Rates, Trade Waste Charges, Water Base Charges and Tip Fees paid to other authorities.",
+    "source": "PDF p22"
+  },
+  "73422": {
+    "name": "Fire Levy",
+    "desc": "Fire levy collected on behalf of Qld Fire & Rescue Service.",
+    "rules": [],
+    "pdf_desc": "Payment of the fire levy collected, on their behalf, to Queensland Fire and Rescue Service and charged on the Rates Notices of Council- owned properties.",
+    "source": "PDF p22"
+  },
+  "73423": {
+    "name": "Waste Levy",
+    "desc": "State Government waste levy.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to the State Government's Waste Levy.",
+    "source": "PDF p22"
+  },
+  "73424": {
+    "name": "Carbon Emissions Tax",
+    "desc": "Purchase of Carbon Emission permits.",
+    "rules": [],
+    "pdf_desc": "Expenses relating to the purchase of Carbon Emissions permits issued under the Federal Government's Carbon Tax.",
+    "source": "PDF p22"
+  },
+  "73425": {
+    "name": "Carbon Emissions — Provision Adjustments",
+    "desc": "Adjustments relating to Carbon Emission permits.",
+    "rules": [],
+    "pdf_desc": "Expense adjustments relating to the holding of Carbon Emission permits issued under the Federal Government's Carbon Tax.",
+    "source": "PDF p22"
+  },
+  "73431": {
+    "name": "Fines & Penalties",
+    "desc": "Fines and penalties, including tax penalties.",
+    "rules": [],
+    "pdf_desc": "Expenses related to fines and penalties, including tax penalties.",
+    "source": "PDF p22"
+  },
+  "73432": {
+    "name": "Commissions",
+    "desc": "Debt collection and other commission fees.",
+    "rules": [],
+    "pdf_desc": "Debt collection and other commission fees payable.",
+    "source": "PDF p22"
+  },
+  "73433": {
+    "name": "Other Fees & Charges",
+    "desc": "Expenses related to fees and charges that do not fall under any other specific category, including meeting fees, licence fees, blue cards, and DigSafe. Does NOT include professional body memberships (use 73542).",
+    "rules": [
+      "Professional memberships → 73542"
+    ],
+    "pdf_desc": "Expenses related to fees and charges that do not fall under any other specific category, this includes meeting fees, licence fees, and blue cards.",
+    "source": "PDF p22"
+  },
+  "73434": {
+    "name": "Regulatory Fees",
+    "desc": "Industry regulators and ombudsman fees.",
+    "rules": [],
+    "pdf_desc": "Expenses related to industry regulators and ombudsman.",
+    "source": "PDF p22"
+  },
+  "73438": {
+    "name": "Minor Damage Claims",
+    "desc": "Rectification costs for damage by Council activity to non-Council property. Excludes insurance.",
+    "rules": [],
+    "pdf_desc": "Expenses related to rectification costs for damage caused by Council activity to non-Council property or re-imbursement of such costs to claimant (excludes insurance related matters).",
+    "source": "PDF p22"
+  },
+  "73511": {
+    "name": "Entertainment & Hospitality FBT",
+    "desc": "Work related hospitality expenditure that INCURS FBT — off-site lunches and dinners, staff Christmas party expenses, events with alcohol, social/recreational functions. On-site nibbles at working meetings do NOT incur FBT — use 73512. Refer Hospitality & Entertainment Guide.",
+    "rules": [
+      "On-site nibbles → 73512"
+    ],
+    "flags": [
+      "fbt"
+    ],
+    "pdf_desc": "Work related hospitality expenditure that incurs Fringe Benefits Tax (FBT), such as off-site lunches and dinners and staff Christmas party expenses. Snack-type nibbles provided at working meetings held on- site do not incur FBT and should be charged to Entertainment & Hospitality Non-FBT (73512). Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p22"
+  },
+  "73512": {
+    "name": "Entertainment & Hospitality Non-FBT",
+    "desc": "Snack-type nibbles and/or sandwiches or morning/afternoon tea provided at working meetings held ON-SITE only. No alcohol, no social element. These do NOT incur FBT. Off-site, alcohol, or social functions = 73511. Refer Hospitality & Entertainment Guide.",
+    "rules": [
+      "Off-site or alcohol → 73511"
+    ],
+    "pdf_desc": "Snack-type nibbles and/or sandwiches or morning/afternoon tea provided at working meetings held on-site. These transactions do not incur Fringe Benefits Tax (FBT). Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p22"
+  },
+  "73513": {
+    "name": "Employee Reward & Recognition",
+    "desc": "Flowers/cards/gifts for employees. Under $300 infrequent = no FBT.",
+    "rules": [],
+    "pdf_desc": "Flowers/Cards/Gifts for employees. Where the purchase is infrequent and under $300 in value it will not incur FBT. Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p22"
+  },
+  "73514": {
+    "name": "Employee Functions & Awards",
+    "desc": "Years of service rewards and associated functions.",
+    "rules": [],
+    "pdf_desc": "Expenses related to provision of employee years of service rewards and associated functions.",
+    "source": "PDF p22"
+  },
+  "73515": {
+    "name": "Presenter & Entertainer Fees",
+    "desc": "Speaker and presenter costs for community and workplace events. Non-FBT.",
+    "rules": [],
+    "pdf_desc": "Expenses related to speaker and presenter costs for community and work place events.",
+    "source": "PDF p22"
+  },
+  "73521": {
+    "name": "Property Leases & Rentals",
+    "desc": "Expenses related to EXTERNAL property leases and rentals only (e.g. commercial venues, hotel conference rooms). Internal LCC venue hire must use 7B611.",
+    "rules": [
+      "Internal LCC venue → 7B611"
+    ],
+    "pdf_desc": "Expenses related to property leases and rentals.",
+    "source": "PDF p22"
+  },
+  "73522": {
+    "name": "Equipment Leases & Rentals",
+    "desc": "Lease/rental of photocopiers, fax, other equipment.",
+    "rules": [],
+    "pdf_desc": "Expenses related to lease or rental payments for photocopier, fax, and other equipment that is leased or rented.",
+    "source": "PDF p22"
+  },
+  "73531": {
+    "name": "Local Travel (SEQ) Cabcharge/Parking",
+    "desc": "Expenses related to local taxi fares and parking fees in South East Queensland ONLY. NOT toll charges (use 73535). NOT interstate taxi/parking (use 73533). NOT overseas taxi/parking (use 73534).",
+    "rules": [
+      "Tolls → 73535, Interstate → 73533"
+    ],
+    "pdf_desc": "Expenses related to local taxi fares and parking fees - not toll charges (should be 73535) and not expenses relating to interstate (should be 73533) or overseas (should be 73534) taxi fares or parking.",
+    "source": "PDF p22"
+  },
+  "73532": {
+    "name": "Intrastate Travel & Accommodation",
+    "desc": "All travel and accommodation within Queensland.",
+    "rules": [],
+    "pdf_desc": "Expenses related to all travel and accommodation within Queensland.",
+    "source": "PDF p23"
+  },
+  "73533": {
+    "name": "Interstate Travel & Accommodation",
+    "desc": "Travel and accommodation within Australia, excluding SEQ and intrastate QLD.",
+    "rules": [
+      "Meals during travel → hospitality, NOT 73533"
+    ],
+    "pdf_desc": "Expenses related to all travel and accommodation within Australia, excluding local travel in South East Queensland (73531) and Travel & Accommodation in Queensland (73532).",
+    "source": "PDF p23"
+  },
+  "73534": {
+    "name": "Overseas Travel & Accommodation",
+    "desc": "All expenses related to Overseas Travel and Accommodation. GST code NA. LGR 2012 s196 reporting requirements apply — must report attendees, positions, destination, purpose, cost.",
+    "rules": [
+      "NA GST code",
+      "LGR 2012 s196 reporting required"
+    ],
+    "pdf_desc": "All Expenses related to Overseas Travel and Accommodation.",
+    "source": "PDF p23"
+  },
+  "73535": {
+    "name": "Tollway Charges",
+    "desc": "Toll charges (Motorway Qld invoices). NOT taxi/parking.",
+    "rules": [
+      "Taxi/parking → 73531"
+    ],
+    "pdf_desc": "Toll Charges incurred by Council (Motorway Qld Invoices).",
+    "source": "PDF p23"
+  },
+  "73541": {
+    "name": "Conferences & Seminar Fees",
+    "desc": "Conference registration fees ONLY. Accommodation/travel separate.",
+    "rules": [],
+    "pdf_desc": "Expenses related to conference registration fees only. Accommodation and travel are separate natural accounts (73531 to",
+    "source": "PDF p23"
+  },
+  "73542": {
+    "name": "Professional Membership",
+    "desc": "Expenses related to professional memberships paid to an external industry or professional organisation (e.g. AILA, CPA, Engineers Australia, IPWEA). Does NOT include licence fees, blue cards, or DigSafe — use 73433 Other Fees & Charges for those.",
+    "rules": [
+      "Blue cards/DigSafe → 73433, NOT 73542"
+    ],
+    "pdf_desc": "s Expenses related to professional memberships paid to an external industry and professional organisation for benefits such as discounted conference or seminars fees, access to free training sessions and information and/or inclusion on a professional body register. This does NOT include licence fees or blue cards or DigSafe (please use 73433 - Other Fees & Charges).",
+    "source": "PDF p23"
+  },
+  "73543": {
+    "name": "Reference Materials & Subscriptions",
+    "desc": "Books, periodicals, media monitors, magazine/newspaper subscriptions.",
+    "rules": [],
+    "pdf_desc": "Expenses related to the purchase of books, periodicals and reference materials including media monitors. Includes consecutive issues of a magazine, newspaper, book or electronic information for a subscribed period of time.",
+    "source": "PDF p23"
+  },
+  "73544": {
+    "name": "Training & Development",
+    "desc": "Expenses related to training and professional development courses (external providers, workshops, short courses). University/TAFE fees reimbursed to staff under Study Assistance = 73545, not 73544.",
+    "rules": [
+      "Uni fees to staff → 73545"
+    ],
+    "pdf_desc": "Expenses related to training and professional development costs.",
+    "source": "PDF p23"
+  },
+  "73545": {
+    "name": "Study Assistance Reimbursement",
+    "desc": "Reimbursement of university or TAFE course fees to staff members under the Study Assistance Policy. General training courses = 73544, not 73545.",
+    "rules": [
+      "General training → 73544"
+    ],
+    "pdf_desc": "Reimbursement of course fees related to study assistance.",
+    "source": "PDF p23"
+  },
+  "73546": {
+    "name": "Executive Professional Development",
+    "desc": "Professional development for Council executives.",
+    "rules": [],
+    "pdf_desc": "Expenses related to professional development costs for Council executives.",
+    "source": "PDF p23"
+  },
+  "73551": {
+    "name": "Recruitment Advertising",
+    "desc": "Advertising for hiring — via HR Services Branch.",
+    "rules": [],
+    "pdf_desc": "Advertising associated with hiring personnel - to be coordinated and placed through the Human Resource Services Branch.",
+    "source": "PDF p23"
+  },
+  "73552": {
+    "name": "Other Advertising",
+    "desc": "Non-recruitment advertising — via Marketing & Communication Branch.",
+    "rules": [],
+    "pdf_desc": "Advertising other than recruitment - to be coordinated and placed through the Marketing and Communication Branch.",
+    "source": "PDF p23"
+  },
+  "73553": {
+    "name": "Promotional Items",
+    "desc": "Promotional items — via Marketing & Communication Branch.",
+    "rules": [],
+    "pdf_desc": "Promotional items - to be coordinated through the Marketing and Communication Branch.",
+    "source": "PDF p23"
+  },
+  "73561": {
+    "name": "Other Administration Costs",
+    "desc": "Administration costs not classified elsewhere.",
+    "rules": [],
+    "pdf_desc": "Expenses related to administration that do not fall under any other specific category.",
+    "source": "PDF p23"
+  },
+  "73562": {
+    "name": "Multi-Media Services / Photography",
+    "desc": "Photography, graphic design, videography, digital graphics.",
+    "rules": [],
+    "todo_pdf_split": true,
+    "pdf_desc": "Multi-Media Services Expenses related to creating multi-media products or services (incl. photography, graphic design, videography or digital graphics)",
+    "source": "PDF p23"
+  },
+  "73563": {
+    "name": "Printing & Stationery",
+    "desc": "Printing and stationery expenses.",
+    "rules": [],
+    "pdf_desc": "Expenses related to printing and stationery costs.",
+    "source": "PDF p23"
+  },
+  "73564": {
+    "name": "IT Equipment & Applications",
+    "desc": "IT equipment and applications purchases.",
+    "rules": [],
+    "pdf_desc": "Expenses related to IT purchases.",
+    "source": "PDF p23"
+  },
+  "73565": {
+    "name": "Postage & Courier Services",
+    "desc": "Postage and courier services.",
+    "rules": [],
+    "pdf_desc": "Expenses related to courier delivery charges and postage costs.",
+    "source": "PDF p23"
+  },
+  "73566": {
+    "name": "IT Software Licence Fees",
+    "desc": "Software licence fees.",
+    "rules": [],
+    "pdf_desc": "Expenses related to IT software licence fees.",
+    "source": "PDF p23"
+  },
+  "73601": {
+    "name": "Management Consultancies",
+    "desc": "Refer Consultancy Guide. All 4 elements required.",
+    "rules": [
+      "Missing any element → contractor 73211/73212"
+    ],
+    "flags": [
+      "consult"
+    ],
+    "pdf_desc": "Expenses related to Management Consultancies. Refer Consultancy Guide for more information.",
+    "source": "PDF p23"
+  },
+  "73602": {
+    "name": "Alliance Consultancies",
+    "desc": "Logan Water Alliance consulting only.",
+    "rules": [
+      "RESTRICTED — Logan Water only"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Consulting expenses for the Logan Water Alliance.",
+    "source": "PDF p23"
+  },
+  "73603": {
+    "name": "Planning & Environment Consultancies",
+    "desc": "Refer Consultancy Guide.",
+    "rules": [],
+    "flags": [
+      "consult"
+    ],
+    "pdf_desc": "Expenses related to Planning & Environmental Consultancies. Refer Consultancy Guide for more information.",
+    "source": "PDF p23"
+  },
+  "73605": {
+    "name": "IT Consultancies",
+    "desc": "Refer Consultancy Guide.",
+    "rules": [],
+    "flags": [
+      "consult"
+    ],
+    "todo_pdf_split": true,
+    "pdf_desc": "Information Technology (IT) Consultancies Expenses related to IT Consultancies. Refer Consultancy Guide for more information.",
+    "source": "PDF p23"
+  },
+  "73606": {
+    "name": "Contractors (Capital Recovery)",
+    "desc": "Contractors for CAPITAL projects. NOT consultants.",
+    "rules": [],
+    "pdf_desc": ")Expenses related to contractors (not consultants) providing services for capital related projects.",
+    "source": "PDF p23"
+  },
+  "73607": {
+    "name": "Engineering Consultancies",
+    "desc": "Refer Consultancy Guide.",
+    "rules": [],
+    "flags": [
+      "consult"
+    ],
+    "pdf_desc": "Expenses related to Engineering Consultancies. Refer Consultancy Guide for more information.",
+    "source": "PDF p24"
+  },
+  "73609": {
+    "name": "Other Consultancies",
+    "desc": "Other consultancies not classified above. Refer Guide.",
+    "rules": [],
+    "flags": [
+      "consult"
+    ],
+    "pdf_desc": "Expenses related to any Other Consultancies that do not fit in the specific categories above. Refer Consultancy Guide for more information.",
+    "source": "PDF p24"
+  },
+  "73699": {
+    "name": "Contractors Recovery",
+    "desc": "Contractors for OPERATIONAL projects. NOT consultants.",
+    "rules": [],
+    "pdf_desc": "Expenses related to contractors (not consultants) providing services for operational (not capital) type projects.",
+    "source": "PDF p24"
+  },
+  "74111": {
+    "name": "Bus — External Hire",
+    "desc": "External hire costs for buses.",
+    "rules": [],
+    "pdf_desc": "costs for a bus.",
+    "source": "PDF p24"
+  },
+  "74112": {
+    "name": "Passenger Vehicles — External Hire",
+    "desc": "External hire costs for passenger vehicles.",
+    "rules": [],
+    "pdf_desc": "costs for a passenger vehicle.",
+    "source": "PDF p24"
+  },
+  "74113": {
+    "name": "Van — External Hire",
+    "desc": "External hire costs for vans.",
+    "rules": [],
+    "pdf_desc": "costs for a van.",
+    "source": "PDF p24"
+  },
+  "74114": {
+    "name": "Water Truck — External Hire",
+    "desc": "External hire costs for water trucks.",
+    "rules": [],
+    "todo_pdf_split": true,
+    "pdf_desc": "Wagon 6 cylinder External hire costs for a 6 cylinder wagon.",
+    "source": "PDF p24"
+  },
+  "74121": {
+    "name": "Backhoe — External Hire",
+    "desc": "External hire costs for backhoes.",
+    "rules": [],
+    "pdf_desc": "costs for a backhoe.",
+    "source": "PDF p24"
+  },
+  "74122": {
+    "name": "Grader — External Hire",
+    "desc": "External hire costs for graders.",
+    "rules": [],
+    "pdf_desc": "costs for a grader.",
+    "source": "PDF p24"
+  },
+  "74123": {
+    "name": "Excavator — External Hire",
+    "desc": "External hire costs for excavators.",
+    "rules": [],
+    "pdf_desc": "costs for an excavator.",
+    "source": "PDF p24"
+  },
+  "74124": {
+    "name": "Forklift — External Hire",
+    "desc": "External hire costs for forklifts.",
+    "rules": [],
+    "pdf_desc": "costs for a forklift.",
+    "source": "PDF p24"
+  },
+  "74125": {
+    "name": "Landfill Compactor — External Hire",
+    "desc": "External hire costs for landfill compactors.",
+    "rules": [],
+    "pdf_desc": "costs for a landfill compactor.",
+    "source": "PDF p24"
+  },
+  "74126": {
+    "name": "Roller — External Hire",
+    "desc": "External hire costs for rollers.",
+    "rules": [],
+    "pdf_desc": "costs for a roller.",
+    "source": "PDF p24"
+  },
+  "74127": {
+    "name": "Vacuum Excavation Truck — External Hire",
+    "desc": "External hire costs for vacuum excavation trucks.",
+    "rules": [],
+    "todo_pdf_split": true,
+    "pdf_desc": "Tractor External hire costs for a tractor.",
+    "source": "PDF p24"
+  },
+  "74128": {
+    "name": "Mobile Crane — External Hire",
+    "desc": "External hire costs for mobile cranes.",
+    "rules": [],
+    "pdf_desc": "costs for a mobile crane.",
+    "source": "PDF p24"
+  },
+  "74129": {
+    "name": "Dozer — External Hire",
+    "desc": "External hire costs for dozers.",
+    "rules": [],
+    "pdf_desc": "costs for a dozer.",
+    "source": "PDF p24"
+  },
+  "74131": {
+    "name": "Track Loader — External Hire",
+    "desc": "External hire costs for track loaders.",
+    "rules": [],
+    "pdf_desc": "costs for a track loader.",
+    "source": "PDF p24"
+  },
+  "74132": {
+    "name": "Skid Steer Loader — External Hire",
+    "desc": "External hire costs for skid steer loaders.",
+    "rules": [],
+    "pdf_desc": "costs for a skid steer loader.",
+    "source": "PDF p24"
+  },
+  "74133": {
+    "name": "Pneumatic Tyred Loader — External Hire",
+    "desc": "External hire costs for pneumatic tyred loaders.",
+    "rules": [],
+    "pdf_desc": "costs for a pneumatic tyred loader.",
+    "source": "PDF p24"
+  },
+  "74141": {
+    "name": "Trucks to 8t GVM — External Hire",
+    "desc": "External hire costs for trucks up to 8 tonnes GVM.",
+    "rules": [],
+    "pdf_desc": "for a truck up to 8 tonnes G.V.M.",
+    "source": "PDF p24"
+  },
+  "74142": {
+    "name": "Trucks 8–15t GVM — External Hire",
+    "desc": "External hire costs for trucks above 8t to 15t GVM.",
+    "rules": [],
+    "pdf_desc": "for a truck between 8 to 15 tonnes G.V.M.",
+    "source": "PDF p24"
+  },
+  "74143": {
+    "name": "Trucks over 15t GVM — External Hire",
+    "desc": "External hire costs for trucks over 15 tonnes GVM.",
+    "rules": [],
+    "pdf_desc": "for a truck over 15 tonnes G.V.M.",
+    "source": "PDF p24"
+  },
+  "74144": {
+    "name": "Low Loader — External Hire",
+    "desc": "External hire costs for low loaders.",
+    "rules": [],
+    "pdf_desc": "costs for a low loader.",
+    "source": "PDF p24"
+  },
+  "74145": {
+    "name": "Tilt Tray Truck — External Hire",
+    "desc": "External hire costs for tilt tray trucks.",
+    "rules": [],
+    "pdf_desc": "costs for a tilt tray truck.",
+    "source": "PDF p24"
+  },
+  "74151": {
+    "name": "Utility — External Hire",
+    "desc": "External hire costs for utility vehicles.",
+    "rules": [],
+    "pdf_desc": "costs for a utility.",
+    "source": "PDF p24"
+  },
+  "74161": {
+    "name": "Other Plant Hire — External",
+    "desc": "External hire costs for other minor plant.",
+    "rules": [],
+    "pdf_desc": "hire costs for other minor plant.",
+    "source": "PDF p24"
+  },
+  "74162": {
+    "name": "Pump Hire — External",
+    "desc": "External hire costs for pumps.",
+    "rules": [],
+    "pdf_desc": "hire costs for pumps.",
+    "source": "PDF p24"
+  },
+  "74163": {
+    "name": "Combination Plant Hire — External",
+    "desc": "External hire costs for combination equipment.",
+    "rules": [],
+    "pdf_desc": "hire costs for combination equipment (e.g. 2 different items hired as a set).",
+    "source": "PDF p24"
+  },
+  "74171": {
+    "name": "Ancillary Plant — External Hire",
+    "desc": "External hire costs for ancillary plant.",
+    "rules": [],
+    "pdf_desc": "Expenses related to ancillary equipment.",
+    "source": "PDF p24"
+  },
+  "74172": {
+    "name": "Ground Engaging Tools — External Hire",
+    "desc": "External hire costs for ground engaging tools.",
+    "rules": [],
+    "pdf_desc": "Expenses related to ground engaging tools.",
+    "source": "PDF p24"
+  },
+  "74173": {
+    "name": "Safety Equipment (Plant) — External Hire",
+    "desc": "External hire costs for plant-related safety equipment.",
+    "rules": [],
+    "todo_pdf_split": true,
+    "pdf_desc": "Safety Equipment Expenses related to safety equipment.",
+    "source": "PDF p24"
+  },
+  "74181": {
+    "name": "Batteries",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to batteries - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74182": {
+    "name": "Filters",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to filters - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74183": {
+    "name": "Fuel",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to fuel - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74184": {
+    "name": "Oils & Grease",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to oils and grease - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74185": {
+    "name": "Parts",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to parts - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74186": {
+    "name": "Tyres & Tubes",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to tyres and tubes - For Plant Fleet Services only.",
+    "source": "PDF p24"
+  },
+  "74187": {
+    "name": "Registration & Licences",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "todo_pdf_split": true,
+    "pdf_desc": "Rego, Licences & Third PartyExpenses related to registration, licences and third party compulsory insurance - For Plant Fleet Services only.",
+    "source": "PDF p25"
+  },
+  "74188": {
+    "name": "Plant Repairs — External",
+    "desc": "Plant Fleet Services ONLY.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Expenses related to repairs - For Plant Fleet Services only.",
+    "source": "PDF p25"
+  },
+  "7B111": {
+    "name": "Internal — Rates & Charges",
+    "desc": "Internal LCC Rates & Charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Rates & Charges.",
+    "source": "PDF p27"
+  },
+  "7B112": {
+    "name": "Internal — Water Base Charge",
+    "desc": "Internal LCC water base charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Water Base Charges.",
+    "source": "PDF p27"
+  },
+  "7B113": {
+    "name": "Internal — Water Usage Charge",
+    "desc": "Internal LCC water usage charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Water Usage Charges.",
+    "source": "PDF p27"
+  },
+  "7B114": {
+    "name": "Internal — Sewerage Charges",
+    "desc": "Internal LCC sewerage charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Wastewater Charges.",
+    "source": "PDF p27"
+  },
+  "7B115": {
+    "name": "Internal — Garbage Charges",
+    "desc": "Internal LCC garbage charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Garbage Charges.",
+    "source": "PDF p27"
+  },
+  "7B121": {
+    "name": "Internal — Trade Waste Charges",
+    "desc": "Internal LCC trade waste charges.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Trade Waste Charges.",
+    "source": "PDF p27"
+  },
+  "7B122": {
+    "name": "Internal — Tip Fees",
+    "desc": "Internal LCC tip fees.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Tip Fees.",
+    "source": "PDF p27"
+  },
+  "7B123": {
+    "name": "Internal — Other Fees & Charges",
+    "desc": "LEC fees, Corporate Catalogue items (no FBT). Use 7B221 where FBT applies.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Logan City Council Other Fees & Charges. Includes fees and charges of the Logan Entertainment Centre and items from the Corporate Catalogue where FBT does not apply (use",
+    "source": "PDF p27"
+  },
+  "7B124": {
+    "name": "Internal — Excess & Damage Payments",
+    "desc": "Internal excess costs or damage payments on insurance events.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to excess costs or damage payments on insurance events.",
+    "source": "PDF p27"
+  },
+  "7B125": {
+    "name": "Internal — Carbon Tax Expense",
+    "desc": "Internal carbon tax charged by Logan Waste.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Carbon Tax expenses which is charged by Logan Waste.",
+    "source": "PDF p27"
+  },
+  "7B211": {
+    "name": "Internal — Property Professional Services",
+    "desc": "Architects, surveyors, town planning, valuation by LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Architects, Building & Land Surveyors, Town Planning and Valuation Services provided by Logan City Council.",
+    "source": "PDF p27"
+  },
+  "7B212": {
+    "name": "Internal — Consulting Services",
+    "desc": "Accounting, engineering, marketing, PM, training by LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Accounting, Engineering, Marketing, Project Management, Training and other consulting services provided by Logan City Council.",
+    "source": "PDF p27"
+  },
+  "7B213": {
+    "name": "Internal — Medical Services",
+    "desc": "Internal medical services by LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Veterinarian, immunisation and other medical services provided by Logan City Council.",
+    "source": "PDF p27"
+  },
+  "7B214": {
+    "name": "Internal — Maintenance Services",
+    "desc": "Fire protection, pest control, repairs, A/C, plumbers by LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Fire protection, pest control, repair fees, painters, building contractors, air conditioning, plumbers and other maintenance services provided by Logan City Council.",
+    "source": "PDF p27"
+  },
+  "7B215": {
+    "name": "Internal — Construction Services",
+    "desc": "Internal construction services by LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Construction Services.",
+    "source": "PDF p27"
+  },
+  "7B219": {
+    "name": "Internal — Other Services",
+    "desc": "Internal services not classified elsewhere.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Other Services that cannot be classified as a specified service listed above.",
+    "source": "PDF p28"
+  },
+  "7B221": {
+    "name": "Internal — Hospitality FBT",
+    "desc": "Internal catering that incurs FBT (e.g. farewell functions at LEC).",
+    "rules": [],
+    "flags": [
+      "fbt"
+    ],
+    "pdf_desc": "Internal work related catering expenditure that incurs Fringe Benefits Tax (FBT), such as staff retirement/farewell functions held at the Logan Entertainment Centre. Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p28"
+  },
+  "7B222": {
+    "name": "Internal — Hospitality Non-FBT",
+    "desc": "Internal snack-type nibbles at working meetings. No FBT.",
+    "rules": [],
+    "pdf_desc": "Snack-type nibbles provided at working meetings which do not incur Fringe Benefits Tax (FBT) Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p28"
+  },
+  "7B223": {
+    "name": "Employee Functions & Awards",
+    "desc": "Years of Service and Employee Excellence Awards functions.",
+    "rules": [],
+    "pdf_desc": "Costs relating to Years or Service and Employee Excellence Awards functions Refer Hospitality & Entertainment Guide for more information.",
+    "source": "PDF p28"
+  },
+  "7B311": {
+    "name": "Internal — Contributions",
+    "desc": "Internal contributions to projects within LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Contributions to projects within Logan City Council.",
+    "source": "PDF p28"
+  },
+  "7B411": {
+    "name": "Internal — IT Equipment & Application",
+    "desc": "Internal IT equipment and applications.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to IT Equipment.",
+    "source": "PDF p28"
+  },
+  "7B412": {
+    "name": "Internal — Communication Equipment",
+    "desc": "Internal communication equipment.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Communication Equipment.",
+    "source": "PDF p28"
+  },
+  "7B511": {
+    "name": "Internal — Landscape Supplies",
+    "desc": "Internal landscape supplies from LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Landscape Supplies provided by Logan City Council.",
+    "source": "PDF p28"
+  },
+  "7B520": {
+    "name": "Internal — Gravel",
+    "desc": "Internal gravel from LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Gravel.",
+    "source": "PDF p28"
+  },
+  "7B521": {
+    "name": "Internal — Crushed Gravel",
+    "desc": "Internal crushed gravel.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Crushed Gravel.",
+    "source": "PDF p28"
+  },
+  "7B522": {
+    "name": "Internal — Pea Gravel",
+    "desc": "Internal pea gravel.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Pea Gravel.",
+    "source": "PDF p28"
+  },
+  "7B523": {
+    "name": "Internal — Uncrushed Gravel",
+    "desc": "Internal uncrushed gravel.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Uncrushed Gravel.",
+    "source": "PDF p28"
+  },
+  "7B524": {
+    "name": "Internal — X Gravel",
+    "desc": "Internal X gravel.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to X Gravel.",
+    "source": "PDF p28"
+  },
+  "7B525": {
+    "name": "Internal — Ballast",
+    "desc": "Internal ballast.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Ballast.",
+    "source": "PDF p28"
+  },
+  "7B526": {
+    "name": "Internal — Screenings",
+    "desc": "Internal screenings.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Screenings.",
+    "source": "PDF p28"
+  },
+  "7B528": {
+    "name": "Internal — Crusher Dust",
+    "desc": "Internal crusher dust.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Crusher Dust.",
+    "source": "PDF p28"
+  },
+  "7B529": {
+    "name": "Internal — Topsoil",
+    "desc": "Internal topsoil.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Topsoil.",
+    "source": "PDF p28"
+  },
+  "7B531": {
+    "name": "Internal — Sand",
+    "desc": "Internal sand.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Sand.",
+    "source": "PDF p28"
+  },
+  "7B532": {
+    "name": "Internal — Spoils",
+    "desc": "Internal spoils.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Spoils.",
+    "source": "PDF p28"
+  },
+  "7B533": {
+    "name": "Internal — Gravel BTB",
+    "desc": "Internal BTB gravel.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to BTB Gravel.",
+    "source": "PDF p28"
+  },
+  "7B534": {
+    "name": "Internal — Crushed Concrete",
+    "desc": "Internal crushed concrete.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Crushed Concrete.",
+    "source": "PDF p28"
+  },
+  "7B540": {
+    "name": "Internal — Promotional Items",
+    "desc": "Promotional items sourced internally from Marketing Branch.",
+    "rules": [],
+    "pdf_desc": "Promotional items sourced internally from Marketing Branch for branches and Councillors.",
+    "source": "PDF p28"
+  },
+  "7B611": {
+    "name": "Internal — Property Leases & Rentals",
+    "desc": "Internal LCC venue hire — Logan Entertainment Centre, Logan Metro InSports, Council chambers, any Council-owned function space. ALWAYS use this for internal venues, even when hired for training. External commercial venues = 73521.",
+    "rules": [
+      "External venue → 73521"
+    ],
+    "pdf_desc": "Internal expenses related to Property leased or rented from Logan City Council.",
+    "source": "PDF p28"
+  },
+  "7B612": {
+    "name": "Internal — Equipment Leases & Rentals",
+    "desc": "Internal equipment leased from LCC.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to Equipment leased or rented from Logan City Council.",
+    "source": "PDF p28"
+  },
+  "7BZ11": {
+    "name": "Internal — Community Service Obligations",
+    "desc": "Internal reimbursement for the imposition by Council of costs not usually incurred in a business activity, such as free tipping days and remission of building certification fees. System-generated journals ONLY — manual coding to this account is NEVER correct.",
+    "rules": [
+      "System-generated ONLY — never manual"
+    ],
+    "pdf_desc": "Internal reimbursement for the imposition by Council of costs not usually incurred in a business activity, such as free tipping days and remission of building certification fees.",
+    "source": "PDF p28"
+  },
+  "7BZ21": {
+    "name": "Internal — Photocopies",
+    "desc": "Internal photocopying expenses.",
+    "rules": [],
+    "pdf_desc": "Internal expenses related to photocopying.",
+    "source": "PDF p28"
+  },
+  "7C111": {
+    "name": "Internal — Vehicle/Plant Hire",
+    "desc": "Internal hire from Plant Fleet Services Branch.",
+    "rules": [],
+    "pdf_desc": "Internal hire costs for a plant hired from Plant Fleet Services Branch.",
+    "source": "PDF p28"
+  },
+  "7C112": {
+    "name": "Internal — Miscellaneous Plant Hire",
+    "desc": "Internal miscellaneous plant from Plant Fleet Services.",
+    "rules": [],
+    "pdf_desc": "Internal hire costs for a miscellaneous plant hired from Plant Fleet Services Branch.",
+    "source": "PDF p28"
+  },
+  "7C113": {
+    "name": "Internal Plant Oncosts",
+    "desc": "Internal oncosts for plant from Plant Fleet Services.",
+    "rules": [],
+    "pdf_desc": "Internal Oncosts for plant hired from Plant Fleet Services Branch.",
+    "source": "PDF p28"
+  },
+  "7C114": {
+    "name": "PFS — Unfair Wear and Tear",
+    "desc": "Recharge of repair costs. Plant Fleet Services use only.",
+    "rules": [
+      "RESTRICTED"
+    ],
+    "flags": [
+      "restrict"
+    ],
+    "pdf_desc": "Recharge of repair costs - Plant Fleet Services use only.",
+    "source": "PDF p28"
+  },
+  "7C119": {
+    "name": "Internal — Vacuum Truck Hire",
+    "desc": "Internal vacuum truck hire from Plant Fleet Services.",
+    "rules": [],
+    "pdf_desc": "Internal hire cost for Vacuum Trucks hired from Plant Fleet Services Branch.",
+    "source": "PDF p29"
+  }
+}

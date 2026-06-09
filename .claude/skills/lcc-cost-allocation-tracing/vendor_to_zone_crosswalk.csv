@@ -1,0 +1,11 @@
+Vendor,Contract,Zone,Service Code,Section,PK,Monthly Invoice (ex GST),Notes
+Austspray,PAR/338A/2025,LZ6,20376,Park Maintenance,PK000473,73432.77,"Whole-zone landscape maintenance. Subject line on invoice references PK000473 only — no Urban Bushland line, no PK385 reference. The 19% split to PK385 ($13,993.03) has no vendor-side basis."
+Austspray,(zone contract),LZ1,20374,Park Maintenance,PK000017,57284.53,"Whole-zone invoice. 5.5% split to PK385 ($3,157.21). LZ1 has 13 approved Urban Bushland sites per Checklist."
+Austspray,(zone contract),LZ2,20371,Park Maintenance,PK000014,52101,"Whole-zone invoice. 6.6% split to PK385 ($3,454.08). LZ2 has 4 approved sites: Lake Dennis, Gavin Park, Norman Park, Promenade Park."
+Austspray,(zone contract),LZ4,20373,Park Maintenance,PK000016,74897,"Whole-zone invoice. 0.3% split to PK385 ($213.25)."
+Glascott,PAR/338B/2025,LZ3,20372,Park Maintenance,PK000015,,"Whole-zone invoice. ZERO split to PK385 — but 2 approved Urban Bushland sites in LZ3 (Sturdee Park Loganlea LZ3-310, Lake Breeze Park Loganholme LZ3-333). Either work not occurring or absorbed into general zone."
+Glascott,PAR/338C/2025,LZ5,20375,Park Maintenance,PK000019,,"Whole-zone invoice from approximately P9-10 FY26; Austspray previously. April 2026 P10 has TWO Glascott LZ5 lines in one month (INV-9709 and INV-010266). Possible LZ5 contract change or double-billing — unresolved."
+,,,,,,,
+Holding Account,1-20276-73126,(all zones),,Parks Maintenance,,,Lump-sum invoices land here first then split via GJ.
+Tracker DM,17767639,(all zones),,Parks Maintenance,,,Green Maintenance Budget Tracker — drives the split values monthly.
+Checklist DM,14719249,(all zones),,Natural Areas,,,Urban Bushland Checklist — defines approved scope (33 sites at $12,148.36 per round). Does NOT drive the actual split.

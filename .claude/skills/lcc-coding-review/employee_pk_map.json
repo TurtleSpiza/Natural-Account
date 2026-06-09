@@ -1,0 +1,2651 @@
+{
+  "description": "Parks employee to PK lookup, derived from the EOM People & Positions report",
+  "source": "EOM_checking_Report_181502_Report_193167_Report_202298_Report_260517.xlsx",
+  "source_sha256": "75b2e247fccb2c649c6ba937171cf6a0604d0bbd2c19d0efdaa86ae77167a92e",
+  "ingest_anchor": "05-Jun-2026",
+  "crosswalk_rule": "service_no = trailing 5 digits of the 6-digit cost code; PK via svc_map; never invent a PK on a miss",
+  "occupancy_inference": "dated row (TEV or Expected End) = current/acting; undated row = substantive/revert",
+  "finance_gate": "every acting / TEV / temp line is AMBER pending Parks Finance",
+  "privacy": "job-relevant fields only; DOB, gender, email, age, blue card, nationality deliberately excluded",
+  "count_employees": 114,
+  "count_vacant_positions": 17,
+  "employees": {
+    "20680": {
+      "emp_id": "20680",
+      "first": "Peter",
+      "last": "Cronin",
+      "section": "Park Maintenance",
+      "current_pk": "PK000044",
+      "revert_pk": "PK000044",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5688",
+          "title": "Green Asset Contracts Officer",
+          "cost_code": "120131",
+          "pk": "PK000044",
+          "end_date": null
+        }
+      ]
+    },
+    "18325": {
+      "emp_id": "18325",
+      "first": "Brian",
+      "last": "Kirkman",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5655",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "17549": {
+      "emp_id": "17549",
+      "first": "Candy",
+      "last": "Rosmarin",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5541",
+          "title": "Parks Design Coordinator",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "18592": {
+      "emp_id": "18592",
+      "first": "Anne-Marie",
+      "last": "King",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5607",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "14683": {
+      "emp_id": "14683",
+      "first": "Kim",
+      "last": "Pryce",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5647",
+          "title": "Playground Inspector and Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "22572": {
+      "emp_id": "22572",
+      "first": "Dean",
+      "last": "Mawby",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5681",
+          "title": "Tree Services Coordinator",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "22339": {
+      "emp_id": "22339",
+      "first": "Henry",
+      "last": "Fusi",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5654",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "15962": {
+      "emp_id": "15962",
+      "first": "Brenda",
+      "last": "Robertson",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5690",
+          "title": "Arboricultural Technical Officer",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "21777": {
+      "emp_id": "21777",
+      "first": "Brad",
+      "last": "Powell",
+      "section": "Park Services",
+      "current_pk": "PK000002",
+      "revert_pk": "PK000002",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5601",
+          "title": "Park Services Coordinator",
+          "cost_code": "120361",
+          "pk": "PK000002",
+          "end_date": null
+        }
+      ]
+    },
+    "12827": {
+      "emp_id": "12827",
+      "first": "Rene",
+      "last": "Harreman",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5641",
+          "title": "Parks Supervisor - Facilities",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "20944": {
+      "emp_id": "20944",
+      "first": "Peter",
+      "last": "Salisnew",
+      "section": "Natural Areas",
+      "current_pk": "PK000074",
+      "revert_pk": "PK000074",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5740",
+          "title": "Parks Communities Officer",
+          "cost_code": "120422",
+          "pk": "PK000074",
+          "end_date": null
+        }
+      ]
+    },
+    "81938": {
+      "emp_id": "81938",
+      "first": "Jules",
+      "last": "Villiers",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5546",
+          "title": "Parks Contract and Procurement Officer",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "22270": {
+      "emp_id": "22270",
+      "first": "Douglas",
+      "last": "Walker",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5691",
+          "title": "Tree Services Supervisor",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "20189": {
+      "emp_id": "20189",
+      "first": "Russ",
+      "last": "Petersen",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": "20-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5678",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        },
+        {
+          "pos_id": "5673",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": "20-Jun-2026"
+        }
+      ]
+    },
+    "19032": {
+      "emp_id": "19032",
+      "first": "Fiona",
+      "last": "Perry",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5643",
+          "title": "Parks Asset Management Officer",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "19546": {
+      "emp_id": "19546",
+      "first": "Henny",
+      "last": "Purwodihardjo",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5545",
+          "title": "Parks Capital Delivery Project Manager",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "19936": {
+      "emp_id": "19936",
+      "first": "Tania",
+      "last": "Papatheodosiou",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5662",
+          "title": "Parks Project Delivery Officer",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "20484": {
+      "emp_id": "20484",
+      "first": "David",
+      "last": "Franz",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5675",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "15651": {
+      "emp_id": "15651",
+      "first": "Jannit",
+      "last": "Catchpole",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5513",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "17358": {
+      "emp_id": "17358",
+      "first": "Paul",
+      "last": "Mann",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5651",
+          "title": "Parks Maintenance Supervisor",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "21390": {
+      "emp_id": "21390",
+      "first": "Craig",
+      "last": "Logan",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5551",
+          "title": "Manager Parks Operations and Maintenance",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "81811": {
+      "emp_id": "81811",
+      "first": "Jason",
+      "last": "Fourmile",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5658",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "18395": {
+      "emp_id": "18395",
+      "first": "Scott",
+      "last": "Grant",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5625",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "21491": {
+      "emp_id": "21491",
+      "first": "Dylan",
+      "last": "McGavin",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5679",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "20704": {
+      "emp_id": "20704",
+      "first": "Ron",
+      "last": "Clunn",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "override",
+      "pending_separation": false,
+      "basis": "analyst-confirmed; old file PK000003 discarded",
+      "positions": [
+        {
+          "pos_id": "5677",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "20291": {
+      "emp_id": "20291",
+      "first": "Kirsty",
+      "last": "Quinn",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5624",
+          "title": "Business Support and Systems Coordinator",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "20198": {
+      "emp_id": "20198",
+      "first": "Greg",
+      "last": "Birkett",
+      "section": "Park Maintenance",
+      "current_pk": "PK000034",
+      "revert_pk": "PK000034",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5702",
+          "title": "Parks Maintenance Coordinator",
+          "cost_code": "120260",
+          "pk": "PK000034",
+          "end_date": null
+        }
+      ]
+    },
+    "17253": {
+      "emp_id": "17253",
+      "first": "Nigel",
+      "last": "Atkinson",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "7673",
+          "title": "Tractor Operator",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "22831": {
+      "emp_id": "22831",
+      "first": "Susannah",
+      "last": "Harvey-Jamieson",
+      "section": "Management",
+      "current_pk": "PK000087",
+      "revert_pk": "PK000087",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5529",
+          "title": "Branch Project Coordinator",
+          "cost_code": "120001",
+          "pk": "PK000087",
+          "end_date": "16-Feb-2028"
+        }
+      ]
+    },
+    "21085": {
+      "emp_id": "21085",
+      "first": "Kerrie",
+      "last": "Dahtler",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5520",
+          "title": "Parks Asset Management Officer",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "21383": {
+      "emp_id": "21383",
+      "first": "Julie",
+      "last": "Glazebrook",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000431",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5712",
+          "title": "Natural Area Team Leader",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": null
+        }
+      ]
+    },
+    "15538": {
+      "emp_id": "15538",
+      "first": "Melina",
+      "last": "Turpin",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5642",
+          "title": "Parks Assets Project Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "19654": {
+      "emp_id": "19654",
+      "first": "Adam",
+      "last": "Hiratos",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5547",
+          "title": "Parks Project Delivery Officer",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "18240": {
+      "emp_id": "18240",
+      "first": "Travis",
+      "last": "Black",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5661",
+          "title": "Parks Capital Delivery Project Manager",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "21477": {
+      "emp_id": "21477",
+      "first": "Scott",
+      "last": "Kane",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5685",
+          "title": "Arboricultural Technical Officer",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "21507": {
+      "emp_id": "21507",
+      "first": "Adam",
+      "last": "Goodsir",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5623",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "16963": {
+      "emp_id": "16963",
+      "first": "Daniel",
+      "last": "Harman",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5657",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "20179": {
+      "emp_id": "20179",
+      "first": "Sam",
+      "last": "Forbes",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5682",
+          "title": "Arboricultural Technical Officer",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "19221": {
+      "emp_id": "19221",
+      "first": "Brent",
+      "last": "Dowden",
+      "section": null,
+      "current_pk": null,
+      "revert_pk": null,
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5501",
+          "title": "General Manager Parks",
+          "cost_code": "116501",
+          "pk": null,
+          "end_date": null
+        }
+      ]
+    },
+    "16351": {
+      "emp_id": "16351",
+      "first": "Cael",
+      "last": "Wright",
+      "section": "Natural Areas",
+      "current_pk": "PK000374",
+      "revert_pk": "PK000374",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5739",
+          "title": "Natural Areas Bushfire Operations Officer",
+          "cost_code": "120571",
+          "pk": "PK000374",
+          "end_date": null
+        }
+      ]
+    },
+    "21982": {
+      "emp_id": "21982",
+      "first": "Leanne",
+      "last": "Ness Wilson",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": "25-Jun-2027",
+      "temp_status": "override-acting",
+      "pending_separation": true,
+      "basis": "analyst-confirmed; pending separation",
+      "positions": [
+        {
+          "pos_id": "5627",
+          "title": "Business Support Team Leader",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "25-Jun-2027"
+        },
+        {
+          "pos_id": "5624",
+          "title": "Business Support and Systems Coordinator",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "05-Jun-2026"
+        }
+      ]
+    },
+    "20187": {
+      "emp_id": "20187",
+      "first": "Danielle",
+      "last": "Johnsen",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": "17-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5544",
+          "title": "Senior Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        },
+        {
+          "pos_id": "5541",
+          "title": "Parks Design Coordinator",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": "17-Jun-2026"
+        }
+      ]
+    },
+    "21469": {
+      "emp_id": "21469",
+      "first": "Anita",
+      "last": "Moore",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000087",
+      "revert_pk": "PK000087",
+      "cutover": "30-Jun-2026",
+      "temp_status": "override-acting",
+      "pending_separation": false,
+      "basis": "management coding decision; differs from crosswalk PK000086 (substantive Manager)",
+      "positions": [
+        {
+          "pos_id": "5521",
+          "title": "Manager Parks Planning Design & Capital Delivery",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        },
+        {
+          "pos_id": "5501",
+          "title": "General Manager Parks",
+          "cost_code": "116501",
+          "pk": null,
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "20671": {
+      "emp_id": "20671",
+      "first": "Renee",
+      "last": "Hoyle",
+      "section": "Natural Areas",
+      "current_pk": "PK000432",
+      "revert_pk": "PK000434",
+      "cutover": "30-Jun-2026",
+      "temp_status": "acting-move",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5633",
+          "title": "Parks Communities Officer",
+          "cost_code": "120320",
+          "pk": "PK000434",
+          "end_date": null
+        },
+        {
+          "pos_id": "5736",
+          "title": "Natural Area Projects Officer",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "19944": {
+      "emp_id": "19944",
+      "first": "Wendy",
+      "last": "Hoyle",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000431",
+      "cutover": "30-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5711",
+          "title": "Natural Areas Supervisor",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": null
+        },
+        {
+          "pos_id": "5710",
+          "title": "Natural Areas Supervisor",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "22214": {
+      "emp_id": "22214",
+      "first": "Lachlan",
+      "last": "Peebles",
+      "section": "Cemeteries",
+      "current_pk": "PK000439",
+      "revert_pk": "PK000439",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5630",
+          "title": "Cemetery Team Member",
+          "cost_code": "120452",
+          "pk": "PK000439",
+          "end_date": null
+        }
+      ]
+    },
+    "20182": {
+      "emp_id": "20182",
+      "first": "Monty",
+      "last": "Dean",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5664",
+          "title": "Senior Parks Project Delivery Officer",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "22633": {
+      "emp_id": "22633",
+      "first": "Jill",
+      "last": "Provins",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5525",
+          "title": "Parks Planning & Asset Lifecycle Coordinator",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "20206": {
+      "emp_id": "20206",
+      "first": "Shane",
+      "last": "Morris",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5689",
+          "title": "Tree Services Supervisor",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "20404": {
+      "emp_id": "20404",
+      "first": "Greg",
+      "last": "Cavell",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5674",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "21656": {
+      "emp_id": "21656",
+      "first": "Adam",
+      "last": "Barter",
+      "section": "Natural Areas",
+      "current_pk": "PK000434",
+      "revert_pk": "PK000434",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5731",
+          "title": "Parks Communities Supervisor",
+          "cost_code": "120320",
+          "pk": "PK000434",
+          "end_date": null
+        }
+      ]
+    },
+    "20998": {
+      "emp_id": "20998",
+      "first": "Allan",
+      "last": "Anyaya",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5629",
+          "title": "Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "82100": {
+      "emp_id": "82100",
+      "first": "Shawn",
+      "last": "Luxford",
+      "section": "Cemeteries",
+      "current_pk": "PK000439",
+      "revert_pk": "PK000439",
+      "cutover": "26-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5632",
+          "title": "Cemetery Team Member",
+          "cost_code": "120452",
+          "pk": "PK000439",
+          "end_date": null
+        },
+        {
+          "pos_id": "5634",
+          "title": "Cemetery Team Leader",
+          "cost_code": "120452",
+          "pk": "PK000439",
+          "end_date": "26-Jun-2026"
+        }
+      ]
+    },
+    "20836": {
+      "emp_id": "20836",
+      "first": "Steve",
+      "last": "Allan",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000431",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5714",
+          "title": "Natural Area Team Member",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": null
+        }
+      ]
+    },
+    "17662": {
+      "emp_id": "17662",
+      "first": "Caroline",
+      "last": "King",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000082",
+      "cutover": "30-Jun-2026",
+      "temp_status": "acting-move",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5659",
+          "title": "Parks Capital Delivery Coordinator",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        },
+        {
+          "pos_id": "5521",
+          "title": "Manager Parks Planning Design & Capital Delivery",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "20965": {
+      "emp_id": "20965",
+      "first": "Lisa",
+      "last": "Hodgson",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000432",
+      "cutover": "30-Jun-2026",
+      "temp_status": "acting-move",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5736",
+          "title": "Natural Area Projects Officer",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": null
+        },
+        {
+          "pos_id": "5711",
+          "title": "Natural Areas Supervisor",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "22714": {
+      "emp_id": "22714",
+      "first": "Trevor",
+      "last": "Boobyer",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5548",
+          "title": "Senior Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "20399": {
+      "emp_id": "20399",
+      "first": "Aprilita",
+      "last": "Santos",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5523",
+          "title": "Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "21511": {
+      "emp_id": "21511",
+      "first": "Dan",
+      "last": "O'Brien",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5604",
+          "title": "Parks Asset Management Lead",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "20026": {
+      "emp_id": "20026",
+      "first": "Matt",
+      "last": "Dwyer",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "7442",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "17594": {
+      "emp_id": "17594",
+      "first": "Paul",
+      "last": "Canis",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": "30-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5666",
+          "title": "Senior Parks Project Delivery Officer",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        },
+        {
+          "pos_id": "5659",
+          "title": "Parks Capital Delivery Coordinator",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": "30-Jun-2026"
+        }
+      ]
+    },
+    "21409": {
+      "emp_id": "21409",
+      "first": "Gihani",
+      "last": "Mandala Waththage",
+      "section": "Management",
+      "current_pk": "PK000087",
+      "revert_pk": "PK000087",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5602",
+          "title": "Financial Analyst",
+          "cost_code": "120001",
+          "pk": "PK000087",
+          "end_date": null
+        }
+      ]
+    },
+    "18310": {
+      "emp_id": "18310",
+      "first": "Marissa",
+      "last": "Dyba",
+      "section": "Natural Areas",
+      "current_pk": "PK000432",
+      "revert_pk": "PK000432",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5701",
+          "title": "Natural Areas Coordinator",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": null
+        }
+      ]
+    },
+    "19753": {
+      "emp_id": "19753",
+      "first": "Shane",
+      "last": "Ohlsen",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5361",
+          "title": "Playground Inspector and Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "17565": {
+      "emp_id": "17565",
+      "first": "Nakita",
+      "last": "Bishop",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "6501",
+          "title": "Park Asset Maintenance Supervisor",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "20106": {
+      "emp_id": "20106",
+      "first": "Navneet",
+      "last": "Garewal",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5563",
+          "title": "Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "81474": {
+      "emp_id": "81474",
+      "first": "Corey",
+      "last": "Stoops",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": "25-Jun-2027",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5644",
+          "title": "Parks Urban Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        },
+        {
+          "pos_id": "5649",
+          "title": "Painter/Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": "25-Jun-2027"
+        }
+      ]
+    },
+    "21540": {
+      "emp_id": "21540",
+      "first": "Sara",
+      "last": "Dresman",
+      "section": "Management",
+      "current_pk": "PK000087",
+      "revert_pk": "PK000087",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5511",
+          "title": "General Manager's Support Officer",
+          "cost_code": "120001",
+          "pk": "PK000087",
+          "end_date": null
+        }
+      ]
+    },
+    "21619": {
+      "emp_id": "21619",
+      "first": "Sione",
+      "last": "Namoa",
+      "section": "Cemeteries",
+      "current_pk": "PK000439",
+      "revert_pk": "PK000439",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5631",
+          "title": "Cemetery Team Leader",
+          "cost_code": "120452",
+          "pk": "PK000439",
+          "end_date": null
+        }
+      ]
+    },
+    "22169": {
+      "emp_id": "22169",
+      "first": "Billy",
+      "last": "Bevan",
+      "section": "Park Maintenance",
+      "current_pk": "PK000044",
+      "revert_pk": "PK000044",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5687",
+          "title": "Green Asset Contracts Officer",
+          "cost_code": "120131",
+          "pk": "PK000044",
+          "end_date": null
+        }
+      ]
+    },
+    "20874": {
+      "emp_id": "20874",
+      "first": "Leighton",
+      "last": "Funk",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5652",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "21572": {
+      "emp_id": "21572",
+      "first": "Jessica",
+      "last": "Burke",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5686",
+          "title": "Parks Asset Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "20126": {
+      "emp_id": "20126",
+      "first": "Hannah",
+      "last": "Butcher",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5680",
+          "title": "Park Contracts GIS Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "20934": {
+      "emp_id": "20934",
+      "first": "Todd",
+      "last": "Preussner",
+      "section": "Natural Areas",
+      "current_pk": "PK000434",
+      "revert_pk": "PK000434",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5620",
+          "title": "Parks Communities Officer",
+          "cost_code": "120320",
+          "pk": "PK000434",
+          "end_date": null
+        }
+      ]
+    },
+    "20963": {
+      "emp_id": "20963",
+      "first": "Sara",
+      "last": "Pryor",
+      "section": "Park Maintenance",
+      "current_pk": "PK000044",
+      "revert_pk": "PK000003",
+      "cutover": "03-Jul-2026",
+      "temp_status": "acting-move",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5653",
+          "title": "Green Asset Contracts Officer",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        },
+        {
+          "pos_id": "5671",
+          "title": "Parks Contract Maintenance Supervisor",
+          "cost_code": "120131",
+          "pk": "PK000044",
+          "end_date": "03-Jul-2026"
+        }
+      ]
+    },
+    "20397": {
+      "emp_id": "20397",
+      "first": "Lucas",
+      "last": "Lu",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5542",
+          "title": "Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "20177": {
+      "emp_id": "20177",
+      "first": "Joshua",
+      "last": "Van Werkhoven",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000431",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5715",
+          "title": "Natural Areas Team Leader",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": null
+        }
+      ]
+    },
+    "22037": {
+      "emp_id": "22037",
+      "first": "Celeste",
+      "last": "Fry",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": "05-Jun-2026",
+      "temp_status": "override-acting",
+      "pending_separation": true,
+      "basis": "analyst-confirmed; pending separation",
+      "positions": [
+        {
+          "pos_id": "5603",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        },
+        {
+          "pos_id": "5627",
+          "title": "Business Support Team Leader",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "05-Jun-2026"
+        }
+      ]
+    },
+    "20092": {
+      "emp_id": "20092",
+      "first": "Lilly",
+      "last": "Shearman",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5527",
+          "title": "Communications Coordinator - Infrastructure Projects",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": "08-May-2027"
+        }
+      ]
+    },
+    "22717": {
+      "emp_id": "22717",
+      "first": "Kemal",
+      "last": "Basic",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5528",
+          "title": "Parks Capital Program Coordinator",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": "08-Dec-2027"
+        }
+      ]
+    },
+    "20913": {
+      "emp_id": "20913",
+      "first": "Duen",
+      "last": "Jaemjamrat",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5531",
+          "title": "Senior Parks Planner",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "20342": {
+      "emp_id": "20342",
+      "first": "Michael",
+      "last": "Moody",
+      "section": "Natural Areas",
+      "current_pk": "PK000432",
+      "revert_pk": "PK000432",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5683",
+          "title": "Natural Areas Team Leader",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": null
+        }
+      ]
+    },
+    "21309": {
+      "emp_id": "21309",
+      "first": "Renee",
+      "last": "Noon",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5621",
+          "title": "Parks Maintenance Supervisor",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "22359": {
+      "emp_id": "22359",
+      "first": "Brett",
+      "last": "Morton",
+      "section": "Park Maintenance",
+      "current_pk": "PK000044",
+      "revert_pk": "PK000044",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5622",
+          "title": "Green Asset Contracts Officer",
+          "cost_code": "120131",
+          "pk": "PK000044",
+          "end_date": null
+        }
+      ]
+    },
+    "22760": {
+      "emp_id": "22760",
+      "first": "James",
+      "last": "Lloyd-Jones",
+      "section": "Natural Areas",
+      "current_pk": "PK000432",
+      "revert_pk": "PK000432",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5713",
+          "title": "Natural Area Team Member",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": null
+        }
+      ]
+    },
+    "19521": {
+      "emp_id": "19521",
+      "first": "Nani",
+      "last": "Ruatoe",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5684",
+          "title": "Tree Services Officer",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": null
+        }
+      ]
+    },
+    "21369": {
+      "emp_id": "21369",
+      "first": "Jamie",
+      "last": "Fisher",
+      "section": "Natural Areas",
+      "current_pk": "PK000432",
+      "revert_pk": "PK000374",
+      "cutover": "07-Jun-2026",
+      "temp_status": "acting-move",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5738",
+          "title": "Natural Areas Team Member",
+          "cost_code": "120571",
+          "pk": "PK000374",
+          "end_date": null
+        },
+        {
+          "pos_id": "5732",
+          "title": "Natural Areas Officer - Operations",
+          "cost_code": "120318",
+          "pk": "PK000432",
+          "end_date": "07-Jun-2026"
+        }
+      ]
+    },
+    "80090": {
+      "emp_id": "80090",
+      "first": "Kahn",
+      "last": "Helms",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": "26-Jun-2026",
+      "temp_status": "acting-same",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "15356",
+          "title": "Playground Inspector and Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        },
+        {
+          "pos_id": "5694",
+          "title": "Playground Inspector and Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": "26-Jun-2026"
+        }
+      ]
+    },
+    "82034": {
+      "emp_id": "82034",
+      "first": "Lee-Anne",
+      "last": "Niblett",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5532",
+          "title": "Arboricultural Technical Officer",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": "01-Jun-2026"
+        }
+      ]
+    },
+    "22584": {
+      "emp_id": "22584",
+      "first": "Darren",
+      "last": "Bester",
+      "section": "Cemeteries",
+      "current_pk": "PK000439",
+      "revert_pk": "PK000439",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5632",
+          "title": "Cemetery Team Member",
+          "cost_code": "120452",
+          "pk": "PK000439",
+          "end_date": null
+        }
+      ]
+    },
+    "22570": {
+      "emp_id": "22570",
+      "first": "Shaun",
+      "last": "Harrison",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5638",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "22112": {
+      "emp_id": "22112",
+      "first": "Dominic",
+      "last": "Unwin",
+      "section": "Park Services",
+      "current_pk": "PK000435",
+      "revert_pk": "PK000435",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5644",
+          "title": "Parks Urban Maintenance Officer",
+          "cost_code": "120362",
+          "pk": "PK000435",
+          "end_date": null
+        }
+      ]
+    },
+    "23125": {
+      "emp_id": "23125",
+      "first": "Ryan",
+      "last": "McCorkindale",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5646",
+          "title": "Administration Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "07-Oct-2027"
+        }
+      ]
+    },
+    "22743": {
+      "emp_id": "22743",
+      "first": "Dale",
+      "last": "Mckenzie",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5654",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "81521": {
+      "emp_id": "81521",
+      "first": "Philip",
+      "last": "Roschitsch",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5672",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "22705": {
+      "emp_id": "22705",
+      "first": "Oliver",
+      "last": "Mueller",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5673",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "22713": {
+      "emp_id": "22713",
+      "first": "Graeme",
+      "last": "Gray",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5676",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "23292": {
+      "emp_id": "23292",
+      "first": "Mario",
+      "last": "Fuentes",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5678",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "23322": {
+      "emp_id": "23322",
+      "first": "Tyron",
+      "last": "Vakapuna",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5692",
+          "title": "Arboricultural Team Leader",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": "25-Jun-2027"
+        }
+      ]
+    },
+    "22825": {
+      "emp_id": "22825",
+      "first": "Sione",
+      "last": "Mafi",
+      "section": "Trees",
+      "current_pk": "PK000433",
+      "revert_pk": "PK000433",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5693",
+          "title": "Arboricultural Team Member",
+          "cost_code": "120319",
+          "pk": "PK000433",
+          "end_date": "09-Feb-2028"
+        }
+      ]
+    },
+    "23251": {
+      "emp_id": "23251",
+      "first": "Connor",
+      "last": "Forde",
+      "section": "Natural Areas",
+      "current_pk": "PK000374",
+      "revert_pk": "PK000374",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5738",
+          "title": "Natural Areas Team Member",
+          "cost_code": "120571",
+          "pk": "PK000374",
+          "end_date": null
+        }
+      ]
+    },
+    "22727": {
+      "emp_id": "22727",
+      "first": "Guy",
+      "last": "Carkeet",
+      "section": "Park Maintenance",
+      "current_pk": "PK000003",
+      "revert_pk": "PK000003",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "7442",
+          "title": "Urban Parks Team Leader",
+          "cost_code": "120440",
+          "pk": "PK000003",
+          "end_date": null
+        }
+      ]
+    },
+    "23171": {
+      "emp_id": "23171",
+      "first": "Ron",
+      "last": "Jacobs",
+      "section": null,
+      "current_pk": null,
+      "revert_pk": null,
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "15246",
+          "title": "Parks Planning Consultant",
+          "cost_code": "",
+          "pk": null,
+          "end_date": "28-Feb-2027"
+        }
+      ]
+    },
+    "81125": {
+      "emp_id": "81125",
+      "first": "Sheryll",
+      "last": "Arcilla",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000082",
+      "revert_pk": "PK000082",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5550",
+          "title": "Landscape Architect",
+          "cost_code": "220191",
+          "pk": "PK000082",
+          "end_date": null
+        }
+      ]
+    },
+    "21707": {
+      "emp_id": "21707",
+      "first": "Benjamin",
+      "last": "Tabuwaitui",
+      "section": "Park Maintenance",
+      "current_pk": "PK000012",
+      "revert_pk": "PK000012",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5638",
+          "title": "Urban Parks Team Member",
+          "cost_code": "120181",
+          "pk": "PK000012",
+          "end_date": null
+        }
+      ]
+    },
+    "22715": {
+      "emp_id": "22715",
+      "first": "Spero",
+      "last": "Efstathiadis",
+      "section": "Management",
+      "current_pk": "PK000087",
+      "revert_pk": "PK000087",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5628",
+          "title": "Assistant Financial Analyst",
+          "cost_code": "120001",
+          "pk": "PK000087",
+          "end_date": null
+        }
+      ]
+    },
+    "22293": {
+      "emp_id": "22293",
+      "first": "Addis",
+      "last": "Evans-Potter",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5533",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "11-Sep-2026"
+        }
+      ]
+    },
+    "21042": {
+      "emp_id": "21042",
+      "first": "Aisha",
+      "last": "Wilson",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "pending-sep",
+      "pending_separation": true,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5640",
+          "title": "Administration Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": "25-Jun-2027"
+        }
+      ]
+    },
+    "22761": {
+      "emp_id": "22761",
+      "first": "Isabel",
+      "last": "Howard",
+      "section": "Natural Areas",
+      "current_pk": "PK000431",
+      "revert_pk": "PK000431",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5716",
+          "title": "Natural Area Team Member",
+          "cost_code": "120317",
+          "pk": "PK000431",
+          "end_date": null
+        }
+      ]
+    },
+    "81552": {
+      "emp_id": "81552",
+      "first": "Emily",
+      "last": "Garrett",
+      "section": "Planning Design & Capital Delivery",
+      "current_pk": "PK000086",
+      "revert_pk": "PK000086",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5561",
+          "title": "Parks Planner",
+          "cost_code": "120141",
+          "pk": "PK000086",
+          "end_date": null
+        }
+      ]
+    },
+    "81589": {
+      "emp_id": "81589",
+      "first": "Georgia",
+      "last": "Legg",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5526",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "81911": {
+      "emp_id": "81911",
+      "first": "Jenny",
+      "last": "Moir",
+      "section": "Park Maintenance",
+      "current_pk": "PK000044",
+      "revert_pk": "PK000044",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "7657",
+          "title": "Green Asset Contracts Officer",
+          "cost_code": "120131",
+          "pk": "PK000044",
+          "end_date": null
+        }
+      ]
+    },
+    "21591": {
+      "emp_id": "21591",
+      "first": "Amarlia",
+      "last": "Toese",
+      "section": "Depots",
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "single",
+      "pending_separation": false,
+      "basis": "crosswalk",
+      "positions": [
+        {
+          "pos_id": "5512",
+          "title": "Parks Business Support Officer",
+          "cost_code": "120151",
+          "pk": "PK000001",
+          "end_date": null
+        }
+      ]
+    },
+    "22791": {
+      "emp_id": "22791",
+      "first": "Bradley",
+      "last": "Waugh",
+      "section": null,
+      "current_pk": "PK000001",
+      "revert_pk": "PK000001",
+      "cutover": null,
+      "temp_status": "override",
+      "pending_separation": true,
+      "basis": "manual: Trainee code 112521 does not crosswalk; PK assigned by analyst",
+      "positions": [
+        {
+          "pos_id": "14038",
+          "title": "Trainee Administration Officer",
+          "cost_code": "112521",
+          "pk": null,
+          "end_date": null
+        }
+      ]
+    }
+  },
+  "vacant_positions": [
+    {
+      "pos_id": "5530",
+      "title": "Health and Safety Officer",
+      "cost_code": "120001",
+      "pk": "PK000087",
+      "section": "Management",
+      "end_date": "05-Jan-2028"
+    },
+    {
+      "pos_id": "14022",
+      "title": "Trainee Urban Parks Team Member",
+      "cost_code": "112521",
+      "pk": null,
+      "section": null,
+      "end_date": null
+    },
+    {
+      "pos_id": "5634",
+      "title": "Cemetery Team Leader",
+      "cost_code": "120452",
+      "pk": "PK000439",
+      "section": "Cemeteries",
+      "end_date": "31-Dec-2027"
+    },
+    {
+      "pos_id": "5636",
+      "title": "Urban Parks Team Leader",
+      "cost_code": "120181",
+      "pk": "PK000012",
+      "section": "Park Maintenance",
+      "end_date": null
+    },
+    {
+      "pos_id": "5649",
+      "title": "Painter/Maintenance Officer",
+      "cost_code": "120362",
+      "pk": "PK000435",
+      "section": "Park Services",
+      "end_date": "26-Jun-2027"
+    },
+    {
+      "pos_id": "5670",
+      "title": "Park GIS Officer",
+      "cost_code": "120151",
+      "pk": "PK000001",
+      "section": "Depots",
+      "end_date": "30-Jun-2026"
+    },
+    {
+      "pos_id": "5671",
+      "title": "Parks Contract Maintenance Supervisor",
+      "cost_code": "120131",
+      "pk": "PK000044",
+      "section": "Park Maintenance",
+      "end_date": null
+    },
+    {
+      "pos_id": "5694",
+      "title": "Playground Inspector and Maintenance Officer",
+      "cost_code": "120362",
+      "pk": "PK000435",
+      "section": "Park Services",
+      "end_date": "25-Jun-2027"
+    },
+    {
+      "pos_id": "5710",
+      "title": "Natural Areas Supervisor",
+      "cost_code": "120317",
+      "pk": "PK000431",
+      "section": "Natural Areas",
+      "end_date": "30-Jun-2026"
+    },
+    {
+      "pos_id": "5732",
+      "title": "Natural Areas Officer - Operations",
+      "cost_code": "120318",
+      "pk": "PK000432",
+      "section": "Natural Areas",
+      "end_date": null
+    },
+    {
+      "pos_id": "5737",
+      "title": "Natural Areas Team Leader",
+      "cost_code": "120571",
+      "pk": "PK000374",
+      "section": "Natural Areas",
+      "end_date": null
+    },
+    {
+      "pos_id": "5756",
+      "title": "Park Ranger",
+      "cost_code": "120301",
+      "pk": "PK000084",
+      "section": "Park Services",
+      "end_date": null
+    },
+    {
+      "pos_id": "5535",
+      "title": "GIS and Systems Analyst",
+      "cost_code": "120141",
+      "pk": "PK000086",
+      "section": "Planning Design & Capital Delivery",
+      "end_date": "07-May-2028"
+    },
+    {
+      "pos_id": "5552",
+      "title": "Senior Landscape Architect",
+      "cost_code": "220191",
+      "pk": "PK000082",
+      "section": "Planning Design & Capital Delivery",
+      "end_date": "11-Nov-2026"
+    },
+    {
+      "pos_id": "5562",
+      "title": "Landscape Architect",
+      "cost_code": "220191",
+      "pk": "PK000082",
+      "section": "Planning Design & Capital Delivery",
+      "end_date": null
+    },
+    {
+      "pos_id": "5598",
+      "title": "Senior Parks Planner",
+      "cost_code": "120141",
+      "pk": "PK000086",
+      "section": "Planning Design & Capital Delivery",
+      "end_date": "01-Oct-2026"
+    },
+    {
+      "pos_id": "5599",
+      "title": "Senior Parks Planner",
+      "cost_code": "120141",
+      "pk": "PK000086",
+      "section": "Planning Design & Capital Delivery",
+      "end_date": "01-Oct-2026"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+LCC PARKS 4090000 - NA 72312 OFFICE & LIBRARY EQUIPMENT - RECODE JOURNAL
+Batch: CN-23167 (held)
+Ledger: PK | Format: GENJNL | Dr positive, Cr negative | Batch must net $0.00
+Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 8-Jun-2026.
+Amounts ex-GST. Account and Resource Code stored as text (leading zeros preserved).
+Format: full-reversal (natural account wrong; PK preserved as transacted on each line).
+
+Columns: LDG | Account number | Fund account | Resource Group Code | Resource Code | Amount | Narrative1 | Narrative2 | Narrative3
+
+--- A  IKEA TE004431  EKET storage cabinets/shelving (furniture)  72312 -> 72313  [HELD on PK] ---
+PK | PK000493 | PK000493 | JOURNAL | 72312 | -218.18 | IKEA TE004431 | Recode 72312 to 72313 F&F | EKET storage cabinets not equip
+PK | PK000493 | PK000493 | JOURNAL | 72313 |  218.18 | IKEA TE004431 | Recode 72312 to 72313 F&F | EKET storage cabinets not equip
+
+--- B  Empire RL196475  Chair gas lifts + desk pop-in power + install (fittings)  72312 -> 72313  [READY] ---
+PK | PK000001 | PK000001 | JOURNAL | 72312 | -2243.09 | Empire RL196475 | Recode 72312 to 72313 F&F | Chair/desk components & install
+PK | PK000001 | PK000001 | JOURNAL | 72313 |  2243.09 | Empire RL196475 | Recode 72312 to 72313 F&F | Chair/desk components & install
+
+BATCH STATUS: HELD - AMBER. Do not submit until Finance confirms:
+  (1) Line A PK. PK000493 is not in the canonical service map and cannot be validated
+      (pk_validator: "PK number 'PK000493' not found in service map"). Service code 20392
+      crosswalks to PK000022 (Park Services, Parks Asset Maint and Repairs) in the canonical
+      map. Confirm the correct PK before release. If PK000493 is invalid, the re-post leg
+      (72313 +218.18) goes to the Finance-confirmed PK, not PK000493.
+  (2) Recode acceptance and format. Both lines move natural account only, PK unchanged;
+      full-reversal per the standing rule (NA wrong, PK preserved). Confirm format for batch.
+
+Line B recode direction is firm and fully validated (pk_validator: VALID). Line A NA direction
+(72312 -> 72313) is firm; the line is held only on the PK000493 question above.
+
+VALIDATION
+  Narration cap (40 chars/field): PASS on all four lines (validate_narrative -> []).
+  Destination 72313 Furniture & Fittings: not restricted (PFS / LWA / system-only / pending).
+  pk_validator: Line B VALID. Line A flagged on PK only (NA and amount valid).
+
+RUNNING NET: $0.00
+Total reclassified out of 72312: $2,461.27 of $2,461.27 account (100.0%).

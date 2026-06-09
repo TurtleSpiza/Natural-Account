@@ -1,0 +1,134 @@
+{
+  "austspray": {
+    "type": "Landscaping / mowing contractor",
+    "typical": [
+      "73126"
+    ],
+    "note": "Zone mowing and landscape maintenance contractor"
+  },
+  "glascott": {
+    "type": "Landscaping contractor",
+    "typical": [
+      "73126"
+    ],
+    "note": "Zone mowing contractor — LZ3, LZ5 etc"
+  },
+  "marsupial": {
+    "type": "Landscaping contractor",
+    "typical": [
+      "73126"
+    ],
+    "note": "Zone mowing and landscape services"
+  },
+  "technigro": {
+    "type": "Landscaping contractor",
+    "typical": [
+      "73126"
+    ],
+    "note": "Zone landscape maintenance"
+  },
+  "weis": {
+    "type": "Maintenance contractor",
+    "typical": [
+      "73211",
+      "73212",
+      "73123"
+    ],
+    "note": "General maintenance and minor works contractor"
+  },
+  "cleanaway": {
+    "type": "Waste and recycling services",
+    "typical": [
+      "73122",
+      "73129"
+    ],
+    "note": "Waste collection and disposal. Electricity or other utilities from Cleanaway would be anomalous."
+  },
+  "hays": {
+    "type": "Employment agency / recruitment",
+    "typical": [
+      "73214"
+    ],
+    "note": "Labour-hire and recruitment agency. All Hays invoices → 73214 Agency Personnel, never 71113."
+  },
+  "chandler": {
+    "type": "Employment agency",
+    "typical": [
+      "73214"
+    ],
+    "note": "Labour-hire agency. Invoices → 73214, never 71113."
+  },
+  "adecco": {
+    "type": "Employment agency",
+    "typical": [
+      "73214"
+    ],
+    "note": "Labour-hire agency. Invoices → 73214, never 71113."
+  },
+  "tec": {
+    "type": "Environmental and WHS consulting",
+    "typical": [
+      "73125",
+      "73128"
+    ],
+    "note": "Total Environmental Concepts — WHS and environmental services"
+  },
+  "total environmental": {
+    "type": "Environmental and WHS consulting",
+    "typical": [
+      "73125",
+      "73128"
+    ],
+    "note": "TEC — WHS and environmental services"
+  },
+  "qldpsi": {
+    "type": "Professional services",
+    "typical": [
+      "73125",
+      "73128"
+    ],
+    "note": "Professional services provider"
+  },
+  "easyweb": {
+    "type": "Digital / IT services",
+    "typical": [
+      "73564",
+      "73566",
+      "73605"
+    ],
+    "note": "Digital and web services provider"
+  },
+  "riverdale": {
+    "type": "Maintenance contractor",
+    "typical": [
+      "73211",
+      "73212",
+      "73123"
+    ],
+    "note": "WOP/reserve maintenance contractor"
+  },
+  "sundai": {
+    "type": "Landscaping / vegetation management",
+    "typical": [
+      "73126"
+    ],
+    "note": "Vegetation management and mowing"
+  },
+  "ventia": {
+    "type": "Facility services",
+    "typical": [
+      "73123",
+      "73211",
+      "73212"
+    ],
+    "note": "Facility and maintenance services"
+  },
+  "spotless": {
+    "type": "Facility / cleaning services",
+    "typical": [
+      "73121",
+      "73123"
+    ],
+    "note": "Cleaning and facility management"
+  }
+}
