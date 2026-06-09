@@ -105,5 +105,82 @@ Everything needed to finish next session is committed:
 
 Next session, once `soffice` loads: run `python build_master.py`, recalc with LibreOffice, read back `data_only=True` and confirm the Register RAG and Reviewed-$ and the Tracker dashboard compute (realigned 72111 reviewed is the sum of non-PENDING lines, $1,893.99 on the 13 worked so far), then retire the three source files and update the repo layout. Decision recorded: a ledger line with no attachment in TechOne is RED on the evidence limb (174 of 364 on 72111), which is already how the listing scores it.
 
+## Correction, 9-Jun-2026 (73533 closed to GREEN)
+
+Both open items on 73533 TE005080 are resolved; the account moves AMBER to GREEN.
+
+- **7-Eleven $6.55 receipt sighted** (NA73533_L02_7Eleven_TE005080.pdf): 7-Eleven 1130 Melb Queen St, ABN 86 960 363 023 (checksum PASS), headed TAX INVOICE, 20-Jan-2026, one ham pesto sandwich $7.20 incl, GST $0.65, ex-GST $6.55 (reconciles to the cent). Cover slip "Dinner/Breakfast", K Quinn. It is food, so a meal during travel: it never sits in the 73531-73534 series. A sole-traveller sandwich, no alcohol, no social function, is light refreshment (Reason B), so the $6.55 recodes to 73512 Non-FBT, not 73511. The pair is now posted in NA73533_GENJNL_Recode.txt (73533 -6.55, 73512 +6.55, nets $0.00, direction verified).
+- **Hotel GST substantiation waived by Spero.** The Booking.com accommodation ($288.18 ex, $28.82 GST) carries no ABN and states it is not a tax invoice. Spero directed (9-Jun-2026) that the line be accepted on the Booking.com confirmation as-is rather than held for an ibis/Accor Australian tax invoice. Recorded as an explicit waiver (only Spero may waive evidence). Residual exposure noted: the $28.82 ITC is claimed without a compliant tax invoice, an ATO substantiation risk if reviewed; the interstate coding is correct and unaffected.
+- **Register and deliverables updated.** 73533 L4 Tax and Overall move to GREEN; the register recalculated via LibreOffice and the total holds at $64,568.41 ex-GST. NA73533_Verification_Record.md carries a closing addendum, NA73533_GENJNL_Recode.txt posts the $6.55 pair, NA73533_Evidence_Manifest.csv lists the receipt, and 00_Bundle_Manifest.csv was regenerated and strict-verified. The Finance email item "obtain ibis tax invoice" drops to advisory; the $6.55 recode joins the held CN-23167 batch.
+
+## Correction, 9-Jun-2026 (73564 PK attributions confirmed, three net-moves staged)
+
+Spero confirmed the IT-recharge allocation convention as officer home PK and resolved three of the nine off-home-PK lines on 73564. Net-movement recodes (NA 73564 unchanged) are now staged in sub-batch B of the held NA73564_GENJNL_Recode.txt:
+
+- L04 Brenda Robertson (Trees) iPhone $30.00, wrongly on Depots 20151/PK000001, to her Trees home 20319/PK000433 (Trees Coordination & Administration).
+- L25 Sara Dressman (Branch Management) Poly headset $500.00, wrongly on Planning 20191/PK000082, to 20001/PK000087.
+- L33 Celeste Fry (Depots) iPhone $1,929.27, wrongly on Trees 20241/PK000055, to 20151/PK000001 (the 8-Jun confirmed cross-section miscode, now released).
+
+Total $2,459.27. Each pair credits the off-home PK and debits the home PK; the three pairs net $0.00 and the full 18-line batch (A software + B attribution) nets $0.00, all narrations within the 40-character cap. Limb 1 (attribution) is cleared on these three; their Limb 3 evidence is still open pending the SR backups (SR219175, SR235810, SR-0315517). Six off-home lines remain ($1,957.00, five Anne-Marie King plus L11 Lilly Shearman), including the L08/L24 Anne-Marie vs Caroline King name-attribution question, all still pending. The register 73564 row carries the update; the account stays AMBER (software recode, six PK lines, and the unsighted-invoice tax limb all still open). The register total holds at $64,568.41 ex-GST.
+
+## Correction, 9-Jun-2026 (72111 Ultimate set sighted, three Trees-PK recodes staged)
+
+The Ultimate Motorbikes / Woodmans / Tennyson evidence set (C00267478) is sighted, all five invoices reconcile to the ledger and all ABNs checksum PASS (Ultimate 91 104 115 095, Woodmans 88 105 899 689, Tennyson 31 110 400 809). Three Trees-section lines (svc 20241 / PK000055), confirmed by Spero, are staged in the new `NA72111_GENJNL_Recode.txt` as NA-only recodes (PK preserved):
+
+- ADVANCE X-Light trousers (PIK2270125) $292.09 ex to 72113 PPE, a partial recode off a $409.62 mixed invoice (STIHL consumables $80.29 stay in 72111).
+- Protective Pants G&U Navy (PIK2267644) $402.59 ex to 72113 PPE, a partial recode off a $776.72 mixed invoice (AS charger/battery/fuel $303.52 stay in 72111).
+- STIHL GTA 40.0 SET (PIK2267816) $439.68 ex to 72315 parks P&A, the whole line, serialised (SN451265196), below the asset threshold.
+
+Batch nets $0.00, narrations within the 40-character cap, direction verified: $1,134.36 out of 72111, $694.68 to 72113, $439.68 to 72315. PPE destination set to 72113 by Spero, which resolves the 72113-vs-72114 question on these lines. The STIHL and PPE/decal evidence GAP rows on the manifest are closed. Tennyson 27577 ($335 to 72222) evidence is sighted but its recode stays held pending the Doc46-vs-AP dedup; Woodmans 6429672 ($54.41) is correct in 72111. The account stays AMBER: NA RED holds at account level on the untested remainder, and TE005091 dedup and the Doc46-vs-AP population match are still open. The register 72111 row carries the update; the register total holds at $64,568.41 ex-GST.
+
+## Correction, 9-Jun-2026 (72111 Set 2: Motorcycles R Us PPE staged on directive)
+
+Two further 72111 lines on svc 20301 / PK000084 (Parks and Bushland Rangers) are confirmed by Spero as motorcycle PPE and staged in Set 2 of `NA72111_GENJNL_Recode.txt`, all to 72113:
+
+- Doc 10286878 (9-Sep-2025), partial $883.49 ex of the $1,169.62 line: LS2 MX701 helmet 2XL $390.90, Tourmax 2 pants 3XL $179.95, Alpinestars Tech 3 boots $234.50, Five Stunt Evo 2 gloves $78.14. The remaining $286.13 ex stays in 72111 (confirmed by Spero).
+- Doc 10287279 (17-Sep-2025), full line $179.95 ex: Tourmax 2 motorcycle pants XXL. The two Tourmax pants (3XL and XXL) are distinct sizes on different dates, not a duplicate.
+
+Set 2 is $1,063.44 ex to 72113; combined with Set 1 (Ultimate), the 72111 recode is now $2,197.80 out of 72111 ($1,758.12 to 72113, $439.68 to 72315), nets $0.00, direction verified, narrations within the cap. The evidence basis differs from Set 1: the Motorcycles R Us invoices are NOT packaged, so Set 2 is staged on Spero's line-level directive with the source invoices carried as GAP rows and the evidence and tax limbs unverified (ABN/GST not sighted) until the PDFs arrive. Outstanding document to obtain: the two Motorcycles R Us invoices (Doc 10286878, Doc 10287279). The account stays AMBER; the register total holds at $64,568.41 ex-GST.
+
+## Correction, 9-Jun-2026 (72111 Set 3: scrap-plaque sale income reclassified to Cemeteries)
+
+A negative $448.00 ex line ("returned plaques for scrap", doc SC10906, 15-Jan-2026) sits as a credit in 72111 on Depots svc 20151 / PK000001. Confirmed by Spero as Cemeteries sale income miscoded against Parks minor-equipment expense; staged in Set 3 of `NA72111_GENJNL_Recode.txt`:
+
+- Reclass to 64411 Sale of materials (grp 6 revenue, unrestricted) on Cemeteries svc 20451 / PK000402. Scrap metal is recycled goods, the 64411 definition; both the natural account (72111 expense to 64411 revenue) and the section/PK (Depots to Cemeteries) change.
+- The amount moved is a credit (income), so the signs invert the usual expense-recode pattern: 72111 is debited +448.00 (lifting the income out, restoring Parks expense) and 64411 credited -448.00. Flagged explicitly in the recode as correct, not a sign-flip.
+- Net 72111 movement across all three sets is now -$1,749.80; the $448.00 income leaves Parks 4090000 for the Cemeteries revenue line. Source doc SC10906 not packaged, carried as a GAP row; staged on directive plus the intrinsic ledger evidence (a credit in an expense account). The register total holds at $64,568.41 ex-GST; the account stays AMBER.
+
+## Live uniform listing, 9-Jun-2026 (72114 full account, per-line)
+
+`00_Uniform_Listing_72114.xlsx` is built from a fresh TechOne export (9-Jun-2026): the full 72114 account, 103 lines, $26,236.42 ex-GST across 22 service codes, one row per line with the four-limb criteria columns. L1 Svc/PK is validated against `svc_map` (98 GREEN where the line PK matches its service home, 5 AMBER off-home or unmapped); L3 Evidence is scored from the attachment flag (57 of 103 lines carry no attachment and are RED, 46 have attachments pending sighting); L1 Emp, L2 NA and L4 Tax are seeded (the IPWEA -$10,650.27 GJ078546 line flagged AMBER to 73542 Professional Membership, not 72114). Document mix: 52 inventory issues, 28 general journals, 17 creditor invoices, 5 stock adjustments, 1 credit note. The register reviewed-$ for 72114 stays the $1,059.76 Reali subset; the listing is the live per-line state and updates as evidence is sighted. The source export is preserved in New/ as raw intake.
+
+## Correction, 9-Jun-2026 (73563 reopened; nine WINC invoices verified; evidence and tax limbs GREEN)
+
+The nine WINC invoices recovered in the _CarryForward triage were verified line by line and 73563's evidence and tax limbs are now closed. The 249 Parks lines across the nine invoices reconcile to $6,261.48 ex-GST to the cent, against both the GL and the support-pack rollup (P1 $448.22, P2 $458.49, P3 $357.50, P4 $1,092.86, P5 $776.44, P6 $629.66, P7 $597.86, P8 $949.99, P10 $950.46). WINC ABN 94 000 728 398 checksum PASS on all nine; per-line GST $506.56 on $5,065.69 taxable, and 34 lines ($1,195.79) are GST-free basic food correctly carrying $0 GST, so the per-line food check is complete and no phantom ITC arises. The nine invoices are filed in NA73563_Evidence/ and listed SIGHTED.
+
+L3 Evidence and L4 Tax move AMBER to GREEN; L1 PK GREEN. L2 NA stays RED on the $6,354.47 systemic recode, which is prepared and held on Finance acceptance (an external decision), so 73563 overall stays AMBER gated solely on the Finance-acceptance items (accept the WINC recode; 72313-vs-72111 risers; Reason B / 50/50 filter), no longer on evidence or tax. The register 73563 row reflects the two cleared limbs; the total holds at $64,568.41 ex-GST.
+
+## _CarryForward triage, 9-Jun-2026 (archives reviewed; 73563 evidence gap found and staged)
+
+The two archive drops (`04_Original_Archives.zip`, `01_Consolidated_Recode_Journal.zip`) were hash-compared against the live bundle and triaged in `_CarryForward/00_CarryForward_Triage_9-Jun-2026.md`. Most of both archives is byte-identical to material already integrated (the archives are the provenance of the current bundle). The headline find: **all nine unsighted WINC invoices behind the 73563 evidence gap are in the archive** (9901690129, 9901699602, 9901709054, 9901718415, 9901727996, 9901737473, 9901746332, 9901754676, 9901773647) and are now staged to `New/CarryForward_9-Jun-2026/WINC_invoices_73563/`, alongside the 14-file 73563 coding-review support pack. Reviewing them moves 73563 evidence AMBER to GREEN, the single largest gap-closer in the bundle, and is the recommended next action.
+
+Integrated into `_CarryForward/`: `build_consol.py` and `april_classified.csv` (provenance for the carried consolidated journal) and `Handover_3-Jun-2026.md` (the original handover). Also staged for review in New/: Flair Floral (a new, unplaced vendor), C00281989, and a Document Reconstruction GJ source. Superseded snapshots in the archive (old register/manifest/handover) are left unintegrated. Nothing posts; the register total holds at $64,568.41 ex-GST.
+
+## Standing directive, 9-Jun-2026 (Spero instructions override criteria, journal-ready, retroactive)
+
+Spero has set a standing rule: anything he gives commentary or instruction on overrides the four-limb review criteria and is to be prepared for journal (upload-ready), and this applies retroactively. In practice a line Spero has instructed on is staged as a finished GENJNL line and is not held on my evidence-sighting or classification judgement; a missing source document is still recorded truthfully as a manifest GAP for audit, but it no longer blocks the line. The rule does not silence findings on items he has not instructed on (arithmetic, reconciliation and completeness checks continue, and un-instructed candidates are flagged, e.g. the desk risers below), and it does not override genuinely external decisions such as Finance acceptance of a new-account move.
+
+Applied this pass: the 72111 recode batch (Sets 1 to 4) and the 73564 sub-batch B (PK attributions) are marked PREPARED FOR JOURNAL. The Motorcycles R Us invoices and SC10906 (72111 Sets 2, 3) and the three 73564 SR backups remain recorded as evidence gaps but no longer hold their lines.
+
+**No emails, no Finance-acceptance gate (Spero, 9-Jun-2026).** No emails are sent to anyone, Finance included. Decisions are Spero's and every prepared recode is journal-ready; the prior "held pending Finance acceptance" disposition is removed. The 73564 sub-batch A (73564->73566), the 72312 (72312->72313) and the 73563 WINC recodes are all now PREPARED FOR JOURNAL, not Finance-gated. The committed Finance-email draft (00_Finance_Email_CN-23167_DRAFT.md) is deleted and the email/Finance framing is removed from CLAUDE.md, the register and 00_Outstanding_Evidence_and_Actions.md. The only genuine hard gate left anywhere is the 72111 TE005091 / Doc46-vs-AP dedup, and the Tennyson 72222 line that depends on it. A live consolidated journal, 00_Live_Recode_Journal.xlsx, now carries every prepared line across all accounts and is regenerated by build_live_journal.py as recodes change.
+
+## Correction, 9-Jun-2026 (72111 Set 4: Posca markers to 73563; desk-riser advisory)
+
+TE004824 Officeworks invoice 624206983 (ABN 36 004 763 526 PASS, Kirsty Quinn, 2-Oct-2025) and the Celeste Fry cover slip are sighted. Per Spero, the PK8 POSCA PC5M marker pack ($45.16 inc / $41.05 ex) is stationery and is recoded to 73563 Printing & Stationery (Set 4 of `NA72111_GENJNL_Recode.txt`); a partial recode off the $95.57 ex line. The combined 72111 recode is now 14 lines, net 72111 movement -$1,790.85, batch nets $0.00 (72113 +$1,758.12, 72315 +$439.68, 73563 +$41.05, 64411 -$448.00). Advisory, not journalled pending instruction: the 3 OTTO acrylic desk risers ($54.52 ex) on the same invoice are stands for monitors/laptops and belong in 72313 Furniture & Fittings per the desk-component rule. The register total holds at $64,568.41 ex-GST; the account stays AMBER.
+
+## Environment note, 9-Jun-2026 (provisioning automated)
+
+`setup.sh` at the repo root is now the single source of truth for environment provisioning, and `.claude/hooks/session-start.sh` runs it automatically on web sessions (registered in `.claude/settings.json`, pending merge to the default branch). The prior session's `soffice`-will-not-load blocker is cleared: LibreOffice 24.2.7 loads and recalculates workbooks in this sandbox, so the register total above was recalc-verified and the `build_master.py` consolidation is now unblocked for a future session. The corrected script drops the failing pip self-upgrade and self-heals a broken cffi binding.
+
 Kind regards,
 Spero

@@ -39,6 +39,7 @@ EXCLUDE_FILES = {
     "verify_manifest.py",
     "build_listing.py",
     "build_master.py",
+    "setup.sh",
     ".gitignore",
 }
 

@@ -1,28 +1,35 @@
 LCC PARKS 4090000 - NA 73533 INTERSTATE TRAVEL & ACCOMMODATION - RECODE JOURNAL
-Batch: CN-23167 (no recode required for confirmed lines)
-Ledger: PK | Format: GENJNL | Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 9-Jun-2026.
-Amounts ex-GST.
+Batch: CN-23167 | Ledger: PK | Format: GENJNL
+Section 4090000, FY26 (26SLACT), Period 1-12. Prepared 9-Jun-2026, revised 9-Jun-2026.
+Amounts ex-GST. Batch nets $0.00.
 
 Account reconciles to 8 GL lines, total $1,021.70 ex-GST (footer matched).
 Single traveller, single trip: Kirsty Quinn, Brisbane-Melbourne-Brisbane (svc 20151, PK000001).
 
-NO RECODE REQUIRED for $1,015.15 of $1,021.70 (99.4%). All confirmed correctly interstate:
-  Qantas airfare (TE005128)            $509.93
-  Booking.com Melbourne hotel (TE005080) $288.18
-  Uber to Qantas lounge (21012026)     $137.85   [previously no-receipt, now substantiated]
+NO RECODE for $1,015.15 of $1,021.70 (99.4%). All confirmed correctly interstate:
+  Qantas airfare (TE005128)              $509.93
+  Booking.com Melbourne hotel (TE005080) $288.18   [GST substantiation waived by Spero, see record]
+  Uber to Qantas lounge (21012026)       $137.85
   Cabcharge Melbourne hotel-to-hotel (INV0000315295) $60.82
-  CTM booking + segment fees (TE005128) $18.37
+  CTM booking + segment fees (TE005128)  $18.37
 
-ONE LINE HELD - AMBER (contingent recode, not posted):
-  7-Eleven general expenses (TE005080)  $6.55  Period 1-20151-73533, 20-Jan-2026.
-  If the receipt shows food or drink, this is a meal during travel and recodes to
-  73511/73512 by FBT classification (meals never sit in the 73531-73534 travel series).
-  Contingent pair, NOT in this batch until the receipt is sighted:
-    PK | PK000001 | PK000001 | JOURNAL | 73533 | -6.55 | Recode 7-Eleven meal fr 73533 | If food/drink meal in travel | To 73511/73512 per FBT
-    PK | PK000001 | PK000001 | JOURNAL | 735xx |  6.55 | Recode 7-Eleven meal fr 73533 | If food/drink meal in travel | To 73511/73512 per FBT
+POSTED - one recode pair ($6.55, 0.6%):
+  The 7-Eleven receipt behind TE005080 is now sighted (NA73533_L02_7Eleven_TE005080.pdf):
+  7-Eleven 1130 Melb Queen St, ABN 86 960 363 023 (checksum PASS), TAX INVOICE, 20-Jan-2026,
+  1x HAM PESTO SANDWICH $7.20 incl, GST $0.65, ex-GST $6.55 (6.55 x 1.1 = 7.205, reconciles).
+  Cover slip "Dinner/Breakfast", K Quinn. This is food: a meal during travel, which never sits
+  in the 73531-73534 series. A sole-traveller sandwich, no alcohol, no social function, consumed
+  during the work trip, is light refreshment (Reason B), so it moves to 73512 Non-FBT.
 
-BATCH STATUS: account confirmed correct bar the $6.55 7-Eleven line. No journal posts
-until the 7-Eleven receipt is sighted; if it is a non-meal sundry the line stays in 73533.
+  LDG | Account  | Fund     | RG      | Resource | Amount | Narration                       | Reason
+  PK  | PK000001 | PK000001 | JOURNAL | 73533    |  -6.55 | 7-Eleven TE005080 meal to 73512 | B refreshment, meal-in-travel
+  PK  | PK000001 | PK000001 | JOURNAL | 73512    |   6.55 | 7-Eleven TE005080 meal to 73512 | B refreshment, meal-in-travel
 
-RUNNING NET: $0.00 (no posted lines).
-Reclassified out of 73533: $0.00 confirmed; $6.55 contingent on receipt.
+DIRECTION CHECK: source NA 73533 leg negative (-6.55, credit), destination NA 73512 leg
+positive (+6.55, debit), matching the narration "to 73512". Narration 31 chars, under the 40 cap.
+
+BATCH STATUS: nets $0.00.
+Reclassified out of 73533: $6.55 (to 73512). Recomputed signed sum on 73533 source leg = -6.55,
+equals the stated reclassified total. Destination 73512 total = +6.55. Cap pass and net-to-zero
+both hold, and the per-pair direction is verified (not a sign-flip).
+RUNNING NET: $0.00.
