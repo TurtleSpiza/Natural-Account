@@ -91,3 +91,33 @@ Evidence basis: the scrap-sale source document SC10906 is not packaged, so this 
 The combined 72111 recode is now 14 lines, net 72111 movement -$1,790.85, batch nets $0.00, destinations 72113 +$1,758.12, 72315 +$439.68, 73563 +$41.05, 64411 -$448.00.
 
 **Advisory (not journalled, awaiting instruction).** The 3 OTTO desk risers ($54.52 ex) on this invoice are stands for monitors/laptops; per the desk-component rule (chair and desk components, including desk risers, are 72313) they belong in 72313 Furniture & Fittings, not 72111. Left in place pending Spero's instruction, consistent with the directive that only instructed lines are journalled.
+
+
+## Addendum, 10-Jun-2026 (TE004478 reconstruction sighted; cardholder ...0429 identified)
+
+The Document Reconstruction for doc 202509081027550000000031 is sighted (filed `NA72111_Evidence/NA72111_TE004478_Oasis_DocReconstruction.pdf`): Oasis Landscaping & Building, $27.55 ex + $2.75 GST on 1-20151-72111, PCard 5550-XXXX-XX86-0429 named **DANIEL HARMAN**. The employee map confirms Daniel Harman (emp 16963), Urban Parks Team Leader, Park Maintenance, home svc 20440 / PK000003.
+
+- **Cardholder identity pending closed.** The card ...0429 identity behind the TE004476 lines ($32.66 and $126.46 on 20392; $40.38 and $259.89 on 20151) and TE004478 ($27.55) is resolved to Harman. Those five listing lines now carry the cardholder.
+- **Observation, not a recode basis.** Harman homes off the charged services (20392 Park Services, 20151 Depots). A PCard charge follows the purpose of spend, not the cardholder's home PK (PCard convention differs from the IT-recharge officer-home convention), so this is recorded as a candidate observation only — no PK move is proposed.
+- **Evidence status.** The reconstruction proves the posting; the underlying Oasis merchant receipt remains unsighted (GAP), so TE004478's evidence limb does not clear.
+
+
+## Addendum, 10-Jun-2026 (Doc46-vs-AP dedup closed; Tennyson stood down; gate lifted)
+
+The last hard gate on this account's journal is closed. Every one of the 41 carried Doc46 items was matched to its underlying line in the full 364-line ledger (37 full-line, 4 within-line partials), every credit is contained within its line, and the ledger-line sets across all twelve journal streams intersect to nothing. TE005091 is settled on the evidence: the $473.64 Officeworks line is covered once, by the Doc45 split, and Doc46 J12 is confirmed absent from the live journal. Full record: `00_Doc46_AP_Dedup_10-Jun-2026.md`.
+
+- **Tennyson 27577 stood down.** The $335.00 to 72222 recode is already carried as Doc46 J22; the separately prepared pair held since 9-Jun is permanently stood down, since staging it would double-count, the J12 pattern over again. The invoice is sighted (ABN PASS, GST exact), so the listing line moves L3/L4 GREEN and stays J via J22.
+- **Three un-annotated Doc46 partials surfaced.** J10 ($33.20 of Pac Fire 188738 stays), J11 ($13.20 of Pac Fire 183802 stays) and J18 ($16.23 of Bunnings 8171/01259462 stays) are within-line partials with no remainder note in the source; the $62.63 joins the untested remainder, source invoices unsighted.
+- **TE004478 is dual-merchant.** The reference resolves to the recoded Oasis $27.55 and an untouched KOMPAN $121.00 line; not a duplicate.
+- **Consequence.** No hard gate remains on the 72111 batch or anywhere on CN-23167; confirmed recodes are upload-ready, with directive-staged evidence gaps still recorded for audit.
+
+## Addendum, 10-Jun-2026 (the three outstanding receipt sets sighted)
+
+All three remaining 72111 evidence GAPs are closed on documents received this session, each reconciling to the GL to the cent.
+
+- **Oasis TE004478, $27.55.** Merchant receipt sighted (docket S7165, Oasis Landscaping & Building Supplies, ABN 83 827 343 713 checksum PASS): crusher dust 1/3 m3 $30.00 incl GST $2.73, plus a $0.30 EFTPOS surcharge, card ...0429 (Daniel Harman, matching the Document Reconstruction). GL $27.55 equals $30.30 divided by 1.1 exactly; the surcharge takes the taxable character of the underlying supply (GSTR 2014/2), so the booked base and the implied $2.75 ITC are correct within a cent of the receipt's $2.73 plus surcharge GST. Verdict COMPLIANT_WITH_NOTE. Advisory: the receipt is dated 18-Jun-2024 against a P3 FY26 posting, a roughly fifteen-month-late PCard reconciliation, noted for completeness.
+- **Pac Fire 183802, $327.90 (P4).** Tax invoice sighted (ABN 60 088 233 783 PASS, 09-Oct-2025): BR9 fire helmet $299.70, name sticker (Van Werkhoven) $13.20, freight $15.00; GST $32.79 exact. COMPLIANT. The content is PPE; this is a Doc46 partial-recode source and the un-instructed remainder is a 72113 candidate.
+- **Pac Fire 188738, $340.55 (P9).** Tax invoice sighted (same ABN, 27-Mar-2026): Apollo Wildland boot $307.35 and two torch holders $33.20; GST $34.06 exact. COMPLIANT. Footwear PPE; the remainder joins the standing 72113-versus-72114 footwear class ruling.
+- **Bunnings 8171/01259462, $219.80 (P3).** Tax invoice sighted (ABN 26 008 672 179 PASS, 03-Sep-2025): six artificial plants and one pair of garden gloves; GST $21.96 by line-level rounding (compliant against $21.98 at a flat 10%). COMPLIANT. Gloves are a PPE candidate; the plants are decor for which 72111 is plausible.
+
+The evidence manifest is updated (Oasis GAP text closed, four SIGHTED rows added) and the four canonical PDFs are filed in NA72111_Evidence/ with raw copies archived to _Sources_10-Jun-2026/. The Doc46 un-annotated remainders ($62.63) remain in the untested balance; the new sightings classify their content but no recode is staged without instruction.

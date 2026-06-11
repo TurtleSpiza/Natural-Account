@@ -88,3 +88,11 @@ L34 narrates a single "Apple iPhone 16 Pro, Case & screen protector" at $3,761.6
 5. Provide SR / IT recharge backup for the six no-attachment lines; sight the two bulk Apple invoices INV-13660 and INV-17543 for the evidence and tax limbs.
 6. Query L34 quantum ($3,761.60 single-device narration).
 7. Advisory: confirm asset-capitalisation threshold and add the iPad/iPhone fleet to the P&A register.
+
+
+## Addendum, 10-Jun-2026 (IT recharge schedule sighted; SR235810 GAP closed)
+
+The corporate Branch IT Purchases schedule for Feb-2026 is sighted (filed `NA73564_Evidence/NA73564_ITRecharge_Schedule_Feb2026_IJ074158.xlsx`; raw copy in `_Sources_10-Jun-2026/`): 330 rows totalling $266,100.67 across the organisation, of which 15 rows are Parks 4090000 ($10,642). Six IJ074158 ledger lines are now evidenced against it, $3,164 in total: L14 SR229226 Legg $250, L22 SR231148 Legg $438, L25 SR235810 Dresman (Poly Focus 2 headset) $500, L26 SR229152 Jaemjamrat $549, L27 SR229160 Efstathiadis $549, L31 SR231148 Legg $878.
+
+- **SR235810 GAP closed.** One of the three staged net-move backups (open action 3) is now sighted. The schedule confirms the charge was raised against PK000082 on L25, and the employee map confirms Sara Dresman (21540) homes to Management PK000087 — the staged 20191 to 20001 net-move stands on full evidence. SR219175 (Robertson) and SR-0315517 (Fry) remain GAP; those two lines stay journal-ready on directive with the gap recorded.
+- Open actions otherwise unchanged; the schedule does not cover the five unsighted external-supply refs or the remaining no-attachment lines outside IJ074158.

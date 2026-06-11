@@ -2,7 +2,9 @@ import pandas as pd, json, re
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-sm=json.load(open('.claude/skills/lcc-coding-review/svc_map.json'))['service_codes']
+import os as _os
+_SVC=[p for p in ('/mnt/skills/user/lcc-coding-review/svc_map.json','.claude/skills/lcc-coding-review/svc_map.json') if _os.path.exists(p)]
+sm=json.load(open(_SVC[0]))['service_codes']
 def svc_info(s): r=sm.get(s); return (r.get('pk',''),r.get('section','')) if r else ('','')
 def vendor(d): return re.split(r'-General Expenses|-Purchase Card',str(d))[0].strip()[:34]
 def load_acct(path,na):

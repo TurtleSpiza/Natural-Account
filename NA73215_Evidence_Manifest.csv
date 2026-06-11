@@ -1,0 +1,5 @@
+file,account,line,sha256,gl_ex_gst,invoice_incl_gst,status
+NA73215_Evidence/NA73215_L01_TotalEnvironmental_3043.pdf,73215,"L01 (P1, 1-20511-73215) + L0a zero line (1-20267)",6ad8ac3aa916b5ff8c647a060be9e08ad6aa00c895bd7d35db54a5745bcb785a,2340.00,2574.00,SIGHTED
+NA73215_Evidence/NA73215_L02_Austspray_155797.pdf,73215,"L02 (P2, 1-20511-73215) + L0b zero line (1-20453)",29f5f6c0fa46b2a989ea897c77146676ff8a109ed2ffa5343f242986f8b61dfe,900.00,990.00,SIGHTED
+NA73215_Evidence/NA73215_L03_Austspray_157909.pdf,73215,"L03 (P10, 1-20511-73215)",4c9d6dab8e3eee7efb6f2479e15a5a5e371087faddb040a21f6f214184ac00f3,1499.00,1648.90,SIGHTED
+NA73215_Evidence/NA73215_Ledger_Extract_11-Jun-2026.xlsx,73215,full account (5 lines),0f4ceb8546d5a612b9ac3c78f1949a40c9201d8ea5ec70f6dbef34a75763a4f0,4739.00,n/a,PROVIDED

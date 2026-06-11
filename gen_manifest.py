@@ -31,14 +31,16 @@ EXCLUDE_DIRS = {".git", ".github", ".claude", "New", "__pycache__"}
 # Individual repo-tooling / project files excluded by repo-relative path.
 EXCLUDE_FILES = {
     MANIFEST_NAME,
-    "CLAUDE.md",
-    "SETUP.md",
     "requirements.txt",
-    "README.md",
+    "00_SESSION_START.md",
     "gen_manifest.py",
     "verify_manifest.py",
     "build_listing.py",
     "build_master.py",
+    "build_live_journal.py",
+    "CLAUDE.md",
+    "SETUP.md",
+    "README.md",
     "setup.sh",
     ".gitignore",
 }

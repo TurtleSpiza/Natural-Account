@@ -1,0 +1,8 @@
+file,account,reference,status,gl_ex_gst,note
+NA73511_Evidence/NA73511_Ledger_Extract_9-Jun-2026.xlsx,73511,Ledger 9-Jun-2026,PROVIDED,5384.57,"TechOne export with reviewer annotations (True Description / Why it Can't be FBT) - claims to verify, not Tier 1 evidence; 126 lines, 7 svc codes"
+,73511,INV-9747,GAP - NOT SIGHTED,2445.45,"Largest line on the account; vendor not identified on the ledger; stay-FBT verdict rests on this document"
+,73511,Warnholtz invoice 001,GAP - NOT SIGHTED,744.30,"Narrated Training; candidate 73544; payee not in employee map"
+,73511,PCard/reimbursement receipts (net population),GAP - NOT SIGHTED,,"No receipts sighted for any net line; export carries no attachment flag; GST-free food check pending"
+,73511,Hoffmann 18-Oct-2025 receipt,GAP - RED,4.18,"Annotated by original reviewer as Doesn't Reconcile to Receipts"
+,73511,Finance FBT 50/50 batches (GJ076295 GJ076539 AP003647 AP003682 AP003801),NETTING BASIS,0.00,"29 reversal legs pair exactly to 29 originals, $0.00; evidenced on the netting, not document sighting; 2 AP003801 re-posts $91.85 remain live"
+NA73511_Evidence/NA73511_L01_Greenbank_INV-9747.pdf,73511,INV-9747 Greenbank Services Club EOY celebration 3-Dec-2025,fa9f5f26646c2ef0411ba6d83a1a7c622b456926c4bad22c2782cdaeb277c979,2445.45,2690.00

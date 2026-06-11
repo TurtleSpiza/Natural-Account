@@ -1,0 +1,39 @@
+winc_invoice,pk,suggested_acct,suggested_category,lines,recode_amount
+9901690129,PK000001,72111,Cleaning / minor kitchen supplies,5,142.62
+9901690129,PK000001,72111,Minor equipment / batteries,4,36.62
+9901690129,PK000001,73512,Hospitality refreshments (Reason B),3,160.92
+9901690129,PK000001,73564,IT equipment / accessories,1,35.78
+9901699602,PK000001,72111,Cleaning / minor kitchen supplies,1,6.81
+9901699602,PK000001,73512,Hospitality refreshments (Reason B),6,166.81
+9901709054,PK000001,72111,Cleaning / minor kitchen supplies,1,6.8
+9901709054,PK000001,73512,Hospitality refreshments (Reason B),4,86.47
+9901709054,PK000001,73564,IT equipment / accessories,2,101.73
+9901709054,PK000086,72111,Cleaning / minor kitchen supplies,2,37.18
+9901709054,PK000086,72113,Safety equipment / PPE,1,7.75
+9901718415,PK000001,72111,Cleaning / minor kitchen supplies,4,66.92
+9901718415,PK000001,73512,Hospitality refreshments (Reason B),5,271.23
+9901718415,PK000001,73564,IT equipment / accessories,1,123.52
+9901727996,PK000001,72111,Cleaning / minor kitchen supplies,1,54.95
+9901727996,PK000001,73512,Hospitality refreshments (Reason B),9,193.17
+9901727996,PK000001,73564,IT equipment / accessories,6,143.81
+9901727996,PK000086,72111,Cleaning / minor kitchen supplies,2,34.9
+9901727996,PK000086,72111,Minor equipment / tools,1,36.82
+9901737473,PK000001,72111,Cleaning / minor kitchen supplies,4,67.98
+9901737473,PK000001,72112,Chemical / pesticide,2,15.56
+9901737473,PK000001,73564,IT equipment / accessories,5,345.98
+9901737473,PK000086,73564,IT equipment / accessories,2,103.68
+9901746332,PK000001,73512,Hospitality refreshments (Reason B),7,265.77
+9901746332,PK000086,72111,Minor equipment / batteries,2,12.8
+9901746332,PK000086,73564,IT equipment / accessories,3,157.81
+9901754676,PK000001,72111,Cleaning / minor kitchen supplies,3,152.53
+9901754676,PK000001,72111,Minor equipment / tools,1,58.58
+9901754676,PK000001,73512,Hospitality refreshments (Reason B),5,94.45
+9901754676,PK000001,73564,IT equipment / accessories,7,452.2
+9901754676,PK000086,72111,Cleaning / minor kitchen supplies,1,18.12
+9901754676,PK000086,72111,Minor equipment / batteries,2,12.8
+9901754676,PK000086,73564,IT equipment / accessories,2,95.67
+9901773647,PK000001,72113,Safety equipment / PPE,1,-23.57
+9901773647,PK000001,73512,Hospitality refreshments (Reason B),1,67.04
+9901773647,PK000001,73564,IT equipment / accessories,3,172.13
+9901773647,PK000086,72111,Cleaning / minor kitchen supplies,2,8.16
+9901773647,PK000086,73512,Hospitality refreshments (Reason B),2,13.0

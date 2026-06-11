@@ -1,0 +1,12 @@
+file,account,line_ref,sha256,gl_ex_gst,invoice_incl_gst
+NA73512_Evidence/NA73512_L01_FreshSave_22032026_Hoffmann.jpg,73512,22032026,e599d436ca084511ffa35ebc197670fa7b8e1001948d87ad38364705695722b0,9.40,9.55
+NA73512_Evidence/NA73512_L02_ALDI_18042026_Hoffmann.jpg,73512,18042026,fc932be2c0c8caa0dbeab1760c2086ebb25969504c42a45c794ba095713ebeff,12.05,12.35
+NA73512_Evidence/NA73512_L03_Woolworths_30052026_Hoffmann.jpg,73512,30052026,5be2e58f00fc9462e5ca1d159276e1ea6e21105218181ca125c7fb3db2a1e9d8,8.42,8.75
+NA73512_Evidence/NA73512_L04_Coles_14042026_Preussner.jpg,73512,14042026,5c2fafd41bc6c4e8671dd07c290f73196e98238192648744472adf852da115a9,36.84,38.68
+NA73512_Evidence/NA73512_L05_Coles_1052026_Preussner.jpg,73512,1052026,bf351c148ec1a089996fe596e9a2c6e6db1f9deb7aca55f19a99393654372297,22.42,23.15
+NA73512_Evidence/NA73512_ID01_Hoffmann_Suncorp_Statement.jpg,73512,identity,0e300305f9d8f32afafce4e307829d7c63aec3673edbbae459f07909e6c6558d,,
+NA73512_Evidence/NA73512_ID02_Preussner_MEBank_Account.png,73512,identity,a367c13f9cb7b3428b82726cb2de8ff1a81f4b52eadbb461e9168cb8f8a1f6ec,,
+GAP,73512,12052026 Preussner receipt,,27.79,unsighted
+GAP,73512,Quote 5468 vendor invoice,,1656.50,unsighted
+GAP,73512,Salisnew direct claims x6,,~234,unsighted
+GAP,73512,micro-line population refs 1179861-1211218,,various,unsighted or waiver

@@ -6,9 +6,15 @@ Always-loaded project constitution for Claude Code. Keep it lean; detailed logic
 
 You assist Spero Karkalemis, Assistant Financial Analyst, Logan City Council Parks Branch (4090000), running branch-level Natural Account review. Each account is submitted as a single journal proposition and verified to a 100% standard before any recode is prepared.
 
+## Standing directive (overrides the review criteria; 9-Jun-2026, reconciled 11-Jun-2026)
+
+- No emails are sent to anyone, Finance included. Decisions are Spero's; there is no Finance-acceptance gate. Outstanding items live in the register, the live journal and `00_Outstanding_Evidence_and_Actions.md`, never in an email.
+- Spero's commentary overrides the four-limb criteria and any journal hold. A line Spero has instructed on is prepared journal-ready and is not held on evidence-sighting or classification judgement. A missing source document is still recorded truthfully as a manifest GAP for audit; it is never silently cleared. The directive does not silence arithmetic, reconciliation or completeness checks, and un-instructed candidates are still flagged.
+- Hard gates: NONE as at 11-Jun-2026. The 72111 TE005091 / Doc46-vs-AP dedup and the dependent Tennyson 72222 line CLOSED 10-Jun-2026 (`00_Doc46_AP_Dedup_10-Jun-2026.md`); any document still citing that gate as live is stale.
+
 ## Read first, every session
 
-Read `00_Account_Review_Register.xlsx` and `00_README_Handover.md` (or `00_START_HERE_Handover.md`) at the repo root before doing anything. They are current state. Update the register row whenever a status changes. A fresh TechOne ledger export dropped in `New/` or `_Sources/` is the account under review for that session. Files in `New/` are raw intake and may be historical working papers; confirm against the register before treating any as live. Absence of an evidence file from `New/` does not mean it is absent from the worked bundle.
+Read `00_Account_Review_Register.xlsx` and `00_START_HERE_Handover.md` at the repo root before doing anything. They are current state. Update the register row whenever a status changes. A fresh TechOne ledger export dropped in `New/` or `_Sources/` is the account under review for that session. Files in `New/` are raw intake and may be historical working papers; confirm against the register before treating any as live. Absence of an evidence file from `New/` does not mean it is absent from the worked bundle.
 
 ## The four-limb standard (the bar for GREEN)
 
@@ -33,7 +39,7 @@ Anything short of all four is AMBER (confirm) or RED (blocker). Advisory items a
 ## Non-negotiable rules (do not re-derive)
 
 - GL amounts are ex-GST; multiply by 1.1 to reconcile to an invoice.
-- Recode format: full-reversal is standard for split-PK recodes; net-movement only where the NA is already correct and only the PK split is wrong. Confirm format with Finance per batch.
+- Recode format: full-reversal is standard for split-PK recodes; net-movement only where the NA is already correct and only the PK split is wrong. The format is Spero's call per batch (no Finance step).
 - GENJNL: LDG=PK, Account=PKNumber, Fund=same PK, RG=JOURNAL, Resource=NA, debits positive and credits negative, 40-character narration cap, batch nets $0.00. Store document and line-number fields as text to preserve leading zeros.
 - GENJNL direction check (mandatory): for every pair the source-NA leg is negative and the destination leg positive, matching the narration. A sign-flipped pair passes both the $0.00 net and the cap, so verify the sign on every line.
 - Employee-to-service crosswalk (Limb 1): drop the leading digit of the six-digit TechOne cost code to get the five-digit service number, map it to the PK via `svc_map`, confirm the named officer belongs to that service. Acting and temporary staff appear twice in the EOM People and Positions report (dated row = current acting, undated row = substantive revert). Two corporate codes (112521 Trainees, 116501 Community and Customer Services) do not crosswalk to a Parks PK.
@@ -45,7 +51,7 @@ Anything short of all four is AMBER (confirm) or RED (blocker). Advisory items a
 
 ## Skills (read SKILL.md before producing output)
 
-`lcc-coding-review` (account/FBT/travel classification; bundles the chart and `svc_map`/`pk_map`/`employee_pk_map`/`confusion_pairs`), `techone-output` and `narr-templates-extraction` (GENJNL narration and validation), `lcc-na-analysis` (ledger-export analysis), `lcc-cost-allocation-tracing`, `lcc-fuel-levy-verify`, `tax-invoice-compliance`, `spero-writing-style`, `lcc-excel-dashboard` and `lcc-html-dashboard-design`, `lcc-finance-batch-email` and `finance-investigation-narrative`.
+`lcc-coding-review` (account/FBT/travel classification; bundles the chart and `svc_map`/`pk_map`/`employee_pk_map`/`confusion_pairs`), `techone-output` and `narr-templates-extraction` (GENJNL narration and validation), `lcc-na-analysis` (ledger-export analysis), `lcc-cost-allocation-tracing`, `lcc-fuel-levy-verify`, `tax-invoice-compliance`, `spero-writing-style`, `lcc-excel-dashboard` and `lcc-html-dashboard-design`. Dormant under the no-email standing directive (available if the directive changes): `lcc-finance-batch-email`, `finance-investigation-narrative`.
 
 Core rule (from `lcc-coding-review`): no account is cleared and no recode dollar is populated without Tier 1 evidence; a suspicious narration alone never generates a finding.
 
@@ -55,7 +61,7 @@ Not yet installed: `lcc-split-pk-recode`, `lcc-asset-accounting`, any PowerBI sk
 
 ```
 00_Account_Review_Register.xlsx      current state (live SUMIF/SUMIFS, no hardcoded totals)
-00_README_Handover.md                handover; carries dated correction notes
+00_START_HERE_Handover.md            handover; carries dated correction notes (00_README_Handover.md is legacy, archived)
 00_Parks_4090000_NAReview_Tracker.xlsx   87-account programme tracker
 00_SE2_Source_8-Jun-2026.xlsx        source ledger, carried unchanged
 00_Bundle_Manifest.csv               SHA-256 of every deliverable file (not New/)
