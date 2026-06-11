@@ -1,0 +1,32 @@
+NA73544 GENJNL Recode - PK splits, NA 73544 retained
+Prepared 11-Jun-2026 | Source ledger 26SLACT, branch 4090000, section 4090210
+Format: PK ledger | LDG=PK | RG=JOURNAL | Resource=NA | Dr positive, Cr negative
+All lines validated pk_validator.py OK | Narratives validated 40-char cap OK
+Batch nets $0.00 | Direction verified: source PK000001 negative on every pair, destinations positive
+
+LDG	Account number	Fund account	Resource Group Code	Resource Code	Amount	Narrative1	Narrative2	Narrative3
+PK	PK000001	PK000001	JOURNAL	73544	-241.07	Trng chargeback Harreman GJ079650	Recode PK000001 to PK000435	Svc 20362 Park Services
+PK	PK000435	PK000435	JOURNAL	73544	241.07	Trng chargeback Harreman GJ079650	Recode PK000001 to PK000435	Svc 20362 Park Services
+PK	PK000001	PK000001	JOURNAL	73544	-241.07	Trng chargeback Papatheodosiou	GJ079650 PK000001 to PK000082	Svc 20191 Design & Capital
+PK	PK000082	PK000082	JOURNAL	73544	241.07	Trng chargeback Papatheodosiou	GJ079650 PK000001 to PK000082	Svc 20191 Design & Capital
+PK	PK000001	PK000001	JOURNAL	73544	-467.50	Trng chargeback Petersen GJ079650	Recode PK000001 to PK000012	Svc 20181 Park Maintenance
+PK	PK000012	PK000012	JOURNAL	73544	467.50	Trng chargeback Petersen GJ079650	Recode PK000001 to PK000012	Svc 20181 Park Maintenance
+PK	PK000001	PK000001	JOURNAL	73544	-1181.82	ACCA Education INV-11404 split	Reversal for two-way PK split	PK000439 and PK000087
+PK	PK000439	PK000439	JOURNAL	73544	590.91	ACCA Education INV-11404 split	Peebles Cemeteries share	PK000001 to PK000439
+PK	PK000087	PK000087	JOURNAL	73544	590.91	ACCA Education INV-11404 split	Mibin Management share	PK000001 to PK000087
+
+Reconciliation
+Source PK000001 signed sum: -2,131.46 (Harreman -241.07, Papatheodosiou -241.07, Petersen -467.50, ACCA -1,181.82)
+Destinations: PK000435 +241.07, PK000082 +241.07, PK000012 +467.50, PK000439 +590.91, PK000087 +590.91 = +2,131.46
+Net: $0.00
+
+Evidence GAPs (recorded, not cleared)
+GAP: GJ079650 source journal backing not sighted (TechOne Document File 1236496, attachment exists)
+GAP: ACCA Education invoice 11404 not sighted (TechOne Document File 1234727, attachment exists)
+GAP: Mibin not present in employee_pk_map (114 employees); PK000087 assigned by Spero directive 11-Jun-2026, Management section svc 20001
+Note: Lachlan Peebles crosswalks cost code 120452 to svc 20452 PK000439 Parks Cemeteries - Employee Costs. Alternative operational PK is PK000402 svc 20451 Cemeteries; PK000439 used per employee crosswalk rule.
+
+Held lines (not in this journal)
+Pryor $214.00 GJ076597 - no instruction received; acting-move officer, PK000044 v PK000003 unresolved
+Hambly $294.42 GJ076597 - no instruction received; officer not in Parks employee map
+Preussner GJ078933 -$3,044.65 - destination NA/PK unverified, possible link to 7B411 $931.20 standing item

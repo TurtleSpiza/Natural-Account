@@ -1,0 +1,4 @@
+file,account,line_ref,sha256,gl_ex_gst,invoice_incl_gst
+NA73433_Evidence/NA73433_L01_QUT_TE005281.pdf,73433,TE005281,5aaf0e7cc7117d26691145572c1bd38bad59e143e23c27f8716fd77ef2b8416f,34.55,38.00
+GAP,73433,TE004496 Blue Card Services receipt,,104.70,unsighted
+NA73433_Evidence/NA73433_L02_BlueCard_TE004496_Preussner.pdf,73433,"Blue card receipt 56213618922 + cover slip (Preussner/Dyba), $104.70 Div 81 exempt",95f8b186084d9fb8430c50b50c99acf83b57a0e88fa4f698f903c6d2d236a728,104.70,"104.70 (GST exempt, gross)"

@@ -1,0 +1,15 @@
+NA73433 GENJNL Recode - PK Ledger format
+Prepared: 10-Jun-2026 | Instructed by Spero Karkalemis (QUT parking to 73531)
+Ledger 26SLACT | Branch 4090000 | Batch nets $0.00 | Direction verified
+
+LDG	Account number	Fund account	Resource Group Code	Resource Code	Amount	Narrative1	Narrative2	Narrative3
+PK	PK000087	PK000087	JOURNAL	73433	-34.55	QUT Parking TE005281 18-Mar parking not	fee Recode 73433 to 73531	
+PK	PK000087	PK000087	JOURNAL	73531	34.55	QUT Parking TE005281 18-Mar parking not	fee Recode 73433 to 73531	
+
+Direction check: source NA 73433 credited -34.55, destination 73531 debited +34.55. Signed sum on 73433 = -34.55 = stated reclassified total. Net = $0.00. Narrative fields validated at 40-char cap (validator OK). PK000087 (svc 20001 Parks Branch Management) validated against service map for both NAs.
+
+Evidence: QUT receipt 1795/0602/602, 18-Mar-2026, $38.00 incl GST, GST $3.45, ABN 83 791 724 622 (checksum VALID). GL $34.55 ex-GST x 1.1 = $38.01 ($38.00 receipt, 1c rounding). Under $82.50 tier, receipt sufficient.
+
+Open on this account (not blocking this journal per standing directive):
+1. Cardholder name on TE005281 unconfirmed (Limb 1).
+2. TE004496 Blue Card Services original receipt unsighted - manifest GAP. GJ078933 backup sighted via Document Reconstruction 75 (direction correct).

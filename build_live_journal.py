@@ -27,7 +27,8 @@ SET_RE=re.compile(r'^(SET\s+\d+|SUB-BATCH\s+[AB])\b[ :-]*(.*)', re.I)
 LABELS={'NA72111':'72111 Minor Equipment','NA72312':'72312->72313 Furniture',
         'NA73513':'73513 Flair Floral','NA73533':'73533 Travel meal',
         'NA73563':'73563 WINC stationery','NA73564':'73564 IT Equipment',
-        'NACarried3Jun':'Carried 3-Jun (Doc46+PCard)','NA72114':'72114 Reali uniforms'}
+        'NACarried3Jun':'Carried 3-Jun (Doc46+PCard)','NA72114':'72114 Reali uniforms',
+        'NA73128':'73128->73512 TCB milk','NA73544':'73544 Training PK splits'}
 
 def parse(path: Path, label: str):
     stream=label
@@ -36,8 +37,15 @@ def parse(path: Path, label: str):
         if m:
             tail=re.split(r'[(.]', m.group(2))[0].strip().strip('-').strip()
             stream=f"{label} - {m.group(1).upper()}" + (f" {tail[:28]}" if tail else "")
-        if "|" not in raw: continue
-        p=[x.strip() for x in raw.split("|")]
+        if "\t" in raw and "|" not in raw:
+            # Tab-delimited GENJNL with a leading Line No column (NA73128 onward).
+            p=[x.strip() for x in raw.split("\t")]
+            if p and p[0].isdigit():
+                p=p[1:]
+        elif "|" in raw:
+            p=[x.strip() for x in raw.split("|")]
+        else:
+            continue
         if len(p)<6 or p[0] not in ("PK","SL"): continue
         if not NA_RE.match(p[4]): continue
         try: amt=float(p[5])

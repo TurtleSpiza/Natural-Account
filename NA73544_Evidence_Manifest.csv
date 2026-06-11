@@ -1,0 +1,45 @@
+file,account,line_ref,sha256,gl_ex_gst,invoice_incl_gst
+NA73544_Evidence/NA73544_L01_Warnholtz_INV001.pdf,73544,AP003847/INV001,b4fe0e16e8a5b473a77932ef9305447816a4afce8d4ef1754d9d4ba3ac17a58c,744.30,744.30 (GST-free)
+NA73544_Evidence/NA73544_L01b_GST_Amendment_Note.pdf,73544,1211033/1215540,570424a93d68ef8a0144676901690a68b2ed2ff14511afa922f27685d6b29c87,,
+NA73544_Evidence/NA73544_L01c_ABR_Warnholtz.pdf,73544,ABR,0b7a9746382bbe50f3053ce1919f379d35343e916cc24c40ab4342f61bfea2c0,,
+NA73544_Evidence/NA73544_L02_WhiteheadCET_26-3234.pdf,73544,26-3234,73a14e1802af99d54110b91e39693a8e41928fda0a08850c5c74053e8161fb8b,18750.00,20625.00
+NA73544_Evidence/NA73544_L02b_ABR_Whitehead.pdf,73544,ABR,7e6d312cb412eee6b5fceed66a25ad8ddf29e22708b2b84a9a73ae0be47cd966,,
+NA73544_Evidence/NA73544_L03_PLA_65230.pdf,73544,TE005536/65230,4ed3e936cbf6b9902f682fc031c6ec89bf1e752651c9420f7e4587a25dbe219d,2034.90,2238.39
+NA73544_Evidence/NA73544_L04_FireMgmtTraining_20755.pdf,73544,20755,452e58ed62cb4ab0b7b6568cd72a86b1fcb8fe6479544c8f1c13f72e4cfab92c,1500.00,1500.00 (GST-free)
+NA73544_Evidence/NA73544_L05_FireMgmtTraining_20776.pdf,73544,20776,50054902e5e91dad043d9f09b89fb839d601314ecfa9ecbcb46c5bf5d4e24b0d,9000.00,9000.00 (GST-free)
+NA73544_Evidence/NA73544_L06_LinkResources_LR32578.pdf,73544,LR32578,f23833ae5675c73fb454de1e3b8cda55d1f325a22d1feaac8b0b13df44fd9232,1980.00,1980.00 (GST-free)
+NA73544_Evidence/NA73544_L07_AustWideFirstAid_1223986.pdf,73544,1223986,14617a855106ce4555cc3c6203a1282bbad134308410c16ee3b61a3431064f90,90.00,90.00 (GST-free)
+NA73544_Evidence/NA73544_L08_AustWideFirstAid_1236149.pdf,73544,1236149,2631b206968e197556150bbfb6d21a5e7bb21b0ce61952e82126f2e97160782a,90.00,90.00 (GST-free)
+NA73544_Evidence/NA73544_L09_AustWideFirstAid_3774909.pdf,73544,3774909,66131ec0d531898f094f2c6ef5079f6f3e579aa270bcc5ee590b55ccf210f342,54.00,54.00 (GST-free)
+NA73544_Evidence/NA73544_L10_ACCA_00011404.pdf,73544,00011404,6126cdf223f6f54e569dc70fb77c942cb25af7803576f72356ef1db2cf33a796,1181.82,1300.00
+NA73544_Evidence/NA73544_L11_Accelerate_TMR-41999_Bevan.pdf,73544,TE004411,49ec3f36d69483366e0be0a9b57507836412fd07f7e0aee689465cb5b77f5e82,72.00,79.20
+NA73544_Evidence/NA73544_L12_AustOnlineCourses_INV-25092_Moir.pdf,73544,TE004218,1b7fc9cbd495c982b77b3549692cef33f65d4c0089639ee4e61b491e6e982a01,590.00,649.00
+NA73544_Evidence/NA73544_L13_Interlink_67470_Funk.pdf,73544,67470,3e155fe729c2892964f6351d039744a346b57336c69bfcecaae939501c028d61,400.00,400.00 (GST-free)
+NA73544_Evidence/NA73544_L13b_ABR_Chalcedony.pdf,73544,ABR,8ad3025a4d835e3f689ce52c89821a7e0763a526061eff36b82a8b346ed36039,,
+NA73544_Evidence/NA73544_L14_BAL_Workshop_Receipt_TE004334.pdf,73544,TE004334,84fb6e275f62eebf930dbb348eb6fe9dabf0a366cadc97bda9e8bccb3e0cff4a,1767.00,1943.70 (no ABN - tax AMBER)
+NA73544_Evidence/NA73544_L15_IPWEA_39657_OBrien.pdf,73544,GJ078546/39657,b2e134aa0c03c705ace26120c02a6b38af2bd0239d560e9e1f290724ad98807c,2788.00,3066.80 due (after 343.20 part-pay)
+NA73544_Evidence/NA73544_L16_PSIA_00001400.pdf,73544,GJ078546/1400,e9772fef8789167ec498d382b7ad4ee86db2d27e84602a37664b01942028524e,4300.00,4730.00
+NA73544_Evidence/NA73544_L17_Bendelta_INV-13157.pdf,73544,INV-13157,7ce600c22a70fbfa4b97bc9e96c44962b517f1ad57d0ebd895f81cf8e9444c4d,8966.28,9862.91
+NA73544_Evidence/NA73544_L14b_ABR_HLW_Current.pdf,73544,ABR,9fdfe34adbf15f917236239a7bb4d3b2c10926c04064581c240743458d991f22,,HLW ABN 91 115 662 989 PASS; GST reg 26-Sep-2005; ACNC charity
+NA73544_Evidence/NA73544_L14c_ABR_HLW_History.pdf,73544,ABR,254d2ecf3e19169da3de5bc0786f95f648b2df9dac44475f4afb6628d14dd45f,,Entity history: SEQ Catchments > Healthy Waterways and Catchments > HLW
+NA73544_Evidence/NA73544_L14d_ASIC_QFBC_BusinessName.pdf,73544,ASIC,214a41b31c67517ecfb44e18bb72f9c2672d30a682fc8fa49d439c6d9937a6cf,,QFBC registered to HLW; renewal 8-Jun-2026
+NA73544_Evidence/NA73544_L14e_ASIC_CarbonPlus_BusinessName.pdf,73544,ASIC,e2deaa1f5353284ffe01415916307f0fe3999def8fcf06f67075166cda0457da,,CARBON + registered to HLW; renewal 21-Jan-2028
+NA73544_Evidence/NA73544_L14f_ASIC_HealthyWaterways_Cancelled.pdf,73544,ASIC,f247f18be65702948bc1147c329b91580b1330362d8b09b8963aecfb6a6493fd,,Healthy Waterways name cancelled 12-Sep-2019 (historic)
+NA73544_Evidence/NA73544_L18_BlueDog_194770_TE004766.pdf,73544,TE004766/194770,ee6413bd7bb91ecf6d62fae5a477c434c04ddcb18103bf0bcf5cb0d93f89ebb5,117.27,129.00 (GST-free) - white card Villiers; No GST Applicable; GSTE-25
+NA73544_Evidence/NA73544_L18b_BlueDog_CoverSlip_TE004766.png,73544,TE004766,b7b2194f1b707b8d8acf59d1b0df73f962c417d0368f794129c718f220b1e47b,,Cover slip 12-Nov-2025: req A-M King PK000082 cardholder Anita Moore
+NA73544_Evidence/NA73544_L19_OIR_TE004236_PCardDataEntry.jpg,73544,TE004236,4916ae504f45d61bbfcac06b20da23c56fad4c4bec1c641239e0eeb79728699a,87.59,96.35 - TechOne entry: Powell card ...5576 GST code C $8.76; GSTE-27
+NA73544_Evidence/NA73544_L19b_OIR_TE004236_LedgerView.jpg,73544,TE004236,f65b03b48f0b78e34c77394c6fa4b06d6e63d14d5d109cf0dcd8ab9e2ce746d6,,1-20661-73544 ledger view PK000383 posted 4-Jul-2025
+NA73544_Evidence/NA73544_L20_BlueCard_Barter_58974030233.png,73544,58974030233,397a1b5356e48d71b4b4c238985a5222db8cab3c9796c9fe95d09a6bc270fb4b,95.18,104.70 (Div 81 exempt) - A Barter 29-Nov-2025; GSTE-26
+NA73544_Evidence/NA73544_L20b_Barter_ING_PaymentIdentity.png,73544,58974030233,5e069ad0d1ce9a102a77ec119b3525fa00f21a13447507a1c129f6424d451975,,ING statement (identity); full BSB+account - restrict to folder
+NA73544_Evidence/NA73544_L21_GJ079650_DocReconstruction.xlsx,73544,GJ079650,6520321954904e26a4afd377154250abc0d398a08939ceb87397cad24da37970,949.64,n/a (internal) - doc 202606031092133000000001; TechOne Document File 1236496
+NA73544_Evidence/NA73544_L21b_Chargeback_List_Mar-May-2026.xlsx,73544,GJ079650,57fbae0abd2e1a1ba11abb0fd88215f77dd0d0a6e682a7439f73df6ccf99ee70,,Corporate L&D chargeback list Mar-May 2026 (approved source)
+NA73544_Evidence/NA73544_L21c_Chargeback_Approval_Email_2-Jun-2026.msg,73544,GJ079650,0443d4b1b66faa065e08723a772c4bf66e8daa324220f831b2ca164e13ec5c32,,Approval chain: Kaur approve / Panchal submit / Yang post instruction
+NA73544_Evidence/NA73544_L21d_Chargeback_Confirmation_Email_2-Jun-2026.msg,73544,GJ079650,6041fb8abc4f28c1ab3164506391675cc7005120ac29f3767ed6a8431c8b432c,,One-person-per-line / column H posting confirmation
+GAP,73544,OIR TE004236 source receipt,,96.35 net,NARROWED 10-Jun: TechOne posting evidenced (L19/L19b); the OIR licence receipt naming the licensee remains unsighted
+GAP,73544,Healthy Land & Water tax invoice (BAL),,1767.00,NARROWED 10-Jun: supplier dossier sighted (ABR + ASIC L14b-L14f); the compliant tax invoice itself remains unsighted - tax limb AMBER
+GAP,73544,Internal journal backups x7,,~11100,GJ079650 $949.64 CLOSED 10-Jun (L21 set); GJ076597 IJ074222 GJ078710 GJ078895 GJ077155 GJ079267 GJ078296 remain unsighted (GJ076597 = Pryor $214.00 + Hambly $294.42 held lines)
+GAP,73544,ACCA INV-11404 TechOne attachment,,,Pointer only: Document File 1234727 exists in TechOne; the invoice itself SIGHTED 10-Jun at L10 - the 11-Jun recode file's GAP note is stale
+NA73544_Evidence/NA73544_L22_GJ076597_DocLineTable.xlsx,73544,"GJ076597 backup (Doc File 1176525), 17 lines nets $0.00; Pryor $214.00, Hambly $294.42",ff81a20d9e10a88d1a3fc90cda2838887db4acd3fd23e2005d1a32a48bb7fc2e,508.42 (Parks legs),n/a
+NA73544_Evidence/NA73544_L22b_GJ076597_LD_NonAttendance_Email.msg,73544,"L&D non-attendance charge email chain (Yang/Horacek, 3-Oct-2025)",87adccbc5acafc539c1a897f0b29fae84c1a44880be8d1d03254734fc97909fd,n/a,n/a
+NA73544_Evidence/NA73544_L19c_OIR_SourceReceipt_Hoyle_96.35.pdf,73544,"TE004236 source receipt 5477 9425 994, licensee Renee Hoyle, cover slip PK000383",6ff4fafdcb59f8fcd7d244261cd3e64b0ea8d6a2c8199cde32169aadba482c10,87.59,"96.35 (Div 81 exempt, gross)"
+NA73544_Evidence/NA73544_L19d_PCard_Audit_Hood_8-Aug-2025.msg,73544,Corporate Procurement PCard audit email corroborating GSTE-27,de6d3fc3982ac9f6a6d91507bc32d0b47cfcddb6d1f8cf58ce56a36290df1b13,n/a,n/a

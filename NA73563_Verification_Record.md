@@ -77,3 +77,15 @@ The nine unsighted WINC invoices were recovered from the `_CarryForward` archive
 - **Limbs.** L3 Evidence AMBER to GREEN; L4 Tax (incl per-line GST status) to GREEN. L1 PK GREEN unchanged. L2 NA remains RED on the $6,354.47 systemic miscode: the finding is firm and the recode is prepared, but it is held on Finance acceptance of the reclass out of 73563 (an external decision), so the overall RAG stays AMBER on that and the two destination confirmations (72313-vs-72111 risers; Reason B / 50/50 filter), not on evidence or tax.
 
 The nine invoices are filed in `NA73563_Evidence/` and listed SIGHTED on the evidence manifest. Overall RAG stays AMBER, now gated solely on the Finance-acceptance items, not on the evidence or tax gap.
+
+
+## Addendum, 10-Jun-2026 (stores lines closed under the Marsden convention; code collision documented)
+
+The two Despatch Stock Requisition lines (094908 $37.93, 096380 $71.54, both 1-20151-73563) are closed.
+
+- **Evidence.** Both lines narrate item **207144**, and the Document Reconstruction for 096380 is sighted (filed `NA73563_Evidence/NA73563_096380_DocReconstruction.pdf`), confirming the posting. Under the Marsden stores convention (Spero, 10-Jun-2026) the 6-digit item match satisfies the evidence limb.
+- **Code collision documented.** The Marsden inventory carries 207141-207144 twice: once as ENVELOPES (207144 = ENVELOPE DLX BARCODE WINDOW FACE SELF SEAL, BOX 500) and once as Steel Blue footwear flagged in-catalogue as a typo (should be 208141-44). The true item on these lines is the envelope — consistent with the QE11/ENVELOPE D narration — so the natural account 73563 is **correct** and no recode arises. Recorded so future reviewers do not read the boots entry.
+- **Tax.** An internal stores issue is no GST event (the GST sat on the original stores purchase), per the 72114 stores precedent; tax limb GREEN on both lines.
+- **April invoice firmed.** A PDF summary copy of WINC 9901782965 (April) is filed (`NA73563_WINC_April_9901782965_SummaryPDF.pdf`); it duplicates the already-sighted xlsx invoice and adds no new value.
+
+Account RAG unchanged (AMBER on the held WINC systemic recode); the two stores lines move to GREEN in the running listing.

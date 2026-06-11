@@ -1,0 +1,7 @@
+file,account,line,GL_ex_GST,invoice_incl_GST,note,sha256
+Evidence/CEM_E01_LCC_INV-498178_King.pdf,1-20131-62121 (history),INV 498178 11-Dec-2024,-5967.27,-6564.00,"Original King invoice, superseded by CN 140775 and INV 501999",c85ed41330c197b86edbb852d0957603d46825efd11ff0798127251211dbbc8d
+Evidence/CEM_E02_LCC_CN-140775_King.pdf,1-20131-62121 (history),CN 140775 27-Jun-2025,5080.91,5589.00,"Credits 498178 King line, plot has no GST, reissued as 501999",7edb8a506980046423070886ebb2f5ff3a3ef23e3341d516c86f4cd69c4af80e
+Evidence/CEM_E03_LCC_INV-501999_King.pdf,1-20446-62125,501999 16-Jul-2025,-1552.73,-1708.00,Ashes interments line; pre-purchase plot 3493.00 GST-free on same invoice,cd11f4ea702c368f0b1372840bbd5c93b971d4b867d1ab43b95b97a84b8f572b
+Evidence/CEM_E04_LCC_INV-502197_Davies.pdf,1-20446-62125,502197 1-Aug-2025,-2159.00,-2159.00,"One of three GST-free pre-purchase plots, Helen Davies C/L01/F/283",a4e464e951d3fc725fb9bad5c41f5b7f2786923f897934d68744ad7e9e58b4a5
+Evidence/CEM_E05_LCC_CN-140799_Timmins.pdf,1-20131-62121,140799 31-Jul-2025,1878.00,1878.00,"Plot fee charged in error TIMMINS B/L06/155, GST-free, exact ledger match",d7cdb9d0354e12ad0435302b6a54a3725ce8413366d39f03d308cc67886212df
+Evidence/CEM_E06_Garside_Email_29-Aug-2025.msg,1-20446-62125,n/a,,,"Originating query, Garside to MandalaWaththage, PK000400 pre-purchase burials",e8feb5d77ef03ce4fb2044b869731ce1486f87458d4fa2afdb19408eba8d4f9a
