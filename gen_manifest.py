@@ -38,6 +38,8 @@ EXCLUDE_FILES = {
     "build_listing.py",
     "build_master.py",
     "build_live_journal.py",
+    "build_workstream_tabs.py",
+    "build_status_tracker_ext.py",
     "CLAUDE.md",
     "SETUP.md",
     "README.md",

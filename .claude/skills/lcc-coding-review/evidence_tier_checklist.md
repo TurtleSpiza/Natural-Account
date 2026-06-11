@@ -26,6 +26,9 @@ Sufficient on its own.
 ### ALLSTORE / CHAMBERS inventory issues
 - Stores issue slip naming the requester and the cost centre
 
+### Stores-issue and stock-adjustment lines (Marsden convention, Spero 10-Jun-2026)
+A stores-issue or stock-adjustment line (Despatch Stock Requisition, IN-prefixed/STKISS) evidences against the Marsden stores inventory bundled in this skill (`marsden_stores_inventory.{json,csv}`): the 6-digit item number in the line Details matching the inventory code satisfies the evidence limb. The tax limb is GREEN on the nature basis that an internal stores issue is no GST event (the GST sat on the original stores purchase), recorded per line. Known catalogue trap: codes 207141-207144 appear twice in the inventory, once as envelopes and once as Steel Blue footwear flagged in-catalogue as a typo for 208141-44; the true items are the envelopes (documented on the 73563 stores lines, 10-Jun-2026). A truncated item code in the export defeats the match and the line stays on the ordinary tiers.
+
 ## Tier 2 — Review
 
 Status remains **Review**. Do not populate recode $ even if the miscoding seems obvious.

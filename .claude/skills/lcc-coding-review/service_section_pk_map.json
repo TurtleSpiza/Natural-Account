@@ -250,7 +250,18 @@
     "20392": {
       "name": "Parks Asset Maint and Repairs",
       "pk": "PK000022",
-      "section": "Park Services"
+      "section": "Park Services",
+      "sub_pks": {
+        "PK000493": {
+          "pk": "PK000493",
+          "name": "Flying Gang",
+          "service_code": "20392",
+          "service_name": "Parks Asset Maint and Repairs",
+          "section": "Park Services",
+          "sub_pk_of": "PK000022",
+          "basis": "Sub-PK of svc 20392 alongside primary PK000022. Confirmed valid as transacted 8-Jun-2026 on the 72312 IKEA line (analyst sub-PK ledger); added 11-Jun-2026 so the 72312 recode validates."
+        }
+      }
     },
     "20393": {
       "name": "Beenleigh Town Square Maintenance",

@@ -46,10 +46,10 @@ See `evidence_tier_checklist.md` for what counts at each tier.
 | `vendor_lookup.json` | 18 known Parks vendors with suggested accounts and warnings |
 | `vendor_hints.json` | Hardcoded vendor → account hints used by the AI tool |
 | `section_contacts.json` | Parks section coordinator names and contacts |
-| `svc_map.json` | 101 service codes mapped to PK number and section (with documented exceptions) |
-| `pk_map.json` | 95 PK numbers reverse-mapped to service code and section |
+| `svc_map.json` | 101 service codes mapped to PK number and section (with documented exceptions). Svc 20392 carries a `sub_pks` block: PK000493 Flying Gang validates alongside primary PK000022 (added 11-Jun-2026 for the 72312 IKEA line) |
+| `pk_map.json` | 96 PK numbers reverse-mapped to service code and section (PK000493 Flying Gang added 11-Jun-2026), plus a `non_crosswalk_pks` block documenting PKs that do NOT validate: PK000510/PK000511 are work-order pseudo-PKs (Gihani 6-May-2026 email, `02_NA73211_Minor_Contracts/Related/`; 510 re-posts to PK000023, 511 to PK000022) and PK000415/PK000429 are unmapped journal PKs pending confirmation (GJ076924). The `service_section_pk_map.csv` carries primary PKs only; sub-PKs live in the JSON maps |
 | `service_section_pk_map.csv` and `.json` | Canonical service map (portable copy of `_shared/`) |
-| `marsden_stores_inventory.json` and `.csv` | 750 stores items across 79 categories with codes, descriptions, units. Use when an ALLSTORE/CHAMBERS issue (IN-prefixed transaction) needs a description-to-NA decision. (Portable copy of `_shared/`.) |
+| `marsden_stores_inventory.json` and `.csv` | 750 stores items across 79 categories with codes, descriptions, units. Use when an ALLSTORE/CHAMBERS issue (IN-prefixed transaction) needs a description-to-NA decision. Also the evidence basis for stores-issue/adjustment lines under the Marsden convention (Spero 10-Jun-2026): a 6-digit item-number match in the line Details satisfies the evidence limb — see `evidence_tier_checklist.md`. (Portable copy of `_shared/`.) |
 | `lcc_session_protocol/` | Session header, outstanding items, traps catalogue, session log, closed log templates (portable copy of `_shared/`) |
 | `quiz_bank.json` | 103-question coding quiz (mixed / miscode traps / FBT) |
 | `fbt_data.json` | Operational 24-entry FBT allocation lookup (used by the AI tool; cross-linked from `fbt_classification.json`) |

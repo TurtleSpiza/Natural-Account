@@ -1,5 +1,5 @@
 {
-  "count": 95,
+  "count": 96,
   "pks": {
     "PK000087": {
       "pk": "PK000087",
@@ -570,6 +570,34 @@
       "service_code": "20802",
       "service_name": "Water Parks",
       "section": "Water Parks"
+    },
+    "PK000493": {
+      "pk": "PK000493",
+      "name": "Flying Gang",
+      "service_code": "20392",
+      "service_name": "Parks Asset Maint and Repairs",
+      "section": "Park Services",
+      "sub_pk_of": "PK000022",
+      "basis": "Sub-PK of svc 20392 alongside primary PK000022. Confirmed valid as transacted 8-Jun-2026 on the 72312 IKEA line (analyst sub-PK ledger); added 11-Jun-2026 so the 72312 recode validates."
+    }
+  },
+  "non_crosswalk_pks": {
+    "note": "Documented PKs that do NOT validate for journal lines. Work-order pseudo-PKs are transacted references that resolve to a real PK per instruction; unmapped journal PKs await confirmation.",
+    "PK000510": {
+      "status": "work-order pseudo-PK",
+      "basis": "Gihani 6-May-2026 instruction email (02_NA73211_Minor_Contracts/Related/NA73211_F1_Gihani_PK510-511_TransferRequest_6-May-2026.pdf): PK000510 batch re-posts to PK000023"
+    },
+    "PK000511": {
+      "status": "work-order pseudo-PK",
+      "basis": "Gihani 6-May-2026 instruction email (same file): PK000511 batch re-posts to PK000022"
+    },
+    "PK000415": {
+      "status": "unmapped journal PK, pending confirmation",
+      "basis": "Seen on GJ076924 redistribution legs (11-Jun-2026); not in the canonical service map"
+    },
+    "PK000429": {
+      "status": "unmapped journal PK, pending confirmation",
+      "basis": "Seen on GJ076924 redistribution legs (11-Jun-2026); not in the canonical service map"
     }
   }
 }

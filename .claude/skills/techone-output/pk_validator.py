@@ -90,12 +90,15 @@ def load_reference_data(shared_dir: Path = None) -> dict:
 
     svc_codes = svc_map_doc.get("service_codes", {})
 
-    # Build a reverse PK lookup
+    # Build a reverse PK lookup (primary PK plus any documented sub-PKs,
+    # e.g. PK000493 Flying Gang under svc 20392 alongside primary PK000022)
     pk_to_svc = {}
     for code, entry in svc_codes.items():
         pk = entry.get("pk")
         if pk:
             pk_to_svc[pk] = code
+        for sub_pk in entry.get("sub_pks", {}):
+            pk_to_svc[sub_pk] = code
 
     return {
         "svc_codes": svc_codes,

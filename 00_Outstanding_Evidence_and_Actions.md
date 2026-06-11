@@ -77,20 +77,19 @@ Single source of truth for everything still open. Three buckets: documents to si
 ## Internal work
 
 - CLOSED 10-Jun: TE005091 and the Doc46-vs-AP dedup (see 00_Doc46_AP_Dedup_10-Jun-2026.md); zero collisions, journal stands as built.
-- Restored 3-Jun travel flags (candidates for the 73531/73541 programme accounts, not journalled): Gold Coast parking TE004218 $6.05 (73541 to 73531, Craig Logan PCard 16-Jun-2025); Cabcharge Jan-2026 statement $787.74 per-traveller split (mixed 73531 local SEQ and 73533 interstate legs).
+- Restored 3-Jun travel flags: the Cabcharge Jan-2026 statement $787.74 per-traveller split (mixed 73531 local SEQ and 73533 interstate legs) remains a candidate, not journalled. The TE004218 $6.05 flag CLOSED 11-Jun-2026 (verified recoded 73541 to 73531 in-ledger via GJ078933).
 - Work the 72114 Reali set at full scope (Mar-2026 officer detail now in hand; GJ079517 $45.29 Replacement cross-reference to net); review the 72111 and 72114 remainders.
 - Identify Hoffmann, Bahry, Warnholtz and Salisnew (73511 payees not in the employee map); confirm the Mann and Rosmarin line sections; classify the four unannotated 73511 lines ($97.27).
 - Confirm Burke's Play Safety recode basis: home service resolved 10-Jun as 20362 / PK000435 (Parks Asset Officer) — apply when the 73544 recode is instructed.
 - Item-level tie-out of the GJ078546 redistribution to the five Reali invoices' per-officer detail (dedicated pass).
-- Add the Flying Gang sub-PK (PK000493 / svc 20392) to lcc-coding-review so the 72312 IKEA line validates.
-- `build_listing.py` does not yet rebuild the 73511 tab (built directly this session) — queued.
+- `build_listing.py` does not yet rebuild the 73511 tab nor the five workstream tabs added 11-Jun-2026 (73211, 73541, 7B532, 7B214, 62121/62125; built by `build_workstream_tabs.py`) — queued. `build_master.py` LINE_NAS was extended 11-Jun-2026 for the four new expense tabs.
 - Service confirmations (one EOM People and Positions pass settles all): Anita Moore home service (20001 vs 20141 vs 20191 — resolves PLA, A1 and corroborates GJ078933); TE005281 cardholder (QUT); Jennifer Moir (20131?); Leighton Funk (20241?). The ACCA Peebles/Mibin question is RESOLVED by the 11-Jun recode (Peebles PK000439 crosswalk; Mibin PK000087 directive).
 - `build_listing.py` and `build_master.py` do not yet cover the four merged accounts (73433, 73512, 73544, 73212) — their TechOne exports were not packaged in the session bundle; obtain the exports, build listing tabs, extend LINE_NAS — queued.
 - The 10-Jun merge binaries were recovered in place and hash-verified 11-Jun (00_Repackaging_Gap_11-Jun-2026.md); no re-attach owed. This bundle supersedes both prior zips.
 - SC10918 plaque credit attribution (-$154 on Depots PK000001, 73211; plaques are a cemeteries item, svc 20451) — the original purchase line is not in the 73211 listing, so the trail starts with the AP document trail.
 - Quarry returns week-ending field corruption ("W/E 01-Jan-1900 Week 0") on all 7B532 narrations — raise with the system owner; it currently prevents distinguishing daily from weekly charge bases.
 - GJ078546 narration quality ("Consulting Pty Ltd" describing training and furniture legs; "Timber Treatment (PK000510)" on GJ079190/GJ079210 describing a Playforce assessment and referencing a PK on neither leg) — note for the journal preparer.
-- Derived workbooks (00_NA_Status_All_Accounts_11-Jun-2026.xlsx, 00_Parks_4090000_NAReview_Tracker.xlsx, 00_NAReview_Master.xlsx, 00_Running_Transaction_Listing.xlsx) not yet extended for the five handover workstreams (73211, 62121/62125, 7B532, 7B214, 73541) — queued; 00_Account_Review_Register.xlsx is current and authoritative at $502,932.11.
+- Derived workbooks CLEARED 11-Jun-2026 (fourth pass): 00_NA_Status_All_Accounts_11-Jun-2026.xlsx, 00_Parks_4090000_NAReview_Tracker.xlsx, 00_NAReview_Master.xlsx and 00_Running_Transaction_Listing.xlsx are extended for the five handover workstreams; the status workbook carries a live tie-out that recomputes the bridge to the register total $502,932.11 and reads TIES. 00_Account_Review_Register.xlsx remains authoritative.
 
 ## Handover reconciliation note, 11-Jun-2026
 
@@ -117,6 +116,13 @@ The parallel 11-Jun session (LCC4090000_NAReview_Handover_11-Jun-2026) ran witho
 - 73211 F6 CLOSED — the $0.01 RL195364 variance line is Empire's GST rounding cent (GST $37.01 on $370.05).
 - Salisnew identity NARROWED — "Peter Salinsnew" appears as the LCC contact on INCON LCC31326 (a Parks materials order); People & Positions confirmation still owed for the 73511/73512 payee lines.
 - TE004838 evidence GAP CLOSED with finding F7 — Message Media invoice + cover slip sighted; coding mismatch (slip PK000055-73212, posted 1-20241-73211) held for ruling.
+
+## Closed this session (11-Jun-2026, fourth pass)
+
+- Derived workbooks extended for the five handover workstreams (73211, 62121/62125, 7B532, 7B214, 73541): status workbook, Tracker, Running Transaction Listing (133 new lines, 73211 reconciled to $236,378.27 before writing) and the rebuilt NAReview Master. Status-workbook tie-out recomputes TIES at the register $502,932.11.
+- Flying Gang sub-PK (PK000493 / svc 20392) added to lcc-coding-review and the pk_validator reverse lookup (skills delta patch); the 72312 IKEA line now validates. PK000510/511 documented as work-order pseudo-PKs (Gihani 6-May-2026), PK000415/429 as unmapped journal PKs pending confirmation.
+- Marsden stores-issue/adjustment evidence rule (Spero, 10-Jun-2026) recorded durably in lcc-coding-review (evidence_tier_checklist.md and SKILL.md).
+- TE004218 $6.05 restored travel flag closed (verified recoded via GJ078933; the Cabcharge split flag remains open).
 
 ## Closed prior session (10-Jun-2026)
 

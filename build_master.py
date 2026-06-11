@@ -25,7 +25,11 @@ from openpyxl.utils import get_column_letter
 LISTING = "00_Running_Transaction_Listing.xlsx"
 REGISTER = "00_Account_Review_Register.xlsx"
 TRACKER = "00_Parks_4090000_NAReview_Tracker.xlsx"
-LINE_NAS = ["72111", "72312", "73533", "73563", "73564", "72114", "73511", "73128"]
+LINE_NAS = ["72111", "72312", "73533", "73563", "73564", "72114", "73511", "73128",
+            "73211", "73541", "7B532", "7B214"]
+# 62121/62125 (revenue) stays register-row only: its listing tab (62121-62125)
+# nets -$1,139.28 as exported while the register reviewed scope is $3,711.73.
+INTERNAL_NAS = {"7B532", "7B214"}  # tax limb n/a: internal charges, no GST event
 
 NAVY = "1F4E79"
 HDR = Font(name="Segoe UI", bold=True, color="FFFFFF", size=10)
@@ -168,7 +172,7 @@ def main():
                         f'IF(COUNTIF({r1},"P")>0,"AMBER","GREEN"))))')
             rg.cell(rr, 4, f"=SUM('{sh}'!K3:K{last})")
             rg.cell(rr, 6, w2("N", "O")); rg.cell(rr, 7, w1("P")); rg.cell(rr, 8, w1("Q"))
-            rg.cell(rr, 9, w1("R"))
+            rg.cell(rr, 9, "n/a (internal)" if na in INTERNAL_NAS else w1("R"))
             rov = f"'{sh}'!S3:S{last}"
             rg.cell(rr, 10, (f'=IF(COUNTIF({rov},"R"),"RED",'
                              f'IF(COUNTIF({rov},"A"),"AMBER",'
@@ -183,8 +187,8 @@ def main():
                 rg.cell(rr, j, src[j - 1])
             rg.cell(rr, 16, src[3] if src[9] != "PENDING" else 0)
             rg.cell(rr, 17, 0)
-        if na == "73128":
-            rg.cell(rr, 5, src[4])   # GST-free milk: invoice value, not D*1.1
+        if na in ("73128", "7B532", "7B214", "62121/62125"):
+            rg.cell(rr, 5, src[4])   # 73128 GST-free invoice value; internal = ex-GST; revenue per-line
         else:
             rg.cell(rr, 5, f"=D{rr}*1.1")
         for c, fmt in ((4, "#,##0.00"), (5, "#,##0.00"), (16, "#,##0.00"), (17, "#,##0.00")):
@@ -222,7 +226,8 @@ def main():
                 c.number_format = "#,##0.00"
         sr += 1
     for label, note in [("73140 Pre-Employment Background Checks", "no line ledger; SE2 $3,703.03; see Verification Record"),
-                        ("Remaining 80 programme accounts", "no TechOne transaction export pulled yet; line coverage pending")]:
+                        ("62121/62125 Cemetery Revenue", "register row $3,711.73 (Garside scope); 7-line tab in the Running Transaction Listing (export nets -$1,139.28); revenue, not rolled into the master"),
+                        ("Remaining 74 programme accounts", "no TechOne transaction export pulled yet; line coverage pending")]:
         c = sm.cell(sr, 1, label); c.font = BASE; c.alignment = lft; c.border = bd
         c2 = sm.cell(sr, 5, note); c2.font = BASE; c2.alignment = lft; c2.border = bd
         sr += 1

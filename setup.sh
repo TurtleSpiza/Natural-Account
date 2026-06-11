@@ -13,13 +13,17 @@ if [ "$(id -u)" -eq 0 ]; then SUDO=""; else SUDO="sudo"; fi
 export DEBIAN_FRONTEND=noninteractive
 
 echo "==> System packages: LibreOffice headless (spreadsheet formula recalc)"
-if ! command -v soffice >/dev/null 2>&1; then
+# Test for the Calc filter module, not the soffice binary: some images ship
+# libreoffice-core (soffice present) without libreoffice-calc, and a calc-less
+# soffice fails every workbook load with "source file could not be loaded"
+# (hit 11-Jun-2026).
+if ! dpkg -s libreoffice-calc >/dev/null 2>&1; then
   $SUDO apt-get update -y
   # Recommends left in on purpose: headless --convert-to recalc is load-bearing for
   # the live-formula register and tracker; reliability over image size here.
   $SUDO apt-get install -y libreoffice-calc
 else
-  echo "    soffice already present, skipping apt"
+  echo "    libreoffice-calc already present, skipping apt"
 fi
 
 echo "==> Python dependencies"
