@@ -1,0 +1,71 @@
+evidence_file,account,ledger_ref,period,date,employee,vaccine,gl_ex_gst,invoice_incl_gst_x1_1,sha256,evidence_status
+(none - unsighted),7B213,IJ072836,P2,13-Aug-2025,Adam Goodsir,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ072836,P2,13-Aug-2025,Dominic Unwin,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Shane Morris,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Darren Bester,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Shane Morris,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073940,P7,04-Feb-2026,Darren Bester,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073940,P7,04-Feb-2026,Dominic Unwin,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,James Lloyd-Jones,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Guy Carkeet,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Isabel Howard,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Graeme Gray,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,James Lloyd-Jones,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Isabel Howard,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Oliver Mueller,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Guy Carkeet,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074595,P11,11-May-2026,Oliver Mueller,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Shane Morris,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Mario Fuentes,Hep B,26.00,28.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074595,P11,11-May-2026,Arno Schneider,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Guy Carkeet,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Dale McKenzie,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Darren Bester,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Shane Morris,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073453,P5,12-Nov-2025,Jason Fourmile,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ072836,P2,13-Aug-2025,Dominic Unwin,DTPa,39.00,42.90,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ072836,P2,13-Aug-2025,Dominic Unwin,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ072836,P2,13-Aug-2025,Benjamin Tabuwaitui,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Shane Morris,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Lachlan Peebles,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Darren Bester,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,James Lloyd-Jones,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Isabel Howard,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Dale McKenzie,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Guy Carkeet,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073940,P7,04-Feb-2026,Dominic Unwin,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Graeme Gray,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Oliver Mueller,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Mario Fuentes,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Shane Morris,Hep A,58.00,63.80,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Dominic Unwin,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Guy Carkeet,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Dale Mckenzie,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Guy Carkeet,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074372,P9,01-Apr-2026,Dale Mckenzie,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074595,P11,11-May-2026,Arno Schneider,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,Isabel Howard,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074226,P9,11-Mar-2026,James Lloyd-Jones,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073940,P7,04-Feb-2026,Lachlan Peebles,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073453,P5,12-Nov-2025,Gregory Cavell,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073453,P5,12-Nov-2025,Jennifer Harley,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Henry Fusi,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Jason Fourmile,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Sonya Karlsson,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Renee Hoyle,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Dominic Unwin,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Christian De Leon,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Darren Bester,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Darren Bester,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Shane Morris,Blood Test,82.00,90.20,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073262,P4,16-Oct-2025,Jason Fourmile,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Zhi Cai,Hep B,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Anna-Marie Higgins,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Anna-Marie Higgins,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073639,P6,08-Dec-2025,Darren Bester,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073756,P6,05-Jan-2026,Lachlan Kim Peebles,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Mario Ernesto Fuentes,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Oliver Mueller,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,James Lloyd-Jones,Q Fever Initial,146.30,160.93,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ074855,P12,12-Jun-2026,Oliver Mueller,Q Fever Vaccinat,176.00,193.60,UNSIGHTED-GAP,GAP - source IJ not sighted
+(none - unsighted),7B213,IJ073052,P3,17-Sep-2025,Jason Fourmile,Q Fever Vaccinat,176.00,193.60,UNSIGHTED-GAP,GAP - source IJ not sighted

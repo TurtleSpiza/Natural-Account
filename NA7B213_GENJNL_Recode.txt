@@ -1,0 +1,35 @@
+LDG	Account number	Fund account	Resource Group Code	Resource Code	Amount	Narrative1	Narrative2	Narrative3
+PK	PK000432	PK000432	JOURNAL	7B213	-261.00	Imms recode Dale Mckenzie	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000003	PK000003	JOURNAL	7B213	261.00	Imms Dale Mckenzie	To Park Maintenance PK000003	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-313.00	Imms recode Guy Carkeet	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000003	PK000003	JOURNAL	7B213	313.00	Imms Guy Carkeet	To Park Maintenance PK000003	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-82.00	Imms recode Henry Fusi	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000003	PK000003	JOURNAL	7B213	82.00	Imms Henry Fusi	To Park Maintenance PK000003	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-443.30	Imms recode Jason Fourmile	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000003	PK000003	JOURNAL	7B213	443.30	Imms Jason Fourmile	To Park Maintenance PK000003	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-26.00	Imms recode Adam Goodsir	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	26.00	Imms Adam Goodsir	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-58.00	Imms recode Benjamin Tabuwaitui	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	58.00	Imms Benjamin Tabuwaitui	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-84.00	Imms recode Graeme Gray	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	84.00	Imms Graeme Gray	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-82.00	Imms recode Gregory Cavell	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	82.00	Imms Gregory Cavell	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-230.30	Imms recode Mario Fuentes	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	230.30	Imms Mario Fuentes	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-432.30	Imms recode Oliver Mueller	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	432.30	Imms Oliver Mueller	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-82.00	Imms recode Sonya Karlsson	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000012	PK000012	JOURNAL	7B213	82.00	Imms Sonya Karlsson	To Park Maintenance PK000012	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-82.00	Imms recode Christian De Leon	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000084	PK000084	JOURNAL	7B213	82.00	Imms Christian De Leon	To Park Services PK000084	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-192.00	Imms recode Isabel Howard	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000431	PK000431	JOURNAL	7B213	192.00	Imms Isabel Howard	To Natural Areas PK000431	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-315.00	Imms recode Shane Morris	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000433	PK000433	JOURNAL	7B213	315.00	Imms Shane Morris	To Trees PK000433	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-371.00	Imms recode Dominic Unwin	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000435	PK000435	JOURNAL	7B213	371.00	Imms Dominic Unwin	To Park Services PK000435	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-459.30	Imms recode Darren Bester	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000439	PK000439	JOURNAL	7B213	459.30	Imms Darren Bester	To Cemeteries PK000439	Imms FY26 svc-PK split
+PK	PK000432	PK000432	JOURNAL	7B213	-286.30	Imms recode Lachlan Peebles	Out of NatAreas PK000432	Imms FY26 svc-PK split
+PK	PK000439	PK000439	JOURNAL	7B213	286.30	Imms Lachlan Peebles	To Cemeteries PK000439	Imms FY26 svc-PK split

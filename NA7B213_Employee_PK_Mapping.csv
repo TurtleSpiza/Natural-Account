@@ -1,0 +1,27 @@
+employee,emp_id,branch_in_narration,amount_ex_gst,ledger_refs,source_pk,destination,destination_section,rag,note
+Jennifer Harley,,2070000,82.0,IJ073453,n/a (off-branch),OFF-BRANCH,Plant Fleet Services,RED,Not a Parks employee; cross-branch SL reversal
+Anna-Marie Higgins,,4020000,292.6,IJ073052,n/a (off-branch),OFF-BRANCH,City Standards & Animal Care/C,RED,Not a Parks employee; cross-branch SL reversal
+Arno Schneider,,4090000,121.0,IJ074595,PK000432,HELD on PK000432,UNKNOWN,AMBER,Not on roster; section not advised
+Dale Mckenzie,22743,4090000,97.0,IJ074226,PK000432,PK000003,Park Maintenance,GREEN,roster full-name
+Dale Mckenzie,22743,4090000,164.0,IJ074372,PK000432,PK000003,Park Maintenance,GREEN,roster full-name
+Guy Carkeet,22727,4090000,313.0,IJ074226;IJ074372,PK000432,PK000003,Park Maintenance,GREEN,roster full-name
+Henry Fusi,22339,4090000,82.0,IJ073052,PK000432,PK000003,Park Maintenance,GREEN,roster full-name
+Jason Fourmile,81811,4090000,443.3,IJ073052;IJ073262;IJ073453,PK000432,PK000003,Park Maintenance,GREEN,roster full-name
+Adam Goodsir,21507,4090000,26.0,IJ072836,PK000432,PK000012,Park Maintenance,GREEN,roster full-name
+Benjamin Tabuwaitui,21707,4090000,58.0,IJ072836,PK000432,PK000012,Park Maintenance,GREEN,roster full-name
+Graeme Gray,22713,4090000,84.0,IJ074372,PK000432,PK000012,Park Maintenance,GREEN,roster full-name
+Gregory Cavell,,4090000,82.0,IJ073453,PK000432,PK000012,Park Maintenance,GREEN (Spero-instructed),Placement on Spero instruction; not on roster
+Mario Fuentes,23292,4090000,146.3,IJ074855,PK000432,PK000012,Park Maintenance,GREEN,roster first+last
+Mario Fuentes,23292,4090000,84.0,IJ074855,PK000432,PK000012,Park Maintenance,GREEN,roster full-name
+Oliver Mueller,22705,4090000,432.3,IJ074372;IJ074595;IJ074855,PK000432,PK000012,Park Maintenance,GREEN,roster full-name
+Sonya Karlsson,,4090000,82.0,IJ073052,PK000432,PK000012,Park Maintenance,GREEN (Spero-instructed),Placement on Spero instruction; not on roster
+Christian De Leon,,4090000,82.0,IJ073756,PK000432,PK000084,Park Services (Rangers),GREEN (Spero-instructed),Placement on Spero instruction; not on roster
+Isabel Howard,22761,4090000,192.0,IJ074226;IJ074372,PK000432,PK000431,Natural Areas,GREEN,roster full-name
+Shane Morris,20206,4090000,315.0,IJ073756;IJ074855,PK000432,PK000433,Trees,GREEN,roster full-name
+Dominic Unwin,22112,4090000,371.0,IJ072836;IJ073052;IJ073940;IJ074855,PK000432,PK000435,Park Services,GREEN,roster full-name
+Darren Bester,22584,4090000,459.3,IJ073639;IJ073756;IJ073940,PK000432,PK000439,Cemeteries,GREEN,roster full-name
+Lachlan Peebles,22214,4090000,146.3,IJ073756,PK000432,PK000439,Cemeteries,GREEN,roster first+last
+Lachlan Peebles,22214,4090000,140.0,IJ073756;IJ073940,PK000432,PK000439,Cemeteries,GREEN,roster full-name
+James Lloyd-Jones,22760,4090000,338.3,IJ074226;IJ074372;IJ074855,PK000432,no move,Natural Areas,GREEN,Already on correct Natural Areas PK000432
+Renee Hoyle,20671,4090000,82.0,IJ073052,PK000432,no move,Natural Areas,GREEN,Already on correct Natural Areas PK000432
+Zhi Cai,,6110000,146.3,IJ073052,n/a (off-branch),OFF-BRANCH,Water Service Delivery,RED,Not a Parks employee; cross-branch SL reversal

@@ -2,6 +2,19 @@
 
 Single source of truth for everything still open. Three buckets: documents to sight, decisions, and internal work. No emails are sent to anyone, Finance included; decisions are Spero's and prepared recodes are journal-ready (no Finance-acceptance gate). The rule throughout: every journal line needs its own sighted evidence before its evidence or tax limb clears, unless Spero has directed the line (standing directive: instructions override criteria and are journal-ready, with the source-document gap recorded for audit).
 
+## 16-Jun-2026 intake (NA7B213 integrated; 73211 re-export refreshed)
+
+| Account | Item | Status |
+|---|---|---|
+| 7B213 | Immunisation IJ backings, all 70 lines (IJ072836 to IJ074855) | GAP; evidence limb AMBER, all unsighted; recode staged journal-ready on the coding/PK review |
+| 7B213 | Arno Schneider's home section ($121.00) | OPEN decision; needed to add his pair to the svc-PK split |
+| 7B213 | Park Maintenance PK000012 vs PK000003 by substantive position | OPEN decision; affects destination PK on several pairs |
+| 7B213 | Off-branch $520.90 (not Parks) incl $146.30 duplicate | TO FINANCE; cross-branch SL reversal draft prepared (NA7B213_Offbranch_SL_Reversal_DRAFT.txt), not for posting as-is |
+| 7B213 | Internal_Medical.XLSM row 23 lookup fix (per-section Parks) | OPEN internal; stops the miscode recurring (NA7B213_Lookup_Fix_Row23.md) |
+| 7B213 | SE2 reconciliation (export $4,861.70 vs SE2 $3,996.80) | GAP; no account-level GREEN until it ties |
+| 73211 | 6 new P12 lines from the 17-Jun re-export ($31,153.92): INV-0356 Destination Trails $24,340 (F2 candidate >$20k), plus five standing orders | PENDING; lines carried in the register/listing, evidence and tax limbs unworked |
+| 73211 | ~30 supporting documents received this session (AP coversheets C00*, Document Reconstructions, FBT/GST correction working, P6 accruals, two journal .msg) | RAW INTAKE; archived _Sources_16-Jun-2026/NA73211_ReExport_17-Jun/, not yet worked against the ledger |
+
 ## Documents to obtain or sight
 
 | Account | Document | Status |
