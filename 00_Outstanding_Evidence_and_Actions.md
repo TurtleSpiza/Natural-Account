@@ -12,8 +12,11 @@ Single source of truth for everything still open. Three buckets: documents to si
 | 7B213 | Off-branch $520.90 (not Parks) incl $146.30 duplicate | TO FINANCE; cross-branch SL reversal draft prepared (NA7B213_Offbranch_SL_Reversal_DRAFT.txt), not for posting as-is |
 | 7B213 | Internal_Medical.XLSM row 23 lookup fix (per-section Parks) | OPEN internal; stops the miscode recurring (NA7B213_Lookup_Fix_Row23.md) |
 | 7B213 | SE2 reconciliation (export $4,861.70 vs SE2 $3,996.80) | GAP; no account-level GREEN until it ties |
-| 73211 | 6 new P12 lines from the 17-Jun re-export ($31,153.92): INV-0356 Destination Trails $24,340 (F2 candidate >$20k), plus five standing orders | PENDING; lines carried in the register/listing, evidence and tax limbs unworked |
-| 73211 | ~30 supporting documents received this session (AP coversheets C00*, Document Reconstructions, FBT/GST correction working, P6 accruals, two journal .msg) | RAW INTAKE; archived _Sources_16-Jun-2026/NA73211_ReExport_17-Jun/, not yet worked against the ledger |
+| 73601 | Eight Org Risk Consulting WHS Gap invoices ($43,871.03) | CLOSED 17-Jun-2026: all eight sighted from the 17-Jun intake, exact, ABN PASS, GST exact; account now 9 of 9 and GREEN |
+| 73211 | 16 outstanding invoices (Lothian 2906937/2908705, TBM x4, Ausecology x2, T2 Electrical x2, IDM 698933AU/713170AU, Radio Logan 9016, Treescape 34828, T&H Levai INV-38877, Wildlife Qld 00735) | SIGHTED 17-Jun-2026 (+$66,404.23, all ABN PASS, GST exact); L3/L4 GREEN in the listing |
+| 73211 | 6 remaining GAPs: Provac INV-00037183 $2,050, Telstra Dec-25 $727.95, EWN INV-14768, standing orders 00059013 / 00031055.. / 00060617.. | GAP; not in the 17-Jun intake |
+| 73211 | Blackout Coffee and Catering tax invoice 5468 ($ catering, ABN 96 762 143 615 PASS) | RECEIVED; catering on Minor Contracts, NA-classification candidate (73511/73512), held un-instructed |
+| 73211 | 6 new P12 lines from the 17-Jun re-export ($31,153.92): INV-0356 Destination Trails $24,340 (F2 candidate >$20k), plus five standing orders | PENDING; no evidence in the intake; lines carried in register/listing, limbs unworked |
 
 ## Documents to obtain or sight
 

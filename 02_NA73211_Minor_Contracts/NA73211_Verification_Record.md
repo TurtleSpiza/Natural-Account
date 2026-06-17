@@ -118,3 +118,20 @@ The C00228240 intake (56 files) was triaged in full. Every invoice reconciles to
 **Play Force AP-ledger context (filed to sources).** The intake's AP ledger export (account PLA073, Play Force, ABN 89 677 476 541) lists 29 further invoices INV-7594 to INV-7733, P11-P12, $97,347.39 - relevant to the F2 contract-floor question on the Play Force engagement and to the 73212 Play Force series; archived under _Sources_11-Jun-2026/C00228240_intake/ for the floor test.
 
 **Limb position after this addendum.** L1 AMBER (F1/F7 PK questions open, otherwise unchanged). L2 AMBER (candidate set now F2/F3 plus Firesight 73601, Chronicle 73566/survey, Tennyson 72222, SC10918 64411, Telstra telecoms, TE004838, INCON materials). L3 AMBER, narrowed from $0 to $157,051.42 sighted; gap rows restated in the manifest. L4 AMBER (math exact on sighted; ABR queue and unsighted lines). Overall AMBER. No recode dollar populated; everything held for Spero's rulings per the standing directive.
+
+
+## Evidence addendum, 17-Jun-2026 (16 outstanding invoices sighted from the 17-Jun intake)
+
+Sixteen of the outstanding 73211 invoices are sighted and filed in `NA73211_Evidence/`, +$66,404.23 of line dollars, every ABN checksum PASS and every line reconciling to the cent (ex-GST = ledger, incl = ex x 1.1, GST disclosed):
+
+- The Lothian Group (ABN 13 654 653 639): 2906937 $10,200.00, 2908705 $17,000.00.
+- TrailBuilders / TBM (ABN 42 057 669 173): TBM 00097461 $7,344.11, 00097583 $2,180.00, 00097626 $4,600.00, 00097780 $1,480.00.
+- Ausecology (ABN 21 627 796 435): INV-4029 $8,480.00, INV-4030 $6,360.00 (the GJ078960 pair).
+- T2 Electrical & Data (ABN 19 159 509 501): 3222869 $480.00, 3223786 $1,340.00.
+- IDM (ABN 46 121 411 649): 698933AU $2,093.47, 713170AU $339.97.
+- Radio Logan Inc / 101FM (ABN 69 271 971 993): 9016 $1,710.00 (svc 20412 Community Planting).
+- Treescape / Australasia (ABN 20 117 830 118): 34828 $546.68 (svc 20821 Parks Disaster Mgmt).
+- T & H Levai (ABN 65 100 395 480): INV-38877 $2,250.00.
+- Wildlife Preservation Society of Qld (ABN 44 235 565 907): 00735 $200.00.
+
+Six GAPs remain: Provac INV-00037183 $2,050.00, Telstra Dec-25 49359879351225 $727.95, EWN INV-14768, and standing orders 00059013 / 00031055.. / 00060617... Blackout Coffee and Catering tax invoice 5468 (ABN 96 762 143 615 PASS) was also received: it is a catering supply sitting on Minor Contracts, an NA-classification candidate (73511/73512 hospitality), held un-instructed. The six new P12 lines from the 17-Jun re-export are unworked (PENDING). L3 Evidence stays AMBER on the residue; the listing 73211 tab carries the 16 lines at L3/L4 GREEN.
