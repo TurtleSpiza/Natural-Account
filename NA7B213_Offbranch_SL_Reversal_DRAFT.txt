@@ -1,0 +1,27 @@
+NA7B213 OFF-BRANCH REVERSAL — DRAFT, FOR FINANCE, NOT FOR POSTING AS-IS
+Prepared 16-Jun-2026. Cross-branch correction. The Parks-side reversal (PK ledger,
+out of PK000432, 7B213) is validated. The re-post side uses the home-branch account
+strings from Internal_Medical.XLSM "Lookup Values"; Finance to confirm the exact
+ledger mechanics (the lookup specifies SL for Plant Fleet and City Standards, PS for
+Water). Do not post the duplicate to City Standards; hold it as a provider query.
+
+PARKS-SIDE REVERSAL (PK ledger, validated, credits out of Parks PK000432)
+LDG  Account   Fund      RG       Resource  Amount    Narrative
+PK   PK000432  PK000432  JOURNAL  7B213     -82.00    Imms J Harley off-branch reversal
+PK   PK000432  PK000432  JOURNAL  7B213     -146.30   Imms Z Cai off-branch reversal
+PK   PK000432  PK000432  JOURNAL  7B213     -146.30   Imms A-M Higgins off-branch reversal
+PK   PK000432  PK000432  JOURNAL  7B213     -146.30   Imms A-M Higgins DUPLICATE reversal
+                                            --------
+Parks credit total                          -520.90
+
+PROPOSED RE-POST (home branch, Finance to action via the lookup ledger code)
+Target acct (from lookup)    Branch                         Amount   Note
+1-13051-7B213                2070000 Plant Fleet Services    82.00   Jennifer Harley
+100009-200-7B213             6110000 Water Service Delivery  146.30  Zhi Cai (PS ledger per lookup)
+1-17151-7B213                4020000 City Standards & Animal 146.30  Anna-Marie Higgins (one charge only)
+                                                             ------
+Re-post total                                                374.60
+
+RESIDUAL (do not re-post): 146.30 — the Anna-Marie Higgins duplicate on IJ073052.
+Hold as a credit pending the immunisation provider correcting the double-charge.
+Parks-side reversal (-520.90) less legitimate re-post (374.60) = -146.30 = the duplicate.

@@ -26,10 +26,10 @@ LISTING = "00_Running_Transaction_Listing.xlsx"
 REGISTER = "00_Account_Review_Register.xlsx"
 TRACKER = "00_Parks_4090000_NAReview_Tracker.xlsx"
 LINE_NAS = ["72111", "72312", "73533", "73563", "73564", "72114", "73511", "73128",
-            "73211", "73541", "7B532", "7B214"]
+            "73211", "73541", "7B532", "7B214", "7B213"]
 # 62121/62125 (revenue) stays register-row only: its listing tab (62121-62125)
 # nets -$1,139.28 as exported while the register reviewed scope is $3,711.73.
-INTERNAL_NAS = {"7B532", "7B214"}  # tax limb n/a: internal charges, no GST event
+INTERNAL_NAS = {"7B532", "7B214", "7B213"}  # tax limb n/a: internal charges, no GST event
 
 NAVY = "1F4E79"
 HDR = Font(name="Segoe UI", bold=True, color="FFFFFF", size=10)
