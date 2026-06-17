@@ -1,3 +1,8 @@
-file,account,reference,status,gl_ex_gst,note
-,73140,CV Check AP invoices (sample),GAP - NOT SIGHTED,,Sample of CV Check pre-employment invoices required for evidence + tax limbs; invoice numbers not yet known
-,73140,73140 ledger export,GAP - NOT PROVIDED,,No 73140 ledger export this project; account carried at SE2 balance $3703.03
+file,account,reference,status,gl_ex_gst,gst,note
+07_Intake_Held_Kinatico/Kinatico_P00075671_Jul-2025_C00224808.pdf,73140,P00075671 C00224808,"VERIFIED-HELD (ABN 25 111 728 842 PASS, GST exact; over-scope, not attributed to 73140)",1822.86,182.29,"Valid Kinatico tax invoice; whole-of-council billing, Parks 73140 slice unknown"
+07_Intake_Held_Kinatico/Kinatico_P00081314_Dec-2025_C00262458.pdf,73140,P00081314 C00262458,"VERIFIED-HELD (ABN 25 111 728 842 PASS, GST exact; over-scope, not attributed to 73140)",1377.21,137.72,"Valid Kinatico tax invoice; whole-of-council billing, Parks 73140 slice unknown"
+07_Intake_Held_Kinatico/Kinatico_P00082255_Jan-2026_C00268409.pdf,73140,P00082255 C00268409,"VERIFIED-HELD (ABN 25 111 728 842 PASS, GST exact; over-scope, not attributed to 73140)",1036.50,103.65,"Valid Kinatico tax invoice; whole-of-council billing, Parks 73140 slice unknown"
+07_Intake_Held_Kinatico/Kinatico_P00083290_Feb-2026_C00275221.pdf,73140,P00083290 C00275221,"VERIFIED-HELD (ABN 25 111 728 842 PASS, GST exact; over-scope, not attributed to 73140)",1797.93,179.79,"Valid Kinatico tax invoice; whole-of-council billing, Parks 73140 slice unknown"
+07_Intake_Held_Kinatico/Kinatico_P00086890_May-2026_C00296988.pdf,73140,P00086890 C00296988,"VERIFIED-HELD (ABN 25 111 728 842 PASS, GST exact; over-scope, not attributed to 73140)",1962.36,196.24,"Valid Kinatico tax invoice; whole-of-council billing, Parks 73140 slice unknown"
+,73140,RECONCILIATION,"5 invoices total $7996.86 ex-GST vs 73140 SE2 $3,703.03",7996.86,,"Held sum (7996.86) is 2.16x the 73140 SE2 balance; the five monthly invoices bill the whole council. Parks portion cannot be attributed without the FY26 73140 ledger extract. Evidence limb stays AMBER; documents are now verified, not merely held."
+,73140,73140 ledger export,GAP - NOT PROVIDED,,,"Still required to attribute the Parks slice of each Kinatico monthly invoice; account carried at SE2 $3,703.03"

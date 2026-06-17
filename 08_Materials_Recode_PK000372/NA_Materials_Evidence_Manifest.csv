@@ -1,0 +1,7 @@
+file,workstream,line_ref,sha256,gl_ex_gst,invoice_incl_gst,status
+NA_Materials_Evidence/Materials_EMU_INV-0367.pdf,Materials_PK000372,EMU INV-0367,df1cb9967f5f2503ab3ed2d266645c07e3c2c271bdf045db17b29fa0390f19e9,11256.00,12381.60,SIGHTED (72111->73212 leg source)
+NA_Materials_Evidence/Materials_EMU_INV-0389.pdf,Materials_PK000372,EMU INV-0389,9cc8d4c8d45cc5ba3bd6350f7f7f1cb3b001292606612b22652f16dc19d496ff,14407.68,15848.45,SIGHTED (72111->73212 leg source)
+NA_Materials_Evidence/Materials_EMU_INV-0395.pdf,Materials_PK000372,EMU INV-0395,607501ff68ebde5ed1bd0ae7cdba1267d40bb335722923257b8fe225e0b3ee4b,750.40,825.44,SIGHTED (72111->73212 leg source)
+(not held),Materials_PK000372,Bushcare INV-18177, ,1137.45,1251.20,GAP - source invoice not in bundle (72411->74114 leg)
+(not held),Materials_PK000372,Bushcare INV-17401, ,1050.00,1155.00,"GAP - in summary, NOT in posted journal; confirm in/out of batch"
+cross-ref,Materials_PK000372,Ausecology INV-4029/4030; EWN 14566/14768, ,15290.00, ,Already sighted in NA73211 manifest (72111->73211 legs)

@@ -1,5 +1,9 @@
 # Parks 4090000 NA Review, Handover, 9-Jun-2026
 
+## Session note, 17-Jun-2026 (intakes dispositioned; structure assessed)
+
+Every intake folder was opened and every held document verified and given a disposition; see `00_Intake_Disposition_and_Structure_Assessment_17-Jun-2026.md`. Headlines: the **Materials Journal** (posted reclassification PK000372, $42,841.53, nets $0.00, directive-authorised) is staged and verified as workstream `08_Materials_Recode_PK000372/` — it is already posted, so evidenced not re-posted; the named **Ausecology INV-4029/4030** gap is closed and EMU INV-0367/0389/0395 sighted for the 73212 legs. NA73211 evidence gaps down from 6 to 4 (EWN 14768, Wallum 00059013 closed). The five **Kinatico** invoices (73140) are now verified (ABN/GST PASS) but correctly held — they total $7,996.86, 2.16x the 73140 balance, so they bill the whole council and need the ledger extract to attribute. Items needing a Spero ruling (Bushcare source GAPs, Broad-Intake floor test, the six unplaced IPWEA docs) are listed in the assessment and the outstanding register. No dollar moved; register stays $560,824.33, 23 accounts. Structure assessed sound (hygiene clean, manifest strict-verifies).
+
 ## Session note, 17-Jun-2026 (LINEAGE RECONCILIATION: PR-8 deltas merged into the synced master)
 
 Two divergent lineages of this review were reconciled into one. The synced master ($524,808.71, 22 accounts: NA73122, the EVID audit overlay, the 17-Jun SE2 + broad intake, the 73544 Document-Reconstruction backups) was the base; the three account deltas held only on the git/PR-8 side were ported in. Register moves to **$560,824.33 ex-GST across 23 accounts**, recalc-verified; manifest regenerated and strict-verified. The account-level state (register), the live journal and the evidence are fully reconciled; some derived views remain queued (below).
