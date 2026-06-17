@@ -1,5 +1,9 @@
 # Parks 4090000 NA Review, Handover, 9-Jun-2026
 
+## Session note, 18-Jun-2026 (TCB binder re-extracted)
+
+The NA73128 SecondIntake binder (C00216123, 36 pages, image-only) was re-extracted. It held two matters mixed together: 25 TCB Distributors milk invoices (pages 3-27) and a separate Mundoolun Community Group refund (ABR x2 pages 1-2, Qld Country Bank statement pages 28-29, email chain pages 30-36). The 25 invoices are now standalone, hash-verified PDFs (NA73128_L##_TCB_INV-######.pdf); the Mundoolun matter is bundled separately and flagged as mis-filed (ABN 72 940 549 625, not GST-registered). EVID overlay: 56 of the 114 TCB journal lines moved CONSOLIDATED->PRESENT; the other 25 invoices (58 lines) are not in this binder (first intake). The TCB GST ERROR is confirmed from the source: invoices show $0.00 GST but were booked with GST.
+
 ## Session note, 18-Jun-2026 (source documents received; citations closed)
 
 Eight source documents received and processed (all sightings, no dollar movement; register holds $560,824.33). **7B213 evidence CLOSED** - the Parks 7B213 ledger reconciles to the manifest exactly (70 lines, $4,861.70, all 11 IJs), folded with the Internal Immunisation Services Journal; L3 GREEN. **73140** ledger sighted (reconciles $3,703.03 exact); the five Kinatico invoices attributed by P-number (Parks slice $632.09; a second vendor, JobFit, carries $2,816). **73211 Telstra Dec-25** closed via Document Reconstruction 97 ($727.95 + $72.80 GST exact); NA73211 gaps now 3. **73433** manifest-vs-register conflict reconciled (stale GAP row removed; receipt held and SHA-verified; L3 GREEN). **72114/72111** full ledgers provided (remainders now line-visible). Uploads staged in _Sources_18-Jun-2026/.
