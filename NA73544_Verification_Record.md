@@ -64,3 +64,20 @@ Consequence for the held lines: the nature of the Pryor and Hambly charges is no
 OIR TE004236: the source payment receipt is sighted (receipt 5477 9425 994, 27-Jun-2025, OIR Workplace Health and Safety Queensland, BPoint). It names the licensee: Renee Hoyle, forklift (high-risk work) licence renewal, $96.35, cover slip cost account PK000383 (ParkCare, svc 20661), cardholder Bradley Powell. The last gap on this item closes. The Corporate Procurement audit email (Kristen Hood, 8-Aug-2025) is also filed; it independently corroborates the GSTE-27 finding that the attachment was a receipt rather than a tax invoice and that GST was wrongly claimed (code C, $8.76) on a Division 81 exempt government fee, subsequently corrected. The two TechOne screenshots in the intake are byte-identical to NA73544_L19 and L19b already filed; no re-attach.
 
 Evidence filed: NA73544_L22_GJ076597_DocLineTable.xlsx, NA73544_L22b_GJ076597_LD_NonAttendance_Email.msg, NA73544_L19c_OIR_SourceReceipt_Hoyle_96.35.pdf, NA73544_L19d_PCard_Audit_Hood_8-Aug-2025.msg.
+
+## Addendum, 17-Jun-2026 (six journal backups sighted; ACCA deficiency reconciled as stale)
+
+Intake `Document_Reconstruction_96` and `Materials_Journal` received and processed. Six of the seven outstanding internal journal backups were the genuine evidence gap; all six are now sighted as balanced Document Reconstruction exports, each netting $0.00, folded at L23 to L28:
+
+- L23 IJ074222 (IAP2 Training; Parks leg Shearman 20191), doc 202603101071061000000001.
+- L24 GJ078710 (HAZMAT Spill Combo x14 Staff, 25-Mar-2026, 20001), doc 202603311076033000000001.
+- L25 GJ078895 (composite April batch; the outstanding HAZMAT x12 $2,250 line sits inside it at 20001), doc 202604101078508000000001.
+- L26 GJ077155 (Drive and Manoeuvre Trailers 17141 + Quick Cut Saws non-attendance), doc 202511191045528000000001.
+- L27 GJ079267 (Spill Kit Training x2 20001 + VOC's mobile-plant recharge), doc 202605081085558000000001.
+- L28 GJ078296 (Roller Operations + Roller and FEL recharged to 26RMACT; Parks 26SLACT leg Unwin ACDC 20362), doc 202602251067728000000001.
+
+The internal journals post cross-ledger to 26PSLACT, 26RMACT, WW03 and inter-entity clearing; the natural account is 73544 throughout, and the non-attendance recharges are corroborated by the L&D email already held at L22b. With GJ079650 (L21) and GJ076597 (L22) closed earlier, the journal-backup gap is fully closed.
+
+ACCA INV-11404 ($1,181.82 ex-GST, GST $118.18, ABN 19 009 555 426 VALID) was already held at L10 since 10-Jun. The 17-Jun journal-and-evidence audit overlay had flagged journal lines 159 to 161 as evidence-deficient; that was a matcher miss, not a true gap. The lines are relinked to the held source (EVID-0148) and the deficiency is cleared. The intake copy is byte-identical (SHA 6126cdf2), confirming the held document.
+
+Account RAG holds AMBER: the HLW (BAL) compliant tax invoice is still outstanding (tax limb), and the Bendelta to 73601 and BAL 73541 classification rulings remain with Spero. The BAL workshop receipt in this intake ($1,943.70, paid 26-Jun-2025) does not reconcile to the $1,767 TE004334 ledger figure and does not yet close that candidate.

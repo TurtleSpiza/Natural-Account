@@ -119,19 +119,43 @@ The C00228240 intake (56 files) was triaged in full. Every invoice reconciles to
 
 **Limb position after this addendum.** L1 AMBER (F1/F7 PK questions open, otherwise unchanged). L2 AMBER (candidate set now F2/F3 plus Firesight 73601, Chronicle 73566/survey, Tennyson 72222, SC10918 64411, Telstra telecoms, TE004838, INCON materials). L3 AMBER, narrowed from $0 to $157,051.42 sighted; gap rows restated in the manifest. L4 AMBER (math exact on sighted; ABR queue and unsighted lines). Overall AMBER. No recode dollar populated; everything held for Spero's rulings per the standing directive.
 
+---
 
-## Evidence addendum, 17-Jun-2026 (16 outstanding invoices sighted from the 17-Jun intake)
+## 17-Jun-2026 Evidence-pass addendum (intake Ledger_Accounts_Transactions_Table 17-Jun + 28 AP docs)
 
-Sixteen of the outstanding 73211 invoices are sighted and filed in `NA73211_Evidence/`, +$66,404.23 of line dollars, every ABN checksum PASS and every line reconciling to the cent (ex-GST = ledger, incl = ex x 1.1, GST disclosed):
+**Verdict: 14 source invoices sighted exact to GL on the x1.1 test; evidence limb advanced from 66.4% to 88.3% of the $236,378.27 scope ($208,815.65 sighted; $223,655.65 / 94.6% including Ausecology narrowed). Limb held AMBER on the residual. No GST errors raised; 8 distinct vendor ABN checksums PASS.**
 
-- The Lothian Group (ABN 13 654 653 639): 2906937 $10,200.00, 2908705 $17,000.00.
-- TrailBuilders / TBM (ABN 42 057 669 173): TBM 00097461 $7,344.11, 00097583 $2,180.00, 00097626 $4,600.00, 00097780 $1,480.00.
-- Ausecology (ABN 21 627 796 435): INV-4029 $8,480.00, INV-4030 $6,360.00 (the GJ078960 pair).
-- T2 Electrical & Data (ABN 19 159 509 501): 3222869 $480.00, 3223786 $1,340.00.
-- IDM (ABN 46 121 411 649): 698933AU $2,093.47, 713170AU $339.97.
-- Radio Logan Inc / 101FM (ABN 69 271 971 993): 9016 $1,710.00 (svc 20412 Community Planting).
-- Treescape / Australasia (ABN 20 117 830 118): 34828 $546.68 (svc 20821 Parks Disaster Mgmt).
-- T & H Levai (ABN 65 100 395 480): INV-38877 $2,250.00.
-- Wildlife Preservation Society of Qld (ABN 44 235 565 907): 00735 $200.00.
+### Sighted exact (GL ex-GST x 1.1 = invoice incl-GST, to the cent)
+| Line ref | Vendor | GL ex-GST | Invoice incl-GST | ABN checksum |
+| --- | --- | --- | --- | --- |
+| 2906937 | Lockwise | $10,200.00 | $11,220.00 | PASS (13 654 653 639) |
+| 2908705 | Lockwise | $17,000.00 | $18,700.00 | PASS |
+| 00097461 | TBM | $7,344.11 | $8,078.52 | PASS (42 057 669 173) |
+| 00097583 | TBM | $2,180.00 | $2,398.00 | PASS |
+| 00097626 | TBM | $4,600.00 | $5,060.00 | PASS |
+| 00097780 | TBM | $1,480.00 | $1,628.00 | PASS |
+| 3222869 | T2 Electrical & Data | $480.00 | $528.00 | PASS (19 159 509 501) |
+| 3223786 | T2 Electrical & Data | $1,340.00 | $1,474.00 | PASS |
+| 698933AU | Easy Signs | $2,093.47 | $2,302.82 | PASS (46 121 411 649) |
+| 713170AU | Easy Signs | $339.97 | $373.97 | PASS |
+| 9016 | (ABN 69 271 971 993) | $1,710.00 | $1,881.00 | PASS |
+| 34828 | Australasia Pty Ltd | $546.68 | $601.35 | PASS (20 117 830 118) |
+| 00735 | (ABN 44 235 565 907) | $200.00 | $220.00 | PASS |
+| INV-38877 | T & H Levai Pty Ltd | $2,250.00 | $2,475.00 | PASS (65 100 395 480) |
+| **Total sighted** | | **$51,764.23** | **$56,940.65** | |
 
-Six GAPs remain: Provac INV-00037183 $2,050.00, Telstra Dec-25 49359879351225 $727.95, EWN INV-14768, and standing orders 00059013 / 00031055.. / 00060617... Blackout Coffee and Catering tax invoice 5468 (ABN 96 762 143 615 PASS) was also received: it is a catering supply sitting on Minor Contracts, an NA-classification candidate (73511/73512 hospitality), held un-instructed. The six new P12 lines from the 17-Jun re-export are unworked (PENDING). L3 Evidence stays AMBER on the residue; the listing 73211 tab carries the 16 lines at L3/L4 GREEN.
+### Narrowed, not cleared
+- **Ausecology GJ078960.** INV-4029 (Prep) $8,480.00 ex + INV-4030 (Reserve Burn Prep) $6,360.00 ex sighted = $14,840.00 ex; journal GJ078960 carries $15,290.00 ex, so a **$450.00 residual** is unexplained, and the **vendor ABN is not printed on either invoice**. Evidence limb stays AMBER on this line.
+
+### Residual GAP (still unsighted)
+- Small series 00059013 + 00031055/79/85/86 + 00060617/47 ($2,438.20 ex); Provac INV-00037183 ($2,050.00 ex); Telstra Dec-25 ($727.95 ex); EWN INV-14768 (amount tbc).
+
+### Cross-account evidence found in this intake (flagged, not actioned here)
+- **73601:** eight Organisational Risk Consulting WHS Gap Analysis invoices INV-250714 / 250811-813 / 250910-913 (ABN 27 651 588 662) present; bears on the 73601 $43,871.03 gap. Their INV numbers are absent from the 73211 ledger references, so coding is unconfirmed - reconcile in a 73601 pass.
+- **73512:** Blackout Coffee and Catering Tax Invoice 5468 (ABN 96 762 143 615) present; bears on the 73512 "Quote 5468 $1,656.50" gap.
+- Unmatched intake docs: C00217933 / C00224690 (ABN 64 086 174 781, duplicate pair) and Invoice 3494 (ABN 46 159 342 373) do not match an open 73211 gap line.
+
+### Scope note
+- The fresh 17-Jun export totals **$267,532.19** (120 lines) vs the established register scope **$236,378.27**, a **$31,153.92** delta. Suspected added P11/P12 activity (and the Org Risk series above). Register scope held at $236,378.27 pending reconciliation; not silently changed.
+
+Evidence filed canonically to NA73211_Evidence/ (59 files), SHA-256 in NA73211_Evidence_Manifest.csv; this pass logged in NA73211_EvidencePass_17-Jun-2026.csv. Raw intake retained in uploads for archival under _Sources_17-Jun-2026/ at incorporation.

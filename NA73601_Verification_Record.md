@@ -45,21 +45,3 @@ All nine lines are "Project Organisational Consulting" or "Organisational Risk-I
 | L3 Evidence | AMBER | 1 of 9 sighted; $43,871.03 GAP |
 | L4 Tax | AMBER | Sighted line exact; 8 lines tax-unverified |
 | Overall | AMBER | Evidence set outstanding |
-
-
-## Closing addendum, 17-Jun-2026 (account GREEN: eight outstanding invoices sighted)
-
-The eight Organisational Risk Consulting weekly invoices that were the entire evidence GAP are sighted in the 17-Jun intake and filed in `NA73601_Evidence/`:
-
-| Line | Invoice | Ex-GST | Incl | File |
-|---|---|---|---|---|
-| L01 | INV-250714 | $1,955.25 | $2,150.78 | NA73601_L01_OrgRisk_INV-250714.pdf |
-| L02 | INV-250811 | $7,238.00 | $7,961.80 | NA73601_L02_OrgRisk_INV-250811.pdf |
-| L04 | INV-250812 | $5,867.95 | $6,454.75 | NA73601_L04_OrgRisk_INV-250812.pdf |
-| L05 | INV-250813 | $1,809.50 | $1,990.45 | NA73601_L05_OrgRisk_INV-250813.pdf |
-| L06 | INV-250910 | $5,687.00 | $6,255.70 | NA73601_L06_OrgRisk_INV-250910.pdf |
-| L07 | INV-250911 | $6,850.25 | $7,535.28 | NA73601_L07_OrgRisk_INV-250911.pdf |
-| L08 | INV-250912 | $5,105.38 | $5,615.92 | NA73601_L08_OrgRisk_INV-250912.pdf |
-| L09 | INV-250913 | $9,357.70 | $10,293.47 | NA73601_L09_OrgRisk_INV-250913.pdf |
-
-The eight sum to $43,871.03 ex-GST, exact against the GAP. ABN 27 651 588 662 checksum PASS on every invoice; disclosed GST = ex x 0.1 and incl = ex x 1.1 to the cent throughout. With L03 (INV-251010(2)) already sighted, the account is 9 of 9 invoices, $46,003.66, reconciled to the cent. Limb 3 (Evidence) and Limb 4 (Tax) move to GREEN; with Limb 1 (PK000087) and Limb 2 (73601 Management Consultancies) already GREEN, the account is now GREEN. No recode; coding correct as transacted.
