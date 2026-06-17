@@ -19,6 +19,8 @@ The bundle was intaken from the 9 native zips, merged to one tree (601 files), a
 
 ## 2. Journal audit — the one Limb 1 finding
 
+> **18-Jun update (PK-map):** PK000083 and PK000445 resolve to cost code 20451, PK000493 to 20392, from the 18-Jun 72111 ledger (canonical). Only PK000510/PK000511 remain unmapped. See 00_Analysis_Findings_PKmap_73123_18-Jun-2026.md.
+
 **12 lines sit on PKs that are absent from every installed map** (service_section_pk_map, pk_map, employee_pk_map — 95 PKs total). The service/officer crosswalk cannot be confirmed for these from canonical data. This is the same class as the known PK000510/511 gap.
 
 | PK | Lines | Streams |
