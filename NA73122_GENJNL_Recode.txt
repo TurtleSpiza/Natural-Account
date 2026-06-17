@@ -1,0 +1,12 @@
+# NA73122 Garbage Collection - GENJNL Recode
+# Branch 4090000, Section O110-O115, Ledger 26SLACT, FY25/26
+# Prepared 17-Jun-2026
+#
+# NIL RECODE. No journal lines.
+# Account 73122 coding verified correct on all reviewed lines:
+#   - External Cleanaway garbage charges correctly coded to 73122 Garbage Collection
+#     (not 73121 Cleaning & Sanitary, not 7B115 Internal Garbage, not 7B122 Internal Tip Fees).
+#   - Service/PK crosswalk correct: svc 20151 -> PK000001, svc 20392 -> PK000022.
+# Account held AMBER on evidence completeness only (see Verification Record). No recode dollar.
+#
+# Batch net: $0.00 (no lines).
