@@ -159,3 +159,43 @@ The C00228240 intake (56 files) was triaged in full. Every invoice reconciles to
 - The fresh 17-Jun export totals **$267,532.19** (120 lines) vs the established register scope **$236,378.27**, a **$31,153.92** delta. Suspected added P11/P12 activity (and the Org Risk series above). Register scope held at $236,378.27 pending reconciliation; not silently changed.
 
 Evidence filed canonically to NA73211_Evidence/ (59 files), SHA-256 in NA73211_Evidence_Manifest.csv; this pass logged in NA73211_EvidencePass_17-Jun-2026.csv. Raw intake retained in uploads for archival under _Sources_17-Jun-2026/ at incorporation.
+
+---
+
+## 18-Jun-2026 Evidence-pass addendum (full 73211 export + SE2 enquiry + intake C00277186)
+
+**Verdict: scope reconciled UP to the SE2 authoritative figure $268,032.19; the $450 Ausecology residual CLOSED; two further small-series invoices sighted exact; PRINCE2 confirmed a two-limb correction. Overall RAG held AMBER on the residual evidence and the open rulings.**
+
+### Account reconciliation restated to SE2
+
+The 18-Jun full export (Account @-@@@@@-73211, periods 1-12) totals **$268,032.19 across 121 transaction lines** and ties to the **SE2 26SLACT Accum Act p1-12 enquiry of $268,032.19 to the cent** (Accum Bud $894,312.41; Accum Var $626,280.22). The prior register scope of $236,378.27 is therefore **superseded**: the $31,653.92 gap flagged on 17-Jun was genuine added P11/P12 activity, now SE2-confirmed, not an export artefact. New scope **$268,032.19** carried to the register.
+
+Reconciliation trap noted for the file preparer: the export's own grand-total row (no Account/Period) sits inside the data at $268,032.19; a naive sum double-counts to $536,064.38. Strip the total row.
+
+### Ausecology $450 residual CLOSED (GJ078960 reconstruction sighted)
+
+Document Reconstruction for GJ078960 (cross-ref 202604161079934000000001, filed NA73211_DocRecon_GJ078960_EWN-Ausecology.xlsx) shows the journal's 73211 destination legs in full: Ausecology INV-4030 $6,360.00 + INV-4029 $8,480.00 + **EWN INV-14566 $75.00 + EWN INV-14768 $375.00 = $15,290.00**, matching the journal exactly. The "$450.00 unexplained residual" flagged 17-Jun was never a discrepancy: it is the two EWN planned-burn notification legs riding in the same journal. **EWN INV-14768 quantified and closed at $375.00** (already filed NA73211_14768_EWN.pdf). The journal's source side is 72111 Minor Equipment credits, i.e. GJ078960 moved cost out of 72111 into 73211/73212/74114. Ausecology vendor-ABN-not-printed note stands (a tax-limb item, not a quantum gap).
+
+### Sighted exact (GL ex-GST x 1.1 = invoice incl-GST, to the cent)
+| Line ref | Vendor | GL ex-GST | Invoice incl-GST | ABN checksum |
+| --- | --- | --- | --- | --- |
+| 00060617 | Wallum Nurseries | $319.60 | $351.56 | PASS (92 086 722 456) |
+| 00031055 | Barbs Trees | $528.00 | $580.80 | PASS (89 859 104 277) |
+
+Both nursery lines are plant stock (native tube stock, freight); a stores/materials classification note applies (mirrors the INCON materials read), advisory, not blocking. 00059013 Wallum ($276.80) confirmed already on file (hash match), not re-filed.
+
+### F3 PRINCE2 confirmed a TWO-LIMB correction (NA and PK)
+
+DOC0079602 (PRINCE2 Agile, Duen Jaemjamrat, $2,440.00) posted to **1-20191-73211 / WO PK000082** (svc 20191). Against the named officer: Duen Jaemjamrat is emp 20913, Senior Parks Planner, cost code 120141 -> svc 20141 -> **PK000086** (employee_pk_map). The recode is therefore both limbs: **73211 -> 73544 Training & Development** AND **PK000082 -> PK000086** (off-home-PK miscode, Limb 1). This is the only F3 item still live on the ledger; PSIA $4,300, IPWEA $2,788 and the Jemma chair $370.05 were already reversed off 73211 by GJ078546 (P9, -$7,458.05) to an as-yet-unverified destination.
+
+### New GAPs raised by the 18-Jun export
+- **00001190 Standing Order 2025/26, $500.00** (P12, 16-Jun-2026, 1-20451-73211, WO PK000083 cemeteries, PUR Cred Invoice, doc 1240297). Unsighted; new since 17-Jun.
+- **INV-0356 Destination Trails $24,340.00** (P12, Quote Q261.2, 1-20641-73211, PK000381). New Destination Trails line above the $20,000 floor; extends the F2 series (now LCC31326 + Destination Trails incl INV-0356 + Chronicle). Unsighted; held to the F2 floor-test ruling.
+
+### Residual GAP (still unsighted) after this pass
+- Small-series remainder: 00031079 $314.00, 00031085 $244.00, 00031086 $582.00, 00060647 $173.80 ($1,313.80); the new 00001190 $500.00 and INV-0356 $24,340.00; Provac INV-00037183 $2,050.00 (no source); EWN INV-14768 vendor PDF reconstructed not vendor-sighted; the ABR sightings queue and the IPWEA $343.20 part-payment trace. Telstra Dec-25 $727.95 was already closed via Document Reconstruction 97 (NA73211_Telstra_Dec25_DocRecon97.xlsx); the vendor PDF C00255407 now sits in _Sources_18-Jun-2026/ and can upgrade that reconstruction to a vendor sighting in a later pass.
+
+### Limb position after this addendum
+L1 AMBER (F1/F7 PK questions open; PRINCE2 PK000082->PK000086 now specified). L2 AMBER (candidate set unchanged plus the new INV-0356 floor line). L3 AMBER, evidence now ~$210k of $268,032.19 sighted/reconstructed; gap rows restated in the manifest. L4 AMBER (math exact on sighted; ABR queue and unsighted lines). Overall AMBER. No recode dollar populated; everything held for Spero's rulings per the standing directive.
+
+Evidence filed canonically to NA73211_Evidence/ (NA73211_00060617_Wallum.pdf, NA73211_00031055_BarbsTrees.pdf, NA73211_DocRecon_GJ078960_EWN-Ausecology.xlsx, NA73211_DocRecon100_GJ079190-79210_F1.xlsx), SHA-256 in NA73211_Evidence_Manifest.csv; this pass logged in NA73211_EvidencePass_18-Jun-2026.csv. The PK511 transfer-request email in intake C00277186 is byte-equivalent to the F1 email already filed in Related/, archived only.

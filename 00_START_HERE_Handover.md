@@ -1,5 +1,16 @@
 # Parks 4090000 NA Review, Handover, 9-Jun-2026
 
+## Session correction note, 18-Jun-2026 (73211 scope reconciled to SE2; Ausecology residual closed)
+
+A fresh full 73211 export plus the SE2 26SLACT enquiry and intake C00277186 were processed.
+
+- **73211 scope reconciled UP to $268,032.19.** The 18-Jun full export (121 lines) ties to the SE2 Accum Act p1-12 enquiry of $268,032.19 to the cent. The prior $236,378.27 register scope is superseded; the $31,653.92 gap flagged on 17-Jun was genuine added P11/P12 activity, SE2-confirmed. Register row 21 updated (D21 $268,032.19, E21 $294,835.41; SUM totals D28/E28 stay live formulas and recalc on open). NOTE: LibreOffice headless could not load any xlsx in this reset sandbox ("source file could not be loaded"), so the register was edited with openpyxl and the totals are left as live formulas rather than recalc-cached; they compute correctly when opened in Excel/Excel Online.
+- **Ausecology $450 residual CLOSED.** The GJ078960 Document Reconstruction shows the journal's 73211 legs are Ausecology INV-4030 $6,360 + INV-4029 $8,480 + EWN INV-14566 $75 + EWN INV-14768 $375 = $15,290 exact. The "$450 unexplained residual" was the two EWN legs in the same journal; EWN INV-14768 quantified $375. Filed NA73211_DocRecon_GJ078960_EWN-Ausecology.xlsx.
+- **Two small-series invoices sighted exact.** Wallum 00060617 ($319.60/$351.56, ABN 92 086 722 456 PASS) and Barbs Trees 00031055 ($528.00/$580.80, ABN 89 859 104 277 PASS). Small-series remainder now 00031079/85/86 + 00060647 ($1,313.80). 00059013 Wallum confirmed already on file (hash match).
+- **PRINCE2 is a TWO-LIMB recode.** DOC0079602 (Duen Jaemjamrat $2,440) posted to 1-20191-73211/PK000082; Duen is Senior Parks Planner svc 20141 -> PK000086 (employee_pk_map). Recode is 73211->73544 Training & Development AND PK000082->PK000086 (off-home-PK miscode). Only F3 item still live on the ledger.
+- **New GAPs.** 00001190 cemeteries standing order $500 (P12, PK000083, doc 1240297) and Destination Trails INV-0356 $24,340 (P12, above the $20k floor, extends F2). Both unsighted, held.
+- Evidence filed canonically (4 files), per-account manifest and a new NA73211_EvidencePass_18-Jun-2026.csv updated; bundle manifest regenerated and strict-verified PASS. No recode dollar populated; all findings held for Spero's rulings per the standing directive.
+
 ## Session note, 18-Jun-2026 (TCB binder re-extracted)
 
 The NA73128 SecondIntake binder (C00216123, 36 pages, image-only) was re-extracted. It held two matters mixed together: 25 TCB Distributors milk invoices (pages 3-27) and a separate Mundoolun Community Group refund (ABR x2 pages 1-2, Qld Country Bank statement pages 28-29, email chain pages 30-36). The 25 invoices are now standalone, hash-verified PDFs (NA73128_L##_TCB_INV-######.pdf); the Mundoolun matter is bundled separately and flagged as mis-filed (ABN 72 940 549 625, not GST-registered). EVID overlay: 56 of the 114 TCB journal lines moved CONSOLIDATED->PRESENT; the other 25 invoices (58 lines) are not in this binder (first intake). The TCB GST ERROR is confirmed from the source: invoices show $0.00 GST but were booked with GST.
