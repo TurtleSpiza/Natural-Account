@@ -68,3 +68,17 @@ Complete list of evidence still to be cited, compiled from every `NA*_Evidence_M
 - **73212 GJ079210** ($66,183.82) — CLOSED 11-Jun (balanced PK move).
 - **73544** Blue Dog TE004766, Barter, OIR TE004236 — all SIGHTED/CLOSED 10–11-Jun.
 - **73211** Ausecology INV-4029/4030, EWN 14768, Wallum 00059013 — SIGHTED 17-Jun (Materials intake).
+
+---
+
+## Closed / advanced 18-Jun-2026 (source documents received)
+
+- **7B213 — CLOSED.** Parks 4090000 7B213 ledger export reconciles to the manifest exactly (70 lines, $4,861.70, all 11 IJs line-for-line); Internal Immunisation Services Journal (per-person/vaccine source) also held. All 70 lines lifted GAP→CITED; evidence limb GREEN.
+- **73140 — ADVANCED.** FY26 ledger SIGHTED, reconciles $3,703.03 exact (22 lines, all att=Y). The five held Kinatico invoices ATTRIBUTED by P-number (Parks slice $632.09). Two vendors found: CV Check/Kinatico and JobFit standing order ($2,816). Remaining: 6 more CV Check months + 10 JobFit lines, all att=Y in TechOne.
+- **73211 Telstra Dec-25 — CLOSED.** Document Reconstruction 97 (XRef 139000000001) posts $727.95 + $72.80 GST = $800.75 exact; bill C00255407 held. NA73211 gaps now 3 (Provac, Wallum 00031055-series, Wallum 00060617/47).
+- **73433 — RECONCILED.** Manifest-vs-register conflict resolved: the TE004496 Blue Card receipt is held and SIGHTED (SHA verified); stale duplicate GAP row removed; both lines sighted, L3 GREEN.
+- **72114 / 72111 — ledger exports PROVIDED.** 72114 (112 lines, $27,590.02) and 72111 (371 lines, $68,112.06) full ledgers held; untested remainders now line-visible.
+- **Prepayment journal (GJ079455)** received as a council-wide working paper; touches 73433/73566 across branches, Parks slice minimal (our 73433 already fully sighted).
+- **73544 Bendelta INV-13157 ($8,966.28)** — SIGHTED via Document Reconstruction 98 (XRef 172000000001): posted reclass of Bendelta consulting from 73211→73544 (and Org Risk INV-251010(2) $2,132.63 → 73601).
+- **73564 Anthropic Claude Team (TE3T6EYQ-0004, $903.50)** — invoice + Document Reconstruction 99 SIGHTED (Jayne Clark PCard; overseas supplier, no GST; split 73566/73564).
+- **72114 Reali Supply (PKLCC2025-071, July consolidated)** — SIGHTED; supports the 72114 ledger remainder.
