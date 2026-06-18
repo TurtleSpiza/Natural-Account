@@ -1,5 +1,14 @@
 # Parks 4090000 NA Review, Handover, 9-Jun-2026
 
+## Session correction note, 18-Jun-2026 (NA73211 evidence dedup + Lothian->Lockwise vendor fix)
+
+A naming audit found 13 content-duplicate support files in NA73211_Evidence/ - each document filed twice under two names, a residue of the 11-Jun lineage merge carrying two naming schemes. Deduped to one canonical NA73211_<ref>_<Vendor> copy each (all pairs confirmed byte-identical before deletion); the per-account evidence manifest and the 17-Jun EvidencePass log were realigned to the surviving names.
+
+- **Vendor attribution corrected:** 2906937 and 2908705 were labelled Lothian; the invoices are Lockwise Locksmiths (ABN 13 654 653 639, Abus padlocks $10,200 / $17,000). Renamed to _Lockwise and the manifest fixed. The stale "Lothian" attribution in the 17-Jun register merge note is superseded.
+- Other dedups kept the convention-matching / real-vendor name: _EasySigns (x2, over bare 698933AU/713170AU), _WildlifeQld and _RadioLogan (over ABN-placeholder names), bare-ref 00097461_TBM (x4, over TBM-prefixed), INV-4029/4030_Ausecology (hyphen normalised), 34828_Australasia (legal entity, T/A Treescape).
+- Live journal rebuilt (re-resolves evidence to the surviving names; 367 lines, batch nets $0.00); bundle manifest regenerated 572->559 rows, strict verify PASS. No dollar moved.
+- Open follow-up (not naming): NA73211_Telstra_Dec25_Bill_C00255407.pdf is filed and manifested but not yet a row in the per-account evidence manifest (the DocRecon97 row notes it); add a row when next touching 73211.
+
 ## Session correction note, 18-Jun-2026 (73211 scope reconciled to SE2; Ausecology residual closed)
 
 A fresh full 73211 export plus the SE2 26SLACT enquiry and intake C00277186 were processed.
