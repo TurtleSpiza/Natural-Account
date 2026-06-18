@@ -1,5 +1,10 @@
 # Parks 4090000 NA Review, Handover, 9-Jun-2026
 
+## Session correction note, 18-Jun-2026 (73212 manifest reconciled to register)
+
+The 73212 evidence manifest carried two STALE GAP rows ("GJ079210 backup $66,183.82" and "GJ076924 backup $1,914.00", both "unsighted") alongside the actual SIGHTED rows for the same items (NA73212_L06_GJ079210_DocLineTable.xlsx and NA73212_L07_GJ076924_DocLineTable.xlsx, filed with SHA-256; raw sources in _Sources_11-Jun-2026/). The register was correct (both CLOSED 11-Jun: balanced, direction verified); the GAP placeholders were never removed when the backups were filed. The two stale GAP rows are deleted; the SIGHTED rows stand. Outstanding Lines Register rebuilt (EVIDENCE 25->23; 73212 now shows only its two genuine gaps - s4090230 standing-order vendor invoices and the $20k-floor contract documents). Manifest regenerated, strict verify PASS.
+
+
 ## Session correction note, 18-Jun-2026 (NA73211 evidence dedup + Lothian->Lockwise vendor fix)
 
 A naming audit found 13 content-duplicate support files in NA73211_Evidence/ - each document filed twice under two names, a residue of the 11-Jun lineage merge carrying two naming schemes. Deduped to one canonical NA73211_<ref>_<Vendor> copy each (all pairs confirmed byte-identical before deletion); the per-account evidence manifest and the 17-Jun EvidencePass log were realigned to the surviving names.
