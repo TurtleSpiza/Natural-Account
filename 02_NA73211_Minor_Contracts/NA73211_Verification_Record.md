@@ -199,3 +199,27 @@ DOC0079602 (PRINCE2 Agile, Duen Jaemjamrat, $2,440.00) posted to **1-20191-73211
 L1 AMBER (F1/F7 PK questions open; PRINCE2 PK000082->PK000086 now specified). L2 AMBER (candidate set unchanged plus the new INV-0356 floor line). L3 AMBER, evidence now ~$210k of $268,032.19 sighted/reconstructed; gap rows restated in the manifest. L4 AMBER (math exact on sighted; ABR queue and unsighted lines). Overall AMBER. No recode dollar populated; everything held for Spero's rulings per the standing directive.
 
 Evidence filed canonically to NA73211_Evidence/ (NA73211_00060617_Wallum.pdf, NA73211_00031055_BarbsTrees.pdf, NA73211_DocRecon_GJ078960_EWN-Ausecology.xlsx, NA73211_DocRecon100_GJ079190-79210_F1.xlsx), SHA-256 in NA73211_Evidence_Manifest.csv; this pass logged in NA73211_EvidencePass_18-Jun-2026.csv. The PK511 transfer-request email in intake C00277186 is byte-equivalent to the F1 email already filed in Related/, archived only.
+
+---
+
+## 18-Jun-2026 Evidence-pass addendum 2 (Barbs Trees / Wallum / RST small-series, intakes C00273057 + C00278314)
+
+**15 source invoices sighted exact to GL on the x1.1 test ($11,458.60 ex-GST), closing the bulk of the Barbs Trees / Wallum native-plant small-series. ABN checksums PASS on all three suppliers. No GST errors.**
+
+Correction note: these invoices were supplied across the C00273057 and C00278314 intakes and were initially mis-triaged as out-of-scope landscape documents; on re-match every one is a 73211 small-series ledger line and reconciles to the cent. Filed canonically with SHA-256 in NA73211_Evidence_Manifest.csv; logged in NA73211_EvidencePass_18-Jun-2026_SmallSeries.csv.
+
+### Sighted exact (GL ex-GST x 1.1 = invoice incl-GST)
+| Line ref | Vendor | GL ex-GST | Invoice incl | ABN |
+| --- | --- | --- | --- | --- |
+| 00031079 / 085 / 086 / 100 / 115 / 176 / 204 / 222 / 239 / 242 / 269 | Barbs Trees | $8,940.50 | $9,834.55 | 89 859 104 277 PASS |
+| 00059183 / 00059890 / 00060386 | Wallum Nurseries | $1,273.10 | $1,400.42 | 92 086 722 456 PASS |
+| 00001394 | RST Systems | $1,245.00 | $1,369.50 | 21 627 796 435 PASS |
+
+The 00031079/085/086 gap row is closed in full; the manifest small-series GAP rows are restated.
+
+### Residual GAP after this pass
+- Small-series still unsighted (6 lines, $3,133.70): 00059199, 00059568, 00059569, 00060647, 00060756, 00061080 (Wallum/Barbs).
+- Provac INV-00037183 ($2,050.00).
+- ABR sightings queue and the IPWEA $343.20 part-payment trace.
+
+Limb position: L3 advances by $11,458.60; the native-plant small-series is now substantially evidenced. Overall AMBER unchanged (residual evidence + open rulings). No recode dollar populated.
